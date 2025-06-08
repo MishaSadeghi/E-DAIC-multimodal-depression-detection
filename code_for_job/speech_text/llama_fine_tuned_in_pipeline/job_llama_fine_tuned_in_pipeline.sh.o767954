@@ -1,0 +1,83 @@
+### Starting TaskPrologue of job 767954 on tg090 at Tue 13 Feb 2024 04:06:20 PM CET
+Running on cores 32-63 with governor ondemand
+Tue Feb 13 16:06:20 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:41:00.0 Off |                    0 |
+| N/A   36C    P0              53W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/llama_fine_tuned_in_pipeline
+def_dev:      id  ...                                               text
+0  300  ...   which will record your body. So I'll show you...
+1  301  ...   Yeah, there's all sorts of different studies ...
+2  306  ...   Okay, looks like we're good. But let's move a...
+3  317  ...   Okay. How long is this? This is probably goin...
+4  320  ...   Okay, everything looks good. Okay. Perfect. O...
+
+[5 rows x 7 columns]
+max PHQ score in df_train:  23
+prompt_number:  1
+prompt:   Your task is to read the following text which is an interview with a person and to summarize the key points that might be related to the depression of the person. Be concise and to the point.
+prompt_number:  2
+prompt:   Your task is to read the following text which is an interview with a person and to summarize the key points that might be related to the depression of the person. Be concise and to the point. It is very essential that you write your answer in the first-person perspective, as if the interviewee is narrating about himself or herself. 
+prompt_number:  3
+prompt:   After reading the interview, briefly summarize the main aspects that pertain to the person's depression. 
+prompt_number:  4
+prompt:   Based on the interview, highlight the key factors that might be indicative of the interviewee's depression. 
+prompt_number:  5
+prompt:   Your task is to summarize the interviewee's main points that could be linked to their depression. Keep it concise. 
+prompt_number:  6
+prompt:   After reading the interview, identify and summarize the main challenges or difficulties the interviewee faces that are indicative of depression. 
+prompt_number:  7
+prompt:   Based on the interview, provide a concise analysis of the interviewee's emotional state and behaviors that may indicate the presence of depression. 
+prompt_number:  8
+prompt:   Read the interview carefully and extract the most significant indicators of depression exhibited by the interviewee. Summarize them concisely. 
+prompt_number:  9
+prompt:   Your task is to analyze the interviewee's responses and highlight the key signs or symptoms of depression that are evident in the interview. 
+prompt_number:  10
+prompt:   Provide a brief summary of the interview, focusing on aspects that strongly suggest the presence of depression in the interviewee. 
+Extracting Features for Prompt  1  ..... 
+Traceback (most recent call last):
+  File "/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/llama_fine_tuned_in_pipeline/llama_fine_tuned_in_pipeline.py", line 383, in <module>
+    X_train_features, X_dev_features, X_test_features = extract_features(df_train, df_dev, df_test, model)
+                                                                                                    ^^^^^
+NameError: name 'model' is not defined
+srun: error: tg090: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=767954.0
+=== JOB_STATISTICS ===
+=== current date     : Tue 13 Feb 2024 04:24:00 PM CET
+= Job-ID             : 767954 on tinygpu
+= Job-Name           : job_llama_fine_tuned_in_pipeline.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/llama_fine_tuned_in_pipeline/job_llama_fine_tuned_in_pipeline.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/llama_fine_tuned_in_pipeline
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 20:00:00
+= Elapsed runtime    : 00:17:47
+= Total RAM usage    : 0.0 GiB of requested 117 GiB (0.0%)   
+= Node list          : tg090
+= Subm/Elig/Start/End: 2024-02-13T15:33:13 / 2024-02-13T15:33:13 / 2024-02-13T16:06:13 / 2024-02-13T16:24:00
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           76.4G   104.9G   209.7G        N/A  45,036      500K   1,000K        N/A    
+    /home/woody        311.0G   500.0G   750.0G        N/A     314K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

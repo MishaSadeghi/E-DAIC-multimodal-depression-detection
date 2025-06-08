@@ -1,0 +1,53 @@
+### Starting TaskPrologue of job 767922 on tg097 at Tue 13 Feb 2024 02:42:09 PM CET
+Running on cores 96-127 with governor ondemand
+Tue Feb 13 14:42:09 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:C1:00.0 Off |                    0 |
+| N/A   37C    P0              56W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/llama_fine_tuned_in_pipeline
+Traceback (most recent call last):
+  File "/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/llama_fine_tuned_in_pipeline/llama_fine_tuned_in_pipeline.py", line 26, in <module>
+    sys.path.append('/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/llama_fine_tuned_in_pipeline')
+    ^^^
+NameError: name 'sys' is not defined
+srun: error: tg097: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=767922.0
+=== JOB_STATISTICS ===
+=== current date     : Tue 13 Feb 2024 02:55:42 PM CET
+= Job-ID             : 767922 on tinygpu
+= Job-Name           : job_llama_fine_tuned_in_pipeline.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/llama_fine_tuned_in_pipeline/job_llama_fine_tuned_in_pipeline.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/llama_fine_tuned_in_pipeline
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 20:00:00
+= Elapsed runtime    : 00:13:42
+= Total RAM usage    : 0.0 GiB of requested 117 GiB (0.0%)   
+= Node list          : tg097
+= Subm/Elig/Start/End: 2024-02-13T14:40:27 / 2024-02-13T14:40:27 / 2024-02-13T14:42:00 / 2024-02-13T14:55:42
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           76.4G   104.9G   209.7G        N/A  45,014      500K   1,000K        N/A    
+    /home/woody        311.0G   500.0G   750.0G        N/A     314K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

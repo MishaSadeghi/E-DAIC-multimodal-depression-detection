@@ -1,0 +1,156 @@
+### Starting TaskPrologue of job 769874 on tg094 at Fri 16 Feb 2024 12:04:00 PM CET
+Running on cores 0-31 with governor ondemand
+Fri Feb 16 12:04:00 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:01:00.0 Off |                    0 |
+| N/A   34C    P0              55W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Using device: cuda
+feature_type:  all
+Epoch [1/20], Step [1/21], Loss train: 5.6510
+Epoch [1/20], Step [11/21], Loss train: nan
+Epoch [1/20], Step [21/21], Loss train: nan
+Epoch [1/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [2/20], Step [1/21], Loss train: nan
+Epoch [2/20], Step [11/21], Loss train: nan
+Epoch [2/20], Step [21/21], Loss train: nan
+Epoch [2/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [3/20], Step [1/21], Loss train: nan
+Epoch [3/20], Step [11/21], Loss train: nan
+Epoch [3/20], Step [21/21], Loss train: nan
+Epoch [3/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [4/20], Step [1/21], Loss train: nan
+Epoch [4/20], Step [11/21], Loss train: nan
+Epoch [4/20], Step [21/21], Loss train: nan
+Epoch [4/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [5/20], Step [1/21], Loss train: nan
+Epoch [5/20], Step [11/21], Loss train: nan
+Epoch [5/20], Step [21/21], Loss train: nan
+Epoch [5/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [6/20], Step [1/21], Loss train: nan
+Epoch [6/20], Step [11/21], Loss train: nan
+Epoch [6/20], Step [21/21], Loss train: nan
+Epoch [6/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [7/20], Step [1/21], Loss train: nan
+Epoch [7/20], Step [11/21], Loss train: nan
+Epoch [7/20], Step [21/21], Loss train: nan
+Epoch [7/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [8/20], Step [1/21], Loss train: nan
+Epoch [8/20], Step [11/21], Loss train: nan
+Epoch [8/20], Step [21/21], Loss train: nan
+Epoch [8/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [9/20], Step [1/21], Loss train: nan
+Epoch [9/20], Step [11/21], Loss train: nan
+Epoch [9/20], Step [21/21], Loss train: nan
+Epoch [9/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [10/20], Step [1/21], Loss train: nan
+Epoch [10/20], Step [11/21], Loss train: nan
+Epoch [10/20], Step [21/21], Loss train: nan
+Epoch [10/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [11/20], Step [1/21], Loss train: nan
+Epoch [11/20], Step [11/21], Loss train: nan
+Epoch [11/20], Step [21/21], Loss train: nan
+Epoch [11/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [12/20], Step [1/21], Loss train: nan
+Epoch [12/20], Step [11/21], Loss train: nan
+Epoch [12/20], Step [21/21], Loss train: nan
+Epoch [12/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [13/20], Step [1/21], Loss train: nan
+Epoch [13/20], Step [11/21], Loss train: nan
+Epoch [13/20], Step [21/21], Loss train: nan
+Epoch [13/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [14/20], Step [1/21], Loss train: nan
+Epoch [14/20], Step [11/21], Loss train: nan
+Epoch [14/20], Step [21/21], Loss train: nan
+Epoch [14/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [15/20], Step [1/21], Loss train: nan
+Epoch [15/20], Step [11/21], Loss train: nan
+Epoch [15/20], Step [21/21], Loss train: nan
+Epoch [15/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [16/20], Step [1/21], Loss train: nan
+Epoch [16/20], Step [11/21], Loss train: nan
+Epoch [16/20], Step [21/21], Loss train: nan
+Epoch [16/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [17/20], Step [1/21], Loss train: nan
+Epoch [17/20], Step [11/21], Loss train: nan
+Epoch [17/20], Step [21/21], Loss train: nan
+Epoch [17/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [18/20], Step [1/21], Loss train: nan
+Epoch [18/20], Step [11/21], Loss train: nan
+Epoch [18/20], Step [21/21], Loss train: nan
+Epoch [18/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [19/20], Step [1/21], Loss train: nan
+Epoch [19/20], Step [11/21], Loss train: nan
+Epoch [19/20], Step [21/21], Loss train: nan
+Epoch [19/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [20/20], Step [1/21], Loss train: nan
+Epoch [20/20], Step [11/21], Loss train: nan
+Epoch [20/20], Step [21/21], Loss train: nan
+Epoch [20/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Test RMSE Loss (all): nan, Test MAE Loss (all): nan
+---------------------------------
+Traceback (most recent call last):
+  File "/home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/enhancing_base_code/base_config/LSTM_enhance.py", line 414, in <module>
+    dot = make_dot(model(dummy_input), params=dict(model.named_parameters()))
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/enhancing_base_code/base_config/LSTM_enhance.py", line 278, in forward
+    lstm_out, _ = self.lstm(x)
+                  ^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/rnn.py", line 878, in forward
+    result = _VF.lstm(input, hx, self._flat_weights, self.bias, self.num_layers,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Input and parameter tensors are not at the same device, found input tensor at cpu and parameter tensor at cuda:0
+srun: error: tg094: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=769874.0
+=== JOB_STATISTICS ===
+=== current date     : Fri 16 Feb 2024 12:16:01 PM CET
+= Job-ID             : 769874 on tinygpu
+= Job-Name           : job_LSTM_base.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/enhancing_base_code/base_config/job_LSTM_base.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/enhancing_base_code/base_config
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 20:00:00
+= Elapsed runtime    : 00:12:02
+= Total RAM usage    : 0.9 GiB of requested 117 GiB (0.8%)   
+= Node list          : tg094
+= Subm/Elig/Start/End: 2024-02-16T11:41:06 / 2024-02-16T11:41:06 / 2024-02-16T12:03:59 / 2024-02-16T12:16:01
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           76.4G   104.9G   209.7G        N/A  45,976      500K   1,000K        N/A    
+    /home/vault       2645.5G     0.0K     0.0K        N/A      75K     300K     450K        N/A    
+    /home/woody        311.0G   500.0G   750.0G        N/A     314K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:01:00.0, 3139675, 28 %, 1 %, 20304 MiB, 680235 ms

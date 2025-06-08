@@ -1,0 +1,52 @@
+### Starting TaskPrologue of job 800957 on tg086 at Mon 15 Apr 2024 09:19:30 PM CEST
+Running on cores 8-11,40-43 with governor ondemand
+Mon Apr 15 21:19:30 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3080        On  |   00000000:3E:00.0 Off |                  N/A |
+| 30%   39C    P8             13W /  300W |       1MiB /  10240MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:11<00:22, 11.06s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:21<00:10, 10.41s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:29<00:00,  9.36s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:29<00:00,  9.70s/it]
+/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:492: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.5` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:492: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.5` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+=== JOB_STATISTICS ===
+=== current date     : Mon 15 Apr 2024 09:20:08 PM CEST
+= Job-ID             : 800957 on tinygpu
+= Job-Name           : test_gpu_exist.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study/test_gpu_exist.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study
+= Queue/Partition    : rtx3080
+= Slurm account      : empk with QOS=normal
+= Requested resources:  for 10:00:00
+= Elapsed runtime    : 00:00:38
+= Total RAM usage    : 21.7 GiB of requested  GiB (%)   
+= Node list          : tg086
+= Subm/Elig/Start/End: 2024-04-15T21:19:29 / 2024-04-15T21:19:29 / 2024-04-15T21:19:30 / 2024-04-15T21:20:08
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           51.3G   104.9G   209.7G        N/A  19,443      500K   1,000K        N/A    
+    /home/vault       2303.5G     0.0K     0.0K        N/A      86K     300K     450K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

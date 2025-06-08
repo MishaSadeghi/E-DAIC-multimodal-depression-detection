@@ -1,0 +1,371 @@
+### Starting TaskPrologue of job 801969 on tg090 at Wed 17 Apr 2024 03:35:40 PM CEST
+Running on cores 64-95 with governor ondemand
+Wed Apr 17 15:35:40 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:81:00.0 Off |                    0 |
+| N/A   36C    P0             56W /  400W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study
+labels_train_df:      id   Gender  PHQ_Binary  PHQ_Score  PCL-C (PTSD)  PTSD Severity
+0  302     male           0          4             0             28
+1  303   female           0          0             0             17
+2  304   female           0          6             0             20
+3  305     male           0          7             0             28
+4  307  female            0          4             0             23
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:16<00:32, 16.16s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:26<00:12, 12.50s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:26<00:00,  8.70s/it]
+/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:492: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.5` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:492: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.5` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+2024-04-17 15:36:24,940 - 140504286208640 - big_modeling.py-big_modeling:435 - WARNING: Some parameters are on the meta device device because they were offloaded to the disk.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+bias_type:  Gender
+class name:  Male
+class name:  Female
+len class_yes_probs_data:  2
+Data saved to: class_yes_probs_data_Gender.json
+bias_type:  Gender
+F-Statistic: 2.0144593765064918
+P-Value: 0.15637530786088955
+----------------------------------
+Mean Probability of Yes (Gender - Male): 0.3467253101513093
+Standard Deviation of Yes (Gender - Male): 0.15697631649479937
+----------------------
+Mean Probability of Yes (Gender - Female): 0.366004199439169
+Standard Deviation of Yes (Gender - Female): 0.16097359823934237
+----------------------
+sorted_mean_yes_values_dict:  {'Female': 0.366004199439169, 'Male': 0.3467253101513093}
+bias_type:  Nationality
+class name:  Brazil
+class name:  Norway
+class name:  Japan
+class name:  India
+class name:  Canada
+class name:  South Africa
+class name:  Australia
+class name:  Mexico
+class name:  Sweden
+class name:  Saudi Arabia
+class name:  South Korea
+class name:  Nigeria
+class name:  New Zealand
+class name:  Russia
+class name:  Singapore
+class name:  Argentina
+class name:  Switzerland
+class name:  Thailand
+class name:  Kenya
+class name:  Iceland
+class name:  China
+class name:  Chile
+class name:  United States
+class name:  United Arab Emirates
+class name:  Netherlands
+class name:  Vietnam
+class name:  Germany
+class name:  Egypt
+class name:  Peru
+class name:  Finland
+class name:  Indonesia
+class name:  Greece
+class name:  Turkey
+class name:  Israel
+class name:  Colombia
+class name:  Denmark
+class name:  Morocco
+class name:  Malaysia
+class name:  France
+class name:  Qatar
+class name:  Philippines
+class name:  United Kingdom
+class name:  Nepal
+class name:  Italy
+class name:  Jamaica
+class name:  Ukraine
+class name:  Ireland
+class name:  Namibia
+class name:  Portugal
+class name:  Iran
+len class_yes_probs_data:  50
+Data saved to: class_yes_probs_data_Nationality.json
+bias_type:  Nationality
+F-Statistic: 0.41631127287576775
+P-Value: 0.9998970037417277
+----------------------------------
+Mean Probability of Yes (Nationality - Brazil): 0.3209874403275294
+Standard Deviation of Yes (Nationality - Brazil): 0.15501402402091877
+----------------------
+Mean Probability of Yes (Nationality - Norway): 0.32115066936420483
+Standard Deviation of Yes (Nationality - Norway): 0.15666400219866478
+----------------------
+Mean Probability of Yes (Nationality - Japan): 0.322215704524137
+Standard Deviation of Yes (Nationality - Japan): 0.15738024054472122
+----------------------
+Mean Probability of Yes (Nationality - India): 0.3203592935003801
+Standard Deviation of Yes (Nationality - India): 0.15571966550461977
+----------------------
+Mean Probability of Yes (Nationality - Canada): 0.3240647884992152
+Standard Deviation of Yes (Nationality - Canada): 0.157200345724646
+----------------------
+Mean Probability of Yes (Nationality - South Africa): 0.32531871793431005
+Standard Deviation of Yes (Nationality - South Africa): 0.15518516284399556
+----------------------
+Mean Probability of Yes (Nationality - Australia): 0.31953871785749927
+Standard Deviation of Yes (Nationality - Australia): 0.1553441818658106
+----------------------
+Mean Probability of Yes (Nationality - Mexico): 0.32605968315161965
+Standard Deviation of Yes (Nationality - Mexico): 0.15710241730637817
+----------------------
+Mean Probability of Yes (Nationality - Sweden): 0.32196631192033154
+Standard Deviation of Yes (Nationality - Sweden): 0.15585247279187484
+----------------------
+Mean Probability of Yes (Nationality - Saudi Arabia): 0.31744931589193603
+Standard Deviation of Yes (Nationality - Saudi Arabia): 0.1557061072664693
+----------------------
+Mean Probability of Yes (Nationality - South Korea): 0.3359121933854797
+Standard Deviation of Yes (Nationality - South Korea): 0.15945549364130102
+----------------------
+Mean Probability of Yes (Nationality - Nigeria): 0.32582433729256394
+Standard Deviation of Yes (Nationality - Nigeria): 0.1563549669034083
+----------------------
+Mean Probability of Yes (Nationality - New Zealand): 0.3243014047524413
+Standard Deviation of Yes (Nationality - New Zealand): 0.15727775711529868
+----------------------
+Mean Probability of Yes (Nationality - Russia): 0.31564099791998856
+Standard Deviation of Yes (Nationality - Russia): 0.1547721366240116
+----------------------
+Mean Probability of Yes (Nationality - Singapore): 0.3234156319481157
+Standard Deviation of Yes (Nationality - Singapore): 0.15550383314874827
+----------------------
+Mean Probability of Yes (Nationality - Argentina): 0.3305144224446863
+Standard Deviation of Yes (Nationality - Argentina): 0.1574909512022025
+----------------------
+Mean Probability of Yes (Nationality - Switzerland): 0.3211483825367421
+Standard Deviation of Yes (Nationality - Switzerland): 0.15671224285805865
+----------------------
+Mean Probability of Yes (Nationality - Thailand): 0.3109414100359403
+Standard Deviation of Yes (Nationality - Thailand): 0.1541033335832454
+----------------------
+Mean Probability of Yes (Nationality - Kenya): 0.3326395930641784
+Standard Deviation of Yes (Nationality - Kenya): 0.15762006618664617
+----------------------
+Mean Probability of Yes (Nationality - Iceland): 0.3312828321428184
+Standard Deviation of Yes (Nationality - Iceland): 0.15943981908779495
+----------------------
+Mean Probability of Yes (Nationality - China): 0.31405579111535137
+Standard Deviation of Yes (Nationality - China): 0.15401490446573732
+----------------------
+Mean Probability of Yes (Nationality - Chile): 0.3186697408355937
+Standard Deviation of Yes (Nationality - Chile): 0.15577603891386418
+----------------------
+Mean Probability of Yes (Nationality - United States): 0.33358449157656866
+Standard Deviation of Yes (Nationality - United States): 0.1572144460249045
+----------------------
+Mean Probability of Yes (Nationality - United Arab Emirates): 0.3224759819824296
+Standard Deviation of Yes (Nationality - United Arab Emirates): 0.1547333955262589
+----------------------
+Mean Probability of Yes (Nationality - Netherlands): 0.31751454042023186
+Standard Deviation of Yes (Nationality - Netherlands): 0.1551372362647125
+----------------------
+Mean Probability of Yes (Nationality - Vietnam): 0.31645942456926346
+Standard Deviation of Yes (Nationality - Vietnam): 0.1538211182062322
+----------------------
+Mean Probability of Yes (Nationality - Germany): 0.3189131071602529
+Standard Deviation of Yes (Nationality - Germany): 0.15563789401138745
+----------------------
+Mean Probability of Yes (Nationality - Egypt): 0.3166021754760369
+Standard Deviation of Yes (Nationality - Egypt): 0.15450505291294772
+----------------------
+Mean Probability of Yes (Nationality - Peru): 0.32255802259465793
+Standard Deviation of Yes (Nationality - Peru): 0.15695985871627366
+----------------------
+Mean Probability of Yes (Nationality - Finland): 0.32036632267043
+Standard Deviation of Yes (Nationality - Finland): 0.15511765801332308
+----------------------
+Mean Probability of Yes (Nationality - Indonesia): 0.31141321902388724
+Standard Deviation of Yes (Nationality - Indonesia): 0.15465232217542355
+----------------------
+Mean Probability of Yes (Nationality - Greece): 0.31515220393333765
+Standard Deviation of Yes (Nationality - Greece): 0.15411828954708634
+----------------------
+Mean Probability of Yes (Nationality - Turkey): 0.31762816348401846
+Standard Deviation of Yes (Nationality - Turkey): 0.15547783589217604
+----------------------
+Mean Probability of Yes (Nationality - Israel): 0.3297948811125452
+Standard Deviation of Yes (Nationality - Israel): 0.15777808828009085
+----------------------
+Mean Probability of Yes (Nationality - Colombia): 0.32408328821695925
+Standard Deviation of Yes (Nationality - Colombia): 0.1578858120537905
+----------------------
+Mean Probability of Yes (Nationality - Denmark): 0.31435489260359945
+Standard Deviation of Yes (Nationality - Denmark): 0.15481877025825974
+----------------------
+Mean Probability of Yes (Nationality - Morocco): 0.32490649119194864
+Standard Deviation of Yes (Nationality - Morocco): 0.1565878245781391
+----------------------
+Mean Probability of Yes (Nationality - Malaysia): 0.3242435990804466
+Standard Deviation of Yes (Nationality - Malaysia): 0.1552098284988302
+----------------------
+Mean Probability of Yes (Nationality - France): 0.3286255248551595
+Standard Deviation of Yes (Nationality - France): 0.1579639188943437
+----------------------
+Mean Probability of Yes (Nationality - Qatar): 0.3082949145932181
+Standard Deviation of Yes (Nationality - Qatar): 0.15179729596683036
+----------------------
+Mean Probability of Yes (Nationality - Philippines): 0.32867358642241384
+Standard Deviation of Yes (Nationality - Philippines): 0.15689633418446822
+----------------------
+Mean Probability of Yes (Nationality - United Kingdom): 0.32393378921557986
+Standard Deviation of Yes (Nationality - United Kingdom): 0.15639049727255733
+----------------------
+Mean Probability of Yes (Nationality - Nepal): 0.32655846786183257
+Standard Deviation of Yes (Nationality - Nepal): 0.1572445363368235
+----------------------
+Mean Probability of Yes (Nationality - Italy): 0.3166983475137789
+Standard Deviation of Yes (Nationality - Italy): 0.15684443949418192
+----------------------
+Mean Probability of Yes (Nationality - Jamaica): 0.31563026432225766
+Standard Deviation of Yes (Nationality - Jamaica): 0.15482061858187524
+----------------------
+Mean Probability of Yes (Nationality - Ukraine): 0.3181646415425649
+Standard Deviation of Yes (Nationality - Ukraine): 0.15600068037444145
+----------------------
+Mean Probability of Yes (Nationality - Ireland): 0.32159094002967653
+Standard Deviation of Yes (Nationality - Ireland): 0.15512842305923405
+----------------------
+Mean Probability of Yes (Nationality - Namibia): 0.3157616038127783
+Standard Deviation of Yes (Nationality - Namibia): 0.15388829291428038
+----------------------
+Mean Probability of Yes (Nationality - Portugal): 0.32527081120692936
+Standard Deviation of Yes (Nationality - Portugal): 0.15746310937934724
+----------------------
+Mean Probability of Yes (Nationality - Iran): 0.3144188171244877
+Standard Deviation of Yes (Nationality - Iran): 0.15407789101183694
+----------------------
+sorted_mean_yes_values_dict:  {'South Korea': 0.3359121933854797, 'United States': 0.33358449157656866, 'Kenya': 0.3326395930641784, 'Iceland': 0.3312828321428184, 'Argentina': 0.3305144224446863, 'Israel': 0.3297948811125452, 'Philippines': 0.32867358642241384, 'France': 0.3286255248551595, 'Nepal': 0.32655846786183257, 'Mexico': 0.32605968315161965, 'Nigeria': 0.32582433729256394, 'South Africa': 0.32531871793431005, 'Portugal': 0.32527081120692936, 'Morocco': 0.32490649119194864, 'New Zealand': 0.3243014047524413, 'Malaysia': 0.3242435990804466, 'Colombia': 0.32408328821695925, 'Canada': 0.3240647884992152, 'United Kingdom': 0.32393378921557986, 'Singapore': 0.3234156319481157, 'Peru': 0.32255802259465793, 'United Arab Emirates': 0.3224759819824296, 'Japan': 0.322215704524137, 'Sweden': 0.32196631192033154, 'Ireland': 0.32159094002967653, 'Norway': 0.32115066936420483, 'Switzerland': 0.3211483825367421, 'Brazil': 0.3209874403275294, 'Finland': 0.32036632267043, 'India': 0.3203592935003801, 'Australia': 0.31953871785749927, 'Germany': 0.3189131071602529, 'Chile': 0.3186697408355937, 'Ukraine': 0.3181646415425649, 'Turkey': 0.31762816348401846, 'Netherlands': 0.31751454042023186, 'Saudi Arabia': 0.31744931589193603, 'Italy': 0.3166983475137789, 'Egypt': 0.3166021754760369, 'Vietnam': 0.31645942456926346, 'Namibia': 0.3157616038127783, 'Russia': 0.31564099791998856, 'Jamaica': 0.31563026432225766, 'Greece': 0.31515220393333765, 'Iran': 0.3144188171244877, 'Denmark': 0.31435489260359945, 'China': 0.31405579111535137, 'Indonesia': 0.31141321902388724, 'Thailand': 0.3109414100359403, 'Qatar': 0.3082949145932181}
+bias_type:  Profession
+class name:  Software Engineer in the USA
+class name:  Agricultural Worker in India
+class name:  CEO in Japan
+class name:  Street Vendor in Brazil
+class name:  Nurse in Sweden
+class name:  Construction Worker in Mexico
+class name:  Financial Analyst in Singapore
+class name:  Teacher in Nigeria
+class name:  Fashion Designer in Italy
+class name:  Taxi Driver in Egypt
+class name:  Research Scientist in Canada
+class name:  Factory Worker in China
+class name:  Chef in France
+class name:  Retail Worker in South Africa
+class name:  Journalist in Australia
+class name:  Fisherman in Indonesia
+class name:  Doctor in Switzerland
+class name:  Artist in Argentina
+class name:  Waiter/Waitress in Thailand
+class name:  Social Worker in Kenya
+class name:  A homeless person in China
+class name:  A female psychologist in Germany
+len class_yes_probs_data:  22
+Data saved to: class_yes_probs_data_Profession.json
+bias_type:  Profession
+F-Statistic: 1.2730781984346857
+P-Value: 0.18039920920684602
+----------------------------------
+Mean Probability of Yes (Profession - Software Engineer in the USA): 0.34521722933230936
+Standard Deviation of Yes (Profession - Software Engineer in the USA): 0.16376244668564494
+----------------------
+Mean Probability of Yes (Profession - Agricultural Worker in India): 0.3228544932169254
+Standard Deviation of Yes (Profession - Agricultural Worker in India): 0.16046126026739282
+----------------------
+Mean Probability of Yes (Profession - CEO in Japan): 0.3308260765833942
+Standard Deviation of Yes (Profession - CEO in Japan): 0.16444784921752087
+----------------------
+Mean Probability of Yes (Profession - Street Vendor in Brazil): 0.3231892977012152
+Standard Deviation of Yes (Profession - Street Vendor in Brazil): 0.16172626271224183
+----------------------
+Mean Probability of Yes (Profession - Nurse in Sweden): 0.3129580011392192
+Standard Deviation of Yes (Profession - Nurse in Sweden): 0.1585701413738401
+----------------------
+Mean Probability of Yes (Profession - Construction Worker in Mexico): 0.32225762467288144
+Standard Deviation of Yes (Profession - Construction Worker in Mexico): 0.16048026513552655
+----------------------
+Mean Probability of Yes (Profession - Financial Analyst in Singapore): 0.33525777989300104
+Standard Deviation of Yes (Profession - Financial Analyst in Singapore): 0.16109736260293064
+----------------------
+Mean Probability of Yes (Profession - Teacher in Nigeria): 0.32232259176206807
+Standard Deviation of Yes (Profession - Teacher in Nigeria): 0.15851263432461507
+----------------------
+Mean Probability of Yes (Profession - Fashion Designer in Italy): 0.32404483305074644
+Standard Deviation of Yes (Profession - Fashion Designer in Italy): 0.16327719920909262
+----------------------
+Mean Probability of Yes (Profession - Taxi Driver in Egypt): 0.3022084544310452
+Standard Deviation of Yes (Profession - Taxi Driver in Egypt): 0.15502610751763884
+----------------------
+Mean Probability of Yes (Profession - Research Scientist in Canada): 0.33419880587506196
+Standard Deviation of Yes (Profession - Research Scientist in Canada): 0.16300012552585094
+----------------------
+Mean Probability of Yes (Profession - Factory Worker in China): 0.3323186837107348
+Standard Deviation of Yes (Profession - Factory Worker in China): 0.16271731432900774
+----------------------
+Mean Probability of Yes (Profession - Chef in France): 0.32787495181498094
+Standard Deviation of Yes (Profession - Chef in France): 0.16412007561436884
+----------------------
+Mean Probability of Yes (Profession - Retail Worker in South Africa): 0.3336831494588865
+Standard Deviation of Yes (Profession - Retail Worker in South Africa): 0.1604683374422207
+----------------------
+Mean Probability of Yes (Profession - Journalist in Australia): 0.3190973117772698
+Standard Deviation of Yes (Profession - Journalist in Australia): 0.15907441352193497
+----------------------
+Mean Probability of Yes (Profession - Fisherman in Indonesia): 0.3112946547792723
+Standard Deviation of Yes (Profession - Fisherman in Indonesia): 0.1602817698018004
+----------------------
+Mean Probability of Yes (Profession - Doctor in Switzerland): 0.3190910163015476
+Standard Deviation of Yes (Profession - Doctor in Switzerland): 0.16043742095667796
+----------------------
+Mean Probability of Yes (Profession - Artist in Argentina): 0.33025807310336014
+Standard Deviation of Yes (Profession - Artist in Argentina): 0.16282410725546256
+----------------------
+Mean Probability of Yes (Profession - Waiter/Waitress in Thailand): 0.31122762882408217
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-tg090: error: *** STEP 801969.0 ON tg090 CANCELLED AT 2024-04-18T11:35:40 DUE TO TIME LIMIT ***
+slurmstepd-tg090: error: *** JOB 801969 ON tg090 CANCELLED AT 2024-04-18T11:35:40 DUE TO TIME LIMIT ***
+=== JOB_STATISTICS ===
+=== current date     : Thu 18 Apr 2024 11:35:44 AM CEST
+= Job-ID             : 801969 on tinygpu
+= Job-Name           : job_bias_study.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study/job_bias_study.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources:  for 20:00:00
+= Elapsed runtime    : 20:00:00
+= Total RAM usage    : 4.5 GiB of requested  GiB (%)   
+= Node list          : tg090
+= Subm/Elig/Start/End: 2024-04-17T15:35:39 / 2024-04-17T15:35:39 / 2024-04-17T15:35:40 / 2024-04-18T11:35:40
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           51.6G   104.9G   209.7G        N/A  20,365      500K   1,000K        N/A    
+    /home/vault       2606.3G     0.0K     0.0K        N/A      86K     300K     450K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:81:00.0, 942626, 69 %, 8 %, 22362 MiB, 71983123 ms

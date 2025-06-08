@@ -1,0 +1,55 @@
+### Starting TaskPrologue of job 767890 on tg091 at Tue 13 Feb 2024 12:03:45 PM CET
+Running on cores 0-31 with governor ondemand
+Tue Feb 13 12:03:45 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:01:00.0 Off |                    0 |
+| N/A   37C    P0              54W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/fine_tune_llama
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:31<00:31, 31.56s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:42<00:00, 19.18s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:42<00:00, 21.04s/it]
+Some weights of LlamaForSequenceClassification were not initialized from the model checkpoint at /home/hpc/empk/empk004h/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/8cca527612d856d7d32bd94f8103728d614eb852 and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+2024-02-13 12:18:12.122911: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+output:  [array([1.67e-06, 2.09e-06, 1.00e+00], dtype=float16), array([1.669e-06, 6.451e-02, 9.355e-01], dtype=float16), array([2.337e-05, 2.366e-05, 1.000e+00], dtype=float16)]
+=== JOB_STATISTICS ===
+=== current date     : Tue 13 Feb 2024 12:18:22 PM CET
+= Job-ID             : 767890 on tinygpu
+= Job-Name           : job_finetuned_llama_inference.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/fine_tune_llama/job_finetuned_llama_inference.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/fine_tune_llama
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 20:00:00
+= Elapsed runtime    : 00:14:37
+= Total RAM usage    : 0.9 GiB of requested 117 GiB (0.8%)   
+= Node list          : tg091
+= Subm/Elig/Start/End: 2024-02-13T12:03:27 / 2024-02-13T12:03:27 / 2024-02-13T12:03:45 / 2024-02-13T12:18:22
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           76.4G   104.9G   209.7G        N/A  44,959      500K   1,000K        N/A    
+    /home/vault        193.8G     0.0K     0.0K        N/A      74K     300K     450K        N/A    
+    /home/woody        311.0G   500.0G   750.0G        N/A     314K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:01:00.0, 618646, 1 %, 0 %, 4562 MiB, 65630 ms

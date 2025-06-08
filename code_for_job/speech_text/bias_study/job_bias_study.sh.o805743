@@ -1,0 +1,92 @@
+### Starting TaskPrologue of job 805743 on tg097 at Wed 24 Apr 2024 02:25:04 PM CEST
+Running on cores 0-31 with governor ondemand
+Wed Apr 24 14:25:04 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:01:00.0 Off |                    0 |
+| N/A   40C    P0             54W /  400W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study
+labels_train_df:      id   Gender  PHQ_Binary  PHQ_Score  PCL-C (PTSD)  PTSD Severity
+0  302     male           0          4             0             28
+1  303   female           0          0             0             17
+2  304   female           0          6             0             20
+3  305     male           0          7             0             28
+4  307  female            0          4             0             23
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:22<00:22, 22.58s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:22<00:00, 11.29s/it]
+2024-04-24 14:25:46,465 - 139989111198336 - big_modeling.py-big_modeling:435 - WARNING: Some parameters are on the meta device device because they were offloaded to the disk.
+bias_type:  Gender
+Traceback (most recent call last):
+  File "/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/guidance/_program_executor.py", line 109, in run
+    await self.visit(self.parse_tree, VariableStack([self.program._variables], self))
+  File "/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/guidance/_program_executor.py", line 559, in visit
+    visited_children.append(await self.visit(child, variable_stack, inner_next_node, inner_next_next_node, inner_prev_node, node, parent_node))
+  File "/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/guidance/_program_executor.py", line 524, in visit
+    command_output = await command_function(*positional_args, **named_args)
+  File "/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/guidance/library/_select.py", line 151, in select
+    option_logprobs = await recursive_select([])
+  File "/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/guidance/library/_select.py", line 107, in recursive_select
+    gen_obj = await parser.llm_session(
+  File "/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/guidance/llms/_transformers.py", line 335, in __call__
+    generated_sequence = self.llm.model_obj.generate(**generate_args)
+  File "/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 1324, in generate
+    generation_config, model_kwargs = self._prepare_generation_config(generation_config, **kwargs)
+  File "/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 1220, in _prepare_generation_config
+    model_kwargs = generation_config.update(**kwargs)
+  File "/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/transformers/generation/configuration_utils.py", line 1088, in update
+    self.validate()
+  File "/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/transformers/generation/configuration_utils.py", line 474, in validate
+    raise ValueError(f"`max_new_tokens` must be greater than 0, but is {self.max_new_tokens}.")
+ValueError: `max_new_tokens` must be greater than 0, but is -306.
+
+Error in program:  `max_new_tokens` must be greater than 0, but is -306.
+Traceback (most recent call last):
+  File "/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study/bias_study.py", line 370, in <module>
+    analyze_bias(model, transcripts_df, 'Gender', gender_identities, guidance)
+  File "/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study/bias_study.py", line 154, in analyze_bias
+    log_probs = executed_program['logprobs']
+  File "/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/guidance/_program.py", line 470, in __getitem__
+    return self._variables[key]
+KeyError: 'logprobs'
+srun: error: tg097: task 0: Exited with exit code 1
+srun: Terminating StepId=805743.0
+=== JOB_STATISTICS ===
+=== current date     : Wed 24 Apr 2024 02:31:41 PM CEST
+= Job-ID             : 805743 on tinygpu
+= Job-Name           : job_bias_study.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study/job_bias_study.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources:  for 20:00:00
+= Elapsed runtime    : 00:06:49
+= Total RAM usage    : 1.0 GiB of requested  GiB (%)   
+= Node list          : tg097
+= Subm/Elig/Start/End: 2024-04-24T13:52:19 / 2024-04-24T13:52:19 / 2024-04-24T14:24:52 / 2024-04-24T14:31:41
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           49.9G   104.9G   209.7G        N/A  21,874      500K   1,000K        N/A    
+    /home/vault       4284.9G     0.0K     0.0K        N/A      86K     300K     450K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:01:00.0, 20174, 59 %, 7 %, 38742 MiB, 377894 ms

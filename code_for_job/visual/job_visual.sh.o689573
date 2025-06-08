@@ -1,0 +1,577 @@
+### Starting TaskPrologue of job 689573 on tg083 at Sat 18 Nov 2023 11:14:51 PM CET
+Running on cores 6-9,38-41 with governor ondemand
+Sat Nov 18 23:14:51 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3080        On  | 00000000:3D:00.0 Off |                  N/A |
+| 30%   32C    P8              15W / 300W |      2MiB / 10240MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/code_for_job/visual
+      id  Gender  PHQ_Binary  PHQ_Score  PCL-C (PTSD)  PTSD Severity
+0    300    male           0          2             0           25.0
+1    301    male           0          3             0           17.0
+2    306  female           0          0             0           21.0
+3    317    male           0          8             1           51.0
+4    320  female           0         11             1           64.0
+..   ...     ...         ...        ...           ...            ...
+270  712    male           0          0             0           21.0
+271  715    male           0          7             0           55.0
+272  716    male           1         15             1           73.0
+273  717    male           0          1             0           20.0
+274  718    male           0          3             0           29.0
+
+[275 rows x 6 columns]
+df_openface :            id  frame  pose_Tx  pose_Ty  ...  AU25_c  AU26_c  AU28_c  AU45_c
+0        300      1     69.5     37.7  ...     0.0     0.0     0.0     0.0
+1        300      2     69.4     37.4  ...     0.0     0.0     0.0     0.0
+2        300      3     69.4     37.3  ...     0.0     0.0     0.0     0.0
+3        300      4     69.3     37.3  ...     0.0     0.0     0.0     0.0
+4        300      5     69.4     37.3  ...     0.0     0.0     0.0     0.0
+...      ...    ...      ...      ...  ...     ...     ...     ...     ...
+7582123  718  38452     -8.0     18.3  ...     0.0     0.0     0.0     1.0
+7582124  718  38453     -8.1     18.6  ...     0.0     0.0     0.0     1.0
+7582125  718  38454     -8.4     18.6  ...     0.0     0.0     0.0     1.0
+7582126  718  38455     -8.9     18.9  ...     0.0     0.0     0.0     1.0
+7582127  718  38456     -9.0     19.1  ...     0.0     0.0     0.0     0.0
+
+[7582128 rows x 51 columns]
+df_openface_train :            id  frame  pose_Tx  pose_Ty  ...  AU25_c  AU26_c  AU28_c  AU45_c
+43846    302      1      4.2     19.5  ...     1.0     0.0     0.0     0.0
+43847    302      2      4.2     19.2  ...     0.0     0.0     0.0     0.0
+43848    302      3      4.2     19.1  ...     0.0     0.0     0.0     0.0
+43849    302      4      4.2     19.1  ...     0.0     0.0     0.0     0.0
+43850    302      5      4.2     19.1  ...     0.0     0.0     0.0     0.0
+...      ...    ...      ...      ...  ...     ...     ...     ...     ...
+7328221  707  26046     65.1     14.8  ...     1.0     0.0     0.0     0.0
+7328222  707  26064    106.1     19.7  ...     0.0     0.0     0.0     0.0
+7328223  707  26066    108.3     18.8  ...     0.0     0.0     0.0     0.0
+7328224  707  26096     96.6      5.8  ...     0.0     0.0     0.0     0.0
+7328225  707  26098     87.0      1.7  ...     0.0     0.0     0.0     0.0
+
+[4572269 rows x 51 columns]
+df_openface_dev :            id  frame  pose_Tx  pose_Ty  ...  AU25_c  AU26_c  AU28_c  AU45_c
+0        300      1     69.5     37.7  ...     0.0     0.0     0.0     0.0
+1        300      2     69.4     37.4  ...     0.0     0.0     0.0     0.0
+2        300      3     69.4     37.3  ...     0.0     0.0     0.0     0.0
+3        300      4     69.3     37.3  ...     0.0     0.0     0.0     0.0
+4        300      5     69.4     37.3  ...     0.0     0.0     0.0     0.0
+...      ...    ...      ...      ...  ...     ...     ...     ...     ...
+7457475  713  23644    -51.4    117.7  ...     0.0     0.0     0.0     0.0
+7457476  713  23645    -51.4    118.0  ...     0.0     0.0     0.0     0.0
+7457477  713  23646    -52.1    119.9  ...     0.0     0.0     0.0     0.0
+7457478  713  23647    -52.5    121.2  ...     0.0     0.0     0.0     0.0
+7457479  713  23648    -52.8    123.7  ...     0.0     0.0     0.0     0.0
+
+[1508770 rows x 51 columns]
+df_openface_test :            id  frame  pose_Tx  pose_Ty  ...  AU25_c  AU26_c  AU28_c  AU45_c
+5225346  600      1      6.3    -15.4  ...     0.0     0.0     0.0     0.0
+5225347  600      2      6.4    -15.6  ...     0.0     0.0     0.0     0.0
+5225348  600      3      6.4    -15.7  ...     0.0     0.0     0.0     0.0
+5225349  600      4      6.4    -15.7  ...     0.0     0.0     0.0     0.0
+5225350  600      5      6.4    -15.7  ...     0.0     0.0     0.0     0.0
+...      ...    ...      ...      ...  ...     ...     ...     ...     ...
+7582123  718  38452     -8.0     18.3  ...     0.0     0.0     0.0     1.0
+7582124  718  38453     -8.1     18.6  ...     0.0     0.0     0.0     1.0
+7582125  718  38454     -8.4     18.6  ...     0.0     0.0     0.0     1.0
+7582126  718  38455     -8.9     18.9  ...     0.0     0.0     0.0     1.0
+7582127  718  38456     -9.0     19.1  ...     0.0     0.0     0.0     0.0
+
+[1501089 rows x 51 columns]
+Feature Extraction:   0%|          | 0/160 [00:00<?, ?it/s]Feature Extraction:   1%|          | 1/160 [00:01<02:52,  1.08s/it]Feature Extraction:   2%|▏         | 3/160 [00:01<00:50,  3.13it/s]Feature Extraction:   3%|▎         | 5/160 [00:01<00:32,  4.76it/s]Feature Extraction:   5%|▌         | 8/160 [00:01<00:18,  8.32it/s]Feature Extraction:   6%|▋         | 10/160 [00:01<00:15,  9.78it/s]Feature Extraction:   8%|▊         | 12/160 [00:01<00:13, 10.64it/s]Feature Extraction:   9%|▉         | 14/160 [00:01<00:11, 12.30it/s]Feature Extraction:  11%|█         | 17/160 [00:02<00:09, 14.49it/s]Feature Extraction:  12%|█▎        | 20/160 [00:02<00:07, 17.77it/s]Feature Extraction:  14%|█▍        | 23/160 [00:02<00:07, 18.57it/s]Feature Extraction:  16%|█▋        | 26/160 [00:02<00:07, 17.86it/s]Feature Extraction:  18%|█▊        | 28/160 [00:02<00:08, 15.58it/s]Feature Extraction:  19%|█▉        | 31/160 [00:02<00:07, 17.14it/s]Feature Extraction:  21%|██▏       | 34/160 [00:02<00:07, 17.38it/s]Feature Extraction:  23%|██▎       | 37/160 [00:03<00:06, 19.13it/s]Feature Extraction:  25%|██▌       | 40/160 [00:03<00:06, 19.13it/s]Feature Extraction:  27%|██▋       | 43/160 [00:03<00:05, 20.44it/s]Feature Extraction:  29%|██▉       | 47/160 [00:03<00:04, 23.00it/s]Feature Extraction:  31%|███▏      | 50/160 [00:03<00:06, 16.20it/s]Feature Extraction:  32%|███▎      | 52/160 [00:04<00:07, 14.89it/s]Feature Extraction:  34%|███▍      | 55/160 [00:04<00:06, 15.67it/s]Feature Extraction:  36%|███▋      | 58/160 [00:04<00:06, 16.06it/s]Feature Extraction:  38%|███▊      | 61/160 [00:04<00:05, 17.36it/s]Feature Extraction:  39%|███▉      | 63/160 [00:04<00:06, 15.62it/s]Feature Extraction:  42%|████▏     | 67/160 [00:04<00:04, 19.81it/s]Feature Extraction:  44%|████▍     | 70/160 [00:04<00:04, 19.69it/s]Feature Extraction:  46%|████▋     | 74/160 [00:05<00:03, 21.69it/s]Feature Extraction:  48%|████▊     | 77/160 [00:05<00:03, 22.13it/s]Feature Extraction:  50%|█████     | 80/160 [00:05<00:04, 18.26it/s]Feature Extraction:  52%|█████▏    | 83/160 [00:05<00:04, 18.32it/s]Feature Extraction:  53%|█████▎    | 85/160 [00:05<00:04, 18.59it/s]Feature Extraction:  55%|█████▌    | 88/160 [00:05<00:03, 19.46it/s]Feature Extraction:  57%|█████▊    | 92/160 [00:06<00:03, 19.63it/s]Feature Extraction:  59%|█████▉    | 95/160 [00:06<00:02, 21.77it/s]Feature Extraction:  61%|██████▏   | 98/160 [00:06<00:02, 22.51it/s]Feature Extraction:  63%|██████▎   | 101/160 [00:06<00:02, 22.01it/s]Feature Extraction:  65%|██████▌   | 104/160 [00:06<00:03, 17.35it/s]Feature Extraction:  67%|██████▋   | 107/160 [00:06<00:02, 19.79it/s]Feature Extraction:  69%|██████▉   | 110/160 [00:06<00:02, 19.19it/s]Feature Extraction:  71%|███████   | 113/160 [00:07<00:02, 20.19it/s]Feature Extraction:  72%|███████▎  | 116/160 [00:07<00:02, 20.84it/s]Feature Extraction:  74%|███████▍  | 119/160 [00:07<00:01, 21.57it/s]Feature Extraction:  76%|███████▋  | 122/160 [00:07<00:01, 20.33it/s]Feature Extraction:  78%|███████▊  | 125/160 [00:07<00:01, 21.13it/s]Feature Extraction:  80%|████████  | 128/160 [00:07<00:01, 22.49it/s]Feature Extraction:  82%|████████▏ | 131/160 [00:07<00:01, 20.83it/s]Feature Extraction:  84%|████████▍ | 134/160 [00:08<00:01, 20.57it/s]Feature Extraction:  86%|████████▌ | 137/160 [00:08<00:01, 21.26it/s]Feature Extraction:  88%|████████▊ | 141/160 [00:08<00:00, 23.96it/s]Feature Extraction:  90%|█████████ | 144/160 [00:08<00:00, 22.74it/s]Feature Extraction:  92%|█████████▏| 147/160 [00:08<00:00, 20.55it/s]Feature Extraction:  94%|█████████▍| 150/160 [00:08<00:00, 22.48it/s]Feature Extraction:  96%|█████████▌| 153/160 [00:08<00:00, 22.25it/s]Feature Extraction:  98%|█████████▊| 156/160 [00:09<00:00, 23.35it/s]Feature Extraction:  99%|█████████▉| 159/160 [00:09<00:00, 24.16it/s]Feature Extraction: 100%|██████████| 160/160 [00:09<00:00, 17.45it/s]
+Feature Extraction:   0%|          | 0/153 [00:00<?, ?it/s]Feature Extraction:   1%|          | 1/153 [00:00<00:56,  2.69it/s]Feature Extraction:   4%|▍         | 6/153 [00:00<00:09, 15.21it/s]Feature Extraction:   8%|▊         | 12/153 [00:00<00:05, 26.74it/s]Feature Extraction:  12%|█▏        | 18/153 [00:00<00:03, 35.31it/s]Feature Extraction:  15%|█▌        | 23/153 [00:00<00:03, 38.25it/s]Feature Extraction:  19%|█▉        | 29/153 [00:00<00:02, 42.04it/s]Feature Extraction:  24%|██▎       | 36/153 [00:01<00:02, 45.34it/s]Feature Extraction:  27%|██▋       | 41/153 [00:01<00:02, 46.22it/s]Feature Extraction:  30%|███       | 46/153 [00:01<00:02, 42.27it/s]Feature Extraction:  35%|███▍      | 53/153 [00:01<00:02, 47.73it/s]Feature Extraction:  39%|███▊      | 59/153 [00:01<00:01, 50.73it/s]Feature Extraction:  43%|████▎     | 66/153 [00:01<00:01, 55.22it/s]Feature Extraction:  48%|████▊     | 73/153 [00:01<00:01, 58.18it/s]Feature Extraction:  52%|█████▏    | 79/153 [00:01<00:01, 56.71it/s]Feature Extraction:  56%|█████▌    | 85/153 [00:01<00:01, 56.20it/s]Feature Extraction:  60%|██████    | 92/153 [00:02<00:01, 59.34it/s]Feature Extraction:  64%|██████▍   | 98/153 [00:02<00:01, 50.33it/s]Feature Extraction:  69%|██████▊   | 105/153 [00:02<00:00, 51.70it/s]Feature Extraction:  73%|███████▎  | 112/153 [00:02<00:00, 54.84it/s]Feature Extraction:  78%|███████▊  | 119/153 [00:02<00:00, 58.21it/s]Feature Extraction:  82%|████████▏ | 125/153 [00:02<00:00, 57.18it/s]Feature Extraction:  86%|████████▌ | 131/153 [00:02<00:00, 51.92it/s]Feature Extraction:  90%|█████████ | 138/153 [00:02<00:00, 56.15it/s]Feature Extraction:  95%|█████████▍| 145/153 [00:03<00:00, 58.03it/s]Feature Extraction:  99%|█████████▊| 151/153 [00:03<00:00, 52.58it/s]Feature Extraction: 100%|██████████| 153/153 [00:03<00:00, 47.82it/s]
+Feature Extraction:   0%|          | 0/153 [00:00<?, ?it/s]Feature Extraction:   1%|          | 1/153 [00:00<01:19,  1.92it/s]Feature Extraction:   5%|▍         | 7/153 [00:00<00:10, 14.23it/s]Feature Extraction:   9%|▉         | 14/153 [00:00<00:05, 25.71it/s]Feature Extraction:  12%|█▏        | 19/153 [00:00<00:04, 30.68it/s]Feature Extraction:  16%|█▌        | 24/153 [00:00<00:03, 32.65it/s]Feature Extraction:  19%|█▉        | 29/153 [00:01<00:03, 34.63it/s]Feature Extraction:  23%|██▎       | 35/153 [00:01<00:03, 39.10it/s]Feature Extraction:  27%|██▋       | 41/153 [00:01<00:02, 42.78it/s]Feature Extraction:  32%|███▏      | 49/153 [00:01<00:02, 50.86it/s]Feature Extraction:  36%|███▌      | 55/153 [00:01<00:01, 51.27it/s]Feature Extraction:  40%|███▉      | 61/153 [00:01<00:01, 49.97it/s]Feature Extraction:  44%|████▍     | 67/153 [00:01<00:01, 52.57it/s]Feature Extraction:  48%|████▊     | 74/153 [00:01<00:01, 55.51it/s]Feature Extraction:  52%|█████▏    | 80/153 [00:02<00:01, 56.05it/s]Feature Extraction:  56%|█████▌    | 86/153 [00:02<00:01, 52.99it/s]Feature Extraction:  60%|██████    | 92/153 [00:02<00:01, 53.10it/s]Feature Extraction:  64%|██████▍   | 98/153 [00:02<00:01, 50.43it/s]Feature Extraction:  68%|██████▊   | 104/153 [00:02<00:00, 51.03it/s]Feature Extraction:  72%|███████▏  | 110/153 [00:02<00:00, 51.39it/s]Feature Extraction:  76%|███████▌  | 116/153 [00:02<00:00, 50.89it/s]Feature Extraction:  80%|███████▉  | 122/153 [00:02<00:00, 52.17it/s]Feature Extraction:  84%|████████▍ | 129/153 [00:02<00:00, 56.41it/s]Feature Extraction:  90%|████████▉ | 137/153 [00:03<00:00, 60.50it/s]Feature Extraction:  94%|█████████▍| 144/153 [00:03<00:00, 60.07it/s]Feature Extraction:  99%|█████████▊| 151/153 [00:03<00:00, 59.09it/s]Feature Extraction: 100%|██████████| 153/153 [00:03<00:00, 45.78it/s]
+Columns in minimal_features_dev: Index(['pose_Tx__sum_values', 'pose_Tx__median', 'pose_Tx__mean',
+       'pose_Tx__length', 'pose_Tx__standard_deviation', 'pose_Tx__variance',
+       'pose_Tx__root_mean_square', 'pose_Tx__maximum',
+       'pose_Tx__absolute_maximum', 'pose_Tx__minimum',
+       ...
+       'AU45_c__sum_values', 'AU45_c__median', 'AU45_c__mean',
+       'AU45_c__length', 'AU45_c__standard_deviation', 'AU45_c__variance',
+       'AU45_c__root_mean_square', 'AU45_c__maximum',
+       'AU45_c__absolute_maximum', 'AU45_c__minimum'],
+      dtype='object', length=490)
+Columns in minimal_features_dev after impute: Index(['pose_Tx__sum_values', 'pose_Tx__median', 'pose_Tx__mean',
+       'pose_Tx__length', 'pose_Tx__standard_deviation', 'pose_Tx__variance',
+       'pose_Tx__root_mean_square', 'pose_Tx__maximum',
+       'pose_Tx__absolute_maximum', 'pose_Tx__minimum',
+       ...
+       'AU45_c__sum_values', 'AU45_c__median', 'AU45_c__mean',
+       'AU45_c__length', 'AU45_c__standard_deviation', 'AU45_c__variance',
+       'AU45_c__root_mean_square', 'AU45_c__maximum',
+       'AU45_c__absolute_maximum', 'AU45_c__minimum'],
+      dtype='object', length=490)
+Feature Importances for Selected Features:
+Feature 1: Index 21, Importance: 0.0368754029946149
+Feature 2: Index 106, Importance: 0.01737098610858322
+Feature 3: Index 215, Importance: 0.015101533880693897
+Feature 4: Index 140, Importance: 0.014900195359358374
+Feature 5: Index 137, Importance: 0.013334564408922066
+Feature 6: Index 147, Importance: 0.012596310259678254
+Feature 7: Index 117, Importance: 0.012075524094933107
+Feature 8: Index 148, Importance: 0.011302121565078087
+Feature 9: Index 211, Importance: 0.01100810166729716
+Feature 10: Index 9, Importance: 0.0109334597498401
+Feature 11: Index 216, Importance: 0.010880738432504778
+Feature 12: Index 5, Importance: 0.010794403604820218
+Feature 13: Index 10, Importance: 0.010706466990696937
+Feature 14: Index 103, Importance: 0.010610022182529856
+Feature 15: Index 190, Importance: 0.009792593233632643
+Feature 16: Index 162, Importance: 0.009701652979358148
+Feature 17: Index 237, Importance: 0.009676098292254855
+Feature 18: Index 149, Importance: 0.009463038984690982
+Feature 19: Index 75, Importance: 0.009460019091307708
+Feature 20: Index 217, Importance: 0.008407956124970764
+Feature 21: Index 37, Importance: 0.00839421038332018
+Feature 22: Index 160, Importance: 0.007900589661910875
+Feature 23: Index 39, Importance: 0.007783202134896072
+Feature 24: Index 238, Importance: 0.007386720254916422
+Feature 25: Index 161, Importance: 0.007089071142229749
+Feature 26: Index 158, Importance: 0.006727015972918979
+Feature 27: Index 210, Importance: 0.006685966600779587
+Feature 28: Index 96, Importance: 0.006679988317478244
+Feature 29: Index 43, Importance: 0.0065547787683511004
+Feature 30: Index 143, Importance: 0.0063900032462870906
+Feature 31: Index 25, Importance: 0.0062554792985982785
+Feature 32: Index 218, Importance: 0.006249973724499023
+Feature 33: Index 85, Importance: 0.006034327898518356
+Feature 34: Index 55, Importance: 0.005939041096812198
+Feature 35: Index 208, Importance: 0.005911930027994893
+Feature 36: Index 56, Importance: 0.0057910521134878976
+Feature 37: Index 70, Importance: 0.005730491616984639
+Feature 38: Index 80, Importance: 0.005636474814406635
+Feature 39: Index 51, Importance: 0.005486858897285016
+Feature 40: Index 150, Importance: 0.005449635815826288
+Feature 41: Index 193, Importance: 0.005395633985165618
+Feature 42: Index 4, Importance: 0.005176004428441901
+Feature 43: Index 207, Importance: 0.005154123317380483
+Feature 44: Index 48, Importance: 0.0051430033674061725
+Feature 45: Index 157, Importance: 0.005103636311736285
+Feature 46: Index 66, Importance: 0.004995705139986513
+Feature 47: Index 170, Importance: 0.004982216625018879
+Feature 48: Index 111, Importance: 0.004977980304157974
+Feature 49: Index 20, Importance: 0.004919659911118583
+Feature 50: Index 108, Importance: 0.004907247678593897
+Feature 51: Index 38, Importance: 0.00487486693483986
+Feature 52: Index 59, Importance: 0.004699467380631076
+Feature 53: Index 224, Importance: 0.004666762079833145
+Feature 54: Index 145, Importance: 0.004662088682363731
+Feature 55: Index 47, Importance: 0.004649694681566064
+Feature 56: Index 105, Importance: 0.00464406201330561
+Feature 57: Index 34, Importance: 0.00463226978416075
+Feature 58: Index 42, Importance: 0.004596826239723259
+Feature 59: Index 87, Importance: 0.004553352885227008
+Feature 60: Index 27, Importance: 0.004541008692153739
+Feature 61: Index 78, Importance: 0.004539539476310641
+Feature 62: Index 113, Importance: 0.004529124412478088
+Feature 63: Index 239, Importance: 0.004431592710629469
+Feature 64: Index 91, Importance: 0.004415298801678716
+Feature 65: Index 102, Importance: 0.004377271141135319
+Feature 66: Index 194, Importance: 0.004345557977738568
+Feature 67: Index 54, Importance: 0.004334751138753257
+Feature 68: Index 180, Importance: 0.0043196100866574935
+Feature 69: Index 136, Importance: 0.00428239650397036
+Feature 70: Index 202, Importance: 0.004275591570695103
+Feature 71: Index 152, Importance: 0.004218694519496096
+Feature 72: Index 7, Importance: 0.004208917315341395
+Feature 73: Index 146, Importance: 0.004197602242709663
+Feature 74: Index 23, Importance: 0.004178965333501126
+Feature 75: Index 2, Importance: 0.004154420544307188
+Feature 76: Index 26, Importance: 0.0041526951830257244
+Feature 77: Index 17, Importance: 0.00414910704552494
+Feature 78: Index 191, Importance: 0.004143228033471392
+Feature 79: Index 227, Importance: 0.004110818466880873
+Feature 80: Index 99, Importance: 0.004056194712958307
+Feature 81: Index 12, Importance: 0.004056055505536071
+Feature 82: Index 86, Importance: 0.004053464087628945
+Feature 83: Index 123, Importance: 0.003994614843886263
+Feature 84: Index 67, Importance: 0.003984093967658839
+Feature 85: Index 204, Importance: 0.003949710372467818
+Feature 86: Index 225, Importance: 0.003938155884214524
+Feature 87: Index 130, Importance: 0.003927173084820527
+Feature 88: Index 176, Importance: 0.0038878499316288167
+Feature 89: Index 0, Importance: 0.003884583115416313
+Feature 90: Index 22, Importance: 0.0038420457296613275
+Feature 91: Index 28, Importance: 0.003833749857499882
+Feature 92: Index 197, Importance: 0.0038097704504512146
+Feature 93: Index 11, Importance: 0.0037799817733060476
+Feature 94: Index 242, Importance: 0.003778905310412572
+Feature 95: Index 240, Importance: 0.003765996571186457
+Feature 96: Index 32, Importance: 0.003748555967649941
+Feature 97: Index 118, Importance: 0.0037316256414005543
+Feature 98: Index 24, Importance: 0.003720010549034955
+Feature 99: Index 168, Importance: 0.00371226407549846
+Feature 100: Index 243, Importance: 0.003697890271837901
+Feature 101: Index 14, Importance: 0.0036731222955016605
+Feature 102: Index 3, Importance: 0.003660550666041687
+Feature 103: Index 171, Importance: 0.0036389747902865017
+Feature 104: Index 228, Importance: 0.0036343283967080757
+Feature 105: Index 84, Importance: 0.0036135026166109804
+Feature 106: Index 124, Importance: 0.003599400057650492
+Feature 107: Index 222, Importance: 0.0035992360927799187
+Feature 108: Index 132, Importance: 0.0035620909304306964
+Feature 109: Index 109, Importance: 0.0034939313515230438
+Feature 110: Index 52, Importance: 0.003475078571370407
+Feature 111: Index 33, Importance: 0.003454155987636439
+Feature 112: Index 13, Importance: 0.003430150506935806
+Feature 113: Index 107, Importance: 0.0034277564086108354
+Feature 114: Index 165, Importance: 0.003416453051189051
+Feature 115: Index 90, Importance: 0.003415467006953966
+Feature 116: Index 203, Importance: 0.003407734138466863
+Feature 117: Index 153, Importance: 0.003398078365734826
+Feature 118: Index 186, Importance: 0.003396768739660167
+Feature 119: Index 159, Importance: 0.0033944656498274156
+Feature 120: Index 154, Importance: 0.0033874971086801913
+Feature 121: Index 169, Importance: 0.0033673923852738296
+Feature 122: Index 49, Importance: 0.0033333967176005217
+Feature 123: Index 172, Importance: 0.003327038503854121
+Feature 124: Index 63, Importance: 0.0033264800672551825
+Feature 125: Index 126, Importance: 0.003316730716984424
+Feature 126: Index 142, Importance: 0.003315640979459913
+Feature 127: Index 41, Importance: 0.003289350528594084
+Feature 128: Index 83, Importance: 0.0032805713530327297
+Feature 129: Index 64, Importance: 0.0032616209964935914
+Feature 130: Index 151, Importance: 0.0032438612742350242
+Feature 131: Index 61, Importance: 0.003227911312840761
+Feature 132: Index 183, Importance: 0.003214371035218978
+Feature 133: Index 110, Importance: 0.003188844790728938
+Feature 134: Index 229, Importance: 0.003179856383128331
+Feature 135: Index 233, Importance: 0.0031373037573504186
+Feature 136: Index 198, Importance: 0.0031251167274208725
+Feature 137: Index 175, Importance: 0.0031127696872206693
+Feature 138: Index 60, Importance: 0.003110939346253313
+Feature 139: Index 199, Importance: 0.0030763478235871122
+Feature 140: Index 138, Importance: 0.002991463062085164
+Feature 141: Index 74, Importance: 0.002965659301352527
+Feature 142: Index 223, Importance: 0.0029564346893568515
+Feature 143: Index 116, Importance: 0.002935189183252297
+Feature 144: Index 128, Importance: 0.0029337742308918817
+Feature 145: Index 77, Importance: 0.002917044177002932
+Feature 146: Index 164, Importance: 0.0028782776055503115
+Feature 147: Index 205, Importance: 0.0028752494587893414
+Feature 148: Index 65, Importance: 0.002867869676274448
+Feature 149: Index 163, Importance: 0.002865561779357219
+Feature 150: Index 174, Importance: 0.0028642164923848713
+Feature 151: Index 6, Importance: 0.0028452201232205755
+Feature 152: Index 189, Importance: 0.002843691963315505
+Feature 153: Index 101, Importance: 0.0028112177248568
+Feature 154: Index 120, Importance: 0.0027984315878792003
+Feature 155: Index 234, Importance: 0.0027784829513784076
+Feature 156: Index 167, Importance: 0.0027769642900718696
+Feature 157: Index 19, Importance: 0.0027559332867897334
+Feature 158: Index 213, Importance: 0.002751521851792832
+Feature 159: Index 30, Importance: 0.0027324398917490124
+Feature 160: Index 36, Importance: 0.0027238642466048653
+Feature 161: Index 139, Importance: 0.00271776313986184
+Feature 162: Index 184, Importance: 0.0026950645215880137
+Feature 163: Index 94, Importance: 0.0026931369557836645
+Feature 164: Index 76, Importance: 0.0026622224846179305
+Feature 165: Index 212, Importance: 0.002641694163386259
+Feature 166: Index 35, Importance: 0.0026359228589028162
+Feature 167: Index 220, Importance: 0.002628535507729677
+Feature 168: Index 214, Importance: 0.0026049891175416832
+Feature 169: Index 177, Importance: 0.002592131106063447
+Feature 170: Index 173, Importance: 0.002576750690992325
+Feature 171: Index 219, Importance: 0.0025652441017868393
+Feature 172: Index 188, Importance: 0.0025421180795854093
+Feature 173: Index 81, Importance: 0.002532490096704667
+Feature 174: Index 82, Importance: 0.002511152601448041
+Feature 175: Index 93, Importance: 0.002508883484838916
+Feature 176: Index 45, Importance: 0.0024541954981028373
+Feature 177: Index 125, Importance: 0.0024506767002659517
+Feature 178: Index 104, Importance: 0.0024325574847173753
+Feature 179: Index 134, Importance: 0.0024297091933432437
+Feature 180: Index 69, Importance: 0.002392953796973053
+Feature 181: Index 57, Importance: 0.0023917193849719628
+Feature 182: Index 236, Importance: 0.002385079090160831
+Feature 183: Index 141, Importance: 0.002351201959468283
+Feature 184: Index 100, Importance: 0.0023263556545796813
+Feature 185: Index 44, Importance: 0.0023034930269841946
+Feature 186: Index 185, Importance: 0.002301677499331287
+Feature 187: Index 46, Importance: 0.002297975953307305
+Feature 188: Index 121, Importance: 0.002287352429573439
+Feature 189: Index 72, Importance: 0.0022796980478460693
+Feature 190: Index 155, Importance: 0.0022622153649141316
+Feature 191: Index 79, Importance: 0.002256366478574953
+Feature 192: Index 68, Importance: 0.002242195616180388
+Feature 193: Index 53, Importance: 0.0022220768837643208
+Feature 194: Index 182, Importance: 0.0021623863071807683
+Feature 195: Index 97, Importance: 0.0021313164909889026
+Feature 196: Index 92, Importance: 0.0021294373889348558
+Feature 197: Index 71, Importance: 0.002112574562858653
+Feature 198: Index 73, Importance: 0.0021101041809067616
+Feature 199: Index 230, Importance: 0.002100717617359154
+Feature 200: Index 62, Importance: 0.002074779808811743
+Feature 201: Index 200, Importance: 0.002068678450516136
+Feature 202: Index 129, Importance: 0.0020572192517238795
+Feature 203: Index 232, Importance: 0.0020503497312967783
+Feature 204: Index 135, Importance: 0.002035704755621772
+Feature 205: Index 115, Importance: 0.0020298020260260024
+Feature 206: Index 119, Importance: 0.002019799138162755
+Feature 207: Index 29, Importance: 0.001979643051962163
+Feature 208: Index 112, Importance: 0.0019499544036250618
+Feature 209: Index 98, Importance: 0.0019465225520948074
+Feature 210: Index 226, Importance: 0.0019319277737804507
+Feature 211: Index 178, Importance: 0.0019166755546788207
+Feature 212: Index 95, Importance: 0.0019011262240149933
+Feature 213: Index 127, Importance: 0.0018927632462395184
+Feature 214: Index 181, Importance: 0.0018754290724076687
+Feature 215: Index 16, Importance: 0.0017823180571810676
+Feature 216: Index 88, Importance: 0.0017816641189160303
+Feature 217: Index 221, Importance: 0.0017439284551017623
+Feature 218: Index 187, Importance: 0.0017257611196549567
+Feature 219: Index 40, Importance: 0.001719281327978352
+Feature 220: Index 195, Importance: 0.0017071911002231493
+Feature 221: Index 50, Importance: 0.0016559643156208045
+Feature 222: Index 89, Importance: 0.0016322095391196403
+Feature 223: Index 244, Importance: 0.0015988042820341908
+Feature 224: Index 114, Importance: 0.0015534449028901582
+Feature 225: Index 8, Importance: 0.0015490500395670499
+Feature 226: Index 144, Importance: 0.0014872595157340918
+Feature 227: Index 156, Importance: 0.001468408225934209
+Feature 228: Index 196, Importance: 0.0013978339035853294
+Feature 229: Index 209, Importance: 0.0013796314976690642
+Feature 230: Index 131, Importance: 0.0013450829034994541
+Feature 231: Index 122, Importance: 0.0013290297126614871
+Feature 232: Index 15, Importance: 0.0012892483839457077
+Feature 233: Index 133, Importance: 0.001247281330479229
+Feature 234: Index 241, Importance: 0.0012224262688002093
+Feature 235: Index 31, Importance: 0.0011745838025475136
+Feature 236: Index 192, Importance: 0.0010858930066906685
+Feature 237: Index 206, Importance: 0.0010760551586427986
+Feature 238: Index 58, Importance: 0.0010681313921901852
+Feature 239: Index 179, Importance: 0.0010633692277844623
+Feature 240: Index 235, Importance: 0.0010503857705517754
+Feature 241: Index 166, Importance: 0.0009162764476677776
+Feature 242: Index 201, Importance: 0.0007037930187179881
+Feature 243: Index 18, Importance: 0.0005610664559364543
+Feature 244: Index 1, Importance: 0.0005489027091434653
+Feature 245: Index 231, Importance: 0.00023893230882072978
+Selected Feature Names:
+Index(['AU07_r', 'gaze_0_y', 'pose_Rx', 'gaze_0_z', 'AU06_c', 'AU09_c',
+       'AU15_c', 'AU14_r', 'pose_Tz', 'AU26_c', 'AU06_r', 'AU07_c', 'AU25_c',
+       'AU02_c', 'AU14_c', 'AU17_r', 'pose_Rz', 'AU10_r', 'pose_Tx', 'AU15_r',
+       'AU02_r', 'gaze_1_y', 'id', 'AU09_r', 'AU20_r', 'gaze_1_x', 'AU45_r',
+       'AU12_r', 'gaze_angle_x', 'pose_Ty', 'AU01_c', 'gaze_1_z', 'AU28_c',
+       'AU12_c', 'pose_Ry', 'AU05_r', 'AU25_r', 'AU05_c', 'AU04_c', 'AU20_c',
+       'AU17_c', 'AU23_c', 'AU23_r', 'AU01_r', 'AU10_c', 'AU45_c', 'gaze_0_x',
+       'gaze_angle_y', 'AU26_r', 'AU04_r', 'frame'],
+      dtype='object')
+Selected Feature Names with Direction of Impact:
+Feature 1: Index 21, Importance: 0.0369, Impact Direction: Positive
+Feature 2: Index 9, Importance: 0.0109, Impact Direction: Positive
+Feature 3: Index 5, Importance: 0.0108, Impact Direction: Positive
+Feature 4: Index 10, Importance: 0.0107, Impact Direction: Positive
+Feature 5: Index 37, Importance: 0.0084, Impact Direction: Positive
+Feature 6: Index 39, Importance: 0.0078, Impact Direction: Positive
+Feature 7: Index 43, Importance: 0.0066, Impact Direction: Positive
+Feature 8: Index 25, Importance: 0.0063, Impact Direction: Positive
+Feature 9: Index 4, Importance: 0.0052, Impact Direction: Positive
+Feature 10: Index 48, Importance: 0.0051, Impact Direction: Positive
+Feature 11: Index 20, Importance: 0.0049, Impact Direction: Positive
+Feature 12: Index 38, Importance: 0.0049, Impact Direction: Positive
+Feature 13: Index 47, Importance: 0.0046, Impact Direction: Positive
+Feature 14: Index 34, Importance: 0.0046, Impact Direction: Positive
+Feature 15: Index 42, Importance: 0.0046, Impact Direction: Positive
+Feature 16: Index 27, Importance: 0.0045, Impact Direction: Positive
+Feature 17: Index 7, Importance: 0.0042, Impact Direction: Positive
+Feature 18: Index 23, Importance: 0.0042, Impact Direction: Positive
+Feature 19: Index 2, Importance: 0.0042, Impact Direction: Positive
+Feature 20: Index 26, Importance: 0.0042, Impact Direction: Positive
+Feature 21: Index 17, Importance: 0.0041, Impact Direction: Positive
+Feature 22: Index 12, Importance: 0.0041, Impact Direction: Positive
+Feature 23: Index 0, Importance: 0.0039, Impact Direction: Positive
+Feature 24: Index 22, Importance: 0.0038, Impact Direction: Positive
+Feature 25: Index 28, Importance: 0.0038, Impact Direction: Positive
+Feature 26: Index 11, Importance: 0.0038, Impact Direction: Positive
+Feature 27: Index 32, Importance: 0.0037, Impact Direction: Positive
+Feature 28: Index 24, Importance: 0.0037, Impact Direction: Positive
+Feature 29: Index 14, Importance: 0.0037, Impact Direction: Positive
+Feature 30: Index 3, Importance: 0.0037, Impact Direction: Positive
+Feature 31: Index 33, Importance: 0.0035, Impact Direction: Positive
+Feature 32: Index 13, Importance: 0.0034, Impact Direction: Positive
+Feature 33: Index 49, Importance: 0.0033, Impact Direction: Positive
+Feature 34: Index 41, Importance: 0.0033, Impact Direction: Positive
+Feature 35: Index 6, Importance: 0.0028, Impact Direction: Positive
+Feature 36: Index 19, Importance: 0.0028, Impact Direction: Positive
+Feature 37: Index 30, Importance: 0.0027, Impact Direction: Positive
+Feature 38: Index 36, Importance: 0.0027, Impact Direction: Positive
+Feature 39: Index 35, Importance: 0.0026, Impact Direction: Positive
+Feature 40: Index 45, Importance: 0.0025, Impact Direction: Positive
+Feature 41: Index 44, Importance: 0.0023, Impact Direction: Positive
+Feature 42: Index 46, Importance: 0.0023, Impact Direction: Positive
+Feature 43: Index 29, Importance: 0.0020, Impact Direction: Positive
+Feature 44: Index 16, Importance: 0.0018, Impact Direction: Positive
+Feature 45: Index 40, Importance: 0.0017, Impact Direction: Positive
+Feature 46: Index 50, Importance: 0.0017, Impact Direction: Positive
+Feature 47: Index 8, Importance: 0.0015, Impact Direction: Positive
+Feature 48: Index 15, Importance: 0.0013, Impact Direction: Positive
+Feature 49: Index 31, Importance: 0.0012, Impact Direction: Positive
+Feature 50: Index 18, Importance: 0.0006, Impact Direction: Positive
+Feature 51: Index 1, Importance: 0.0005, Impact Direction: Positive
+y_dev:  0      2
+1      3
+2      0
+3      8
+4     11
+5     20
+6      8
+7      5
+8      7
+9      9
+10    11
+11    16
+12    11
+13    12
+14     9
+15     9
+16     2
+17    16
+18     0
+19    17
+20     2
+21     9
+22    11
+23     0
+24    12
+25     3
+26     0
+27     6
+28     2
+29    10
+30     8
+31     0
+32    18
+33     6
+34    18
+35     4
+36     1
+37     1
+38     2
+39     4
+40     0
+41     6
+42     7
+43     1
+44     9
+45     4
+46    12
+47     3
+48     1
+49     4
+50     0
+51     3
+52     0
+53     7
+54    19
+55     0
+Name: PHQ_Score, dtype: int64
+y_dev_pred_selected:  [ 6.47 10.92  5.86  7.37  6.6   8.18  5.82  7.62  7.85  6.63  4.94 10.88
+  5.25  7.94  7.96  7.81  8.3   6.33 12.75  6.22  7.66  6.06  7.06  5.41
+  6.21  4.9   6.61 10.48  9.58  8.19  5.87  5.    6.86  4.63  5.31  5.76
+  5.17  3.85  7.86  5.7   3.91  9.02  8.46  5.04  9.45  4.61  7.03  8.59
+  8.51  9.82  7.98  5.61  5.59  6.21  6.85  5.17]
+MAE on dev set with selected features: 4.86
+RMSE on dev set with selected features: 5.85
+y_test:  0      5
+1     13
+2     12
+3      2
+4      5
+5      7
+6      0
+7      3
+8      4
+9      6
+10     0
+11     0
+12     9
+13    22
+14     2
+15     0
+16     0
+17     0
+18     2
+19     9
+20    15
+21    16
+22    19
+23    17
+24    19
+25     3
+26     5
+27     7
+28    12
+29     8
+30    11
+31    16
+32    19
+33     9
+34     2
+35     5
+36     7
+37     0
+38     8
+39    12
+40     6
+41    19
+42    13
+43    11
+44     3
+45    13
+46    16
+47    20
+48     0
+49    10
+50     7
+51     0
+52     7
+53    15
+54     1
+55     3
+Name: PHQ_Score, dtype: int64
+y_test_pred_selected:  [10.3   9.9   7.8   7.09  5.6   6.25  5.73  8.13  7.18  5.87  8.01  5.39
+  7.73  7.06  5.72  9.64  5.74  6.66  8.25  6.17  6.59  7.49  7.03  7.84
+  5.5   6.54  8.93  6.24  9.45  3.99  6.65  7.4   5.03  5.94  5.21  6.17
+  6.52 11.71  4.73  8.49  5.48  6.62  3.67  5.27  6.08  7.87  5.73  5.53
+  6.01  7.38  5.28  8.02  6.96  9.18  7.16  4.61]
+MAE on test set with selected features: 5.54
+RMSE on test set with selected features: 6.79
+=== JOB_STATISTICS ===
+=== current date     : Sat 18 Nov 2023 11:16:37 PM CET
+= Job-ID             : 689573 on tinygpu
+= Job-Name           : job_visual.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/job_visual.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual
+= Queue/Partition    : rtx3080
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=8,mem=47200M,node=1,billing=8,gres/gpu=1,gres/gpu:rtx3080=1 for 20:00:00
+= Elapsed runtime    : 00:01:51
+= Total RAM usage    : 15.1 GiB of requested 46 GiB (32.8%)   
+= Node list          : tg083
+= Subm/Elig/Start/End: 2023-11-18T23:14:46 / 2023-11-18T23:14:46 / 2023-11-18T23:14:46 / 2023-11-18T23:16:37
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           25.0G    52.4G   104.9G        N/A  46,309      500K   1,000K        N/A    
+    /home/vault       3897.0G  2147.5G     0.0K        N/A      68K     300K     450K        N/A    
+    /home/woody        256.6G   500.0G   750.0G        N/A     214K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA GeForce RTX 3080, 00000000:3D:00.0, 339406, 0 %, 0 %, 216 MiB, 98379 ms

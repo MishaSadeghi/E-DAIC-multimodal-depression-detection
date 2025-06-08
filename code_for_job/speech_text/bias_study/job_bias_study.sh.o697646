@@ -1,0 +1,344 @@
+### Starting TaskPrologue of job 697646 on tg092 at Fri 01 Dec 2023 03:46:49 PM CET
+Running on cores 64-95 with governor ondemand
+Fri Dec  1 15:46:49 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:81:00.0 Off |                    0 |
+| N/A   40C    P0              57W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study
+labels_train_df:      id   Gender  PHQ_Binary  PHQ_Score  PCL-C (PTSD)  PTSD Severity
+0  302     male           0          4             0             28
+1  303   female           0          0             0             17
+2  304   female           0          6             0             20
+3  305     male           0          7             0             28
+4  307  female            0          4             0             23
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:29<00:29, 29.91s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:45<00:00, 21.29s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:45<00:00, 22.58s/it]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-12-01 15:54:07.715074: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Mean Probability of Yes (Gender - Male): 0.1897565255668928
+Standard Deviation of Yes (Gender - Male): 0.1505859506103354
+Mean Probability of No (Gender - Male): 0.8102434744331072
+Standard Deviation of No (Gender - Male): 0.1505859506103354
+----------------------
+Mean Probability of Yes (Gender - Female): 0.20729408716267755
+Standard Deviation of Yes (Gender - Female): 0.15850713780180462
+Mean Probability of No (Gender - Female): 0.7927059128373224
+Standard Deviation of No (Gender - Female): 0.15850713780180462
+----------------------
+Paired t-test for Gender - Male:
+T-statistic: -34.103070431997956
+P-value: 1.3417837409676033e-100
+----------------------
+Paired t-test for Gender - Female:
+T-statistic: -30.5673614963483
+P-value: 2.810612083742422e-90
+----------------------
+Independent t-test for Gender - Male vs Female:
+T-statistic (Independent): -1.3277846064521575
+P-value (Independent): 0.18480207855946093
+----------------------
+Mean Probability of Yes (Nationality - Switzerland): 0.1890002645207522
+Standard Deviation of Yes (Nationality - Switzerland): 0.152548212406813
+Mean Probability of No (Nationality - Switzerland): 0.8109997354792479
+Standard Deviation of No (Nationality - Switzerland): 0.15254821240681302
+----------------------
+Mean Probability of Yes (Nationality - Nigeria): 0.1941510312184921
+Standard Deviation of Yes (Nationality - Nigeria): 0.15376658271462162
+Mean Probability of No (Nationality - Nigeria): 0.8058489687815079
+Standard Deviation of No (Nationality - Nigeria): 0.15376658271462162
+----------------------
+Paired t-test for Nationality - Switzerland:
+T-statistic: -33.74645658762436
+P-value: 1.3768828633913504e-99
+----------------------
+Paired t-test for Nationality - Nigeria:
+T-statistic: -32.924587244073464
+P-value: 3.1226129360253907e-97
+----------------------
+Independent t-test for Nationality - Switzerland vs Nigeria:
+T-statistic (Independent): -0.3936323192725083
+P-value (Independent): 0.6940056227792942
+----------------------
+Mean Probability of Yes (Profession - An engineer in the USA): 0.18970431931227416
+Standard Deviation of Yes (Profession - An engineer in the USA): 0.15408634253929968
+Mean Probability of No (Profession - An engineer in the USA): 0.8102956806877258
+Standard Deviation of No (Profession - An engineer in the USA): 0.1540863425392997
+----------------------
+Mean Probability of Yes (Profession - A homeless person in China): 0.1869723196717512
+Standard Deviation of Yes (Profession - A homeless person in China): 0.1500019846659255
+Mean Probability of No (Profession - A homeless person in China): 0.8130276803282488
+Standard Deviation of No (Profession - A homeless person in China): 0.1500019846659255
+----------------------
+Paired t-test for Profession - An engineer in the USA:
+T-statistic: -33.333956549092775
+P-value: 2.0739282609982614e-98
+----------------------
+Paired t-test for Profession - A homeless person in China:
+T-statistic: -34.54307687541068
+P-value: 7.744723443497214e-102
+----------------------
+Independent t-test for Profession - An engineer in the USA vs A homeless person in China:
+T-statistic (Independent): 0.21029647674570182
+P-value (Independent): 0.8335144512776662
+----------------------
+Mean Probability of Yes (Profession - A male engineer in the USA): 0.18494818450797795
+Standard Deviation of Yes (Profession - A male engineer in the USA): 0.15242238485112652
+Mean Probability of No (Profession - A male engineer in the USA): 0.815051815492022
+Standard Deviation of No (Profession - A male engineer in the USA): 0.15242238485112652
+----------------------
+Mean Probability of Yes (Profession - A female psychologist in Germany): 0.18909818276590626
+Standard Deviation of Yes (Profession - A female psychologist in Germany): 0.1544321147903621
+Mean Probability of No (Profession - A female psychologist in Germany): 0.8109018172340937
+Standard Deviation of No (Profession - A female psychologist in Germany): 0.1544321147903621
+----------------------
+Paired t-test for Profession - A male engineer in the USA:
+T-statistic: -34.21436747387511
+P-value: 6.507726779019352e-101
+----------------------
+Paired t-test for Profession - A female psychologist in Germany:
+T-statistic: -33.324291382856046
+P-value: 2.2105419853368107e-98
+----------------------
+Independent t-test for Profession - A male engineer in the USA vs A female psychologist in Germany:
+T-statistic (Independent): -0.3165894097632768
+P-value (Independent): 0.7516757336272495
+----------------------
+Mean Probability of Yes (Religion - Muslim): 0.19647865056701794
+Standard Deviation of Yes (Religion - Muslim): 0.1528925172805964
+Mean Probability of No (Religion - Muslim): 0.803521349432982
+Standard Deviation of No (Religion - Muslim): 0.1528925172805964
+----------------------
+Mean Probability of Yes (Religion - A non-religious person): 0.1916904271269754
+Standard Deviation of Yes (Religion - A non-religious person): 0.15033808449975042
+Mean Probability of No (Religion - A non-religious person): 0.8083095728730245
+Standard Deviation of No (Religion - A non-religious person): 0.15033808449975042
+----------------------
+Paired t-test for Religion - Muslim:
+T-statistic: -32.86081229666297
+P-value: 4.772918783948741e-97
+----------------------
+Paired t-test for Religion - A non-religious person:
+T-statistic: -33.94636515334719
+P-value: 3.7258749858694667e-100
+----------------------
+Independent t-test for Religion - Muslim vs A non-religious person:
+T-statistic (Independent): 0.36963769254960854
+P-value (Independent): 0.7117952584028435
+----------------------
+Mean Probability of Yes (Religion - Christian): 0.19942093899609317
+Standard Deviation of Yes (Religion - Christian): 0.1535487380195404
+Mean Probability of No (Religion - Christian): 0.8005790610039069
+Standard Deviation of No (Religion - Christian): 0.15354873801954036
+----------------------
+Mean Probability of Yes (Religion - A non-religious person): 0.1916904271269754
+Standard Deviation of Yes (Religion - A non-religious person): 0.15033808449975042
+Mean Probability of No (Religion - A non-religious person): 0.8083095728730245
+Standard Deviation of No (Religion - A non-religious person): 0.15033808449975042
+----------------------
+Paired t-test for Religion - Christian:
+T-statistic: -32.40318895813437
+P-value: 1.0169070899303936e-95
+----------------------
+Paired t-test for Religion - A non-religious person:
+T-statistic: -33.94636515334719
+P-value: 3.7258749858694667e-100
+----------------------
+Independent t-test for Religion - Christian vs A non-religious person:
+T-statistic (Independent): 0.5954734801403994
+P-value (Independent): 0.5517728520182776
+----------------------
+Mean Probability of Yes (Sexual orientation - Gay): 0.20403101545236654
+Standard Deviation of Yes (Sexual orientation - Gay): 0.15117283884024718
+Mean Probability of No (Sexual orientation - Gay): 0.7959689845476334
+Standard Deviation of No (Sexual orientation - Gay): 0.15117283884024718
+----------------------
+Mean Probability of Yes (Sexual orientation - Straight): 0.19329991164866825
+Standard Deviation of Yes (Sexual orientation - Straight): 0.1514533625959885
+Mean Probability of No (Sexual orientation - Straight): 0.8067000883513318
+Standard Deviation of No (Sexual orientation - Straight): 0.1514533625959885
+----------------------
+Paired t-test for Sexual orientation - Gay:
+T-statistic: -32.40766308446472
+P-value: 9.868229137478668e-96
+----------------------
+Paired t-test for Sexual orientation - Straight:
+T-statistic: -33.52048258634598
+P-value: 6.06837842309475e-99
+----------------------
+Independent t-test for Sexual orientation - Gay vs Straight:
+T-statistic (Independent): 0.8300953134487251
+P-value (Independent): 0.40684636728840273
+----------------------
+Mean Probability of Yes (Political views - Right-wing): 0.20828112074967634
+Standard Deviation of Yes (Political views - Right-wing): 0.1586645009290721
+Mean Probability of No (Political views - Right-wing): 0.7917188792503237
+Standard Deviation of No (Political views - Right-wing): 0.15866450092907208
+----------------------
+Mean Probability of Yes (Political views - Left-wing): 0.21516531131776184
+Standard Deviation of Yes (Political views - Left-wing): 0.16081703312921308
+Mean Probability of No (Political views - Left-wing): 0.7848346886822382
+Standard Deviation of No (Political views - Left-wing): 0.16081703312921308
+----------------------
+Paired t-test for Political views - Right-wing:
+T-statistic: -30.434070883105246
+P-value: 7.094768083485482e-90
+----------------------
+Paired t-test for Political views - Left-wing:
+T-statistic: -29.318119765443132
+P-value: 1.80133338344774e-86
+----------------------
+Independent t-test for Political views - Right-wing vs Left-wing:
+T-statistic (Independent): -0.5044144796862443
+P-value (Independent): 0.6141728955050596
+----------------------
+Mean Probability of Yes (Political views - Associated with the green party): 0.21233754329018698
+Standard Deviation of Yes (Political views - Associated with the green party): 0.16003495195409606
+Mean Probability of No (Political views - Associated with the green party): 0.7876624567098129
+Standard Deviation of No (Political views - Associated with the green party): 0.16003495195409606
+----------------------
+Mean Probability of Yes (Political views - Not associated with the green party): 0.20875597562111642
+Standard Deviation of Yes (Political views - Not associated with the green party): 0.15773222212570906
+Mean Probability of No (Political views - Not associated with the green party): 0.7912440243788836
+Standard Deviation of No (Political views - Not associated with the green party): 0.15773222212570906
+----------------------
+Paired t-test for Political views - Associated with the green party:
+T-statistic: -29.753881068522727
+P-value: 8.280761354870528e-88
+----------------------
+Paired t-test for Political views - Not associated with the green party:
+T-statistic: -30.56411908865484
+P-value: 2.8745630189229607e-90
+----------------------
+Independent t-test for Political views - Associated with the green party vs Not associated with the green party:
+T-statistic (Independent): 0.2638414382170576
+P-value (Independent): 0.7920012879796214
+----------------------
+Mean Probability of Yes (Ethnicity - White): 0.193610488403848
+Standard Deviation of Yes (Ethnicity - White): 0.1510759220702886
+Mean Probability of No (Ethnicity - White): 0.806389511596152
+Standard Deviation of No (Ethnicity - White): 0.1510759220702886
+----------------------
+Mean Probability of Yes (Ethnicity - Black): 0.2003100753236848
+Standard Deviation of Yes (Ethnicity - Black): 0.1544250461461603
+Mean Probability of No (Ethnicity - Black): 0.7996899246763152
+Standard Deviation of No (Ethnicity - Black): 0.1544250461461603
+----------------------
+Paired t-test for Ethnicity - White:
+T-statistic: -33.57019949959367
+P-value: 4.37642241762525e-99
+----------------------
+Paired t-test for Ethnicity - Black:
+T-statistic: -32.12400495311632
+P-value: 6.655768355802354e-95
+----------------------
+Independent t-test for Ethnicity - White vs Black:
+T-statistic (Independent): -0.513333513755568
+P-value (Independent): 0.6079249316021508
+----------------------
+Mean Probability of Yes (Ethnicity - White): 0.193610488403848
+Standard Deviation of Yes (Ethnicity - White): 0.1510759220702886
+Mean Probability of No (Ethnicity - White): 0.806389511596152
+Standard Deviation of No (Ethnicity - White): 0.1510759220702886
+----------------------
+Mean Probability of Yes (Ethnicity - Hispanic): 0.19713144672859895
+Standard Deviation of Yes (Ethnicity - Hispanic): 0.15434263325929493
+Mean Probability of No (Ethnicity - Hispanic): 0.8028685532714012
+Standard Deviation of No (Ethnicity - Hispanic): 0.15434263325929495
+----------------------
+Paired t-test for Ethnicity - White:
+T-statistic: -33.57019949959367
+P-value: 4.37642241762525e-99
+----------------------
+Paired t-test for Ethnicity - Hispanic:
+T-statistic: -32.482059602465604
+P-value: 5.991409020553781e-96
+----------------------
+Independent t-test for Ethnicity - White vs Hispanic:
+T-statistic (Independent): -0.26985527064233145
+P-value (Independent): 0.7873731871953796
+----------------------
+Mean Probability of Yes (Ethnicity - White): 0.193610488403848
+Standard Deviation of Yes (Ethnicity - White): 0.1510759220702886
+Mean Probability of No (Ethnicity - White): 0.806389511596152
+Standard Deviation of No (Ethnicity - White): 0.1510759220702886
+----------------------
+Mean Probability of Yes (Ethnicity - Asian): 0.18605610494580738
+Standard Deviation of Yes (Ethnicity - Asian): 0.14850407648985645
+Mean Probability of No (Ethnicity - Asian): 0.8139438950541926
+Standard Deviation of No (Ethnicity - Asian): 0.14850407648985645
+----------------------
+Paired t-test for Ethnicity - White:
+T-statistic: -33.57019949959367
+P-value: 4.37642241762525e-99
+----------------------
+Paired t-test for Ethnicity - Asian:
+T-statistic: -34.9936261879535
+P-value: 4.274428654941181e-103
+----------------------
+Independent t-test for Ethnicity - White vs Asian:
+T-statistic (Independent): 0.5902832877625852
+P-value (Independent): 0.5552440709870923
+----------------------
+Mean Probability of Yes (Ethnicity - Black): 0.2003100753236848
+Standard Deviation of Yes (Ethnicity - Black): 0.1544250461461603
+Mean Probability of No (Ethnicity - Black): 0.7996899246763152
+Standard Deviation of No (Ethnicity - Black): 0.1544250461461603
+----------------------
+Mean Probability of Yes (Ethnicity - Asian): 0.18605610494580738
+Standard Deviation of Yes (Ethnicity - Asian): 0.14850407648985645
+Mean Probability of No (Ethnicity - Asian): 0.8139438950541926
+Standard Deviation of No (Ethnicity - Asian): 0.14850407648985645
+----------------------
+Paired t-test for Ethnicity - Black:
+T-statistic: -32.12400495311632
+P-value: 6.655768355802354e-95
+----------------------
+Paired t-test for Ethnicity - Asian:
+T-statistic: -34.9936261879535
+P-value: 4.274428654941181e-103
+----------------------
+Independent t-test for Ethnicity - Black vs Asian:
+T-statistic (Independent): 1.1012911825008558
+P-value (Independent): 0.27125342656278134
+----------------------
+=== JOB_STATISTICS ===
+=== current date     : Fri 01 Dec 2023 05:08:44 PM CET
+= Job-ID             : 697646 on tinygpu
+= Job-Name           : job_bias_study.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study/job_bias_study.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 10:00:00
+= Elapsed runtime    : 01:21:57
+= Total RAM usage    : 4.5 GiB of requested 117 GiB (3.8%)   
+= Node list          : tg092
+= Subm/Elig/Start/End: 2023-12-01T15:42:45 / 2023-12-01T15:42:45 / 2023-12-01T15:46:47 / 2023-12-01T17:08:44
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           43.1G    52.4G   104.9G        N/A  44,827      500K   1,000K        N/A    
+    /home/vault       3726.3G  2147.5G     0.0K        N/A      69K     300K     450K        N/A    
+    /home/woody        267.2G   500.0G   750.0G        N/A     299K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:81:00.0, 3527828, 50 %, 29 %, 22470 MiB, 4770939 ms

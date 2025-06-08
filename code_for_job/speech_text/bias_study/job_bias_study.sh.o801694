@@ -1,0 +1,63 @@
+### Starting TaskPrologue of job 801694 on tg090 at Wed 17 Apr 2024 09:30:11 AM CEST
+Running on cores 64-95 with governor ondemand
+Wed Apr 17 09:30:11 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:81:00.0 Off |                    0 |
+| N/A   33C    P0             55W /  400W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study
+labels_train_df:      id   Gender  PHQ_Binary  PHQ_Score  PCL-C (PTSD)  PTSD Severity
+0  302     male           0          4             0             28
+1  303   female           0          0             0             17
+2  304   female           0          6             0             20
+3  305     male           0          7             0             28
+4  307  female            0          4             0             23
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:13<00:27, 13.53s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:24<00:12, 12.21s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:24<00:00,  8.27s/it]
+/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:492: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.5` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/woody/empk/empk004h/software/private/conda/envs/venv/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:492: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.5` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+2024-04-17 09:30:56,342 - 140451123008128 - big_modeling.py-big_modeling:435 - WARNING: Some parameters are on the meta device device because they were offloaded to the disk.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-tg090: error: *** JOB 801694 ON tg090 CANCELLED AT 2024-04-17T15:35:02 ***
+slurmstepd-tg090: error: *** STEP 801694.0 ON tg090 CANCELLED AT 2024-04-17T15:35:02 ***
+=== JOB_STATISTICS ===
+=== current date     : Wed 17 Apr 2024 03:35:06 PM CEST
+= Job-ID             : 801694 on tinygpu
+= Job-Name           : job_bias_study.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study/job_bias_study.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources:  for 20:00:00
+= Elapsed runtime    : 06:04:52
+= Total RAM usage    : 4.3 GiB of requested  GiB (%)   
+= Node list          : tg090
+= Subm/Elig/Start/End: 2024-04-17T09:30:09 / 2024-04-17T09:30:09 / 2024-04-17T09:30:10 / 2024-04-17T15:35:02
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           51.6G   104.9G   209.7G        N/A  20,398      500K   1,000K        N/A    
+    /home/vault       2606.3G     0.0K     0.0K        N/A      86K     300K     450K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:81:00.0, 592486, 65 %, 8 %, 22112 MiB, 21872292 ms

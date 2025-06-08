@@ -1,0 +1,57 @@
+### Starting TaskPrologue of job 765165 on tg096 at Wed 07 Feb 2024 10:01:20 AM CET
+Running on cores 0-31 with governor ondemand
+Wed Feb  7 10:01:20 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:01:00.0 Off |                    0 |
+| N/A   37C    P0              53W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text
+Traceback (most recent call last):
+  File "/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/llama_fine_tuned_in_pipeline.py", line 37, in <module>
+    transcripts_df = transcripts_df.append({"id": file_id, "text": file_contents}, ignore_index=True)
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/pandas/core/generic.py", line 6204, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'append'. Did you mean: '_append'?
+srun: error: tg096: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=765165.0
+=== JOB_STATISTICS ===
+=== current date     : Wed 07 Feb 2024 10:01:37 AM CET
+= Job-ID             : 765165 on tinygpu
+= Job-Name           : job_llama_fine_tuned_in_pipeline.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/job_llama_fine_tuned_in_pipeline.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 20:00:00
+= Elapsed runtime    : 00:00:34
+= Total RAM usage    : 0.0 GiB of requested 117 GiB (0.0%)   
+= Node list          : tg096
+= Subm/Elig/Start/End: 2024-02-07T10:01:02 / 2024-02-07T10:01:02 / 2024-02-07T10:01:03 / 2024-02-07T10:01:37
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           51.0G   104.9G   209.7G        N/A  46,323      500K   1,000K        N/A    
+    /home/vault       3688.1G     0.0K     0.0K        N/A      74K     300K     450K        N/A    
+    /home/woody        268.2G   500.0G   750.0G        N/A     314K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

@@ -1,0 +1,406 @@
+### Starting TaskPrologue of job 781722 on tg061 at Wed 06 Mar 2024 01:59:15 PM CET
+Running on cores 0-3,16-19 with governor ondemand
+Wed Mar  6 13:59:15 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 2080 Ti     On  | 00000000:18:00.0 Off |                  N/A |
+| 27%   26C    P8               7W / 250W |      1MiB / 11264MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts
+Original transcripts keys: dict_keys(['df_test_prompt3', 'df_dev_prompt3', 'df_train_prompt3', 'df_train_prompt1', 'df_dev_prompt1', 'df_test_prompt1', 'df_dev_prompt2', 'df_test_prompt2', 'df_train_prompt2', 'df_dev_Q10', 'df_test_Q10', 'df_train_Q10'])
+Revised transcripts keys: dict_keys(['df_test_prompt3', 'df_dev_prompt3', 'df_train_prompt3', 'df_train_prompt1', 'df_dev_prompt1', 'df_test_prompt1', 'df_dev_prompt2', 'df_test_prompt2', 'df_train_prompt2', 'df_dev_Q10', 'df_test_Q10', 'df_train_Q10'])
+Original transcripts df_train_prompt1:      id  ...                                        completions
+0  302  ...  Key points related to depression:\n1. The pers...
+1  303  ...  Key points related to the depression of the pe...
+2  304  ...  The key points related to depression in the in...
+3  305  ...  - The person likes certain things about LA, bu...
+4  307  ...  The key points related to the depression of th...
+
+[5 rows x 8 columns]
+max PHQ score in df_train_prompt1:  23
+name of the df:  df_test_prompt3
+    id  ...                                        completions
+0  600  ...  The interviewee expressed a history of mental ...
+1  602  ...  ['Based on the interview, the main points conc...
+2  604  ...  The main points concerning the mental health o...
+3  605  ...  Based on the interview, the interviewee seems ...
+4  606  ...  Based on the interview, the main points concer...
+
+[5 rows x 8 columns]
+len X:  56
+df after feature extraction:      id  ...                       features_deproberta
+0  600  ...    [[0.0325281, 0.95922965, 0.008242318]]
+1  602  ...    [[0.7494525, 0.21884724, 0.031700328]]
+2  604  ...   [[0.0011056684, 0.09038661, 0.9085077]]
+3  605  ...    [[0.01055446, 0.10660201, 0.88284355]]
+4  606  ...  [[0.0025442548, 0.022293776, 0.9751619]]
+
+[5 rows x 9 columns]
+name of the df:  df_dev_prompt3
+    id  ...                                        completions
+0  300  ...  1. The interviewee is originally from Atlanta,...
+1  301  ...  From the interview, it can be inferred that th...
+2  306  ...  Based on the interview, the interviewee appear...
+3  317  ...  Based on the interview, the interviewee has ex...
+4  320  ...  The interviewee discusses their experiences of...
+
+[5 rows x 8 columns]
+len X:  56
+df after feature extraction:      id  ...                          features_deproberta
+0  300  ...     [[0.0016736143, 0.012312955, 0.9860135]]
+1  301  ...  [[0.00034349738, 0.00078908954, 0.9988674]]
+2  306  ...      [[0.05119491, 0.88568765, 0.063117474]]
+3  317  ...       [[0.36917153, 0.6137688, 0.017059615]]
+4  320  ...      [[0.8611733, 0.13238434, 0.0064423527]]
+
+[5 rows x 9 columns]
+name of the df:  df_train_prompt3
+    id  ...                                        completions
+0  302  ...  The interviewee discussed their background in ...
+1  303  ...  The interviewee expressed positive and negativ...
+2  304  ...  The interviewee appears to be doing well menta...
+3  305  ...  ["The interviewee expressed a range of emotion...
+4  307  ...  The interviewee's mental health seems to be im...
+
+[5 rows x 8 columns]
+len X:  163
+df after feature extraction:      id  ...                          features_deproberta
+0  302  ...       [[0.004637151, 0.6761763, 0.31918654]]
+1  303  ...  [[0.00034642877, 0.0013790233, 0.99827456]]
+2  304  ...   [[0.0004250032, 0.0027365047, 0.99683845]]
+3  305  ...        [[0.7696288, 0.22714557, 0.00322563]]
+4  307  ...     [[0.0006537189, 0.021451877, 0.9778944]]
+
+[5 rows x 9 columns]
+name of the df:  df_train_prompt1
+    id  ...                                        completions
+0  302  ...  Key points related to depression:\n1. The pers...
+1  303  ...  Key points related to the depression of the pe...
+2  304  ...  The key points related to depression in the in...
+3  305  ...  - The person likes certain things about LA, bu...
+4  307  ...  The key points related to the depression of th...
+
+[5 rows x 8 columns]
+len X:  163
+df after feature extraction:      id  ...                       features_deproberta
+0  302  ...     [[0.006337868, 0.845272, 0.14839005]]
+1  303  ...    [[0.001586416, 0.08301608, 0.9153976]]
+2  304  ...  [[0.0010512387, 0.04076556, 0.95818317]]
+3  305  ...   [[0.6183303, 0.37767604, 0.0039937026]]
+4  307  ...  [[0.012604435, 0.9843343, 0.0030613868]]
+
+[5 rows x 9 columns]
+name of the df:  df_dev_prompt1
+    id  ...                                        completions
+0  300  ...  Key points related to depression:\n\n1. When a...
+1  301  ...  The key points related to depression in the in...
+2  306  ...  Key points related to the depression of the pe...
+3  317  ...  - The person has experienced a significant cha...
+4  320  ...  Key points related to the depression of the pe...
+
+[5 rows x 8 columns]
+len X:  56
+df after feature extraction:      id  ...                          features_deproberta
+0  300  ...    [[0.00038770787, 0.020634586, 0.9789777]]
+1  301  ...  [[0.00028025376, 0.0020675075, 0.99765223]]
+2  306  ...     [[0.016786246, 0.97469795, 0.008515796]]
+3  317  ...      [[0.016100658, 0.9811178, 0.002781634]]
+4  320  ...       [[0.5363875, 0.4621357, 0.0014768088]]
+
+[5 rows x 9 columns]
+name of the df:  df_test_prompt1
+    id  ...                                        completions
+0  600  ...  Key points related to depression in the interv...
+1  602  ...  ['Key points related to the depression of the ...
+2  604  ...  Key points related to depression in the interv...
+3  605  ...  The key points related to depression in the in...
+4  606  ...  Key points related to depression in the interv...
+
+[5 rows x 8 columns]
+len X:  56
+df after feature extraction:      id  ...                       features_deproberta
+0  600  ...   [[0.005612214, 0.9289201, 0.065467685]]
+1  602  ...  [[0.50459963, 0.49245736, 0.0029430073]]
+2  604  ...    [[0.002419573, 0.8076929, 0.18988755]]
+3  605  ...      [[0.03619441, 0.926083, 0.03772258]]
+4  606  ...      [[0.0099666, 0.37818676, 0.6118467]]
+
+[5 rows x 9 columns]
+name of the df:  df_dev_prompt2
+    id  ...                                        completions
+0  300  ...  I moved from Atlanta to LA because my parents ...
+1  301  ...  I work as an administrative assistant through ...
+2  306  ...  I have a dream job of being an attorney becaus...
+3  317  ...  I have been feeling tired, sluggish, and less ...
+4  320  ...  I have been through a traumatic experience of ...
+
+[5 rows x 8 columns]
+len X:  56
+df after feature extraction:      id  ...                         features_deproberta
+0  300  ...  [[0.00016791956, 0.0061457143, 0.9936864]]
+1  301  ...   [[0.0002712929, 0.0007950377, 0.9989336]]
+2  306  ...       [[0.015368935, 0.1199458, 0.8646853]]
+3  317  ...     [[0.000997403, 0.85751134, 0.14149126]]
+4  320  ...      [[0.5472436, 0.42087147, 0.031884912]]
+
+[5 rows x 9 columns]
+name of the df:  df_test_prompt2
+    id  ...                                        completions
+0  600  ...  I was diagnosed with depression in 2002 after ...
+1  602  ...  ['I have been diagnosed with PTSD almost two y...
+2  604  ...  I have not been diagnosed with depression, but...
+3  605  ...  ["I was diagnosed with depression and have bee...
+4  606  ...  I attended a strange interview where I was ask...
+
+[5 rows x 8 columns]
+len X:  56
+df after feature extraction:      id  ...                        features_deproberta
+0  600  ...  [[0.00071153446, 0.082537666, 0.9167508]]
+1  602  ...   [[0.0048730974, 0.018113837, 0.9770131]]
+2  604  ...     [[0.0005273587, 0.1244964, 0.8749762]]
+3  605  ...      [[0.03579238, 0.71032023, 0.2538874]]
+4  606  ...   [[0.0003036089, 0.009433973, 0.9902624]]
+
+[5 rows x 9 columns]
+name of the df:  df_train_prompt2
+    id  ...                                        completions
+0  302  ...  Since my mother passed away about five years a...
+1  303  ...  I find that managing my stress at work and bei...
+2  304  ...  I have been feeling happy and content lately, ...
+3  305  ...  I struggle with insomnia and have racing thoug...
+4  307  ...  Some key points from the interview that might ...
+
+[5 rows x 8 columns]
+len X:  163
+df after feature extraction:      id  ...                         features_deproberta
+0  302  ...      [[0.0008973033, 0.26385063, 0.735252]]
+1  303  ...  [[0.00019652139, 0.0014603658, 0.9983431]]
+2  304  ...     [[0.00037604885, 0.04107195, 0.958552]]
+3  305  ...   [[0.97136384, 0.027986163, 0.0006500139]]
+4  307  ...   [[0.00041410993, 0.008913847, 0.9906721]]
+
+[5 rows x 9 columns]
+name of the df:  df_test_prompt3
+    id  ...                                        completions
+0  600  ...  Summary of main points regarding the mental he...
+1  602  ...  Based on the interview, the main points concer...
+2  604  ...  The interviewee in the interview appears to be...
+3  605  ...  ["From the interview, it can be summarized tha...
+4  606  ...  Based on the interview, the interviewee seems ...
+
+[5 rows x 8 columns]
+len X:  56
+df after feature extraction:      id  ...                       features_deproberta
+0  600  ...   [[0.15335867, 0.8448939, 0.0017474338]]
+1  602  ...      [[0.303306, 0.32631788, 0.37037614]]
+2  604  ...   [[0.0027382262, 0.8159311, 0.18133065]]
+3  605  ...  [[0.89279795, 0.10571058, 0.0014914679]]
+4  606  ...  [[0.0021154378, 0.13935313, 0.85853136]]
+
+[5 rows x 9 columns]
+name of the df:  df_dev_prompt3
+    id  ...                                        completions
+0  300  ...  Based on the interview with the interviewee, i...
+1  301  ...  Based on the interview, the interviewee is a  ...
+2  306  ...  From the interview, it can be inferred that th...
+3  317  ...  The interviewee discussed their move from New ...
+4  320  ...  The interviewee has experienced trauma in the ...
+
+[5 rows x 8 columns]
+len X:  56
+df after feature extraction:      id  ...                          features_deproberta
+0  300  ...    [[0.0003798826, 0.0018052083, 0.9978149]]
+1  301  ...  [[0.00032589684, 0.0015585689, 0.99811554]]
+2  306  ...        [[0.904295, 0.09288081, 0.002824133]]
+3  317  ...      [[0.0036287108, 0.9438272, 0.05254412]]
+4  320  ...     [[0.84018946, 0.15650004, 0.0033104494]]
+
+[5 rows x 9 columns]
+name of the df:  df_train_prompt3
+    id  ...                                        completions
+0  302  ...  The interviewee has experienced significant lo...
+1  303  ...  The interviewee seems to have a positive outlo...
+2  304  ...  ["1. The interviewee is originally from Los An...
+3  305  ...  The interviewee expressed a variety of feeling...
+4  307  ...  ['The interviewee discusses various aspects of...
+
+[5 rows x 8 columns]
+len X:  163
+df after feature extraction:      id  ...                          features_deproberta
+0  302  ...      [[0.008268162, 0.9682122, 0.023519548]]
+1  303  ...   [[0.00032019315, 0.0015330391, 0.9981468]]
+2  304  ...        [[0.013543588, 0.657846, 0.32861042]]
+3  305  ...    [[0.91678905, 0.082445964, 0.0007648733]]
+4  307  ...  [[0.00021024377, 0.0015646423, 0.99822515]]
+
+[5 rows x 9 columns]
+name of the df:  df_train_prompt1
+    id  ...                                        completions
+0  302  ...  The key points related to the depression of th...
+1  303  ...  Key points related to the depression of the pe...
+2  304  ...  Key points related to potential depression in ...
+3  305  ...  ["The key points related to depression in the ...
+4  307  ...  ['Key points related to potential depression i...
+
+[5 rows x 8 columns]
+len X:  163
+df after feature extraction:      id  ...                       features_deproberta
+0  302  ...     [[0.004518249, 0.8896847, 0.1057971]]
+1  303  ...  [[0.0069044456, 0.88773036, 0.10536513]]
+2  304  ...    [[0.0030898873, 0.31941715, 0.677493]]
+3  305  ...   [[0.8191592, 0.17966208, 0.0011787514]]
+4  307  ...   [[0.002658368, 0.9504253, 0.046916366]]
+
+[5 rows x 9 columns]
+name of the df:  df_dev_prompt1
+    id  ...                                        completions
+0  300  ...  Key points related to depression in the interv...
+1  301  ...  Key points related to the person's depression:...
+2  306  ...  The person in the interview mentioned experien...
+3  317  ...  Key points related to depression:\n- The perso...
+4  320  ...  The key points related to the depression of th...
+
+[5 rows x 8 columns]
+len X:  56
+df after feature extraction:      id  ...                        features_deproberta
+0  300  ...  [[0.00046413613, 0.018731343, 0.9808045]]
+1  301  ...   [[0.0038942124, 0.62569165, 0.37041417]]
+2  306  ...    [[0.019024208, 0.979425, 0.0015507812]]
+3  317  ...    [[0.004906598, 0.9718522, 0.023241151]]
+4  320  ...     [[0.77543485, 0.2106098, 0.013955364]]
+
+[5 rows x 9 columns]
+name of the df:  df_test_prompt1
+    id  ...                                        completions
+0  600  ...  Key points related to depression in the interv...
+1  602  ...  The key points related to the depression of th...
+2  604  ...  The key points related to depression in the in...
+3  605  ...  ["Key points related to the depression of the ...
+4  606  ...  Key points related to depression in the interv...
+
+[5 rows x 8 columns]
+len X:  56
+df after feature extraction:      id  ...                        features_deproberta
+0  600  ...  [[0.031906113, 0.96589845, 0.0021954435]]
+1  602  ...      [[0.8427353, 0.14755988, 0.00970482]]
+2  604  ...      [[0.004593346, 0.73906857, 0.256338]]
+3  605  ...     [[0.24064563, 0.7461437, 0.013210611]]
+4  606  ...     [[0.0064301286, 0.807156, 0.18641385]]
+
+[5 rows x 9 columns]
+name of the df:  df_dev_prompt2
+    id  ...                                        completions
+0  300  ...  I am a person who recently moved to LA from At...
+1  301  ...  I work as an administrative assistant through ...
+2  306  ...  I have experienced symptoms of extreme avoidan...
+3  317  ...  I moved to a new city a couple of years ago fo...
+4  320  ...  I have been diagnosed with PTSD a few years ag...
+
+[5 rows x 8 columns]
+len X:  56
+df after feature extraction:      id  ...                         features_deproberta
+0  300  ...   [[0.00015955114, 0.0017174776, 0.998123]]
+1  301  ...  [[0.00024238003, 0.0008995365, 0.9988581]]
+2  306  ...       [[0.07038541, 0.901373, 0.028241582]]
+3  317  ...     [[0.002108815, 0.9726288, 0.025262354]]
+4  320  ...      [[0.8029475, 0.19008061, 0.006971892]]
+
+[5 rows x 9 columns]
+name of the df:  df_test_prompt2
+    id  ...                                        completions
+0  600  ...  ['I was diagnosed with depression in 2002 afte...
+1  602  ...  ['I have been diagnosed with PTSD almost two y...
+2  604  ...  I have been feeling tired and exhausted lately...
+3  605  ...  I have been diagnosed with depression. Therapy...
+4  606  ...  ['I showed reluctance to open up about my feel...
+
+[5 rows x 8 columns]
+len X:  56
+df after feature extraction:      id  ...                      features_deproberta
+0  600  ...   [[0.00296421, 0.81589633, 0.18113947]]
+1  602  ...      [[0.06337738, 0.122522585, 0.8141]]
+2  604  ...  [[0.00022999803, 0.0037906, 0.9959794]]
+3  605  ...    [[0.0726506, 0.79171526, 0.13563412]]
+4  606  ...  [[0.005440715, 0.96966076, 0.02489847]]
+
+[5 rows x 9 columns]
+name of the df:  df_train_prompt2
+    id  ...                                        completions
+0  302  ...  Since my mother passed away five years ago, I ...
+1  303  ...  ['I feel like a lot of the struggles I have fa...
+2  304  ...  ["I am a friendly and motivated person from Lo...
+3  305  ...  ['I struggle with sleep and have been sleeping...
+4  307  ...  ['After graduating and moving to LA, I struggl...
+
+[5 rows x 8 columns]
+len X:  163
+df after feature extraction:      id  ...                          features_deproberta
+0  302  ...   [[0.00026999018, 0.012827047, 0.98690295]]
+1  303  ...    [[0.00045921913, 0.021818772, 0.9777219]]
+2  304  ...   [[0.00018266316, 0.0031862871, 0.9966311]]
+3  305  ...     [[0.8944005, 0.104782626, 0.0008169617]]
+4  307  ...  [[0.00026806977, 0.0045326883, 0.99519926]]
+
+[5 rows x 9 columns]
+DataFrame 'df_test_prompt3' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/original/df_test_prompt3.csv'
+DataFrame 'df_dev_prompt3' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/original/df_dev_prompt3.csv'
+DataFrame 'df_train_prompt3' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/original/df_train_prompt3.csv'
+DataFrame 'df_train_prompt1' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/original/df_train_prompt1.csv'
+DataFrame 'df_dev_prompt1' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/original/df_dev_prompt1.csv'
+DataFrame 'df_test_prompt1' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/original/df_test_prompt1.csv'
+DataFrame 'df_dev_prompt2' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/original/df_dev_prompt2.csv'
+DataFrame 'df_test_prompt2' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/original/df_test_prompt2.csv'
+DataFrame 'df_train_prompt2' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/original/df_train_prompt2.csv'
+DataFrame 'df_dev_Q10' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/original/df_dev_Q10.csv'
+DataFrame 'df_test_Q10' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/original/df_test_Q10.csv'
+DataFrame 'df_train_Q10' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/original/df_train_Q10.csv'
+DataFrame 'df_test_prompt3' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/revised/df_test_prompt3.csv'
+DataFrame 'df_dev_prompt3' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/revised/df_dev_prompt3.csv'
+DataFrame 'df_train_prompt3' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/revised/df_train_prompt3.csv'
+DataFrame 'df_train_prompt1' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/revised/df_train_prompt1.csv'
+DataFrame 'df_dev_prompt1' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/revised/df_dev_prompt1.csv'
+DataFrame 'df_test_prompt1' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/revised/df_test_prompt1.csv'
+DataFrame 'df_dev_prompt2' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/revised/df_dev_prompt2.csv'
+DataFrame 'df_test_prompt2' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/revised/df_test_prompt2.csv'
+DataFrame 'df_train_prompt2' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/revised/df_train_prompt2.csv'
+DataFrame 'df_dev_Q10' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/revised/df_dev_Q10.csv'
+DataFrame 'df_test_Q10' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/revised/df_test_Q10.csv'
+DataFrame 'df_train_Q10' saved to '/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/deproberta_features/revised/df_train_Q10.csv'
+=== JOB_STATISTICS ===
+=== current date     : Wed 06 Mar 2024 02:09:24 PM CET
+= Job-ID             : 781722 on tinygpu
+= Job-Name           : job_gpt_deproberta_fine_tuned.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/job_gpt_deproberta_fine_tuned.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts
+= Queue/Partition    : work
+= Slurm account      : empk with QOS=normal
+= Requested resources:  for 10:00:00
+= Elapsed runtime    : 00:10:11
+= Total RAM usage    : 3.7 GiB of requested  GiB (%)   
+= Node list          : tg061
+= Subm/Elig/Start/End: 2024-03-06T13:59:13 / 2024-03-06T13:59:13 / 2024-03-06T13:59:13 / 2024-03-06T14:09:24
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           77.4G   104.9G   209.7G        N/A  46,076      500K   1,000K        N/A    
+    /home/vault         96.2T   150.3T   171.8T        N/A      75K     300K     450K        N/A    
+    /home/woody        311.0G   500.0G   750.0G        N/A     314K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

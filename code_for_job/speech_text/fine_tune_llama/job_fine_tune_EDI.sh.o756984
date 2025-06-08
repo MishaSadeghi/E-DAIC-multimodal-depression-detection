@@ -1,0 +1,109 @@
+### Starting TaskPrologue of job 756984 on tg094 at Tue 30 Jan 2024 05:54:21 PM CET
+Running on cores 0-31 with governor ondemand
+Tue Jan 30 17:54:21 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:01:00.0 Off |                    0 |
+| N/A   35C    P0              55W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/fine_tune_llama
+2024-01-30 17:54:51.302500: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Downloading data files:   0%|          | 0/1 [00:00<?, ?it/s]Downloading data files: 100%|██████████| 1/1 [00:00<00:00, 9058.97it/s]
+Extracting data files:   0%|          | 0/1 [00:00<?, ?it/s]Extracting data files: 100%|██████████| 1/1 [00:00<00:00, 164.75it/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 6006 examples [00:00, 28268.56 examples/s]Generating train split: 6006 examples [00:00, 25243.70 examples/s]
+Downloading data files:   0%|          | 0/1 [00:00<?, ?it/s]Downloading data files: 100%|██████████| 1/1 [00:00<00:00, 8559.80it/s]
+Extracting data files:   0%|          | 0/1 [00:00<?, ?it/s]Extracting data files: 100%|██████████| 1/1 [00:00<00:00, 154.00it/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1000 examples [00:00, 32980.05 examples/s]
+Map:   0%|          | 0/6006 [00:00<?, ? examples/s]Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+Map:  17%|█▋        | 1000/6006 [00:00<00:00, 5624.47 examples/s]Map:  50%|████▉     | 3000/6006 [00:00<00:00, 8107.77 examples/s]Map:  67%|██████▋   | 4000/6006 [00:00<00:00, 8667.01 examples/s]Map: 100%|█████████▉| 6000/6006 [00:00<00:00, 10317.78 examples/s]Map: 100%|██████████| 6006/6006 [00:00<00:00, 8680.88 examples/s] 
+Map:   0%|          | 0/1000 [00:00<?, ? examples/s]Map: 100%|██████████| 1000/1000 [00:00<00:00, 8932.13 examples/s]Map: 100%|██████████| 1000/1000 [00:00<00:00, 7275.83 examples/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:24<00:24, 24.77s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:32<00:00, 14.75s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:32<00:00, 16.26s/it]
+Some weights of LlamaForSequenceClassification were not initialized from the model checkpoint at meta-llama/Llama-2-7b-hf and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+all params: 3,389,345,792 || trainable params: 19,996,672 || trainable%: 0.5899861869272499
+  0%|          | 0/60060 [00:00<?, ?it/s]You're using a LlamaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Traceback (most recent call last):
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 748, in convert_to_tensors
+    tensor = as_tensor(value)
+             ^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 720, in as_tensor
+    return torch.tensor(value)
+           ^^^^^^^^^^^^^^^^^^^
+ValueError: too many dimensions 'str'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/fine_tune_llama/EDI_dataset_finetune_.py", line 216, in <module>
+    trainer.train()
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/trainer.py", line 1537, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/trainer.py", line 1821, in _inner_training_loop
+    for step, inputs in enumerate(epoch_iterator):
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/accelerate/data_loader.py", line 451, in __iter__
+    current_batch = next(dataloader_iter)
+                    ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/data/data_collator.py", line 249, in __call__
+    batch = self.tokenizer.pad(
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3299, in pad
+    return BatchEncoding(batch_outputs, tensor_type=return_tensors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 223, in __init__
+    self.convert_to_tensors(tensor_type=tensor_type, prepend_batch_axis=prepend_batch_axis)
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 764, in convert_to_tensors
+    raise ValueError(
+ValueError: Unable to create tensor, you should probably activate truncation and/or padding with 'padding=True' 'truncation=True' to have batched tensors with the same length. Perhaps your features (`label` in this case) have excessive nesting (inputs type `list` where type `int` is expected).
+  0%|          | 0/60060 [00:00<?, ?it/s]
+srun: error: tg094: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=756984.0
+=== JOB_STATISTICS ===
+=== current date     : Tue 30 Jan 2024 06:04:32 PM CET
+= Job-ID             : 756984 on tinygpu
+= Job-Name           : job_fine_tune_EDI.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/fine_tune_llama/job_fine_tune_EDI.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/fine_tune_llama
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 20:00:00
+= Elapsed runtime    : 00:10:12
+= Total RAM usage    : 0.9 GiB of requested 117 GiB (0.8%)   
+= Node list          : tg094
+= Subm/Elig/Start/End: 2024-01-30T17:54:20 / 2024-01-30T17:54:20 / 2024-01-30T17:54:20 / 2024-01-30T18:04:32
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           45.5G   104.9G   209.7G        N/A  45,312      500K   1,000K        N/A    
+    /home/woody        267.9G   500.0G   750.0G        N/A     312K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:01:00.0, 571680, 0 %, 0 %, 4786 MiB, 598967 ms

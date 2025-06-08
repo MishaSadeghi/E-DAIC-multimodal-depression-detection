@@ -1,0 +1,54 @@
+### Starting TaskPrologue of job 769974 on tg096 at Fri 16 Feb 2024 03:50:50 PM CET
+Running on cores 0-31 with governor ondemand
+Fri Feb 16 15:50:50 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:01:00.0 Off |                    0 |
+| N/A   40C    P0              54W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Using device: cuda
+feature_type:  all
+Traceback (most recent call last):
+  File "/home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/enhancing_base_code/base_config_SHAP/LSTM_enhance.py", line 267, in <module>
+    print('test_features_df.columns: ', test_features_df.columns)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'columns'
+srun: error: tg096: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=769974.0
+=== JOB_STATISTICS ===
+=== current date     : Fri 16 Feb 2024 03:51:03 PM CET
+= Job-ID             : 769974 on tinygpu
+= Job-Name           : job_LSTM_base.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/enhancing_base_code/base_config_SHAP/job_LSTM_base.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/enhancing_base_code/base_config_SHAP
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 20:00:00
+= Elapsed runtime    : 00:00:14
+= Total RAM usage    : 0.0 GiB of requested 117 GiB (0.0%)   
+= Node list          : tg096
+= Subm/Elig/Start/End: 2024-02-16T15:03:29 / 2024-02-16T15:03:29 / 2024-02-16T15:50:49 / 2024-02-16T15:51:03
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           76.5G   104.9G   209.7G        N/A  46,033      500K   1,000K        N/A    
+    /home/woody        311.0G   500.0G   750.0G        N/A     314K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

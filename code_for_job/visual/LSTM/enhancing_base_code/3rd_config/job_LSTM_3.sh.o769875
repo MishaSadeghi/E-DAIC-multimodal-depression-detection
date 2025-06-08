@@ -1,0 +1,74 @@
+### Starting TaskPrologue of job 769875 on tg094 at Fri 16 Feb 2024 12:04:00 PM CET
+Running on cores 32-63 with governor ondemand
+Fri Feb 16 12:04:00 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:41:00.0 Off |                    0 |
+| N/A   35C    P0              54W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Using device: cuda
+feature_type:  all
+Traceback (most recent call last):
+  File "/home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/enhancing_base_code/3rd_config/LSTM_enhance.py", line 327, in <module>
+    outputs = model(features).squeeze()
+              ^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/enhancing_base_code/3rd_config/LSTM_enhance.py", line 250, in forward
+    final_output = self.fc(attn_out)
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (300088x32 and 128x1)
+srun: error: tg094: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=769875.0
+=== JOB_STATISTICS ===
+=== current date     : Fri 16 Feb 2024 12:04:42 PM CET
+= Job-ID             : 769875 on tinygpu
+= Job-Name           : job_LSTM_3.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/enhancing_base_code/3rd_config/job_LSTM_3.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/enhancing_base_code/3rd_config
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 20:00:00
+= Elapsed runtime    : 00:00:43
+= Total RAM usage    : 0.3 GiB of requested 117 GiB (0.3%)   
+= Node list          : tg094
+= Subm/Elig/Start/End: 2024-02-16T11:42:12 / 2024-02-16T11:42:12 / 2024-02-16T12:03:59 / 2024-02-16T12:04:42
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           76.5G   104.9G   209.7G        N/A  45,977      500K   1,000K        N/A    
+    /home/vault       2645.5G     0.0K     0.0K        N/A      75K     300K     450K        N/A    
+    /home/woody        311.0G   500.0G   750.0G        N/A     314K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:41:00.0, 3139679, 2 %, 0 %, 5410 MiB, 7990 ms

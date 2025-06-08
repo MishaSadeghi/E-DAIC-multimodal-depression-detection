@@ -1,0 +1,99 @@
+### Starting TaskPrologue of job 758275 on tg094 at Thu 01 Feb 2024 12:56:27 PM CET
+Running on cores 96-127 with governor ondemand
+Thu Feb  1 12:56:27 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:C1:00.0 Off |                    0 |
+| N/A   32C    P0              53W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/fine_tune_llama
+2024-02-01 12:56:45.996097: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Downloading data files:   0%|          | 0/1 [00:00<?, ?it/s]Downloading data files: 100%|██████████| 1/1 [00:00<00:00, 8112.77it/s]
+Extracting data files:   0%|          | 0/1 [00:00<?, ?it/s]Extracting data files: 100%|██████████| 1/1 [00:00<00:00, 86.93it/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 6005 examples [00:00, 18869.64 examples/s]Generating train split: 6005 examples [00:00, 17656.43 examples/s]
+Downloading data files:   0%|          | 0/1 [00:00<?, ?it/s]Downloading data files: 100%|██████████| 1/1 [00:00<00:00, 8886.24it/s]
+Extracting data files:   0%|          | 0/1 [00:00<?, ?it/s]Extracting data files: 100%|██████████| 1/1 [00:00<00:00, 117.27it/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1000 examples [00:00, 33523.59 examples/s]
+Map:   0%|          | 0/6005 [00:00<?, ? examples/s]Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+Map:  17%|█▋        | 1000/6005 [00:00<00:01, 4668.98 examples/s]Map:  50%|████▉     | 3000/6005 [00:00<00:00, 7921.11 examples/s]Map:  67%|██████▋   | 4000/6005 [00:00<00:00, 8521.23 examples/s]Map: 100%|█████████▉| 6000/6005 [00:00<00:00, 10167.65 examples/s]Map: 100%|██████████| 6005/6005 [00:00<00:00, 8532.51 examples/s] 
+Map:   0%|          | 0/1000 [00:00<?, ? examples/s]Map: 100%|██████████| 1000/1000 [00:00<00:00, 9180.92 examples/s]Map: 100%|██████████| 1000/1000 [00:00<00:00, 8389.60 examples/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:30<00:30, 30.80s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:40<00:00, 18.47s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:40<00:00, 20.32s/it]
+Some weights of LlamaForSequenceClassification were not initialized from the model checkpoint at meta-llama/Llama-2-7b-hf and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+all params: 3,389,345,792 || trainable params: 19,996,672 || trainable%: 0.5899861869272499
+  0%|          | 0/60050 [00:00<?, ?it/s]You're using a LlamaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  0%|          | 1/60050 [00:26<447:24:43, 26.82s/it]  0%|          | 2/60050 [00:27<193:32:49, 11.60s/it]  0%|          | 3/60050 [00:28<108:36:22,  6.51s/it]  0%|          | 4/60050 [00:28<68:40:04,  4.12s/it]   0%|          | 5/60050 [00:29<46:12:34,  2.77s/it]  0%|          | 6/60050 [00:31<45:57:19,  2.76s/it]  0%|          | 7/60050 [00:32<33:22:16,  2.00s/it]  0%|          | 8/60050 [00:32<24:52:09,  1.49s/it]../aten/src/ATen/native/cuda/Loss.cu:250: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [0,0,0] Assertion `t >= 0 && t < n_classes` failed.
+Traceback (most recent call last):
+  File "/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/fine_tune_llama/EDI_dataset_finetune_.py", line 219, in <module>
+    trainer.train()
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/trainer.py", line 1537, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/trainer.py", line 1854, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/trainer.py", line 2744, in training_step
+    self.accelerator.backward(loss)
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/accelerate/accelerator.py", line 1987, in backward
+    self.scaler.scale(loss).backward(**kwargs)
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/autograd/function.py", line 288, in apply
+    return user_fn(self, *args)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 288, in backward
+    torch.autograd.backward(outputs_with_grad, args_with_grad)
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+  0%|          | 8/60050 [00:34<71:03:39,  4.26s/it]
+srun: error: tg094: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=758275.0
+=== JOB_STATISTICS ===
+=== current date     : Thu 01 Feb 2024 01:07:01 PM CET
+= Job-ID             : 758275 on tinygpu
+= Job-Name           : job_fine_tune_EDI.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/fine_tune_llama/job_fine_tune_EDI.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/fine_tune_llama
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 20:00:00
+= Elapsed runtime    : 00:10:35
+= Total RAM usage    : 1.0 GiB of requested 117 GiB (0.9%)   
+= Node list          : tg094
+= Subm/Elig/Start/End: 2024-02-01T12:56:25 / 2024-02-01T12:56:25 / 2024-02-01T12:56:26 / 2024-02-01T13:07:01
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           45.6G   104.9G   209.7G        N/A  45,351      500K   1,000K        N/A    
+    /home/woody        267.9G   500.0G   750.0G        N/A     312K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:C1:00.0, 3234022, 0 %, 0 %, 5552 MiB, 623611 ms

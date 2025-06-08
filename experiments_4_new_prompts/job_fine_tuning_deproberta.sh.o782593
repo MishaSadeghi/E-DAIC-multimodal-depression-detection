@@ -1,0 +1,60 @@
+### Starting TaskPrologue of job 782593 on tg092 at Thu 07 Mar 2024 06:12:51 PM CET
+Running on cores 32-63 with governor ondemand
+Thu Mar  7 18:12:51 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:41:00.0 Off |                    0 |
+| N/A   35C    P0              53W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts
+folder_path:  /home/hpc/empk/empk004h/depression-detection/data/original_transcripts_completions/prompt_1
+csv_files:  ['df_train_prompt1.csv', 'df_dev_prompt1.csv', 'df_test_prompt1.csv']
+Traceback (most recent call last):
+  File "/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/fine_tuning_deproberta.py", line 211, in <module>
+    fine_tune_deproberta_model_all_prompts('prompt_1', data_dir_org)
+  File "/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/fine_tuning_deproberta.py", line 209, in fine_tune_deproberta_model_all_prompts
+    model = fine_tune_deproberta_model(prompt, train_texts, train_labels, dev_texts, dev_labels, max_epochs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/fine_tuning_deproberta.py", line 74, in fine_tune_deproberta_model
+    pritn('fine tuning for prompt: ', prompt)
+    ^^^^^
+NameError: name 'pritn' is not defined. Did you mean: 'print'?
+srun: error: tg092: task 0: Exited with exit code 1
+srun: Terminating StepId=782593.0
+=== JOB_STATISTICS ===
+=== current date     : Thu 07 Mar 2024 06:13:05 PM CET
+= Job-ID             : 782593 on tinygpu
+= Job-Name           : job_fine_tuning_deproberta.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/job_fine_tuning_deproberta.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources:  for 20:00:00
+= Elapsed runtime    : 00:00:15
+= Total RAM usage    : 0.0 GiB of requested  GiB (%)   
+= Node list          : tg092
+= Subm/Elig/Start/End: 2024-03-07T17:50:53 / 2024-03-07T17:50:53 / 2024-03-07T18:12:50 / 2024-03-07T18:13:05
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           77.3G   104.9G   209.7G        N/A  46,101      500K   1,000K        N/A    
+    /home/woody        311.0G   500.0G   750.0G        N/A     314K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

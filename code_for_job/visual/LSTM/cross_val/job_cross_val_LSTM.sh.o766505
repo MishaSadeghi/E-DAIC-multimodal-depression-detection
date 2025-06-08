@@ -1,0 +1,490 @@
+### Starting TaskPrologue of job 766505 on tg096 at Fri 09 Feb 2024 03:52:24 PM CET
+Running on cores 96-127 with governor ondemand
+Fri Feb  9 15:52:24 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:C1:00.0 Off |                    0 |
+| N/A   34C    P0              55W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Using device: cuda
+datasets:  [<__main__.PHQDataset object at 0x7f01f1ac8e50>, <__main__.PHQDataset object at 0x7f01e0ed4c10>]
+data_info:       Participant_ID   Gender  ...  PCL-C (PTSD)  PTSD Severity
+0               302     male  ...             0             28
+1               303   female  ...             0             17
+2               304   female  ...             0             20
+3               305     male  ...             0             28
+4               307  female   ...             0             23
+..              ...      ...  ...           ...            ...
+214             667     male  ...             0             23
+215             670     male  ...             0             21
+216             687     male  ...             1             44
+217             698     male  ...             1             60
+218             713     male  ...             0             22
+
+[219 rows x 6 columns]
+Using device: cuda
+len(self.data_info):  219
+len(self.data_info):  219
+len(self.data_info):  219
+len(self.data_info):  219
+len(self.data_info):  219
+len(self.data_info):  219
+Fold 1/5
+Epoch [1/20], Step [1/22], Loss: 4.5864
+Epoch [1/20], Step [11/22], Loss: 7.0375
+Epoch [1/20], Step [21/22], Loss: 5.6471
+Epoch [1/20], Training Loss: 5.1908, Validation MAE Loss: 5.3098, Validation RMSE Loss: 6.7170
+Epoch [2/20], Step [1/22], Loss: 4.4312
+Epoch [2/20], Step [11/22], Loss: 4.6294
+Epoch [2/20], Step [21/22], Loss: 5.3076
+Epoch [2/20], Training Loss: 4.7953, Validation MAE Loss: 5.9321, Validation RMSE Loss: 7.5585
+Epoch [3/20], Step [1/22], Loss: 5.1420
+Epoch [3/20], Step [11/22], Loss: 5.1503
+Epoch [3/20], Step [21/22], Loss: 5.8379
+Epoch [3/20], Training Loss: 4.9689, Validation MAE Loss: 8.8050, Validation RMSE Loss: 10.3390
+Epoch [4/20], Step [1/22], Loss: 3.7710
+Epoch [4/20], Step [11/22], Loss: 4.6138
+Epoch [4/20], Step [21/22], Loss: 4.2761
+Epoch [4/20], Training Loss: 5.0056, Validation MAE Loss: 5.0899, Validation RMSE Loss: 6.1072
+Epoch [5/20], Step [1/22], Loss: 6.7371
+Epoch [5/20], Step [11/22], Loss: 4.8603
+Epoch [5/20], Step [21/22], Loss: 5.8244
+Epoch [5/20], Training Loss: 5.0725, Validation MAE Loss: 7.7633, Validation RMSE Loss: 9.3854
+Epoch [6/20], Step [1/22], Loss: 5.5296
+Epoch [6/20], Step [11/22], Loss: 6.6301
+Epoch [6/20], Step [21/22], Loss: 3.0580
+Epoch [6/20], Training Loss: 5.0257, Validation MAE Loss: 6.8393, Validation RMSE Loss: 8.4835
+Epoch [7/20], Step [1/22], Loss: 4.0473
+Epoch [7/20], Step [11/22], Loss: 4.6456
+Epoch [7/20], Step [21/22], Loss: 3.8690
+Epoch [7/20], Training Loss: 4.9557, Validation MAE Loss: 5.1477, Validation RMSE Loss: 6.4075
+Epoch [8/20], Step [1/22], Loss: 3.5433
+Epoch [8/20], Step [11/22], Loss: 4.4209
+Epoch [8/20], Step [21/22], Loss: 5.8394
+Epoch [8/20], Training Loss: 4.7971, Validation MAE Loss: 5.5131, Validation RMSE Loss: 7.0378
+Epoch [9/20], Step [1/22], Loss: 5.3465
+Epoch [9/20], Step [11/22], Loss: 4.8383
+Epoch [9/20], Step [21/22], Loss: 5.0583
+Epoch [9/20], Training Loss: 5.0587, Validation MAE Loss: 7.5084, Validation RMSE Loss: 9.1632
+Epoch [10/20], Step [1/22], Loss: 2.6908
+Epoch [10/20], Step [11/22], Loss: 4.9418
+Epoch [10/20], Step [21/22], Loss: 4.9003
+Epoch [10/20], Training Loss: 4.9687, Validation MAE Loss: 5.1224, Validation RMSE Loss: 6.3351
+Epoch [11/20], Step [1/22], Loss: 3.3433
+Epoch [11/20], Step [11/22], Loss: 4.2990
+Epoch [11/20], Step [21/22], Loss: 4.5568
+Epoch [11/20], Training Loss: 4.8546, Validation MAE Loss: 5.7154, Validation RMSE Loss: 7.3133
+Epoch [12/20], Step [1/22], Loss: 5.9996
+Epoch [12/20], Step [11/22], Loss: 3.3544
+Epoch [12/20], Step [21/22], Loss: 4.0019
+Epoch [12/20], Training Loss: 4.7395, Validation MAE Loss: 7.1348, Validation RMSE Loss: 8.8190
+Epoch [13/20], Step [1/22], Loss: 5.0414
+Epoch [13/20], Step [11/22], Loss: 2.0217
+Epoch [13/20], Step [21/22], Loss: 5.2436
+Epoch [13/20], Training Loss: 4.8557, Validation MAE Loss: 6.0557, Validation RMSE Loss: 7.7100
+Epoch [14/20], Step [1/22], Loss: 3.3419
+Epoch [14/20], Step [11/22], Loss: 3.5218
+Epoch [14/20], Step [21/22], Loss: 6.9655
+Epoch [14/20], Training Loss: 4.8227, Validation MAE Loss: 5.2583, Validation RMSE Loss: 6.4095
+Epoch [15/20], Step [1/22], Loss: 5.5434
+Epoch [15/20], Step [11/22], Loss: 3.3614
+Epoch [15/20], Step [21/22], Loss: 3.7304
+Epoch [15/20], Training Loss: 4.7566, Validation MAE Loss: 5.4015, Validation RMSE Loss: 6.8895
+Epoch [16/20], Step [1/22], Loss: 4.7791
+Epoch [16/20], Step [11/22], Loss: 4.8031
+Epoch [16/20], Step [21/22], Loss: 2.8812
+Epoch [16/20], Training Loss: 5.0749, Validation MAE Loss: 7.1469, Validation RMSE Loss: 8.8346
+Epoch [17/20], Step [1/22], Loss: 2.7155
+Epoch [17/20], Step [11/22], Loss: 8.2514
+Epoch [17/20], Step [21/22], Loss: 4.9572
+Epoch [17/20], Training Loss: 4.7696, Validation MAE Loss: 6.2527, Validation RMSE Loss: 7.9348
+Epoch [18/20], Step [1/22], Loss: 2.9054
+Epoch [18/20], Step [11/22], Loss: 4.4678
+Epoch [18/20], Step [21/22], Loss: 3.7767
+Epoch [18/20], Training Loss: 4.7335, Validation MAE Loss: 5.6099, Validation RMSE Loss: 7.2144
+Epoch [19/20], Step [1/22], Loss: 3.5268
+Epoch [19/20], Step [11/22], Loss: 4.5901
+Epoch [19/20], Step [21/22], Loss: 5.9580
+Epoch [19/20], Training Loss: 4.7384, Validation MAE Loss: 6.2794, Validation RMSE Loss: 7.9703
+Epoch [20/20], Step [1/22], Loss: 4.0901
+Epoch [20/20], Step [11/22], Loss: 3.9320
+Epoch [20/20], Step [21/22], Loss: 6.5039
+Epoch [20/20], Training Loss: 4.7511, Validation MAE Loss: 5.5758, Validation RMSE Loss: 7.1612
+len(self.data_info):  219
+Fold 2/5
+Epoch [1/20], Step [1/22], Loss: 8.4203
+Epoch [1/20], Step [11/22], Loss: 7.8892
+Epoch [1/20], Step [21/22], Loss: 7.3381
+Epoch [1/20], Training Loss: 5.7505, Validation MAE Loss: 5.3765, Validation RMSE Loss: 6.5981
+Epoch [2/20], Step [1/22], Loss: 5.1226
+Epoch [2/20], Step [11/22], Loss: 6.2550
+Epoch [2/20], Step [21/22], Loss: 5.0976
+Epoch [2/20], Training Loss: 5.1056, Validation MAE Loss: 5.3426, Validation RMSE Loss: 6.0851
+Epoch [3/20], Step [1/22], Loss: 5.9067
+Epoch [3/20], Step [11/22], Loss: 2.6853
+Epoch [3/20], Step [21/22], Loss: 6.0891
+Epoch [3/20], Training Loss: 5.1067, Validation MAE Loss: 5.0473, Validation RMSE Loss: 5.8491
+Epoch [4/20], Step [1/22], Loss: 5.8582
+Epoch [4/20], Step [11/22], Loss: 6.1136
+Epoch [4/20], Step [21/22], Loss: 5.9371
+Epoch [4/20], Training Loss: 5.5066, Validation MAE Loss: 5.0417, Validation RMSE Loss: 5.8364
+Epoch [5/20], Step [1/22], Loss: 6.0004
+Epoch [5/20], Step [11/22], Loss: 6.2073
+Epoch [5/20], Step [21/22], Loss: 4.9957
+Epoch [5/20], Training Loss: 4.8924, Validation MAE Loss: 5.2994, Validation RMSE Loss: 6.4385
+Epoch [6/20], Step [1/22], Loss: 4.4185
+Epoch [6/20], Step [11/22], Loss: 5.2500
+Epoch [6/20], Step [21/22], Loss: 5.9897
+Epoch [6/20], Training Loss: 4.9437, Validation MAE Loss: 5.2556, Validation RMSE Loss: 6.3455
+Epoch [7/20], Step [1/22], Loss: 1.8750
+Epoch [7/20], Step [11/22], Loss: 7.9943
+Epoch [7/20], Step [21/22], Loss: 4.3750
+Epoch [7/20], Training Loss: 5.1997, Validation MAE Loss: 6.3591, Validation RMSE Loss: 8.2180
+Epoch [8/20], Step [1/22], Loss: 7.9007
+Epoch [8/20], Step [11/22], Loss: 4.2056
+Epoch [8/20], Step [21/22], Loss: 6.0153
+Epoch [8/20], Training Loss: 5.0259, Validation MAE Loss: 5.1731, Validation RMSE Loss: 5.8653
+Epoch [9/20], Step [1/22], Loss: 5.9327
+Epoch [9/20], Step [11/22], Loss: 5.8478
+Epoch [9/20], Step [21/22], Loss: 2.7057
+Epoch [9/20], Training Loss: 5.3013, Validation MAE Loss: 5.6407, Validation RMSE Loss: 7.1336
+Epoch [10/20], Step [1/22], Loss: 5.4132
+Epoch [10/20], Step [11/22], Loss: 5.8744
+Epoch [10/20], Step [21/22], Loss: 7.1891
+Epoch [10/20], Training Loss: 4.9824, Validation MAE Loss: 4.9884, Validation RMSE Loss: 5.7535
+Epoch [11/20], Step [1/22], Loss: 2.8193
+Epoch [11/20], Step [11/22], Loss: 6.3750
+Epoch [11/20], Step [21/22], Loss: 4.8825
+Epoch [11/20], Training Loss: 4.9492, Validation MAE Loss: 6.1134, Validation RMSE Loss: 7.8747
+Epoch [12/20], Step [1/22], Loss: 7.3576
+Epoch [12/20], Step [11/22], Loss: 3.9333
+Epoch [12/20], Step [21/22], Loss: 4.4677
+Epoch [12/20], Training Loss: 5.0998, Validation MAE Loss: 5.4226, Validation RMSE Loss: 6.6912
+Epoch [13/20], Step [1/22], Loss: 10.5535
+Epoch [13/20], Step [11/22], Loss: 3.2018
+Epoch [13/20], Step [21/22], Loss: 4.6250
+Epoch [13/20], Training Loss: 5.1471, Validation MAE Loss: 5.4262, Validation RMSE Loss: 6.1873
+Epoch [14/20], Step [1/22], Loss: 6.7387
+Epoch [14/20], Step [11/22], Loss: 6.2500
+Epoch [14/20], Step [21/22], Loss: 6.7009
+Epoch [14/20], Training Loss: 5.4249, Validation MAE Loss: 5.8279, Validation RMSE Loss: 7.4407
+Epoch [15/20], Step [1/22], Loss: 4.2881
+Epoch [15/20], Step [11/22], Loss: 6.0233
+Epoch [15/20], Step [21/22], Loss: 3.7599
+Epoch [15/20], Training Loss: 5.3336, Validation MAE Loss: 5.4106, Validation RMSE Loss: 6.1674
+Epoch [16/20], Step [1/22], Loss: 5.1250
+Epoch [16/20], Step [11/22], Loss: 8.5526
+Epoch [16/20], Step [21/22], Loss: 3.3472
+Epoch [16/20], Training Loss: 5.4895, Validation MAE Loss: 5.1889, Validation RMSE Loss: 6.2148
+Epoch [17/20], Step [1/22], Loss: 3.9233
+Epoch [17/20], Step [11/22], Loss: 6.3723
+Epoch [17/20], Step [21/22], Loss: 3.2500
+Epoch [17/20], Training Loss: 5.0711, Validation MAE Loss: 5.1938, Validation RMSE Loss: 6.2239
+Epoch [18/20], Step [1/22], Loss: 5.3326
+Epoch [18/20], Step [11/22], Loss: 8.4386
+Epoch [18/20], Step [21/22], Loss: 6.7333
+Epoch [18/20], Training Loss: 4.9016, Validation MAE Loss: 5.3623, Validation RMSE Loss: 6.1082
+Epoch [19/20], Step [1/22], Loss: 6.3245
+Epoch [19/20], Step [11/22], Loss: 5.9166
+Epoch [19/20], Step [21/22], Loss: 3.9929
+Epoch [19/20], Training Loss: 5.4268, Validation MAE Loss: 5.2993, Validation RMSE Loss: 6.4383
+Epoch [20/20], Step [1/22], Loss: 5.4591
+Epoch [20/20], Step [11/22], Loss: 3.8750
+Epoch [20/20], Step [21/22], Loss: 3.4583
+Epoch [20/20], Training Loss: 5.0149, Validation MAE Loss: 5.1527, Validation RMSE Loss: 6.1497
+len(self.data_info):  219
+Fold 3/5
+Epoch [1/20], Step [1/22], Loss: 6.8246
+Epoch [1/20], Step [11/22], Loss: nan
+Epoch [1/20], Step [21/22], Loss: nan
+Epoch [1/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [2/20], Step [1/22], Loss: nan
+Epoch [2/20], Step [11/22], Loss: nan
+Epoch [2/20], Step [21/22], Loss: nan
+Epoch [2/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [3/20], Step [1/22], Loss: nan
+Epoch [3/20], Step [11/22], Loss: nan
+Epoch [3/20], Step [21/22], Loss: nan
+Epoch [3/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [4/20], Step [1/22], Loss: nan
+Epoch [4/20], Step [11/22], Loss: nan
+Epoch [4/20], Step [21/22], Loss: nan
+Epoch [4/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [5/20], Step [1/22], Loss: nan
+Epoch [5/20], Step [11/22], Loss: nan
+Epoch [5/20], Step [21/22], Loss: nan
+Epoch [5/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [6/20], Step [1/22], Loss: nan
+Epoch [6/20], Step [11/22], Loss: nan
+Epoch [6/20], Step [21/22], Loss: nan
+Epoch [6/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [7/20], Step [1/22], Loss: nan
+Epoch [7/20], Step [11/22], Loss: nan
+Epoch [7/20], Step [21/22], Loss: nan
+Epoch [7/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [8/20], Step [1/22], Loss: nan
+Epoch [8/20], Step [11/22], Loss: nan
+Epoch [8/20], Step [21/22], Loss: nan
+Epoch [8/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [9/20], Step [1/22], Loss: nan
+Epoch [9/20], Step [11/22], Loss: nan
+Epoch [9/20], Step [21/22], Loss: nan
+Epoch [9/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [10/20], Step [1/22], Loss: nan
+Epoch [10/20], Step [11/22], Loss: nan
+Epoch [10/20], Step [21/22], Loss: nan
+Epoch [10/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [11/20], Step [1/22], Loss: nan
+Epoch [11/20], Step [11/22], Loss: nan
+Epoch [11/20], Step [21/22], Loss: nan
+Epoch [11/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [12/20], Step [1/22], Loss: nan
+Epoch [12/20], Step [11/22], Loss: nan
+Epoch [12/20], Step [21/22], Loss: nan
+Epoch [12/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [13/20], Step [1/22], Loss: nan
+Epoch [13/20], Step [11/22], Loss: nan
+Epoch [13/20], Step [21/22], Loss: nan
+Epoch [13/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [14/20], Step [1/22], Loss: nan
+Epoch [14/20], Step [11/22], Loss: nan
+Epoch [14/20], Step [21/22], Loss: nan
+Epoch [14/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [15/20], Step [1/22], Loss: nan
+Epoch [15/20], Step [11/22], Loss: nan
+Epoch [15/20], Step [21/22], Loss: nan
+Epoch [15/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [16/20], Step [1/22], Loss: nan
+Epoch [16/20], Step [11/22], Loss: nan
+Epoch [16/20], Step [21/22], Loss: nan
+Epoch [16/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [17/20], Step [1/22], Loss: nan
+Epoch [17/20], Step [11/22], Loss: nan
+Epoch [17/20], Step [21/22], Loss: nan
+Epoch [17/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [18/20], Step [1/22], Loss: nan
+Epoch [18/20], Step [11/22], Loss: nan
+Epoch [18/20], Step [21/22], Loss: nan
+Epoch [18/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [19/20], Step [1/22], Loss: nan
+Epoch [19/20], Step [11/22], Loss: nan
+Epoch [19/20], Step [21/22], Loss: nan
+Epoch [19/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [20/20], Step [1/22], Loss: nan
+Epoch [20/20], Step [11/22], Loss: nan
+Epoch [20/20], Step [21/22], Loss: nan
+Epoch [20/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+len(self.data_info):  219
+Fold 4/5
+Epoch [1/20], Step [1/22], Loss: 9.2043
+Epoch [1/20], Step [11/22], Loss: 2.3750
+Epoch [1/20], Step [21/22], Loss: 6.7203
+Epoch [1/20], Training Loss: 5.7799, Validation MAE Loss: 5.5084, Validation RMSE Loss: 6.8796
+Epoch [2/20], Step [1/22], Loss: 7.6126
+Epoch [2/20], Step [11/22], Loss: 4.0434
+Epoch [2/20], Step [21/22], Loss: 5.7389
+Epoch [2/20], Training Loss: 5.6406, Validation MAE Loss: 6.4293, Validation RMSE Loss: 7.1206
+Epoch [3/20], Step [1/22], Loss: 5.5634
+Epoch [3/20], Step [11/22], Loss: 4.7500
+Epoch [3/20], Step [21/22], Loss: 4.3708
+Epoch [3/20], Training Loss: 5.0030, Validation MAE Loss: 5.0625, Validation RMSE Loss: 5.9765
+Epoch [4/20], Step [1/22], Loss: 4.1252
+Epoch [4/20], Step [11/22], Loss: 6.0441
+Epoch [4/20], Step [21/22], Loss: 4.2679
+Epoch [4/20], Training Loss: 5.6255, Validation MAE Loss: 5.1024, Validation RMSE Loss: 6.0884
+Epoch [5/20], Step [1/22], Loss: 7.8643
+Epoch [5/20], Step [11/22], Loss: 3.4502
+Epoch [5/20], Step [21/22], Loss: 5.3915
+Epoch [5/20], Training Loss: 4.9530, Validation MAE Loss: 5.1270, Validation RMSE Loss: 6.1285
+Epoch [6/20], Step [1/22], Loss: 3.2500
+Epoch [6/20], Step [11/22], Loss: 5.1955
+Epoch [6/20], Step [21/22], Loss: 5.4253
+Epoch [6/20], Training Loss: 5.0800, Validation MAE Loss: 5.1755, Validation RMSE Loss: 6.0656
+Epoch [7/20], Step [1/22], Loss: 4.7018
+Epoch [7/20], Step [11/22], Loss: 4.5000
+Epoch [7/20], Step [21/22], Loss: 4.4857
+Epoch [7/20], Training Loss: 5.2803, Validation MAE Loss: 5.0990, Validation RMSE Loss: 6.0755
+Epoch [8/20], Step [1/22], Loss: 3.6868
+Epoch [8/20], Step [11/22], Loss: 6.5255
+Epoch [8/20], Step [21/22], Loss: 6.5146
+Epoch [8/20], Training Loss: 5.3660, Validation MAE Loss: 5.1283, Validation RMSE Loss: 6.1304
+Epoch [9/20], Step [1/22], Loss: 4.3267
+Epoch [9/20], Step [11/22], Loss: 5.7572
+Epoch [9/20], Step [21/22], Loss: 6.3630
+Epoch [9/20], Training Loss: 5.4260, Validation MAE Loss: 5.2318, Validation RMSE Loss: 6.3285
+Epoch [10/20], Step [1/22], Loss: 5.6290
+Epoch [10/20], Step [11/22], Loss: 3.7531
+Epoch [10/20], Step [21/22], Loss: 3.0000
+Epoch [10/20], Training Loss: 5.1207, Validation MAE Loss: 5.3412, Validation RMSE Loss: 6.5469
+Epoch [11/20], Step [1/22], Loss: 4.5430
+Epoch [11/20], Step [11/22], Loss: 4.1842
+Epoch [11/20], Step [21/22], Loss: 7.8330
+Epoch [11/20], Training Loss: 5.6596, Validation MAE Loss: 6.8686, Validation RMSE Loss: 7.5014
+Epoch [12/20], Step [1/22], Loss: 7.1032
+Epoch [12/20], Step [11/22], Loss: 6.4883
+Epoch [12/20], Step [21/22], Loss: 6.8589
+Epoch [12/20], Training Loss: 5.2580, Validation MAE Loss: 5.0625, Validation RMSE Loss: 5.9799
+Epoch [13/20], Step [1/22], Loss: 4.2500
+Epoch [13/20], Step [11/22], Loss: 5.0000
+Epoch [13/20], Step [21/22], Loss: 3.4607
+Epoch [13/20], Training Loss: 5.4307, Validation MAE Loss: 5.4691, Validation RMSE Loss: 6.8058
+Epoch [14/20], Step [1/22], Loss: 5.0216
+Epoch [14/20], Step [11/22], Loss: 5.1250
+Epoch [14/20], Step [21/22], Loss: 7.1307
+Epoch [14/20], Training Loss: 4.9536, Validation MAE Loss: 6.1241, Validation RMSE Loss: 6.8396
+Epoch [15/20], Step [1/22], Loss: 5.5739
+Epoch [15/20], Step [11/22], Loss: 6.8968
+Epoch [15/20], Step [21/22], Loss: 6.7114
+Epoch [15/20], Training Loss: 5.1287, Validation MAE Loss: 5.0625, Validation RMSE Loss: 5.9719
+Epoch [16/20], Step [1/22], Loss: 3.0628
+Epoch [16/20], Step [11/22], Loss: 5.2500
+Epoch [16/20], Step [21/22], Loss: 5.4523
+Epoch [16/20], Training Loss: 4.9501, Validation MAE Loss: 5.5887, Validation RMSE Loss: 6.3598
+Epoch [17/20], Step [1/22], Loss: 5.6770
+Epoch [17/20], Step [11/22], Loss: 1.6592
+Epoch [17/20], Step [21/22], Loss: 5.9051
+Epoch [17/20], Training Loss: 4.7490, Validation MAE Loss: 5.4011, Validation RMSE Loss: 6.2178
+Epoch [18/20], Step [1/22], Loss: 5.2992
+Epoch [18/20], Step [11/22], Loss: 5.7034
+Epoch [18/20], Step [21/22], Loss: 6.3750
+Epoch [18/20], Training Loss: 5.4057, Validation MAE Loss: 5.3980, Validation RMSE Loss: 6.2154
+Epoch [19/20], Step [1/22], Loss: 6.1250
+Epoch [19/20], Step [11/22], Loss: 8.0361
+Epoch [19/20], Step [21/22], Loss: 2.0000
+Epoch [19/20], Training Loss: 6.1095, Validation MAE Loss: 5.4946, Validation RMSE Loss: 6.8533
+Epoch [20/20], Step [1/22], Loss: 7.5464
+Epoch [20/20], Step [11/22], Loss: 5.1512
+Epoch [20/20], Step [21/22], Loss: 7.0481
+Epoch [20/20], Training Loss: 5.0955, Validation MAE Loss: 5.1755, Validation RMSE Loss: 6.2112
+len(self.data_info):  219
+Fold 5/5
+Epoch [1/20], Step [1/22], Loss: 4.5340
+Epoch [1/20], Step [11/22], Loss: nan
+Epoch [1/20], Step [21/22], Loss: nan
+Epoch [1/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [2/20], Step [1/22], Loss: nan
+Epoch [2/20], Step [11/22], Loss: nan
+Epoch [2/20], Step [21/22], Loss: nan
+Epoch [2/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [3/20], Step [1/22], Loss: nan
+Epoch [3/20], Step [11/22], Loss: nan
+Epoch [3/20], Step [21/22], Loss: nan
+Epoch [3/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [4/20], Step [1/22], Loss: nan
+Epoch [4/20], Step [11/22], Loss: nan
+Epoch [4/20], Step [21/22], Loss: nan
+Epoch [4/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [5/20], Step [1/22], Loss: nan
+Epoch [5/20], Step [11/22], Loss: nan
+Epoch [5/20], Step [21/22], Loss: nan
+Epoch [5/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [6/20], Step [1/22], Loss: nan
+Epoch [6/20], Step [11/22], Loss: nan
+Epoch [6/20], Step [21/22], Loss: nan
+Epoch [6/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [7/20], Step [1/22], Loss: nan
+Epoch [7/20], Step [11/22], Loss: nan
+Epoch [7/20], Step [21/22], Loss: nan
+Epoch [7/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [8/20], Step [1/22], Loss: nan
+Epoch [8/20], Step [11/22], Loss: nan
+Epoch [8/20], Step [21/22], Loss: nan
+Epoch [8/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [9/20], Step [1/22], Loss: nan
+Epoch [9/20], Step [11/22], Loss: nan
+Epoch [9/20], Step [21/22], Loss: nan
+Epoch [9/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [10/20], Step [1/22], Loss: nan
+Epoch [10/20], Step [11/22], Loss: nan
+Epoch [10/20], Step [21/22], Loss: nan
+Traceback (most recent call last):
+  File "/home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/cross_val/cross_val_LSTM.py", line 265, in <module>
+Epoch [10/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [11/20], Step [1/22], Loss: nan
+Epoch [11/20], Step [11/22], Loss: nan
+Epoch [11/20], Step [21/22], Loss: nan
+Epoch [11/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [12/20], Step [1/22], Loss: nan
+Epoch [12/20], Step [11/22], Loss: nan
+Epoch [12/20], Step [21/22], Loss: nan
+Epoch [12/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [13/20], Step [1/22], Loss: nan
+Epoch [13/20], Step [11/22], Loss: nan
+Epoch [13/20], Step [21/22], Loss: nan
+Epoch [13/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [14/20], Step [1/22], Loss: nan
+Epoch [14/20], Step [11/22], Loss: nan
+Epoch [14/20], Step [21/22], Loss: nan
+Epoch [14/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [15/20], Step [1/22], Loss: nan
+Epoch [15/20], Step [11/22], Loss: nan
+Epoch [15/20], Step [21/22], Loss: nan
+Epoch [15/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [16/20], Step [1/22], Loss: nan
+Epoch [16/20], Step [11/22], Loss: nan
+Epoch [16/20], Step [21/22], Loss: nan
+Epoch [16/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [17/20], Step [1/22], Loss: nan
+Epoch [17/20], Step [11/22], Loss: nan
+Epoch [17/20], Step [21/22], Loss: nan
+Epoch [17/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [18/20], Step [1/22], Loss: nan
+Epoch [18/20], Step [11/22], Loss: nan
+Epoch [18/20], Step [21/22], Loss: nan
+Epoch [18/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [19/20], Step [1/22], Loss: nan
+Epoch [19/20], Step [11/22], Loss: nan
+Epoch [19/20], Step [21/22], Loss: nan
+Epoch [19/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Epoch [20/20], Step [1/22], Loss: nan
+Epoch [20/20], Step [11/22], Loss: nan
+Epoch [20/20], Step [21/22], Loss: nan
+Epoch [20/20], Training Loss: nan, Validation MAE Loss: nan, Validation RMSE Loss: nan
+Average RMSE across 5 folds: nan
+Average MAE across 5 folds: nan
+    best_model.load_state_dict(torch.load(best_model_path))
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 2153, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for EnhancedPHQLSTM:
+	Unexpected key(s) in state_dict: "lstm.weight_ih_l2", "lstm.weight_hh_l2", "lstm.bias_ih_l2", "lstm.bias_hh_l2", "lstm.weight_ih_l2_reverse", "lstm.weight_hh_l2_reverse", "lstm.bias_ih_l2_reverse", "lstm.bias_hh_l2_reverse". 
+srun: error: tg096: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=766505.0
+=== JOB_STATISTICS ===
+=== current date     : Fri 09 Feb 2024 04:49:31 PM CET
+= Job-ID             : 766505 on tinygpu
+= Job-Name           : job_cross_val_LSTM.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/cross_val/job_cross_val_LSTM.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/cross_val
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 20:00:00
+= Elapsed runtime    : 00:57:08
+= Total RAM usage    : 1.0 GiB of requested 117 GiB (0.9%)   
+= Node list          : tg096
+= Subm/Elig/Start/End: 2024-02-09T15:52:23 / 2024-02-09T15:52:23 / 2024-02-09T15:52:23 / 2024-02-09T16:49:31
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           50.4G   104.9G   209.7G        N/A  46,277      500K   1,000K        N/A    
+    /home/vault        714.7G     0.0K     0.0K        N/A      74K     300K     450K        N/A    
+    /home/woody        311.0G   500.0G   750.0G        N/A     314K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:C1:00.0, 667805, 33 %, 2 %, 25770 MiB, 3411867 ms

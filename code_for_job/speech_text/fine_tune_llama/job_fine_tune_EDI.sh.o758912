@@ -1,0 +1,95 @@
+### Starting TaskPrologue of job 758912 on tg094 at Fri 02 Feb 2024 01:57:26 PM CET
+Running on cores 0-31 with governor ondemand
+Fri Feb  2 13:57:26 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:01:00.0 Off |                    0 |
+| N/A   35C    P0              55W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/fine_tune_llama
+2024-02-02 13:58:09.988117: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Downloading data files:   0%|          | 0/1 [00:00<?, ?it/s]Downloading data files: 100%|██████████| 1/1 [00:00<00:00, 7423.55it/s]
+Extracting data files:   0%|          | 0/1 [00:00<?, ?it/s]Extracting data files: 100%|██████████| 1/1 [00:00<00:00, 104.58it/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 6005 examples [00:00, 39058.92 examples/s]Generating train split: 6005 examples [00:00, 34531.93 examples/s]
+dataset:  Dataset({
+    features: ['label', 'text'],
+    num_rows: 6005
+})
+Downloading data files:   0%|          | 0/1 [00:00<?, ?it/s]Downloading data files: 100%|██████████| 1/1 [00:00<00:00, 9597.95it/s]
+Extracting data files:   0%|          | 0/1 [00:00<?, ?it/s]Extracting data files: 100%|██████████| 1/1 [00:00<00:00, 29.76it/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 999 examples [00:00, 34904.78 examples/s]
+Map:   0%|          | 0/6005 [00:00<?, ? examples/s]Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+Map:  17%|█▋        | 1000/6005 [00:00<00:00, 5445.78 examples/s]Map:  50%|████▉     | 3000/6005 [00:00<00:00, 8163.61 examples/s]Map:  67%|██████▋   | 4000/6005 [00:00<00:00, 8564.45 examples/s]Map: 100%|█████████▉| 6000/6005 [00:00<00:00, 9876.53 examples/s]Map: 100%|██████████| 6005/6005 [00:00<00:00, 8557.51 examples/s]
+Map:   0%|          | 0/999 [00:00<?, ? examples/s]Map: 100%|██████████| 999/999 [00:00<00:00, 9293.99 examples/s]Map: 100%|██████████| 999/999 [00:00<00:00, 7617.97 examples/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:25<00:25, 25.95s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:34<00:00, 15.63s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:34<00:00, 17.18s/it]
+Some weights of LlamaForSequenceClassification were not initialized from the model checkpoint at meta-llama/Llama-2-7b-hf and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+all params: 3,389,345,792 || trainable params: 19,996,672 || trainable%: 0.5899861869272499
+Traceback (most recent call last):
+  File "/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/fine_tune_llama/EDI_dataset_finetune_.py", line 224, in <module>
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/peft/peft_model.py", line 816, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/peft/tuners/tuners_utils.py", line 108, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/accelerate/hooks.py", line 164, in new_forward
+    output = module._old_forward(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LlamaForSequenceClassification.forward() got an unexpected keyword argument 'label'
+srun: error: tg094: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=758912.0
+=== JOB_STATISTICS ===
+=== current date     : Fri 02 Feb 2024 02:07:41 PM CET
+= Job-ID             : 758912 on tinygpu
+= Job-Name           : job_fine_tune_EDI.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/fine_tune_llama/job_fine_tune_EDI.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/fine_tune_llama
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 20:00:00
+= Elapsed runtime    : 00:10:16
+= Total RAM usage    : 1.0 GiB of requested 117 GiB (0.9%)   
+= Node list          : tg094
+= Subm/Elig/Start/End: 2024-02-02T13:45:15 / 2024-02-02T13:45:15 / 2024-02-02T13:57:24 / 2024-02-02T14:07:40
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           48.5G   104.9G   209.7G        N/A      51K     500K   1,000K        N/A    
+    /home/woody        268.2G   500.0G   750.0G        N/A     313K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:01:00.0, 4098265, 0 %, 0 %, 4786 MiB, 588092 ms

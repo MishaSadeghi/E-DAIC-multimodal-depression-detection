@@ -1,0 +1,391 @@
+### Starting TaskPrologue of job 815285 on tg073 at Fri 10 May 2024 11:15:45 AM CEST
+Running on cores 4-7,20-23 with governor ondemand
+Fri May 10 11:15:45 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla V100-PCIE-32GB           On  |   00000000:3B:00.0 Off |                    0 |
+| N/A   31C    P0             25W /  250W |       0MiB /  32768MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Using device: cuda
+feature_type:  all
+Here - Outputs: tensor([-0.0046,  0.0026,  0.0170,  0.0078,  0.0035,  0.0131,  0.0087,  0.0051],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 1.,  4.,  7., 12.,  1.,  0.,  2.,  3.], device='cuda:0')
+Epoch [1/20], Step [1/21], Loss train: 5.2855
+Here - Outputs: tensor([8.5133, 8.5454, 8.5855, 8.4909, 8.5794, 8.5558, 8.5582, 8.5576],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 0.,  1., 18., 19.,  1., 10.,  7., 10.], device='cuda:0')
+Here - Outputs: tensor([7.5141, 7.5134, 7.5125, 7.5133, 7.5132, 7.5132, 7.5135, 7.5132],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([12.,  5.,  2.,  4.,  0., 12.,  5.,  0.], device='cuda:0')
+Here - Outputs: tensor([3.3650, 3.3488, 3.3297, 3.3376, 3.3353, 3.3361, 3.3434, 3.3415],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([12.,  0.,  1., 15.,  6.,  2.,  3., 11.], device='cuda:0')
+Here - Outputs: tensor([3.6292, 3.6292, 3.6291, 3.6292, 3.6290, 3.6291, 3.6291, 3.6291],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([20.,  0.,  6., 15., 22.,  0.,  3., 22.], device='cuda:0')
+Here - Outputs: tensor([6.0035, 6.0035, 6.0035, 6.0034, 6.0035, 6.0035, 6.0034, 6.0034],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([10., 19.,  7.,  2.,  2.,  1., 15.,  5.], device='cuda:0')
+Here - Outputs: tensor([8.8072, 8.8072, 8.8072, 8.8072, 8.8072, 8.8072, 8.8072, 8.8072],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 3.,  0.,  1.,  3.,  4., 17., 15.,  7.], device='cuda:0')
+Here - Outputs: tensor([9.9076, 9.9076, 9.9076, 9.9076, 9.9076, 9.9076, 9.9076, 9.9076],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 5., 20.,  0.,  2.,  3., 23.,  3.,  2.], device='cuda:0')
+Here - Outputs: tensor([9.9955, 9.9955, 9.9955, 9.9955, 9.9955, 9.9955, 9.9955, 9.9955],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([11.,  2.,  2., 13., 10.,  2.,  5.,  0.], device='cuda:0')
+Here - Outputs: tensor([8.4747, 8.4747, 8.4747, 8.4747, 8.4747, 8.4747, 8.4747, 8.4747],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 9.,  8.,  9.,  5.,  9.,  6.,  2., 16.], device='cuda:0')
+Here - Outputs: tensor([6.8330, 6.8328, 6.8329, 6.8328, 6.8328, 6.8328, 6.8328, 6.8328],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 2., 14.,  3., 10., 10.,  1., 17., 17.], device='cuda:0')
+Epoch [1/20], Step [11/21], Loss train: 6.6167
+Here - Outputs: tensor([6.2315, 6.2315, 6.2315, 6.2315, 6.2315, 6.2315, 6.2315, 6.2315],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([18., 12., 10.,  7.,  7.,  0., 14.,  1.], device='cuda:0')
+Here - Outputs: tensor([6.5106, 6.5106, 6.5106, 6.5106, 6.5106, 6.5106, 6.5106, 6.5106],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 1.,  9.,  0., 13., 10., 10., 18.,  6.], device='cuda:0')
+Here - Outputs: tensor([7.4071, 7.4071, 7.4071, 7.4071, 7.4071, 7.4071, 7.4071, 7.4071],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([21.,  4.,  4.,  0.,  0.,  1.,  0.,  7.], device='cuda:0')
+Here - Outputs: tensor([7.4176, 7.4176, 7.4176, 7.4176, 7.4176, 7.4176, 7.4176, 7.4176],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([13.,  0.,  5.,  2., 17.,  3.,  0.,  7.], device='cuda:0')
+Here - Outputs: tensor([6.9193, 6.9193, 6.9193, 6.9193, 6.9193, 6.9193, 6.9193, 6.9193],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 0., 15., 13.,  1.,  7.,  0.,  3.,  7.], device='cuda:0')
+Here - Outputs: tensor([6.0589, 6.0589, 6.0589, 6.0589, 6.0589, 6.0589, 6.0589, 6.0589],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([10.,  1.,  8.,  5., 10.,  4.,  2.,  0.], device='cuda:0')
+Here - Outputs: tensor([4.7548, 4.7548, 4.7548, 4.7548, 4.7548, 4.7548, 4.7548, 4.7548],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 7., 20.,  1.,  1.,  9.,  0., 12.,  4.], device='cuda:0')
+Here - Outputs: tensor([4.1680, 4.1680, 4.1680, 4.1680, 4.1680, 4.1680, 4.1680, 4.1680],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 4., 16.,  5.,  0.,  1.,  5.,  3.,  3.], device='cuda:0')
+Here - Outputs: tensor([3.8281, 3.8281, 3.8281, 3.8281, 3.8281, 3.8281, 3.8281, 3.8281],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 2.,  0.,  7., 16.,  7.,  3.,  0.,  7.], device='cuda:0')
+Here - Outputs: tensor([4.0599, 4.0599, 4.0599], device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 8., 11.,  1.], device='cuda:0')
+Epoch [1/20], Step [21/21], Loss train: 4.9346
+Dev Set - ID: 0, PHQ Score: 2.0, Predicted Output: 5.242822133767347
+Dev Set - ID: 0, PHQ Score: 3.0, Predicted Output: 5.242822135639341
+Dev Set - ID: 0, PHQ Score: 0.0, Predicted Output: 5.242822135987377
+Dev Set - ID: 0, PHQ Score: 8.0, Predicted Output: 5.242822135354699
+Dev Set - ID: 0, PHQ Score: 11.0, Predicted Output: 5.2428221356528315
+Dev Set - ID: 0, PHQ Score: 20.0, Predicted Output: 5.24282213558497
+Dev Set - ID: 0, PHQ Score: 8.0, Predicted Output: 5.2428221358060005
+Dev Set - ID: 0, PHQ Score: 5.0, Predicted Output: 5.242822136869642
+Dev Set - ID: 1, PHQ Score: 7.0, Predicted Output: 5.242837880689727
+Dev Set - ID: 1, PHQ Score: 9.0, Predicted Output: 5.242837880512012
+Dev Set - ID: 1, PHQ Score: 11.0, Predicted Output: 5.242837880546848
+Dev Set - ID: 1, PHQ Score: 16.0, Predicted Output: 5.242837878434052
+Dev Set - ID: 1, PHQ Score: 11.0, Predicted Output: 5.242837880408601
+Dev Set - ID: 1, PHQ Score: 12.0, Predicted Output: 5.242837884153964
+Dev Set - ID: 1, PHQ Score: 9.0, Predicted Output: 5.242837880627883
+Dev Set - ID: 1, PHQ Score: 9.0, Predicted Output: 5.242837883233049
+Dev Set - ID: 2, PHQ Score: 2.0, Predicted Output: 5.242835488483432
+Dev Set - ID: 2, PHQ Score: 16.0, Predicted Output: 5.24283548692876
+Dev Set - ID: 2, PHQ Score: 0.0, Predicted Output: 5.242835484914521
+Dev Set - ID: 2, PHQ Score: 17.0, Predicted Output: 5.242835484525991
+Dev Set - ID: 2, PHQ Score: 2.0, Predicted Output: 5.242835482513772
+Dev Set - ID: 2, PHQ Score: 9.0, Predicted Output: 5.242835485729981
+Dev Set - ID: 2, PHQ Score: 11.0, Predicted Output: 5.242835484844662
+Dev Set - ID: 2, PHQ Score: 0.0, Predicted Output: 5.242835484000103
+Dev Set - ID: 3, PHQ Score: 12.0, Predicted Output: 5.242831395940801
+Dev Set - ID: 3, PHQ Score: 3.0, Predicted Output: 5.242831395285365
+Dev Set - ID: 3, PHQ Score: 0.0, Predicted Output: 5.242831397109212
+Dev Set - ID: 3, PHQ Score: 6.0, Predicted Output: 5.242831398571007
+Dev Set - ID: 3, PHQ Score: 2.0, Predicted Output: 5.242831392575517
+Dev Set - ID: 3, PHQ Score: 10.0, Predicted Output: 5.242831395496335
+Dev Set - ID: 3, PHQ Score: 8.0, Predicted Output: 5.242831398611401
+Dev Set - ID: 3, PHQ Score: 0.0, Predicted Output: 5.242831395852125
+Dev Set - ID: 4, PHQ Score: 18.0, Predicted Output: 5.242833300859975
+Dev Set - ID: 4, PHQ Score: 6.0, Predicted Output: 5.242833300022352
+Dev Set - ID: 4, PHQ Score: 18.0, Predicted Output: 5.242833302986175
+Dev Set - ID: 4, PHQ Score: 4.0, Predicted Output: 5.242833302496984
+Dev Set - ID: 4, PHQ Score: 1.0, Predicted Output: 5.2428332996544675
+Dev Set - ID: 4, PHQ Score: 1.0, Predicted Output: 5.242833299192125
+Dev Set - ID: 4, PHQ Score: 2.0, Predicted Output: 5.242833302456041
+Dev Set - ID: 4, PHQ Score: 4.0, Predicted Output: 5.242833300746536
+Dev Set - ID: 5, PHQ Score: 0.0, Predicted Output: 5.242836665882402
+Dev Set - ID: 5, PHQ Score: 6.0, Predicted Output: 5.242836666396229
+Dev Set - ID: 5, PHQ Score: 7.0, Predicted Output: 5.242836668898415
+Dev Set - ID: 5, PHQ Score: 1.0, Predicted Output: 5.242836668439906
+Dev Set - ID: 5, PHQ Score: 9.0, Predicted Output: 5.242836669526721
+Dev Set - ID: 5, PHQ Score: 4.0, Predicted Output: 5.242836667104927
+Dev Set - ID: 5, PHQ Score: 12.0, Predicted Output: 5.242836672038822
+Dev Set - ID: 5, PHQ Score: 3.0, Predicted Output: 5.242836671831136
+Dev Set - ID: 6, PHQ Score: 1.0, Predicted Output: 5.2428392868889375
+Dev Set - ID: 6, PHQ Score: 4.0, Predicted Output: 5.242839283181866
+Dev Set - ID: 6, PHQ Score: 0.0, Predicted Output: 5.242839285419731
+Dev Set - ID: 6, PHQ Score: 3.0, Predicted Output: 5.242839284544471
+Dev Set - ID: 6, PHQ Score: 0.0, Predicted Output: 5.242839283077888
+Dev Set - ID: 6, PHQ Score: 7.0, Predicted Output: 5.24283928626781
+Dev Set - ID: 6, PHQ Score: 19.0, Predicted Output: 5.242839288805916
+Dev Set - ID: 6, PHQ Score: 0.0, Predicted Output: 5.242839284230168
+Epoch [1/20], Training Loss: 6.1854, Validation RMSE Loss: 5.7118, Validation MAE Loss: 4.7235
+Here - Outputs: tensor([5.2428, 5.2428, 5.2428, 5.2428, 5.2428, 5.2428, 5.2428, 5.2428],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 4.,  1.,  0.,  1.,  0.,  2., 15.,  2.], device='cuda:0')
+Epoch [2/20], Step [1/21], Loss train: 5.1083
+Here - Outputs: tensor([5.5308, 5.5308, 5.5308, 5.5308, 5.5308, 5.5308, 5.5308, 5.5308],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([13.,  9.,  3.,  7.,  3.,  7.,  3.,  3.], device='cuda:0')
+Here - Outputs: tensor([6.0394, 6.0394, 6.0394, 6.0394, 6.0394, 6.0394, 6.0394, 6.0394],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([18.,  0.,  2.,  0., 10.,  5.,  1.,  1.], device='cuda:0')
+Here - Outputs: tensor([6.0717, 6.0717, 6.0717, 6.0717, 6.0717, 6.0717, 6.0717, 6.0717],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([12.,  9.,  5., 17.,  0., 15.,  1.,  0.], device='cuda:0')
+Here - Outputs: tensor([6.4705, 6.4705, 6.4705, 6.4705, 6.4705, 6.4705, 6.4705, 6.4705],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 4.,  2.,  2.,  2., 18.,  7., 13., 16.], device='cuda:0')
+Here - Outputs: tensor([7.2724, 7.2724, 7.2724, 7.2724, 7.2724, 7.2724, 7.2724, 7.2724],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 3., 19., 17.,  2.,  2.,  6.,  1.,  0.], device='cuda:0')
+Here - Outputs: tensor([7.7287, 7.7287, 7.7287, 7.7287, 7.7287, 7.7287, 7.7287, 7.7287],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 4.,  0.,  1.,  0., 17.,  1.,  7.,  1.], device='cuda:0')
+Here - Outputs: tensor([7.0783, 7.0783, 7.0783, 7.0783, 7.0783, 7.0783, 7.0783, 7.0783],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([13.,  3.,  3.,  2.,  7.,  4., 18., 10.], device='cuda:0')
+Here - Outputs: tensor([6.6297, 6.6297, 6.6297, 6.6297, 6.6297, 6.6297, 6.6297, 6.6297],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([8., 2., 0., 4., 5., 6., 7., 1.], device='cuda:0')
+Here - Outputs: tensor([5.0648, 5.0648, 5.0648, 5.0648, 5.0648, 5.0648, 5.0648, 5.0648],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([15.,  7.,  1., 12., 17., 10., 19.,  0.], device='cuda:0')
+Here - Outputs: tensor([4.7265, 4.7265, 4.7265, 4.7265, 4.7265, 4.7265, 4.7265, 4.7265],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([15.,  1., 14., 21.,  0.,  2.,  7.,  0.], device='cuda:0')
+Epoch [2/20], Step [11/21], Loss train: 8.1205
+Here - Outputs: tensor([4.9970, 4.9970, 4.9970, 4.9970, 4.9970, 4.9970, 4.9970, 4.9970],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 0.,  0.,  3.,  2.,  3.,  1., 10.,  3.], device='cuda:0')
+Here - Outputs: tensor([4.2503, 4.2503, 4.2503, 4.2503, 4.2503, 4.2503, 4.2503, 4.2503],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 0.,  7.,  0.,  0., 15., 10.,  2., 22.], device='cuda:0')
+Here - Outputs: tensor([4.1310, 4.1310, 4.1310, 4.1310, 4.1310, 4.1310, 4.1310, 4.1310],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([10.,  0.,  1., 10.,  4.,  5., 20., 16.], device='cuda:0')
+Here - Outputs: tensor([4.8742, 4.8742, 4.8742, 4.8742, 4.8742, 4.8742, 4.8742, 4.8742],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 3.,  4., 22.,  9.,  8.,  4., 12.,  9.], device='cuda:0')
+Here - Outputs: tensor([6.4333, 6.4333, 6.4333, 6.4333, 6.4333, 6.4333, 6.4333, 6.4333],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 5., 23.,  9.,  7.,  8., 10., 10., 10.], device='cuda:0')
+Here - Outputs: tensor([8.7376, 8.7376, 8.7376, 8.7376, 8.7376, 8.7376, 8.7376, 8.7376],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 5.,  7., 10., 20.,  7., 11.,  5.,  7.], device='cuda:0')
+Here - Outputs: tensor([10.9240, 10.9240, 10.9240, 10.9240, 10.9240, 10.9240, 10.9240, 10.9240],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 1.,  7., 11.,  2., 14.,  6.,  1.,  5.], device='cuda:0')
+Here - Outputs: tensor([11.6864, 11.6864, 11.6864, 11.6864, 11.6864, 11.6864, 11.6864, 11.6864],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 3.,  0., 12., 12.,  2.,  0.,  6.,  0.], device='cuda:0')
+Here - Outputs: tensor([11.1303, 11.1303, 11.1303, 11.1303, 11.1303, 11.1303, 11.1303, 11.1303],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 0.,  3., 16.,  5.,  1., 13., 20., 11.], device='cuda:0')
+Here - Outputs: tensor([10.1339, 10.1339, 10.1339], device='cuda:0',
+       grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([12.,  0.,  5.], device='cuda:0')
+Epoch [2/20], Step [21/21], Loss train: 6.6467
+Dev Set - ID: 0, PHQ Score: 2.0, Predicted Output: 8.294215649184826
+Dev Set - ID: 0, PHQ Score: 3.0, Predicted Output: 8.29421565288174
+Dev Set - ID: 0, PHQ Score: 0.0, Predicted Output: 8.294215653569829
+Dev Set - ID: 0, PHQ Score: 8.0, Predicted Output: 8.294215652319608
+Dev Set - ID: 0, PHQ Score: 11.0, Predicted Output: 8.2942156529084
+Dev Set - ID: 0, PHQ Score: 20.0, Predicted Output: 8.294215652774358
+Dev Set - ID: 0, PHQ Score: 8.0, Predicted Output: 8.29421565321086
+Dev Set - ID: 0, PHQ Score: 5.0, Predicted Output: 8.294215655310971
+Dev Set - ID: 1, PHQ Score: 7.0, Predicted Output: 8.294240724874369
+Dev Set - ID: 1, PHQ Score: 9.0, Predicted Output: 8.294240724523531
+Dev Set - ID: 1, PHQ Score: 11.0, Predicted Output: 8.294240724592024
+Dev Set - ID: 1, PHQ Score: 16.0, Predicted Output: 8.294240720572366
+Dev Set - ID: 1, PHQ Score: 11.0, Predicted Output: 8.294240724319005
+Dev Set - ID: 1, PHQ Score: 12.0, Predicted Output: 8.294240731715416
+Dev Set - ID: 1, PHQ Score: 9.0, Predicted Output: 8.294240724752235
+Dev Set - ID: 1, PHQ Score: 9.0, Predicted Output: 8.294240729897068
+Dev Set - ID: 2, PHQ Score: 2.0, Predicted Output: 8.294236916784405
+Dev Set - ID: 2, PHQ Score: 16.0, Predicted Output: 8.294236913714483
+Dev Set - ID: 2, PHQ Score: 0.0, Predicted Output: 8.294236909736657
+Dev Set - ID: 2, PHQ Score: 17.0, Predicted Output: 8.29423690896929
+Dev Set - ID: 2, PHQ Score: 2.0, Predicted Output: 8.294236905199593
+Dev Set - ID: 2, PHQ Score: 9.0, Predicted Output: 8.294236911347069
+Dev Set - ID: 2, PHQ Score: 11.0, Predicted Output: 8.294236909598695
+Dev Set - ID: 2, PHQ Score: 0.0, Predicted Output: 8.29423690793069
+Dev Set - ID: 3, PHQ Score: 12.0, Predicted Output: 8.294230398687032
+Dev Set - ID: 3, PHQ Score: 3.0, Predicted Output: 8.294230397392617
+Dev Set - ID: 3, PHQ Score: 0.0, Predicted Output: 8.294230400994195
+Dev Set - ID: 3, PHQ Score: 6.0, Predicted Output: 8.29423040388126
+Dev Set - ID: 3, PHQ Score: 2.0, Predicted Output: 8.294230392258786
+Dev Set - ID: 3, PHQ Score: 10.0, Predicted Output: 8.29423039780925
+Dev Set - ID: 3, PHQ Score: 8.0, Predicted Output: 8.294230403961175
+Dev Set - ID: 3, PHQ Score: 0.0, Predicted Output: 8.29423039851185
+Dev Set - ID: 4, PHQ Score: 18.0, Predicted Output: 8.294233432340471
+Dev Set - ID: 4, PHQ Score: 6.0, Predicted Output: 8.294233430686262
+Dev Set - ID: 4, PHQ Score: 18.0, Predicted Output: 8.294233436539036
+Dev Set - ID: 4, PHQ Score: 4.0, Predicted Output: 8.294233435573306
+Dev Set - ID: 4, PHQ Score: 1.0, Predicted Output: 8.29423342995976
+Dev Set - ID: 4, PHQ Score: 1.0, Predicted Output: 8.294233429046512
+Dev Set - ID: 4, PHQ Score: 2.0, Predicted Output: 8.294233435492954
+Dev Set - ID: 4, PHQ Score: 4.0, Predicted Output: 8.294233432116426
+Dev Set - ID: 5, PHQ Score: 0.0, Predicted Output: 8.294238789594871
+Dev Set - ID: 5, PHQ Score: 6.0, Predicted Output: 8.29423879050414
+Dev Set - ID: 5, PHQ Score: 7.0, Predicted Output: 8.294238795308738
+Dev Set - ID: 5, PHQ Score: 1.0, Predicted Output: 8.294238794403082
+Dev Set - ID: 5, PHQ Score: 9.0, Predicted Output: 8.294238796549557
+Dev Set - ID: 5, PHQ Score: 4.0, Predicted Output: 8.294238791766727
+Dev Set - ID: 5, PHQ Score: 12.0, Predicted Output: 8.29423880151028
+Dev Set - ID: 5, PHQ Score: 3.0, Predicted Output: 8.294238801100228
+Dev Set - ID: 6, PHQ Score: 1.0, Predicted Output: 8.29424296473576
+Dev Set - ID: 6, PHQ Score: 4.0, Predicted Output: 8.294242957548112
+Dev Set - ID: 6, PHQ Score: 0.0, Predicted Output: 8.294242961834518
+Dev Set - ID: 6, PHQ Score: 3.0, Predicted Output: 8.294242960105992
+Dev Set - ID: 6, PHQ Score: 0.0, Predicted Output: 8.294242957364018
+Dev Set - ID: 6, PHQ Score: 7.0, Predicted Output: 8.294242963509332
+Dev Set - ID: 6, PHQ Score: 19.0, Predicted Output: 8.29424296852162
+Dev Set - ID: 6, PHQ Score: 0.0, Predicted Output: 8.29424295948528
+Epoch [2/20], Training Loss: 6.3885, Validation RMSE Loss: 5.7775, Validation MAE Loss: 5.0305
+Here - Outputs: tensor([8.2942, 8.2942, 8.2942, 8.2942, 8.2942, 8.2942, 8.2942, 8.2942],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([15.,  5.,  1.,  7.,  2.,  9.,  0.,  1.], device='cuda:0')
+Epoch [3/20], Step [1/21], Loss train: 5.8397
+Here - Outputs: tensor([5.8562, 5.8562, 5.8562, 5.8562, 5.8562, 5.8562, 5.8562, 5.8562],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 0.,  2., 17.,  6., 11.,  5.,  7.,  0.], device='cuda:0')
+Here - Outputs: tensor([3.6764, 3.6764, 3.6764, 3.6764, 3.6764, 3.6764, 3.6764, 3.6764],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([14., 14., 10., 10.,  7.,  1.,  0.,  7.], device='cuda:0')
+Here - Outputs: tensor([2.6570, 2.6570, 2.6570, 2.6570, 2.6570, 2.6570, 2.6570, 2.6570],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 8., 18., 11.,  2.,  4.,  0., 12.,  0.], device='cuda:0')
+Here - Outputs: tensor([2.5441, 2.5441, 2.5441, 2.5441, 2.5441, 2.5441, 2.5441, 2.5441],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([17., 22.,  3.,  0.,  6.,  3.,  0.,  4.], device='cuda:0')
+Here - Outputs: tensor([3.1300, 3.1300, 3.1300, 3.1300, 3.1300, 3.1300, 3.1300, 3.1300],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 3.,  9.,  3., 17.,  0.,  3.,  1.,  3.], device='cuda:0')
+Here - Outputs: tensor([4.1035, 4.1035, 4.1035, 4.1035, 4.1035, 4.1035, 4.1035, 4.1035],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 2.,  2., 17.,  1., 15., 12.,  9.,  1.], device='cuda:0')
+Here - Outputs: tensor([5.6237, 5.6237, 5.6237, 5.6237, 5.6237, 5.6237, 5.6237, 5.6237],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([10., 22.,  2., 20.,  2.,  3., 10.,  5.], device='cuda:0')
+Here - Outputs: tensor([7.6022, 7.6022, 7.6022, 7.6022, 7.6022, 7.6022, 7.6022, 7.6022],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 5.,  3.,  1.,  0., 12., 18.,  4.,  8.], device='cuda:0')
+Here - Outputs: tensor([9.0994, 9.0994, 9.0994, 9.0994, 9.0994, 9.0994, 9.0994, 9.0994],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([16., 19.,  0.,  0., 10.,  7.,  1., 10.], device='cuda:0')
+Here - Outputs: tensor([10.2070, 10.2070, 10.2070, 10.2070, 10.2070, 10.2070, 10.2070, 10.2070],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([15.,  4., 10.,  7.,  4.,  3.,  0.,  2.], device='cuda:0')
+Epoch [3/20], Step [11/21], Loss train: 6.4598
+Here - Outputs: tensor([10.2004, 10.2004, 10.2004, 10.2004, 10.2004, 10.2004, 10.2004, 10.2004],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([13.,  1., 20.,  4., 10.,  2.,  1.,  0.], device='cuda:0')
+Here - Outputs: tensor([9.5115, 9.5115, 9.5115, 9.5115, 9.5115, 9.5115, 9.5115, 9.5115],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 2., 21.,  7.,  0.,  9.,  7.,  3.,  0.], device='cuda:0')
+Here - Outputs: tensor([8.2483, 8.2483, 8.2483, 8.2483, 8.2483, 8.2483, 8.2483, 8.2483],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 0.,  1., 20., 10.,  6.,  5.,  5.,  1.], device='cuda:0')
+Here - Outputs: tensor([6.6287, 6.6287, 6.6287, 6.6287, 6.6287, 6.6287, 6.6287, 6.6287],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 1.,  7., 15.,  5.,  2.,  2., 10.,  0.], device='cuda:0')
+Here - Outputs: tensor([4.7806, 4.7806, 4.7806, 4.7806, 4.7806, 4.7806, 4.7806, 4.7806],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 5., 16.,  0.,  0.,  1.,  2.,  9.,  5.], device='cuda:0')
+Here - Outputs: tensor([3.0945, 3.0945, 3.0945, 3.0945, 3.0945, 3.0945, 3.0945, 3.0945],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([6., 1., 2., 4., 0., 0., 8., 1.], device='cuda:0')
+Here - Outputs: tensor([1.3902, 1.3902, 1.3902, 1.3901, 1.3902, 1.3902, 1.3902, 1.3902],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 3.,  7., 19., 13.,  7., 18., 11., 13.], device='cuda:0')
+Here - Outputs: tensor([1.1342, 1.1344, 1.1342, 1.1341, 1.1343, 1.1341, 1.1343, 1.1342],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 1., 13.,  7.,  4., 16., 15., 23., 12.], device='cuda:0')
+Here - Outputs: tensor([2.0296, 2.0296, 2.0296, 2.0296, 2.0296, 2.0296, 2.0296, 2.0296],
+       device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([ 2., 12., 12.,  7., 10.,  3.,  0.,  0.], device='cuda:0')
+Here - Outputs: tensor([3.6272, 3.6272, 3.6272], device='cuda:0', grad_fn=<SqueezeBackward0>)
+Here - PHQ Scores: tensor([3., 5., 7.], device='cuda:0')
+Epoch [3/20], Step [21/21], Loss train: 2.1334
+Dev Set - ID: 0, PHQ Score: 2.0, Predicted Output: 5.895430176325473
+Dev Set - ID: 0, PHQ Score: 3.0, Predicted Output: 5.895430176451087
+Dev Set - ID: 0, PHQ Score: 0.0, Predicted Output: 5.895430176455355
+Dev Set - ID: 0, PHQ Score: 8.0, Predicted Output: 5.895430176431992
+Dev Set - ID: 0, PHQ Score: 11.0, Predicted Output: 5.895430176451993
+Dev Set - ID: 0, PHQ Score: 20.0, Predicted Output: 5.895430176447441
+Dev Set - ID: 0, PHQ Score: 8.0, Predicted Output: 5.8954301764622725
+Dev Set - ID: 0, PHQ Score: 5.0, Predicted Output: 5.895430176445948
+Dev Set - ID: 1, PHQ Score: 7.0, Predicted Output: 5.895447845656592
+Dev Set - ID: 1, PHQ Score: 9.0, Predicted Output: 5.895447845631609
+Dev Set - ID: 1, PHQ Score: 11.0, Predicted Output: 5.895447845633956
+Dev Set - ID: 1, PHQ Score: 16.0, Predicted Output: 5.895447845500251
+Dev Set - ID: 1, PHQ Score: 11.0, Predicted Output: 5.8954478456246555
+Dev Set - ID: 1, PHQ Score: 12.0, Predicted Output: 5.895447845829275
+Dev Set - ID: 1, PHQ Score: 9.0, Predicted Output: 5.895447845652443
+Dev Set - ID: 1, PHQ Score: 9.0, Predicted Output: 5.895447845814294
+Dev Set - ID: 2, PHQ Score: 2.0, Predicted Output: 5.895445157743961
+Dev Set - ID: 2, PHQ Score: 16.0, Predicted Output: 5.89544515770511
+Dev Set - ID: 2, PHQ Score: 0.0, Predicted Output: 5.895445157569955
+Dev Set - ID: 2, PHQ Score: 17.0, Predicted Output: 5.895445157529907
+Dev Set - ID: 2, PHQ Score: 2.0, Predicted Output: 5.895445157418714
+Dev Set - ID: 2, PHQ Score: 9.0, Predicted Output: 5.895445157624676
+Dev Set - ID: 2, PHQ Score: 11.0, Predicted Output: 5.895445157565267
+Dev Set - ID: 2, PHQ Score: 0.0, Predicted Output: 5.895445157499516
+Dev Set - ID: 3, PHQ Score: 12.0, Predicted Output: 5.895440568559708
+Dev Set - ID: 3, PHQ Score: 3.0, Predicted Output: 5.895440568515738
+Dev Set - ID: 3, PHQ Score: 0.0, Predicted Output: 5.895440568622572
+Dev Set - ID: 3, PHQ Score: 6.0, Predicted Output: 5.89544056873621
+Dev Set - ID: 3, PHQ Score: 2.0, Predicted Output: 5.895440568344429
+Dev Set - ID: 3, PHQ Score: 10.0, Predicted Output: 5.895440568529895
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-tg073: error: *** JOB 815285 ON tg073 CANCELLED AT 2024-05-10T11:29:10 ***
+slurmstepd-tg073: error: *** STEP 815285.0 ON tg073 CANCELLED AT 2024-05-10T11:29:10 ***
+=== JOB_STATISTICS ===
+=== current date     : Fri 10 May 2024 11:29:13 AM CEST
+= Job-ID             : 815285 on tinygpu
+= Job-Name           : job_enhanced_LSTM.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/enhancing_base_code/job_enhanced_LSTM.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/enhancing_base_code
+= Queue/Partition    : v100
+= Slurm account      : empk with QOS=normal
+= Requested resources:  for 10:00:00
+= Elapsed runtime    : 00:13:28
+= Total RAM usage    : 1.2 GiB of requested  GiB (%)   
+= Node list          : tg073
+= Subm/Elig/Start/End: 2024-05-10T11:15:41 / 2024-05-10T11:15:41 / 2024-05-10T11:15:42 / 2024-05-10T11:29:10
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           50.6G   104.9G   209.7G        N/A  26,690      500K   1,000K        N/A    
+    /home/vault        592.2G     0.0K     0.0K        N/A      87K     300K     450K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+Tesla V100-PCIE-32GB, 00000000:3B:00.0, 653327, 61 %, 1 %, 24254 MiB, 792522 ms

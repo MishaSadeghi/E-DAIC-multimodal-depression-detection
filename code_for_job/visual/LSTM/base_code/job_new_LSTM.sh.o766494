@@ -1,0 +1,109 @@
+### Starting TaskPrologue of job 766494 on tg096 at Fri 09 Feb 2024 03:24:58 PM CET
+Running on cores 96-127 with governor ondemand
+Fri Feb  9 15:24:58 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:C1:00.0 Off |                    0 |
+| N/A   35C    P0              55W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Using device: cuda
+Epoch [1/20], Step [1/11], Loss: 4.9780
+Epoch [1/20], Step [11/11], Loss: 8.1456
+Epoch [1/20], Training Loss: 5.3766, Validation MAE Loss: 4.6537, Validation RMSE Loss: 6.0068
+Epoch [2/20], Step [1/11], Loss: 6.3036
+Epoch [2/20], Step [11/11], Loss: 7.6314
+Epoch [2/20], Training Loss: 5.4850, Validation MAE Loss: 4.7343, Validation RMSE Loss: 6.0457
+Epoch [3/20], Step [1/11], Loss: 4.7644
+Epoch [3/20], Step [11/11], Loss: 8.1565
+Epoch [3/20], Training Loss: 5.3610, Validation MAE Loss: 4.7370, Validation RMSE Loss: 6.0486
+Epoch [4/20], Step [1/11], Loss: 5.8531
+Epoch [4/20], Step [11/11], Loss: 4.9728
+Epoch [4/20], Training Loss: 5.0804, Validation MAE Loss: 4.7278, Validation RMSE Loss: 5.7120
+Epoch [5/20], Step [1/11], Loss: 4.8276
+Epoch [5/20], Step [11/11], Loss: 6.2116
+Epoch [5/20], Training Loss: 5.2081, Validation MAE Loss: 4.7955, Validation RMSE Loss: 6.1357
+Epoch [6/20], Step [1/11], Loss: 4.5412
+Epoch [6/20], Step [11/11], Loss: 13.5771
+Epoch [6/20], Training Loss: 5.7010, Validation MAE Loss: 4.6748, Validation RMSE Loss: 5.6151
+Epoch [7/20], Step [1/11], Loss: 6.0988
+Epoch [7/20], Step [11/11], Loss: 2.6122
+Epoch [7/20], Training Loss: 4.7942, Validation MAE Loss: 4.8221, Validation RMSE Loss: 6.1939
+Epoch [8/20], Step [1/11], Loss: 5.9646
+Epoch [8/20], Step [11/11], Loss: 7.1478
+Epoch [8/20], Training Loss: 5.3658, Validation MAE Loss: 5.5151, Validation RMSE Loss: 6.3294
+Epoch [9/20], Step [1/11], Loss: 6.9097
+Epoch [9/20], Step [11/11], Loss: 5.3723
+Epoch [9/20], Training Loss: 5.4110, Validation MAE Loss: 5.3214, Validation RMSE Loss: 7.2489
+Epoch [10/20], Step [1/11], Loss: 4.9098
+Epoch [10/20], Step [11/11], Loss: 4.0678
+Epoch [10/20], Training Loss: 5.3360, Validation MAE Loss: 4.8866, Validation RMSE Loss: 5.8208
+Epoch [11/20], Step [1/11], Loss: 5.3432
+Epoch [11/20], Step [11/11], Loss: 11.0023
+Epoch [11/20], Training Loss: 5.5530, Validation MAE Loss: 4.6905, Validation RMSE Loss: 5.9436
+Epoch [12/20], Step [1/11], Loss: 3.6372
+Epoch [12/20], Step [11/11], Loss: 7.6015
+Epoch [12/20], Training Loss: 5.6457, Validation MAE Loss: 4.6780, Validation RMSE Loss: 5.6045
+Epoch [13/20], Step [1/11], Loss: 6.0396
+Epoch [13/20], Step [11/11], Loss: 5.5431
+Epoch [13/20], Training Loss: 4.9635, Validation MAE Loss: 4.7346, Validation RMSE Loss: 6.0988
+Epoch [14/20], Step [1/11], Loss: 4.8491
+Epoch [14/20], Step [11/11], Loss: 5.8224
+Epoch [14/20], Training Loss: 5.1059, Validation MAE Loss: 4.6762, Validation RMSE Loss: 5.6344
+Epoch [15/20], Step [1/11], Loss: 7.5479
+Epoch [15/20], Step [11/11], Loss: 4.4844
+Epoch [15/20], Training Loss: 5.0497, Validation MAE Loss: 4.8400, Validation RMSE Loss: 5.9798
+Epoch [16/20], Step [1/11], Loss: 5.6730
+Epoch [16/20], Step [11/11], Loss: 3.1463
+Epoch [16/20], Training Loss: 5.0314, Validation MAE Loss: 4.7251, Validation RMSE Loss: 6.1253
+Epoch [17/20], Step [1/11], Loss: 5.2169
+Epoch [17/20], Step [11/11], Loss: 5.5299
+Epoch [17/20], Training Loss: 4.9206, Validation MAE Loss: 4.8519, Validation RMSE Loss: 5.7511
+Epoch [18/20], Step [1/11], Loss: 6.1025
+Epoch [18/20], Step [11/11], Loss: 2.3698
+Epoch [18/20], Training Loss: 5.0462, Validation MAE Loss: 4.6547, Validation RMSE Loss: 5.6490
+Epoch [19/20], Step [1/11], Loss: 3.8853
+Epoch [19/20], Step [11/11], Loss: 2.0675
+Epoch [19/20], Training Loss: 4.6305, Validation MAE Loss: 4.6697, Validation RMSE Loss: 5.6408
+Epoch [20/20], Step [1/11], Loss: 5.0110
+Epoch [20/20], Step [11/11], Loss: 5.1925
+Epoch [20/20], Training Loss: 4.9641, Validation MAE Loss: 4.7217, Validation RMSE Loss: 5.7362
+Test MAE Loss: 4.182920455932617, Test RMSE Loss: 4.989954471588135
+=== JOB_STATISTICS ===
+=== current date     : Fri 09 Feb 2024 03:36:18 PM CET
+= Job-ID             : 766494 on tinygpu
+= Job-Name           : job_new_LSTM.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/base_code/job_new_LSTM.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/base_code
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 20:00:00
+= Elapsed runtime    : 00:11:20
+= Total RAM usage    : 1.2 GiB of requested 117 GiB (1.0%)   
+= Node list          : tg096
+= Subm/Elig/Start/End: 2024-02-09T15:24:57 / 2024-02-09T15:24:57 / 2024-02-09T15:24:58 / 2024-02-09T15:36:18
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           50.4G   104.9G   209.7G        N/A  46,253      500K   1,000K        N/A    
+    /home/vault        684.3G     0.0K     0.0K        N/A      74K     300K     450K        N/A    
+    /home/woody        311.0G   500.0G   750.0G        N/A     314K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:C1:00.0, 655613, 23 %, 2 %, 36330 MiB, 601107 ms

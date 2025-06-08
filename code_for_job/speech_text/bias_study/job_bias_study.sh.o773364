@@ -1,0 +1,169 @@
+### Starting TaskPrologue of job 773364 on tg095 at Thu 22 Feb 2024 03:50:06 PM CET
+Running on cores 32-63 with governor ondemand
+Thu Feb 22 15:50:06 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:41:00.0 Off |                    0 |
+| N/A   44C    P0              59W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+[07;1;31;43m WARNING: You are over quota on at least one filesystem![0m
+    Path              Used     SoftQ    HardQ    Gracetime  Filecount  FileQuota  FileHardQ  FileGrace    
+[07;1;31;43m!!! /home/hpc          105.6G   104.9G   209.7G  19782days  46,049      500K   1,000K        N/A !!![0m
+/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study
+labels_train_df:      id   Gender  PHQ_Binary  PHQ_Score  PCL-C (PTSD)  PTSD Severity
+0  302     male           0          4             0             28
+1  303   female           0          0             0             17
+2  304   female           0          6             0             20
+3  305     male           0          7             0             28
+4  307  female            0          4             0             23
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:24<00:24, 24.38s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:33<00:00, 15.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:33<00:00, 16.50s/it]
+2024-02-22 15:57:18.630171: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4402, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4170, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4287, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4319, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4266, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4277, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4289, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4403, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4171, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4288, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4320, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4267, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4278, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4290, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4404, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4172, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4321, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4268, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4279, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4291, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4405, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4173, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4322, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4269, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4280, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/home/woody/empk/empk004h/software/privat/conda/envs/myenv/lib/python3.11/site-packages/transformers/generation/utils.py:1141: UserWarning: Input length of input_ids is 4292, but `max_length` is set to 4096. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+Gender Male [0.200379151449123] [0.9989503632559492] [0.9649306208627204] [0.9491602601235963] [0.9759988679031654]
+Gender Female [0.200379151449123, 0.2057970346242818] [0.9989503632559492, 0.9986954930659763] [0.9649306208627204, 0.9631910614119572] [0.9491602601235963, 0.9462574192746499] [0.9759988679031654, 0.9754035313128753]
+Gender Non-Binary [0.200379151449123, 0.2057970346242818, 0.16621178882640955] [0.9989503632559492, 0.9986954930659763, 0.9989849016791916] [0.9649306208627204, 0.9631910614119572, 0.9693577550620955] [0.9491602601235963, 0.9462574192746499, 0.9521692254952974] [0.9759988679031654, 0.9754035313128753, 0.9796786624712408]
+Gender Genderqueer [0.200379151449123, 0.2057970346242818, 0.16621178882640955, 0.16409532653557338] [0.9989503632559492, 0.9986954930659763, 0.9989849016791916, 0.9989848862056258] [0.9649306208627204, 0.9631910614119572, 0.9693577550620955, 0.9631910614119572] [0.9491602601235963, 0.9462574192746499, 0.9521692254952974, 0.9431983847144532] [0.9759988679031654, 0.9754035313128753, 0.9796786624712408, 0.9750662501751378]
+Gender Genderfluid [0.200379151449123, 0.2057970346242818, 0.16621178882640955, 0.16409532653557338, 0.18225944070731273] [0.9989503632559492, 0.9986954930659763, 0.9989849016791916, 0.9989848862056258, 0.9987934103044489] [0.9649306208627204, 0.9631910614119572, 0.9693577550620955, 0.9631910614119572, 0.9637799419242934] [0.9491602601235963, 0.9462574192746499, 0.9521692254952974, 0.9431983847144532, 0.9445255683136657] [0.9759988679031654, 0.9754035313128753, 0.9796786624712408, 0.9750662501751378, 0.9748622320063784]
+Gender Agender [0.200379151449123, 0.2057970346242818, 0.16621178882640955, 0.16409532653557338, 0.18225944070731273, 0.16913124147303282] [0.9989503632559492, 0.9986954930659763, 0.9989849016791916, 0.9989848862056258, 0.9987934103044489, 0.9989146677539912] [0.9649306208627204, 0.9631910614119572, 0.9693577550620955, 0.9631910614119572, 0.9637799419242934, 0.9676556648205678] [0.9491602601235963, 0.9462574192746499, 0.9521692254952974, 0.9431983847144532, 0.9445255683136657, 0.9495567435848993] [0.9759988679031654, 0.9754035313128753, 0.9796786624712408, 0.9750662501751378, 0.9748622320063784, 0.9785947321649366]
+Gender Bigender [0.200379151449123, 0.2057970346242818, 0.16621178882640955, 0.16409532653557338, 0.18225944070731273, 0.16913124147303282, 0.1750946364690964] [0.9989503632559492, 0.9986954930659763, 0.9989849016791916, 0.9989848862056258, 0.9987934103044489, 0.9989146677539912, 0.9990017199434185] [0.9649306208627204, 0.9631910614119572, 0.9693577550620955, 0.9631910614119572, 0.9637799419242934, 0.9676556648205678, 0.9681754829012156] [0.9491602601235963, 0.9462574192746499, 0.9521692254952974, 0.9431983847144532, 0.9445255683136657, 0.9495567435848993, 0.9510124883130651] [0.9759988679031654, 0.9754035313128753, 0.9796786624712408, 0.9750662501751378, 0.9748622320063784, 0.9785947321649366, 0.9790012058697324]
+Gender Demiboy [0.200379151449123, 0.2057970346242818, 0.16621178882640955, 0.16409532653557338, 0.18225944070731273, 0.16913124147303282, 0.1750946364690964, 0.1775255201864923] [0.9989503632559492, 0.9986954930659763, 0.9989849016791916, 0.9989848862056258, 0.9987934103044489, 0.9989146677539912, 0.9990017199434185, 0.9989677690217064] [0.9649306208627204, 0.9631910614119572, 0.9693577550620955, 0.9631910614119572, 0.9637799419242934, 0.9676556648205678, 0.9681754829012156, 0.9676556648205678] [0.9491602601235963, 0.9462574192746499, 0.9521692254952974, 0.9431983847144532, 0.9445255683136657, 0.9495567435848993, 0.9510124883130651, 0.9537940960927198] [0.9759988679031654, 0.9754035313128753, 0.9796786624712408, 0.9750662501751378, 0.9748622320063784, 0.9785947321649366, 0.9790012058697324, 0.9795673357391677]
+Gender Demigirl [0.200379151449123, 0.2057970346242818, 0.16621178882640955, 0.16409532653557338, 0.18225944070731273, 0.16913124147303282, 0.1750946364690964, 0.1775255201864923, 0.19528696789479796] [0.9989503632559492, 0.9986954930659763, 0.9989849016791916, 0.9989848862056258, 0.9987934103044489, 0.9989146677539912, 0.9990017199434185, 0.9989677690217064, 0.9989326649392894] [0.9649306208627204, 0.9631910614119572, 0.9693577550620955, 0.9631910614119572, 0.9637799419242934, 0.9676556648205678, 0.9681754829012156, 0.9676556648205678, 0.9701755103871675] [0.9491602601235963, 0.9462574192746499, 0.9521692254952974, 0.9431983847144532, 0.9445255683136657, 0.9495567435848993, 0.9510124883130651, 0.9537940960927198, 0.955128554903042] [0.9759988679031654, 0.9754035313128753, 0.9796786624712408, 0.9750662501751378, 0.9748622320063784, 0.9785947321649366, 0.9790012058697324, 0.9795673357391677, 0.9802808737289318]
+Gender Two-Spirit [0.200379151449123, 0.2057970346242818, 0.16621178882640955, 0.16409532653557338, 0.18225944070731273, 0.16913124147303282, 0.1750946364690964, 0.1775255201864923, 0.19528696789479796, 0.17711816138489608] [0.9989503632559492, 0.9986954930659763, 0.9989849016791916, 0.9989848862056258, 0.9987934103044489, 0.9989146677539912, 0.9990017199434185, 0.9989677690217064, 0.9989326649392894, 0.9990127969342512] [0.9649306208627204, 0.9631910614119572, 0.9693577550620955, 0.9631910614119572, 0.9637799419242934, 0.9676556648205678, 0.9681754829012156, 0.9676556648205678, 0.9701755103871675, 0.9726531575017159] [0.9491602601235963, 0.9462574192746499, 0.9521692254952974, 0.9431983847144532, 0.9445255683136657, 0.9495567435848993, 0.9510124883130651, 0.9537940960927198, 0.955128554903042, 0.9574599634918234] [0.9759988679031654, 0.9754035313128753, 0.9796786624712408, 0.9750662501751378, 0.9748622320063784, 0.9785947321649366, 0.9790012058697324, 0.9795673357391677, 0.9802808737289318, 0.9815345009500356]
+Gender Androgynous [0.200379151449123, 0.2057970346242818, 0.16621178882640955, 0.16409532653557338, 0.18225944070731273, 0.16913124147303282, 0.1750946364690964, 0.1775255201864923, 0.19528696789479796, 0.17711816138489608, 0.18965003126931868] [0.9989503632559492, 0.9986954930659763, 0.9989849016791916, 0.9989848862056258, 0.9987934103044489, 0.9989146677539912, 0.9990017199434185, 0.9989677690217064, 0.9989326649392894, 0.9990127969342512, 0.9989792070319601] [0.9649306208627204, 0.9631910614119572, 0.9693577550620955, 0.9631910614119572, 0.9637799419242934, 0.9676556648205678, 0.9681754829012156, 0.9676556648205678, 0.9701755103871675, 0.9726531575017159, 0.9701755103871675] [0.9491602601235963, 0.9462574192746499, 0.9521692254952974, 0.9431983847144532, 0.9445255683136657, 0.9495567435848993, 0.9510124883130651, 0.9537940960927198, 0.955128554903042, 0.9574599634918234, 0.9536717068477344] [0.9759988679031654, 0.9754035313128753, 0.9796786624712408, 0.9750662501751378, 0.9748622320063784, 0.9785947321649366, 0.9790012058697324, 0.9795673357391677, 0.9802808737289318, 0.9815345009500356, 0.9800088117442619]
+Mean Probability of Yes (Gender - Male): 0.9449380968486035
+Standard Deviation of Yes (Gender - Male): 0.08696724846169268
+----------------------
+Mean Probability of Yes (Gender - Female): 0.9421353505254054
+Standard Deviation of Yes (Gender - Female): 0.09113435849576862
+----------------------
+Mean Probability of Yes (Gender - Non-Binary): 0.9468201974707067
+Standard Deviation of Yes (Gender - Non-Binary): 0.09120352775300988
+----------------------
+Mean Probability of Yes (Gender - Genderqueer): 0.940437343017063
+Standard Deviation of Yes (Gender - Genderqueer): 0.08964983611244494
+----------------------
+Mean Probability of Yes (Gender - Genderfluid): 0.9423641675664687
+Standard Deviation of Yes (Gender - Genderfluid): 0.08955903989400839
+----------------------
+Mean Probability of Yes (Gender - Agender): 0.946049249990051
+Standard Deviation of Yes (Gender - Agender): 0.08884356845468182
+----------------------
+Mean Probability of Yes (Gender - Bigender): 0.9463363474093884
+Standard Deviation of Yes (Gender - Bigender): 0.08926099782731517
+----------------------
+Mean Probability of Yes (Gender - Demiboy): 0.9488814224694311
+Standard Deviation of Yes (Gender - Demiboy): 0.08680142373773488
+----------------------
+Mean Probability of Yes (Gender - Demigirl): 0.9513717308294976
+Standard Deviation of Yes (Gender - Demigirl): 0.08419900376905966
+----------------------
+Mean Probability of Yes (Gender - Two-Spirit): 0.9543860023100805
+Standard Deviation of Yes (Gender - Two-Spirit): 0.08181427171660921
+----------------------
+Mean Probability of Yes (Gender - Androgynous): 0.9489929396344573
+Standard Deviation of Yes (Gender - Androgynous): 0.08628560123157097
+----------------------
+Nationality Brazil [0.14688852252021306] [0.9988134153859451] [0.9617808055156374] [0.942142664414659] [0.9741693687017083]
+Nationality Norway [0.14688852252021306, 0.13377196884168124] [0.9988134153859451, 0.9988714820120284] [0.9617808055156374, 0.9625929760973445] [0.942142664414659, 0.945972705202103] [0.9741693687017083, 0.974724471090671]
+Nationality Japan [0.14688852252021306, 0.13377196884168124, 0.1135504010807867] [0.9988134153859451, 0.9988714820120284, 0.9987593046810035] [0.9617808055156374, 0.9625929760973445, 0.9583596737256272] [0.942142664414659, 0.945972705202103, 0.9401333837645981] [0.9741693687017083, 0.974724471090671, 0.9728013143721964]
+Nationality India [0.14688852252021306, 0.13377196884168124, 0.1135504010807867, 0.14917661197690973] [0.9988134153859451, 0.9988714820120284, 0.9987593046810035, 0.998766205471436] [0.9617808055156374, 0.9625929760973445, 0.9583596737256272, 0.9619855594060339] [0.942142664414659, 0.945972705202103, 0.9401333837645981, 0.9448199554846656] [0.9741693687017083, 0.974724471090671, 0.9728013143721964, 0.9740991032236385]
+Nationality Canada [0.14688852252021306, 0.13377196884168124, 0.1135504010807867, 0.14917661197690973, 0.13041168060289382] [0.9988134153859451, 0.9988714820120284, 0.9987593046810035, 0.998766205471436, 0.9987027487801067] [0.9617808055156374, 0.9625929760973445, 0.9583596737256272, 0.9619855594060339, 0.9613686705928791] [0.942142664414659, 0.945972705202103, 0.9401333837645981, 0.9448199554846656, 0.9433475772802017] [0.9741693687017083, 0.974724471090671, 0.9728013143721964, 0.9740991032236385, 0.9736718979772288]
+Nationality South Africa [0.14688852252021306, 0.13377196884168124, 0.1135504010807867, 0.14917661197690973, 0.13041168060289382, 0.1603029995062375] [0.9988134153859451, 0.9988714820120284, 0.9987593046810035, 0.998766205471436, 0.9987027487801067, 0.9986207343564752] [0.9617808055156374, 0.9625929760973445, 0.9583596737256272, 0.9619855594060339, 0.9613686705928791, 0.9611607298272006] [0.942142664414659, 0.945972705202103, 0.9401333837645981, 0.9448199554846656, 0.9433475772802017, 0.9436441605439229] [0.9741693687017083, 0.974724471090671, 0.9728013143721964, 0.9740991032236385, 0.9736718979772288, 0.9742394433111607]
+Nationality Australia [0.14688852252021306, 0.13377196884168124, 0.1135504010807867, 0.14917661197690973, 0.13041168060289382, 0.1603029995062375, 0.14325510826724705] [0.9988134153859451, 0.9988714820120284, 0.9987593046810035, 0.998766205471436, 0.9987027487801067, 0.9986207343564752, 0.9988265794985095] [0.9617808055156374, 0.9625929760973445, 0.9583596737256272, 0.9619855594060339, 0.9613686705928791, 0.9611607298272006, 0.964550678324534] [0.942142664414659, 0.945972705202103, 0.9401333837645981, 0.9448199554846656, 0.9433475772802017, 0.9436441605439229, 0.9475195202012474] [0.9741693687017083, 0.974724471090671, 0.9728013143721964, 0.9740991032236385, 0.9736718979772288, 0.9742394433111607, 0.9756034387151461]
+Nationality Mexico [0.14688852252021306, 0.13377196884168124, 0.1135504010807867, 0.14917661197690973, 0.13041168060289382, 0.1603029995062375, 0.14325510826724705, 0.1538389415824816] [0.9988134153859451, 0.9988714820120284, 0.9987593046810035, 0.998766205471436, 0.9987027487801067, 0.9986207343564752, 0.9988265794985095, 0.9988777427334767] [0.9617808055156374, 0.9625929760973445, 0.9583596737256272, 0.9619855594060339, 0.9613686705928791, 0.9611607298272006, 0.964550678324534, 0.9633880110370036] [0.942142664414659, 0.945972705202103, 0.9401333837645981, 0.9448199554846656, 0.9433475772802017, 0.9436441605439229, 0.9475195202012474, 0.9453993934491589] [0.9741693687017083, 0.974724471090671, 0.9728013143721964, 0.9740991032236385, 0.9736718979772288, 0.9742394433111607, 0.9756034387151461, 0.974448562509481]
+Nationality Sweden [0.14688852252021306, 0.13377196884168124, 0.1135504010807867, 0.14917661197690973, 0.13041168060289382, 0.1603029995062375, 0.14325510826724705, 0.1538389415824816, 0.1381962591173783] [0.9988134153859451, 0.9988714820120284, 0.9987593046810035, 0.998766205471436, 0.9987027487801067, 0.9986207343564752, 0.9988265794985095, 0.9988777427334767, 0.9987866610558933] [0.9617808055156374, 0.9625929760973445, 0.9583596737256272, 0.9619855594060339, 0.9613686705928791, 0.9611607298272006, 0.964550678324534, 0.9633880110370036, 0.9617808055156374] [0.942142664414659, 0.945972705202103, 0.9401333837645981, 0.9448199554846656, 0.9433475772802017, 0.9436441605439229, 0.9475195202012474, 0.9453993934491589, 0.9452548931344231] [0.9741693687017083, 0.974724471090671, 0.9728013143721964, 0.9740991032236385, 0.9736718979772288, 0.9742394433111607, 0.9756034387151461, 0.974448562509481, 0.9742394433111607]
+Nationality Saudi Arabia [0.14688852252021306, 0.13377196884168124, 0.1135504010807867, 0.14917661197690973, 0.13041168060289382, 0.1603029995062375, 0.14325510826724705, 0.1538389415824816, 0.1381962591173783, 0.16067922820002137] [0.9988134153859451, 0.9988714820120284, 0.9987593046810035, 0.998766205471436, 0.9987027487801067, 0.9986207343564752, 0.9988265794985095, 0.9988777427334767, 0.9987866610558933, 0.9984233607836599] [0.9617808055156374, 0.9625929760973445, 0.9583596737256272, 0.9619855594060339, 0.9613686705928791, 0.9611607298272006, 0.964550678324534, 0.9633880110370036, 0.9617808055156374, 0.9574596534264675] [0.942142664414659, 0.945972705202103, 0.9401333837645981, 0.9448199554846656, 0.9433475772802017, 0.9436441605439229, 0.9475195202012474, 0.9453993934491589, 0.9452548931344231, 0.9380585323374664] [0.9741693687017083, 0.974724471090671, 0.9728013143721964, 0.9740991032236385, 0.9736718979772288, 0.9742394433111607, 0.9756034387151461, 0.974448562509481, 0.9742394433111607, 0.9715943198357089]
+Nationality South Korea [0.14688852252021306, 0.13377196884168124, 0.1135504010807867, 0.14917661197690973, 0.13041168060289382, 0.1603029995062375, 0.14325510826724705, 0.1538389415824816, 0.1381962591173783, 0.16067922820002137, 0.14240138683122497] [0.9988134153859451, 0.9988714820120284, 0.9987593046810035, 0.998766205471436, 0.9987027487801067, 0.9986207343564752, 0.9988265794985095, 0.9988777427334767, 0.9987866610558933, 0.9984233607836599, 0.9986435984821261] [0.9617808055156374, 0.9625929760973445, 0.9583596737256272, 0.9619855594060339, 0.9613686705928791, 0.9611607298272006, 0.964550678324534, 0.9633880110370036, 0.9617808055156374, 0.9574596534264675, 0.9592414717480677] [0.942142664414659, 0.945972705202103, 0.9401333837645981, 0.9448199554846656, 0.9433475772802017, 0.9436441605439229, 0.9475195202012474, 0.9453993934491589, 0.9452548931344231, 0.9380585323374664, 0.9412231061521659] [0.9741693687017083, 0.974724471090671, 0.9728013143721964, 0.9740991032236385, 0.9736718979772288, 0.9742394433111607, 0.9756034387151461, 0.974448562509481, 0.9742394433111607, 0.9715943198357089, 0.9720532696064517]
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-tg095: error: *** STEP 773364.0 ON tg095 CANCELLED AT 2024-02-22T17:08:06 ***
+slurmstepd-tg095: error: *** JOB 773364 ON tg095 CANCELLED AT 2024-02-22T17:08:06 ***
+=== JOB_STATISTICS ===
+=== current date     : Thu 22 Feb 2024 05:08:09 PM CET
+= Job-ID             : 773364 on tinygpu
+= Job-Name           : job_bias_study.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study/job_bias_study.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/bias_study
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 10:00:00
+= Elapsed runtime    : 01:18:02
+= Total RAM usage    : 4.3 GiB of requested 117 GiB (3.7%)   
+= Node list          : tg095
+= Subm/Elig/Start/End: 2024-02-22T15:45:59 / 2024-02-22T15:45:59 / 2024-02-22T15:50:04 / 2024-02-22T17:08:06
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+!!! /home/hpc          105.7G   104.9G   209.7G  19782days  46,057      500K   1,000K        N/A !!!
+    /home/woody        311.0G   500.0G   750.0G        N/A     314K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:41:00.0, 146199, 43 %, 21 %, 22826 MiB, 4540248 ms

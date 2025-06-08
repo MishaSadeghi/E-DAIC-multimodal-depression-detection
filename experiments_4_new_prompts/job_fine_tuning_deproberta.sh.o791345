@@ -1,0 +1,395 @@
+### Starting TaskPrologue of job 791345 on tg092 at Sun 24 Mar 2024 08:47:45 PM CET
+Running on cores 96-127 with governor ondemand
+Sun Mar 24 20:47:45 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:C1:00.0 Off |                    0 |
+| N/A   32C    P0             52W /  400W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts
+folder_path:  /home/hpc/empk/empk004h/depression-detection/data/original_transcripts_completions/prompt_3
+csv_files:  ['df_test_prompt3.csv', 'df_dev_prompt3.csv', 'df_train_prompt3.csv']
+fine tuning for prompt:  prompt_3
+len train_loader:  21
+Epoch 0, Batch 0, Learning Rate: 0.00000500, Train Loss: 0.849
+Epoch 0, Batch 1, Learning Rate: 0.00000500, Train Loss: 0.695
+Epoch 0, Batch 2, Learning Rate: 0.00000500, Train Loss: 0.822
+Epoch 0, Batch 3, Learning Rate: 0.00000500, Train Loss: 1.224
+Epoch 0, Batch 4, Learning Rate: 0.00000500, Train Loss: 0.854
+Epoch 0, Batch 5, Learning Rate: 0.00000500, Train Loss: 0.919
+Epoch 0, Batch 6, Learning Rate: 0.00000500, Train Loss: 1.045
+Epoch 0, Batch 7, Learning Rate: 0.00000500, Train Loss: 1.315
+Epoch 0, Batch 8, Learning Rate: 0.00000500, Train Loss: 0.939
+Epoch 0, Batch 9, Learning Rate: 0.00000500, Train Loss: 1.116
+Epoch 0, Batch 10, Learning Rate: 0.00000500, Train Loss: 0.933
+Epoch 0, Batch 11, Learning Rate: 0.00000500, Train Loss: 0.997
+Epoch 0, Batch 12, Learning Rate: 0.00000500, Train Loss: 0.682
+Epoch 0, Batch 13, Learning Rate: 0.00000500, Train Loss: 1.046
+Epoch 0, Batch 14, Learning Rate: 0.00000500, Train Loss: 0.821
+Epoch 0, Batch 15, Learning Rate: 0.00000500, Train Loss: 0.945
+Epoch 0, Batch 16, Learning Rate: 0.00000500, Train Loss: 0.882
+Epoch 0, Batch 17, Learning Rate: 0.00000500, Train Loss: 0.873
+Epoch 0, Batch 18, Learning Rate: 0.00000500, Train Loss: 1.216
+Epoch 0, Batch 19, Learning Rate: 0.00000500, Train Loss: 0.572
+Epoch 0, Batch 20, Learning Rate: 0.00000500, Train Loss: 1.345
+Epoch 0, Batch 20, Dev Loss: 0.840
+len train_loader:  21
+Epoch 1, Batch 0, Learning Rate: 0.00000500, Train Loss: 0.846
+Epoch 1, Batch 1, Learning Rate: 0.00000500, Train Loss: 0.587
+Epoch 1, Batch 2, Learning Rate: 0.00000500, Train Loss: 1.173
+Epoch 1, Batch 3, Learning Rate: 0.00000500, Train Loss: 0.916
+Epoch 1, Batch 4, Learning Rate: 0.00000500, Train Loss: 0.817
+Epoch 1, Batch 5, Learning Rate: 0.00000500, Train Loss: 0.662
+Epoch 1, Batch 6, Learning Rate: 0.00000500, Train Loss: 0.917
+Epoch 1, Batch 7, Learning Rate: 0.00000500, Train Loss: 0.853
+Epoch 1, Batch 8, Learning Rate: 0.00000500, Train Loss: 0.619
+Epoch 1, Batch 9, Learning Rate: 0.00000500, Train Loss: 1.078
+Epoch 1, Batch 10, Learning Rate: 0.00000500, Train Loss: 0.980
+Epoch 1, Batch 11, Learning Rate: 0.00000500, Train Loss: 0.907
+Epoch 1, Batch 12, Learning Rate: 0.00000500, Train Loss: 0.550
+Epoch 1, Batch 13, Learning Rate: 0.00000500, Train Loss: 0.766
+Epoch 1, Batch 14, Learning Rate: 0.00000500, Train Loss: 0.927
+Epoch 1, Batch 15, Learning Rate: 0.00000500, Train Loss: 0.811
+Epoch 1, Batch 16, Learning Rate: 0.00000500, Train Loss: 0.750
+Epoch 1, Batch 17, Learning Rate: 0.00000500, Train Loss: 0.667
+Epoch 1, Batch 18, Learning Rate: 0.00000500, Train Loss: 1.015
+Epoch 1, Batch 19, Learning Rate: 0.00000500, Train Loss: 0.756
+Epoch 1, Batch 20, Learning Rate: 0.00000500, Train Loss: 0.799
+Epoch 1, Batch 20, Dev Loss: 0.854
+len train_loader:  21
+Epoch 2, Batch 0, Learning Rate: 0.00000500, Train Loss: 0.851
+Epoch 2, Batch 1, Learning Rate: 0.00000500, Train Loss: 0.486
+Epoch 2, Batch 2, Learning Rate: 0.00000500, Train Loss: 1.189
+Epoch 2, Batch 3, Learning Rate: 0.00000500, Train Loss: 0.707
+Epoch 2, Batch 4, Learning Rate: 0.00000500, Train Loss: 0.720
+Epoch 2, Batch 5, Learning Rate: 0.00000500, Train Loss: 0.460
+Epoch 2, Batch 6, Learning Rate: 0.00000500, Train Loss: 1.423
+Epoch 2, Batch 7, Learning Rate: 0.00000500, Train Loss: 0.824
+Epoch 2, Batch 8, Learning Rate: 0.00000500, Train Loss: 0.441
+Epoch 2, Batch 9, Learning Rate: 0.00000500, Train Loss: 0.497
+Epoch 2, Batch 10, Learning Rate: 0.00000500, Train Loss: 0.881
+Epoch 2, Batch 11, Learning Rate: 0.00000500, Train Loss: 0.608
+Epoch 2, Batch 12, Learning Rate: 0.00000500, Train Loss: 0.525
+Epoch 2, Batch 13, Learning Rate: 0.00000500, Train Loss: 0.879
+Epoch 2, Batch 14, Learning Rate: 0.00000500, Train Loss: 0.767
+Epoch 2, Batch 15, Learning Rate: 0.00000500, Train Loss: 0.761
+Epoch 2, Batch 16, Learning Rate: 0.00000500, Train Loss: 0.734
+Epoch 2, Batch 17, Learning Rate: 0.00000500, Train Loss: 0.623
+Epoch 2, Batch 18, Learning Rate: 0.00000500, Train Loss: 0.484
+Epoch 2, Batch 19, Learning Rate: 0.00000500, Train Loss: 0.604
+Epoch 2, Batch 20, Learning Rate: 0.00000500, Train Loss: 0.300
+Epoch 2, Batch 20, Dev Loss: 0.829
+len train_loader:  21
+Epoch 3, Batch 0, Learning Rate: 0.00000500, Train Loss: 1.056
+Epoch 3, Batch 1, Learning Rate: 0.00000500, Train Loss: 0.354
+Epoch 3, Batch 2, Learning Rate: 0.00000500, Train Loss: 1.069
+Epoch 3, Batch 3, Learning Rate: 0.00000500, Train Loss: 0.477
+Epoch 3, Batch 4, Learning Rate: 0.00000500, Train Loss: 0.595
+Epoch 3, Batch 5, Learning Rate: 0.00000500, Train Loss: 0.538
+Epoch 3, Batch 6, Learning Rate: 0.00000500, Train Loss: 0.401
+Epoch 3, Batch 7, Learning Rate: 0.00000500, Train Loss: 0.483
+Epoch 3, Batch 8, Learning Rate: 0.00000500, Train Loss: 0.509
+Epoch 3, Batch 9, Learning Rate: 0.00000500, Train Loss: 0.330
+Epoch 3, Batch 10, Learning Rate: 0.00000500, Train Loss: 0.404
+Epoch 3, Batch 11, Learning Rate: 0.00000500, Train Loss: 0.740
+Epoch 3, Batch 12, Learning Rate: 0.00000500, Train Loss: 0.799
+Epoch 3, Batch 13, Learning Rate: 0.00000500, Train Loss: 0.369
+Epoch 3, Batch 14, Learning Rate: 0.00000500, Train Loss: 0.105
+Epoch 3, Batch 15, Learning Rate: 0.00000500, Train Loss: 0.749
+Epoch 3, Batch 16, Learning Rate: 0.00000500, Train Loss: 0.229
+Epoch 3, Batch 17, Learning Rate: 0.00000500, Train Loss: 0.538
+Epoch 3, Batch 18, Learning Rate: 0.00000500, Train Loss: 0.566
+Epoch 3, Batch 19, Learning Rate: 0.00000500, Train Loss: 0.430
+Epoch 3, Batch 20, Learning Rate: 0.00000500, Train Loss: 1.175
+Epoch 3, Batch 20, Dev Loss: 0.980
+len train_loader:  21
+Epoch 4, Batch 0, Learning Rate: 0.00000500, Train Loss: 0.385
+Epoch 4, Batch 1, Learning Rate: 0.00000500, Train Loss: 0.512
+Epoch 4, Batch 2, Learning Rate: 0.00000500, Train Loss: 0.255
+Epoch 4, Batch 3, Learning Rate: 0.00000500, Train Loss: 0.230
+Epoch 4, Batch 4, Learning Rate: 0.00000500, Train Loss: 0.731
+Epoch 4, Batch 5, Learning Rate: 0.00000500, Train Loss: 0.212
+Epoch 4, Batch 6, Learning Rate: 0.00000500, Train Loss: 0.534
+Epoch 4, Batch 7, Learning Rate: 0.00000500, Train Loss: 0.435
+Epoch 4, Batch 8, Learning Rate: 0.00000500, Train Loss: 0.734
+Epoch 4, Batch 9, Learning Rate: 0.00000500, Train Loss: 0.537
+Epoch 4, Batch 10, Learning Rate: 0.00000500, Train Loss: 0.441
+Epoch 4, Batch 11, Learning Rate: 0.00000500, Train Loss: 0.201
+Epoch 4, Batch 12, Learning Rate: 0.00000500, Train Loss: 0.304
+Epoch 4, Batch 13, Learning Rate: 0.00000500, Train Loss: 0.499
+Epoch 4, Batch 14, Learning Rate: 0.00000500, Train Loss: 0.731
+Epoch 4, Batch 15, Learning Rate: 0.00000500, Train Loss: 0.336
+Epoch 4, Batch 16, Learning Rate: 0.00000500, Train Loss: 0.183
+Epoch 4, Batch 17, Learning Rate: 0.00000500, Train Loss: 0.141
+Epoch 4, Batch 18, Learning Rate: 0.00000500, Train Loss: 0.291
+Epoch 4, Batch 19, Learning Rate: 0.00000500, Train Loss: 0.898
+Epoch 4, Batch 20, Learning Rate: 0.00000500, Train Loss: 0.826
+Epoch 4, Batch 20, Dev Loss: 0.926
+len train_loader:  21
+Epoch 5, Batch 0, Learning Rate: 0.00000500, Train Loss: 0.118
+Epoch 5, Batch 1, Learning Rate: 0.00000500, Train Loss: 0.407
+Epoch 5, Batch 2, Learning Rate: 0.00000500, Train Loss: 0.301
+Epoch 5, Batch 3, Learning Rate: 0.00000500, Train Loss: 0.210
+Epoch 5, Batch 4, Learning Rate: 0.00000500, Train Loss: 0.340
+Epoch 5, Batch 5, Learning Rate: 0.00000500, Train Loss: 0.083
+Epoch 5, Batch 6, Learning Rate: 0.00000500, Train Loss: 0.448
+Epoch 5, Batch 7, Learning Rate: 0.00000500, Train Loss: 0.195
+Epoch 5, Batch 8, Learning Rate: 0.00000500, Train Loss: 0.280
+Epoch 5, Batch 9, Learning Rate: 0.00000500, Train Loss: 0.260
+Epoch 5, Batch 10, Learning Rate: 0.00000500, Train Loss: 0.335
+Epoch 5, Batch 11, Learning Rate: 0.00000500, Train Loss: 0.117
+Epoch 5, Batch 12, Learning Rate: 0.00000500, Train Loss: 0.131
+Epoch 5, Batch 13, Learning Rate: 0.00000500, Train Loss: 0.169
+Epoch 5, Batch 14, Learning Rate: 0.00000500, Train Loss: 0.039
+Epoch 5, Batch 15, Learning Rate: 0.00000500, Train Loss: 0.266
+Epoch 5, Batch 16, Learning Rate: 0.00000500, Train Loss: 0.491
+Epoch 5, Batch 17, Learning Rate: 0.00000500, Train Loss: 0.798
+Epoch 5, Batch 18, Learning Rate: 0.00000500, Train Loss: 0.754
+Epoch 5, Batch 19, Learning Rate: 0.00000500, Train Loss: 0.260
+Epoch 5, Batch 20, Learning Rate: 0.00000500, Train Loss: 0.350
+Epoch 5, Batch 20, Dev Loss: 1.114
+len train_loader:  21
+Epoch 6, Batch 0, Learning Rate: 0.00000500, Train Loss: 0.319
+Epoch 6, Batch 1, Learning Rate: 0.00000500, Train Loss: 0.660
+Epoch 6, Batch 2, Learning Rate: 0.00000500, Train Loss: 0.523
+Epoch 6, Batch 3, Learning Rate: 0.00000500, Train Loss: 0.166
+Epoch 6, Batch 4, Learning Rate: 0.00000500, Train Loss: 0.288
+Epoch 6, Batch 5, Learning Rate: 0.00000500, Train Loss: 0.162
+Epoch 6, Batch 6, Learning Rate: 0.00000500, Train Loss: 0.140
+Epoch 6, Batch 7, Learning Rate: 0.00000500, Train Loss: 0.319
+Epoch 6, Batch 8, Learning Rate: 0.00000500, Train Loss: 0.105
+Epoch 6, Batch 9, Learning Rate: 0.00000500, Train Loss: 0.158
+Epoch 6, Batch 10, Learning Rate: 0.00000500, Train Loss: 0.221
+Epoch 6, Batch 11, Learning Rate: 0.00000500, Train Loss: 0.071
+Epoch 6, Batch 12, Learning Rate: 0.00000500, Train Loss: 0.204
+Epoch 6, Batch 13, Learning Rate: 0.00000500, Train Loss: 0.303
+Epoch 6, Batch 14, Learning Rate: 0.00000500, Train Loss: 0.127
+Epoch 6, Batch 15, Learning Rate: 0.00000500, Train Loss: 0.102
+Epoch 6, Batch 16, Learning Rate: 0.00000500, Train Loss: 0.079
+Epoch 6, Batch 17, Learning Rate: 0.00000500, Train Loss: 0.120
+Epoch 6, Batch 18, Learning Rate: 0.00000500, Train Loss: 0.058
+Epoch 6, Batch 19, Learning Rate: 0.00000500, Train Loss: 0.293
+Epoch 6, Batch 20, Learning Rate: 0.00000500, Train Loss: 0.463
+Epoch 6, Batch 20, Dev Loss: 1.219
+len train_loader:  21
+Epoch 7, Batch 0, Learning Rate: 0.00000500, Train Loss: 0.033
+Epoch 7, Batch 1, Learning Rate: 0.00000500, Train Loss: 0.089
+Epoch 7, Batch 2, Learning Rate: 0.00000500, Train Loss: 0.057
+Epoch 7, Batch 3, Learning Rate: 0.00000500, Train Loss: 0.115
+Epoch 7, Batch 4, Learning Rate: 0.00000500, Train Loss: 0.298
+Epoch 7, Batch 5, Learning Rate: 0.00000500, Train Loss: 0.069
+Epoch 7, Batch 6, Learning Rate: 0.00000500, Train Loss: 0.094
+Epoch 7, Batch 7, Learning Rate: 0.00000500, Train Loss: 0.289
+Epoch 7, Batch 8, Learning Rate: 0.00000500, Train Loss: 0.099
+Epoch 7, Batch 9, Learning Rate: 0.00000500, Train Loss: 0.076
+Epoch 7, Batch 10, Learning Rate: 0.00000500, Train Loss: 0.295
+Epoch 7, Batch 11, Learning Rate: 0.00000500, Train Loss: 0.061
+Epoch 7, Batch 12, Learning Rate: 0.00000500, Train Loss: 0.097
+Epoch 7, Batch 13, Learning Rate: 0.00000500, Train Loss: 0.155
+Epoch 7, Batch 14, Learning Rate: 0.00000500, Train Loss: 0.029
+Epoch 7, Batch 15, Learning Rate: 0.00000500, Train Loss: 0.108
+Epoch 7, Batch 16, Learning Rate: 0.00000500, Train Loss: 0.041
+Epoch 7, Batch 17, Learning Rate: 0.00000500, Train Loss: 0.059
+Epoch 7, Batch 18, Learning Rate: 0.00000500, Train Loss: 0.126
+Epoch 7, Batch 19, Learning Rate: 0.00000500, Train Loss: 0.492
+Epoch 7, Batch 20, Learning Rate: 0.00000500, Train Loss: 0.007
+Epoch 7, Batch 20, Dev Loss: 1.451
+len train_loader:  21
+Epoch 8, Batch 0, Learning Rate: 0.00000500, Train Loss: 0.095
+Epoch 8, Batch 1, Learning Rate: 0.00000500, Train Loss: 0.062
+Epoch 8, Batch 2, Learning Rate: 0.00000500, Train Loss: 0.037
+Epoch 8, Batch 3, Learning Rate: 0.00000500, Train Loss: 0.427
+Epoch 8, Batch 4, Learning Rate: 0.00000500, Train Loss: 0.215
+Epoch 8, Batch 5, Learning Rate: 0.00000500, Train Loss: 0.172
+Epoch 8, Batch 6, Learning Rate: 0.00000500, Train Loss: 0.050
+Epoch 8, Batch 7, Learning Rate: 0.00000500, Train Loss: 0.260
+Epoch 8, Batch 8, Learning Rate: 0.00000500, Train Loss: 0.046
+Epoch 8, Batch 9, Learning Rate: 0.00000500, Train Loss: 0.160
+Epoch 8, Batch 10, Learning Rate: 0.00000500, Train Loss: 0.261
+Epoch 8, Batch 11, Learning Rate: 0.00000500, Train Loss: 0.029
+Epoch 8, Batch 12, Learning Rate: 0.00000500, Train Loss: 0.063
+Epoch 8, Batch 13, Learning Rate: 0.00000500, Train Loss: 0.074
+Epoch 8, Batch 14, Learning Rate: 0.00000500, Train Loss: 0.050
+Epoch 8, Batch 15, Learning Rate: 0.00000500, Train Loss: 0.064
+Epoch 8, Batch 16, Learning Rate: 0.00000500, Train Loss: 0.166
+Epoch 8, Batch 17, Learning Rate: 0.00000500, Train Loss: 0.057
+Epoch 8, Batch 18, Learning Rate: 0.00000500, Train Loss: 0.073
+Epoch 8, Batch 19, Learning Rate: 0.00000500, Train Loss: 0.026
+Epoch 8, Batch 20, Learning Rate: 0.00000500, Train Loss: 0.023
+Epoch 8, Batch 20, Dev Loss: 1.269
+len train_loader:  21
+Epoch 9, Batch 0, Learning Rate: 0.00000500, Train Loss: 0.192
+Epoch 9, Batch 1, Learning Rate: 0.00000500, Train Loss: 0.032
+Epoch 9, Batch 2, Learning Rate: 0.00000500, Train Loss: 0.054
+Epoch 9, Batch 3, Learning Rate: 0.00000500, Train Loss: 0.143
+Epoch 9, Batch 4, Learning Rate: 0.00000500, Train Loss: 0.078
+Epoch 9, Batch 5, Learning Rate: 0.00000500, Train Loss: 0.091
+Epoch 9, Batch 6, Learning Rate: 0.00000500, Train Loss: 0.028
+Epoch 9, Batch 7, Learning Rate: 0.00000500, Train Loss: 0.081
+Epoch 9, Batch 8, Learning Rate: 0.00000500, Train Loss: 0.054
+Epoch 9, Batch 9, Learning Rate: 0.00000500, Train Loss: 0.024
+Epoch 9, Batch 10, Learning Rate: 0.00000500, Train Loss: 0.235
+Epoch 9, Batch 11, Learning Rate: 0.00000500, Train Loss: 0.011
+Epoch 9, Batch 12, Learning Rate: 0.00000500, Train Loss: 0.324
+Epoch 9, Batch 13, Learning Rate: 0.00000500, Train Loss: 0.057
+Epoch 9, Batch 14, Learning Rate: 0.00000500, Train Loss: 0.101
+Epoch 9, Batch 15, Learning Rate: 0.00000500, Train Loss: 0.017
+Epoch 9, Batch 16, Learning Rate: 0.00000500, Train Loss: 0.357
+Epoch 9, Batch 17, Learning Rate: 0.00000500, Train Loss: 0.260
+Epoch 9, Batch 18, Learning Rate: 0.00000500, Train Loss: 0.183
+Epoch 9, Batch 19, Learning Rate: 0.00000500, Train Loss: 0.025
+Epoch 9, Batch 20, Learning Rate: 0.00000500, Train Loss: 0.010
+Epoch 9, Batch 20, Dev Loss: 1.496
+len train_loader:  21
+Epoch 10, Batch 0, Learning Rate: 0.00000500, Train Loss: 0.119
+Epoch 10, Batch 1, Learning Rate: 0.00000500, Train Loss: 0.031
+Epoch 10, Batch 2, Learning Rate: 0.00000500, Train Loss: 0.099
+Epoch 10, Batch 3, Learning Rate: 0.00000500, Train Loss: 0.041
+Epoch 10, Batch 4, Learning Rate: 0.00000500, Train Loss: 0.268
+Epoch 10, Batch 5, Learning Rate: 0.00000500, Train Loss: 0.249
+Epoch 10, Batch 6, Learning Rate: 0.00000500, Train Loss: 0.423
+Epoch 10, Batch 7, Learning Rate: 0.00000500, Train Loss: 0.024
+Epoch 10, Batch 8, Learning Rate: 0.00000500, Train Loss: 0.050
+Epoch 10, Batch 9, Learning Rate: 0.00000500, Train Loss: 0.202
+Epoch 10, Batch 10, Learning Rate: 0.00000500, Train Loss: 0.041
+Epoch 10, Batch 11, Learning Rate: 0.00000500, Train Loss: 0.071
+Epoch 10, Batch 12, Learning Rate: 0.00000500, Train Loss: 0.347
+Epoch 10, Batch 13, Learning Rate: 0.00000500, Train Loss: 0.056
+Epoch 10, Batch 14, Learning Rate: 0.00000500, Train Loss: 0.036
+Epoch 10, Batch 15, Learning Rate: 0.00000500, Train Loss: 0.026
+Epoch 10, Batch 16, Learning Rate: 0.00000500, Train Loss: 0.029
+Epoch 10, Batch 17, Learning Rate: 0.00000500, Train Loss: 0.059
+Epoch 10, Batch 18, Learning Rate: 0.00000500, Train Loss: 0.022
+Epoch 10, Batch 19, Learning Rate: 0.00000500, Train Loss: 0.046
+Epoch 10, Batch 20, Learning Rate: 0.00000500, Train Loss: 0.010
+Epoch 10, Batch 20, Dev Loss: 1.454
+len train_loader:  21
+Epoch 11, Batch 0, Learning Rate: 0.00000500, Train Loss: 0.031
+Epoch 11, Batch 1, Learning Rate: 0.00000500, Train Loss: 0.024
+Epoch 11, Batch 2, Learning Rate: 0.00000500, Train Loss: 0.171
+Epoch 11, Batch 3, Learning Rate: 0.00000500, Train Loss: 0.057
+Epoch 11, Batch 4, Learning Rate: 0.00000500, Train Loss: 0.025
+Epoch 11, Batch 5, Learning Rate: 0.00000500, Train Loss: 0.080
+Epoch 11, Batch 6, Learning Rate: 0.00000500, Train Loss: 0.029
+Epoch 11, Batch 7, Learning Rate: 0.00000500, Train Loss: 0.061
+Epoch 11, Batch 8, Learning Rate: 0.00000500, Train Loss: 0.072
+Epoch 11, Batch 9, Learning Rate: 0.00000500, Train Loss: 0.074
+Epoch 11, Batch 10, Learning Rate: 0.00000500, Train Loss: 0.020
+Epoch 11, Batch 11, Learning Rate: 0.00000500, Train Loss: 0.024
+Epoch 11, Batch 12, Learning Rate: 0.00000500, Train Loss: 0.032
+Epoch 11, Batch 13, Learning Rate: 0.00000500, Train Loss: 0.085
+Epoch 11, Batch 14, Learning Rate: 0.00000500, Train Loss: 0.016
+Epoch 11, Batch 15, Learning Rate: 0.00000500, Train Loss: 0.018
+Epoch 11, Batch 16, Learning Rate: 0.00000500, Train Loss: 0.021
+Epoch 11, Batch 17, Learning Rate: 0.00000500, Train Loss: 0.025
+Epoch 11, Batch 18, Learning Rate: 0.00000500, Train Loss: 0.027
+Epoch 11, Batch 19, Learning Rate: 0.00000500, Train Loss: 0.027
+Epoch 11, Batch 20, Learning Rate: 0.00000500, Train Loss: 0.100
+Epoch 11, Batch 20, Dev Loss: 1.457
+len train_loader:  21
+Epoch 12, Batch 0, Learning Rate: 0.00000500, Train Loss: 0.025
+Epoch 12, Batch 1, Learning Rate: 0.00000500, Train Loss: 0.019
+Epoch 12, Batch 2, Learning Rate: 0.00000500, Train Loss: 0.023
+Epoch 12, Batch 3, Learning Rate: 0.00000500, Train Loss: 0.056
+Epoch 12, Batch 4, Learning Rate: 0.00000500, Train Loss: 0.020
+Epoch 12, Batch 5, Learning Rate: 0.00000500, Train Loss: 0.009
+Epoch 12, Batch 6, Learning Rate: 0.00000500, Train Loss: 0.015
+Epoch 12, Batch 7, Learning Rate: 0.00000500, Train Loss: 0.015
+Epoch 12, Batch 8, Learning Rate: 0.00000500, Train Loss: 0.032
+Epoch 12, Batch 9, Learning Rate: 0.00000500, Train Loss: 0.026
+Epoch 12, Batch 10, Learning Rate: 0.00000500, Train Loss: 0.025
+Epoch 12, Batch 11, Learning Rate: 0.00000500, Train Loss: 0.010
+Epoch 12, Batch 12, Learning Rate: 0.00000500, Train Loss: 0.012
+Epoch 12, Batch 13, Learning Rate: 0.00000500, Train Loss: 0.024
+Epoch 12, Batch 14, Learning Rate: 0.00000500, Train Loss: 0.013
+Epoch 12, Batch 15, Learning Rate: 0.00000500, Train Loss: 0.013
+Epoch 12, Batch 16, Learning Rate: 0.00000500, Train Loss: 0.023
+Epoch 12, Batch 17, Learning Rate: 0.00000500, Train Loss: 0.014
+Epoch 12, Batch 18, Learning Rate: 0.00000500, Train Loss: 0.019
+Epoch 12, Batch 19, Learning Rate: 0.00000500, Train Loss: 0.017
+Epoch 12, Batch 20, Learning Rate: 0.00000500, Train Loss: 0.023
+Epoch 12, Batch 20, Dev Loss: 1.684
+len train_loader:  21
+Epoch 13, Batch 0, Learning Rate: 0.00000500, Train Loss: 0.011
+Epoch 13, Batch 1, Learning Rate: 0.00000500, Train Loss: 0.021
+Epoch 13, Batch 2, Learning Rate: 0.00000500, Train Loss: 0.021
+Epoch 13, Batch 3, Learning Rate: 0.00000500, Train Loss: 0.027
+Epoch 13, Batch 4, Learning Rate: 0.00000500, Train Loss: 0.004
+Epoch 13, Batch 5, Learning Rate: 0.00000500, Train Loss: 0.012
+Epoch 13, Batch 6, Learning Rate: 0.00000500, Train Loss: 0.006
+Epoch 13, Batch 7, Learning Rate: 0.00000500, Train Loss: 0.119
+Epoch 13, Batch 8, Learning Rate: 0.00000500, Train Loss: 0.013
+Epoch 13, Batch 9, Learning Rate: 0.00000500, Train Loss: 0.023
+Epoch 13, Batch 10, Learning Rate: 0.00000500, Train Loss: 0.013
+Epoch 13, Batch 11, Learning Rate: 0.00000500, Train Loss: 0.009
+Epoch 13, Batch 12, Learning Rate: 0.00000500, Train Loss: 0.016
+Epoch 13, Batch 13, Learning Rate: 0.00000500, Train Loss: 0.041
+Epoch 13, Batch 14, Learning Rate: 0.00000500, Train Loss: 0.032
+Epoch 13, Batch 15, Learning Rate: 0.00000500, Train Loss: 0.014
+Epoch 13, Batch 16, Learning Rate: 0.00000500, Train Loss: 0.023
+Epoch 13, Batch 17, Learning Rate: 0.00000500, Train Loss: 0.011
+Epoch 13, Batch 18, Learning Rate: 0.00000500, Train Loss: 0.013
+Epoch 13, Batch 19, Learning Rate: 0.00000500, Train Loss: 0.011
+Epoch 13, Batch 20, Learning Rate: 0.00000500, Train Loss: 0.045
+Epoch 13, Batch 20, Dev Loss: 1.766
+len train_loader:  21
+Epoch 14, Batch 0, Learning Rate: 0.00000500, Train Loss: 0.012
+Epoch 14, Batch 1, Learning Rate: 0.00000500, Train Loss: 0.024
+Epoch 14, Batch 2, Learning Rate: 0.00000500, Train Loss: 0.006
+Epoch 14, Batch 3, Learning Rate: 0.00000500, Train Loss: 0.014
+Epoch 14, Batch 4, Learning Rate: 0.00000500, Train Loss: 0.015
+Epoch 14, Batch 5, Learning Rate: 0.00000500, Train Loss: 0.022
+Epoch 14, Batch 6, Learning Rate: 0.00000500, Train Loss: 0.018
+Epoch 14, Batch 7, Learning Rate: 0.00000500, Train Loss: 0.014
+Epoch 14, Batch 8, Learning Rate: 0.00000500, Train Loss: 0.008
+Epoch 14, Batch 9, Learning Rate: 0.00000500, Train Loss: 0.045
+Epoch 14, Batch 10, Learning Rate: 0.00000500, Train Loss: 0.013
+Epoch 14, Batch 11, Learning Rate: 0.00000500, Train Loss: 0.009
+Epoch 14, Batch 12, Learning Rate: 0.00000500, Train Loss: 0.010
+Epoch 14, Batch 13, Learning Rate: 0.00000500, Train Loss: 0.015
+Epoch 14, Batch 14, Learning Rate: 0.00000500, Train Loss: 0.008
+Epoch 14, Batch 15, Learning Rate: 0.00000500, Train Loss: 0.005
+Epoch 14, Batch 16, Learning Rate: 0.00000500, Train Loss: 0.009
+Epoch 14, Batch 17, Learning Rate: 0.00000500, Train Loss: 0.013
+Epoch 14, Batch 18, Learning Rate: 0.00000500, Train Loss: 0.006
+Epoch 14, Batch 19, Learning Rate: 0.00000500, Train Loss: 0.009
+Epoch 14, Batch 20, Learning Rate: 0.00000500, Train Loss: 0.013
+Epoch 14, Batch 20, Dev Loss: 1.655
+=== JOB_STATISTICS ===
+=== current date     : Sun 24 Mar 2024 08:54:57 PM CET
+= Job-ID             : 791345 on tinygpu
+= Job-Name           : job_fine_tuning_deproberta.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts/job_fine_tuning_deproberta.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/experiments_4_new_prompts
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources:  for 20:00:00
+= Elapsed runtime    : 00:07:18
+= Total RAM usage    : 2.6 GiB of requested  GiB (%)   
+= Node list          : tg092
+= Subm/Elig/Start/End: 2024-03-24T20:47:39 / 2024-03-24T20:47:39 / 2024-03-24T20:47:39 / 2024-03-24T20:54:57
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           52.2G   104.9G   209.7G        N/A  44,644      500K   1,000K        N/A    
+    /home/vault        116.7G     0.0K     0.0K        N/A      84K     300K     450K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:C1:00.0, 1691101, 31 %, 8 %, 13016 MiB, 422061 ms

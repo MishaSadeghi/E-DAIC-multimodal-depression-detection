@@ -1,0 +1,49 @@
+### Starting TaskPrologue of job 766457 on tg093 at Fri 09 Feb 2024 02:05:37 PM CET
+Running on cores 64-95 with governor ondemand
+Fri Feb  9 14:05:37 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:81:00.0 Off |                    0 |
+| N/A   33C    P0              57W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-tg093: error: *** JOB 766457 ON tg093 CANCELLED AT 2024-02-09T14:05:51 ***
+slurmstepd-tg093: error: *** STEP 766457.0 ON tg093 CANCELLED AT 2024-02-09T14:05:51 ***
+=== JOB_STATISTICS ===
+=== current date     : Fri 09 Feb 2024 02:05:54 PM CET
+= Job-ID             : 766457 on tinygpu
+= Job-Name           : job_new_LSTM.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/base_code/job_new_LSTM.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/base_code
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 20:00:00
+= Elapsed runtime    : 00:00:15
+= Total RAM usage    : 0.0 GiB of requested 117 GiB (0.0%)   
+= Node list          : tg093
+= Subm/Elig/Start/End: 2024-02-09T14:05:36 / 2024-02-09T14:05:36 / 2024-02-09T14:05:36 / 2024-02-09T14:05:51
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           50.4G   104.9G   209.7G        N/A  46,233      500K   1,000K        N/A    
+    /home/vault        646.5G     0.0K     0.0K        N/A      74K     300K     450K        N/A    
+    /home/woody        311.0G   500.0G   750.0G        N/A     314K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

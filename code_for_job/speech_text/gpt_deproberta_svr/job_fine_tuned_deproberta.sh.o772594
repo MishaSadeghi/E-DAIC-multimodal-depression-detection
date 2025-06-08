@@ -1,0 +1,65 @@
+### Starting TaskPrologue of job 772594 on tg092 at Wed 21 Feb 2024 04:50:09 PM CET
+Running on cores 0-31 with governor ondemand
+Wed Feb 21 16:50:09 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:01:00.0 Off |                    0 |
+| N/A   42C    P0              61W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/gpt_deproberta_svr
+def_dev:      id  ...                                               text
+0  300  ...   which will record your body. So I'll show you...
+1  301  ...   Yeah, there's all sorts of different studies ...
+2  306  ...   Okay, looks like we're good. But let's move a...
+3  317  ...   Okay. How long is this? This is probably goin...
+4  320  ...   Okay, everything looks good. Okay. Perfect. O...
+
+[5 rows x 7 columns]
+max PHQ score in df_train:  23
+prompt_number:  2
+prompt:   Your task is to read the following text which is an interview with a person and to summarize the key points that might be related to the depression of the person. Be concise and to the point. It is very essential that you write your answer in the first-person perspective, as if the interviewee is narrating about himself or herself. 
+Traceback (most recent call last):
+  File "/home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/gpt_deproberta_svr/chatgpt_with_fine_tuned_deproberta_prompt2.py", line 149, in <module>
+    df_train = result['df_train']
+               ^^^^^^
+NameError: name 'result' is not defined
+srun: error: tg092: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=772594.0
+=== JOB_STATISTICS ===
+=== current date     : Wed 21 Feb 2024 04:52:23 PM CET
+= Job-ID             : 772594 on tinygpu
+= Job-Name           : job_fine_tuned_deproberta.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/gpt_deproberta_svr/job_fine_tuned_deproberta.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/speech_text/gpt_deproberta_svr
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 10:00:00
+= Elapsed runtime    : 00:02:21
+= Total RAM usage    : 0.3 GiB of requested 117 GiB (0.3%)   
+= Node list          : tg092
+= Subm/Elig/Start/End: 2024-02-21T16:46:48 / 2024-02-21T16:46:48 / 2024-02-21T16:50:02 / 2024-02-21T16:52:23
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           79.4G   104.9G   209.7G        N/A  46,028      500K   1,000K        N/A    
+    /home/vault       3177.2G     0.0K     0.0K        N/A      75K     300K     450K        N/A    
+    /home/woody        311.0G   500.0G   750.0G        N/A     314K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

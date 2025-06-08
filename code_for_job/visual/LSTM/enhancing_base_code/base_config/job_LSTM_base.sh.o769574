@@ -1,0 +1,1873 @@
+### Starting TaskPrologue of job 769574 on tg096 at Thu 15 Feb 2024 02:47:31 PM CET
+Running on cores 64-95 with governor ondemand
+Thu Feb 15 14:47:31 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:81:00.0 Off |                    0 |
+| N/A   34C    P0              55W / 400W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Using device: cuda
+feature_type:  all
+Epoch [1/20], Step [1/21], Loss train: 7.7647
+Epoch [1/20], Step [11/21], Loss train: 7.0938
+Epoch [1/20], Step [21/21], Loss train: 3.0379
+Epoch [1/20], Training Loss: 6.4932, Validation RMSE Loss: 6.6882, Validation MAE Loss: 5.0993
+Epoch [2/20], Step [1/21], Loss train: 7.7934
+Epoch [2/20], Step [11/21], Loss train: 6.7969
+Epoch [2/20], Step [21/21], Loss train: 9.2739
+Epoch [2/20], Training Loss: 6.4445, Validation RMSE Loss: 5.9058, Validation MAE Loss: 5.1631
+Epoch [3/20], Step [1/21], Loss train: 5.1958
+Epoch [3/20], Step [11/21], Loss train: 8.7122
+Epoch [3/20], Step [21/21], Loss train: 3.5490
+Epoch [3/20], Training Loss: 6.1315, Validation RMSE Loss: 5.8206, Validation MAE Loss: 4.7459
+Epoch [4/20], Step [1/21], Loss train: 5.6721
+Epoch [4/20], Step [11/21], Loss train: 7.7680
+Epoch [4/20], Step [21/21], Loss train: 8.7058
+Epoch [4/20], Training Loss: 6.6816, Validation RMSE Loss: 5.6965, Validation MAE Loss: 4.9331
+Epoch [5/20], Step [1/21], Loss train: 8.3351
+Epoch [5/20], Step [11/21], Loss train: 5.6760
+Epoch [5/20], Step [21/21], Loss train: 10.8717
+Epoch [5/20], Training Loss: 6.9426, Validation RMSE Loss: 5.5666, Validation MAE Loss: 4.7321
+Epoch [6/20], Step [1/21], Loss train: 4.1530
+Epoch [6/20], Step [11/21], Loss train: 5.6233
+Epoch [6/20], Step [21/21], Loss train: 5.3208
+Epoch [6/20], Training Loss: 6.0051, Validation RMSE Loss: 6.4308, Validation MAE Loss: 5.7393
+Epoch [7/20], Step [1/21], Loss train: 7.3317
+Epoch [7/20], Step [11/21], Loss train: 5.4804
+Epoch [7/20], Step [21/21], Loss train: 2.9936
+Epoch [7/20], Training Loss: 6.1095, Validation RMSE Loss: 5.8125, Validation MAE Loss: 4.7439
+Epoch [8/20], Step [1/21], Loss train: 6.2999
+Epoch [8/20], Step [11/21], Loss train: 6.9779
+Epoch [8/20], Step [21/21], Loss train: 4.9338
+Epoch [8/20], Training Loss: 6.1369, Validation RMSE Loss: 5.6070, Validation MAE Loss: 4.7008
+Epoch [9/20], Step [1/21], Loss train: 5.3037
+Epoch [9/20], Step [11/21], Loss train: 7.8773
+Epoch [9/20], Step [21/21], Loss train: 9.7156
+Epoch [9/20], Training Loss: 6.6337, Validation RMSE Loss: 5.6123, Validation MAE Loss: 4.8370
+Epoch [10/20], Step [1/21], Loss train: 5.4551
+Epoch [10/20], Step [11/21], Loss train: 5.7153
+Epoch [10/20], Step [21/21], Loss train: 5.3024
+Epoch [10/20], Training Loss: 6.3571, Validation RMSE Loss: 5.5923, Validation MAE Loss: 4.6980
+Epoch [11/20], Step [1/21], Loss train: 3.9357
+Epoch [11/20], Step [11/21], Loss train: 7.0352
+Epoch [11/20], Step [21/21], Loss train: 10.5415
+Epoch [11/20], Training Loss: 6.6897, Validation RMSE Loss: 5.6643, Validation MAE Loss: 4.7148
+Epoch [12/20], Step [1/21], Loss train: 4.8939
+Epoch [12/20], Step [11/21], Loss train: 5.9900
+Epoch [12/20], Step [21/21], Loss train: 7.2792
+Epoch [12/20], Training Loss: 6.2030, Validation RMSE Loss: 6.4804, Validation MAE Loss: 4.9829
+Epoch [13/20], Step [1/21], Loss train: 2.5048
+Epoch [13/20], Step [11/21], Loss train: 10.8968
+Epoch [13/20], Step [21/21], Loss train: 6.6128
+Epoch [13/20], Training Loss: 6.1930, Validation RMSE Loss: 5.5669, Validation MAE Loss: 4.7481
+Epoch [14/20], Step [1/21], Loss train: 7.2066
+Epoch [14/20], Step [11/21], Loss train: 9.0680
+Epoch [14/20], Step [21/21], Loss train: 3.1582
+Epoch [14/20], Training Loss: 6.2266, Validation RMSE Loss: 5.8359, Validation MAE Loss: 4.7497
+Epoch [15/20], Step [1/21], Loss train: 8.4996
+Epoch [15/20], Step [11/21], Loss train: 8.9683
+Epoch [15/20], Step [21/21], Loss train: 2.5119
+Epoch [15/20], Training Loss: 6.1416, Validation RMSE Loss: 5.5658, Validation MAE Loss: 4.7402
+Epoch [16/20], Step [1/21], Loss train: 4.3458
+Epoch [16/20], Step [11/21], Loss train: 6.2002
+Epoch [16/20], Step [21/21], Loss train: 8.5944
+Epoch [16/20], Training Loss: 6.3571, Validation RMSE Loss: 7.3368, Validation MAE Loss: 6.6160
+Epoch [17/20], Step [1/21], Loss train: 6.8680
+Epoch [17/20], Step [11/21], Loss train: 8.7695
+Epoch [17/20], Step [21/21], Loss train: 7.7923
+Epoch [17/20], Training Loss: 6.7710, Validation RMSE Loss: 6.6808, Validation MAE Loss: 5.0945
+Epoch [18/20], Step [1/21], Loss train: 9.4271
+Epoch [18/20], Step [11/21], Loss train: 5.8886
+Epoch [18/20], Step [21/21], Loss train: 1.7136
+Epoch [18/20], Training Loss: 6.2008, Validation RMSE Loss: 5.7843, Validation MAE Loss: 4.7364
+Epoch [19/20], Step [1/21], Loss train: 8.7145
+Epoch [19/20], Step [11/21], Loss train: 5.7742
+Epoch [19/20], Step [21/21], Loss train: 7.3637
+Epoch [19/20], Training Loss: 6.3337, Validation RMSE Loss: 6.5438, Validation MAE Loss: 5.8528
+Epoch [20/20], Step [1/21], Loss train: 6.0896
+Epoch [20/20], Step [11/21], Loss train: 3.5932
+Epoch [20/20], Step [21/21], Loss train: 2.3934
+Epoch [20/20], Training Loss: 5.9891, Validation RMSE Loss: 5.6224, Validation MAE Loss: 4.7052
+Test RMSE Loss (all): 5.037696838378906, Test MAE Loss (all): 4.375
+---------------------------------
+feature_type:  pose
+Epoch [1/20], Step [1/21], Loss train: 6.7179
+Epoch [1/20], Step [11/21], Loss train: nan
+Epoch [1/20], Step [21/21], Loss train: nan
+Epoch [1/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [2/20], Step [1/21], Loss train: nan
+Epoch [2/20], Step [11/21], Loss train: nan
+Epoch [2/20], Step [21/21], Loss train: nan
+Epoch [2/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [3/20], Step [1/21], Loss train: nan
+Epoch [3/20], Step [11/21], Loss train: nan
+Epoch [3/20], Step [21/21], Loss train: nan
+Epoch [3/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [4/20], Step [1/21], Loss train: nan
+Epoch [4/20], Step [11/21], Loss train: nan
+Epoch [4/20], Step [21/21], Loss train: nan
+Epoch [4/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [5/20], Step [1/21], Loss train: nan
+Epoch [5/20], Step [11/21], Loss train: nan
+Epoch [5/20], Step [21/21], Loss train: nan
+Epoch [5/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [6/20], Step [1/21], Loss train: nan
+Epoch [6/20], Step [11/21], Loss train: nan
+Epoch [6/20], Step [21/21], Loss train: nan
+Epoch [6/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [7/20], Step [1/21], Loss train: nan
+Epoch [7/20], Step [11/21], Loss train: nan
+Epoch [7/20], Step [21/21], Loss train: nan
+Epoch [7/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [8/20], Step [1/21], Loss train: nan
+Epoch [8/20], Step [11/21], Loss train: nan
+Epoch [8/20], Step [21/21], Loss train: nan
+Epoch [8/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [9/20], Step [1/21], Loss train: nan
+Epoch [9/20], Step [11/21], Loss train: nan
+Epoch [9/20], Step [21/21], Loss train: nan
+Epoch [9/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [10/20], Step [1/21], Loss train: nan
+Epoch [10/20], Step [11/21], Loss train: nan
+Epoch [10/20], Step [21/21], Loss train: nan
+Epoch [10/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [11/20], Step [1/21], Loss train: nan
+Epoch [11/20], Step [11/21], Loss train: nan
+Epoch [11/20], Step [21/21], Loss train: nan
+Epoch [11/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [12/20], Step [1/21], Loss train: nan
+Epoch [12/20], Step [11/21], Loss train: nan
+Epoch [12/20], Step [21/21], Loss train: nan
+Epoch [12/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [13/20], Step [1/21], Loss train: nan
+Epoch [13/20], Step [11/21], Loss train: nan
+Epoch [13/20], Step [21/21], Loss train: nan
+Epoch [13/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [14/20], Step [1/21], Loss train: nan
+Epoch [14/20], Step [11/21], Loss train: nan
+Epoch [14/20], Step [21/21], Loss train: nan
+Epoch [14/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [15/20], Step [1/21], Loss train: nan
+Epoch [15/20], Step [11/21], Loss train: nan
+Epoch [15/20], Step [21/21], Loss train: nan
+Epoch [15/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [16/20], Step [1/21], Loss train: nan
+Epoch [16/20], Step [11/21], Loss train: nan
+Epoch [16/20], Step [21/21], Loss train: nan
+Epoch [16/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [17/20], Step [1/21], Loss train: nan
+Epoch [17/20], Step [11/21], Loss train: nan
+Epoch [17/20], Step [21/21], Loss train: nan
+Epoch [17/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [18/20], Step [1/21], Loss train: nan
+Epoch [18/20], Step [11/21], Loss train: nan
+Epoch [18/20], Step [21/21], Loss train: nan
+Epoch [18/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [19/20], Step [1/21], Loss train: nan
+Epoch [19/20], Step [11/21], Loss train: nan
+Epoch [19/20], Step [21/21], Loss train: nan
+Epoch [19/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [20/20], Step [1/21], Loss train: nan
+Epoch [20/20], Step [11/21], Loss train: nan
+Epoch [20/20], Step [21/21], Loss train: nan
+Epoch [20/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Test RMSE Loss (pose): nan, Test MAE Loss (pose): nan
+---------------------------------
+feature_type:  gaze
+Epoch [1/20], Step [1/21], Loss train: 10.2146
+Epoch [1/20], Step [11/21], Loss train: 5.4063
+Epoch [1/20], Step [21/21], Loss train: 14.9108
+Epoch [1/20], Training Loss: 7.6948, Validation RMSE Loss: 6.6585, Validation MAE Loss: 5.0800
+Epoch [2/20], Step [1/21], Loss train: 7.5842
+Epoch [2/20], Step [11/21], Loss train: 4.8030
+Epoch [2/20], Step [21/21], Loss train: 6.5427
+Epoch [2/20], Training Loss: 6.7340, Validation RMSE Loss: 5.8366, Validation MAE Loss: 5.0953
+Epoch [3/20], Step [1/21], Loss train: 7.8032
+Epoch [3/20], Step [11/21], Loss train: 5.5888
+Epoch [3/20], Step [21/21], Loss train: 3.7624
+Epoch [3/20], Training Loss: 6.0451, Validation RMSE Loss: 5.7658, Validation MAE Loss: 4.7317
+Epoch [4/20], Step [1/21], Loss train: 7.8758
+Epoch [4/20], Step [11/21], Loss train: 3.5429
+Epoch [4/20], Step [21/21], Loss train: 5.2592
+Epoch [4/20], Training Loss: 5.9667, Validation RMSE Loss: 5.5774, Validation MAE Loss: 4.7674
+Epoch [5/20], Step [1/21], Loss train: 6.0404
+Epoch [5/20], Step [11/21], Loss train: 3.7474
+Epoch [5/20], Step [21/21], Loss train: 7.5468
+Epoch [5/20], Training Loss: 6.2986, Validation RMSE Loss: 5.5690, Validation MAE Loss: 4.7251
+Epoch [6/20], Step [1/21], Loss train: 5.7279
+Epoch [6/20], Step [11/21], Loss train: 6.3736
+Epoch [6/20], Step [21/21], Loss train: 8.4622
+Epoch [6/20], Training Loss: 6.8007, Validation RMSE Loss: 6.2040, Validation MAE Loss: 4.8577
+Epoch [7/20], Step [1/21], Loss train: 8.5744
+Epoch [7/20], Step [11/21], Loss train: 5.3534
+Epoch [7/20], Step [21/21], Loss train: 3.6639
+Epoch [7/20], Training Loss: 6.4962, Validation RMSE Loss: 5.7656, Validation MAE Loss: 5.0164
+Epoch [8/20], Step [1/21], Loss train: 6.6514
+Epoch [8/20], Step [11/21], Loss train: 7.0805
+Epoch [8/20], Step [21/21], Loss train: 5.6903
+Epoch [8/20], Training Loss: 6.3005, Validation RMSE Loss: 5.5934, Validation MAE Loss: 4.6971
+Epoch [9/20], Step [1/21], Loss train: 5.0967
+Epoch [9/20], Step [11/21], Loss train: 4.6411
+Epoch [9/20], Step [21/21], Loss train: 6.7375
+Epoch [9/20], Training Loss: 6.1802, Validation RMSE Loss: 6.6359, Validation MAE Loss: 5.9408
+Epoch [10/20], Step [1/21], Loss train: 6.7600
+Epoch [10/20], Step [11/21], Loss train: 4.9391
+Epoch [10/20], Step [21/21], Loss train: 10.2836
+Epoch [10/20], Training Loss: 6.4688, Validation RMSE Loss: 5.5825, Validation MAE Loss: 4.7065
+Epoch [11/20], Step [1/21], Loss train: 7.6451
+Epoch [11/20], Step [11/21], Loss train: 5.9730
+Epoch [11/20], Step [21/21], Loss train: 7.7270
+Epoch [11/20], Training Loss: 6.2175, Validation RMSE Loss: 5.5663, Validation MAE Loss: 4.7340
+Epoch [12/20], Step [1/21], Loss train: 3.3235
+Epoch [12/20], Step [11/21], Loss train: 6.4410
+Epoch [12/20], Step [21/21], Loss train: 5.2111
+Epoch [12/20], Training Loss: 6.1879, Validation RMSE Loss: 5.7624, Validation MAE Loss: 4.7312
+Epoch [13/20], Step [1/21], Loss train: 5.8379
+Epoch [13/20], Step [11/21], Loss train: 6.3534
+Epoch [13/20], Step [21/21], Loss train: 6.2200
+Epoch [13/20], Training Loss: 6.3753, Validation RMSE Loss: 6.4036, Validation MAE Loss: 5.7109
+Epoch [14/20], Step [1/21], Loss train: 8.5301
+Epoch [14/20], Step [11/21], Loss train: 3.5953
+Epoch [14/20], Step [21/21], Loss train: 10.7716
+Epoch [14/20], Training Loss: 6.4493, Validation RMSE Loss: 5.9287, Validation MAE Loss: 4.7708
+Epoch [15/20], Step [1/21], Loss train: 8.5945
+Epoch [15/20], Step [11/21], Loss train: 5.9093
+Epoch [15/20], Step [21/21], Loss train: 4.5438
+Epoch [15/20], Training Loss: 6.0213, Validation RMSE Loss: 5.5658, Validation MAE Loss: 4.7402
+Epoch [16/20], Step [1/21], Loss train: 4.1872
+Epoch [16/20], Step [11/21], Loss train: 7.8593
+Epoch [16/20], Step [21/21], Loss train: 3.7712
+Epoch [16/20], Training Loss: 6.2620, Validation RMSE Loss: 5.6647, Validation MAE Loss: 4.7149
+Epoch [17/20], Step [1/21], Loss train: 6.7678
+Epoch [17/20], Step [11/21], Loss train: 7.4193
+Epoch [17/20], Step [21/21], Loss train: 5.2365
+Epoch [17/20], Training Loss: 6.5788, Validation RMSE Loss: 5.5769, Validation MAE Loss: 4.7668
+Epoch [18/20], Step [1/21], Loss train: 6.7025
+Epoch [18/20], Step [11/21], Loss train: 6.0160
+Epoch [18/20], Step [21/21], Loss train: 3.3405
+Epoch [18/20], Training Loss: 6.1300, Validation RMSE Loss: 6.4417, Validation MAE Loss: 4.9664
+Epoch [19/20], Step [1/21], Loss train: 4.8329
+Epoch [19/20], Step [11/21], Loss train: 6.3792
+Epoch [19/20], Step [21/21], Loss train: 3.7506
+Epoch [19/20], Training Loss: 6.0769, Validation RMSE Loss: 6.3085, Validation MAE Loss: 4.9073
+Epoch [20/20], Step [1/21], Loss train: 6.1374
+Epoch [20/20], Step [11/21], Loss train: 5.7703
+Epoch [20/20], Step [21/21], Loss train: 7.9361
+Epoch [20/20], Training Loss: 6.5054, Validation RMSE Loss: 6.1861, Validation MAE Loss: 5.4821
+Test RMSE Loss (gaze): 6.524393081665039, Test MAE Loss (gaze): 5.644165515899658
+---------------------------------
+feature_type:  au_r
+Epoch [1/20], Step [1/21], Loss train: 11.0053
+Epoch [1/20], Step [11/21], Loss train: 8.4740
+Epoch [1/20], Step [21/21], Loss train: 4.1907
+Epoch [1/20], Training Loss: 6.4334, Validation RMSE Loss: 5.5691, Validation MAE Loss: 4.7247
+Epoch [2/20], Step [1/21], Loss train: 3.9153
+Epoch [2/20], Step [11/21], Loss train: 5.1329
+Epoch [2/20], Step [21/21], Loss train: 6.9290
+Epoch [2/20], Training Loss: 6.0314, Validation RMSE Loss: 5.6534, Validation MAE Loss: 4.8897
+Epoch [3/20], Step [1/21], Loss train: 5.6477
+Epoch [3/20], Step [11/21], Loss train: 8.3236
+Epoch [3/20], Step [21/21], Loss train: 3.5209
+Epoch [3/20], Training Loss: 6.2345, Validation RMSE Loss: 6.5813, Validation MAE Loss: 5.0288
+Epoch [4/20], Step [1/21], Loss train: 4.1981
+Epoch [4/20], Step [11/21], Loss train: 5.1710
+Epoch [4/20], Step [21/21], Loss train: 5.1517
+Epoch [4/20], Training Loss: 6.3376, Validation RMSE Loss: 5.6414, Validation MAE Loss: 4.8759
+Epoch [5/20], Step [1/21], Loss train: 6.4242
+Epoch [5/20], Step [11/21], Loss train: 4.9581
+Epoch [5/20], Step [21/21], Loss train: 7.6832
+Epoch [5/20], Training Loss: 6.7314, Validation RMSE Loss: 5.8924, Validation MAE Loss: 5.1505
+Epoch [6/20], Step [1/21], Loss train: 4.7276
+Epoch [6/20], Step [11/21], Loss train: 6.3794
+Epoch [6/20], Step [21/21], Loss train: 5.0697
+Epoch [6/20], Training Loss: 6.3348, Validation RMSE Loss: 5.5789, Validation MAE Loss: 4.7102
+Epoch [7/20], Step [1/21], Loss train: 4.3078
+Epoch [7/20], Step [11/21], Loss train: 5.5093
+Epoch [7/20], Step [21/21], Loss train: 8.0707
+Epoch [7/20], Training Loss: 6.3219, Validation RMSE Loss: 6.2860, Validation MAE Loss: 4.8969
+Epoch [8/20], Step [1/21], Loss train: 9.0996
+Epoch [8/20], Step [11/21], Loss train: 3.8509
+Epoch [8/20], Step [21/21], Loss train: 5.4050
+Epoch [8/20], Training Loss: 6.3104, Validation RMSE Loss: 5.7314, Validation MAE Loss: 4.7266
+Epoch [9/20], Step [1/21], Loss train: 6.0071
+Epoch [9/20], Step [11/21], Loss train: 4.7050
+Epoch [9/20], Step [21/21], Loss train: 5.1739
+Epoch [9/20], Training Loss: 6.1889, Validation RMSE Loss: 6.3701, Validation MAE Loss: 4.9352
+Epoch [10/20], Step [1/21], Loss train: 7.3707
+Epoch [10/20], Step [11/21], Loss train: 4.7451
+Epoch [10/20], Step [21/21], Loss train: 5.7476
+Epoch [10/20], Training Loss: 6.0350, Validation RMSE Loss: 5.7914, Validation MAE Loss: 5.0465
+Epoch [11/20], Step [1/21], Loss train: 6.5353
+Epoch [11/20], Step [11/21], Loss train: 7.6338
+Epoch [11/20], Step [21/21], Loss train: 3.7272
+Epoch [11/20], Training Loss: 6.1203, Validation RMSE Loss: 5.5676, Validation MAE Loss: 4.7504
+Epoch [12/20], Step [1/21], Loss train: 6.0584
+Epoch [12/20], Step [11/21], Loss train: 4.7544
+Epoch [12/20], Step [21/21], Loss train: 4.9815
+Epoch [12/20], Training Loss: 6.1854, Validation RMSE Loss: 5.6987, Validation MAE Loss: 4.9352
+Epoch [13/20], Step [1/21], Loss train: 7.0169
+Epoch [13/20], Step [11/21], Loss train: 6.0056
+Epoch [13/20], Step [21/21], Loss train: 7.2745
+Epoch [13/20], Training Loss: 6.8347, Validation RMSE Loss: 7.0661, Validation MAE Loss: 6.3454
+Epoch [14/20], Step [1/21], Loss train: 6.3003
+Epoch [14/20], Step [11/21], Loss train: 5.2498
+Epoch [14/20], Step [21/21], Loss train: 7.8258
+Epoch [14/20], Training Loss: 6.4225, Validation RMSE Loss: 5.8176, Validation MAE Loss: 4.7452
+Epoch [15/20], Step [1/21], Loss train: 4.0647
+Epoch [15/20], Step [11/21], Loss train: 6.9789
+Epoch [15/20], Step [21/21], Loss train: 5.3072
+Epoch [15/20], Training Loss: 6.5283, Validation RMSE Loss: 5.7373, Validation MAE Loss: 4.7275
+Epoch [16/20], Step [1/21], Loss train: 7.0461
+Epoch [16/20], Step [11/21], Loss train: 6.8600
+Epoch [16/20], Step [21/21], Loss train: 3.4132
+Epoch [16/20], Training Loss: 6.1970, Validation RMSE Loss: 5.8944, Validation MAE Loss: 4.7634
+Epoch [17/20], Step [1/21], Loss train: 7.8453
+Epoch [17/20], Step [11/21], Loss train: 6.7885
+Epoch [17/20], Step [21/21], Loss train: 4.8473
+Epoch [17/20], Training Loss: 6.1319, Validation RMSE Loss: 5.7134, Validation MAE Loss: 4.9493
+Epoch [18/20], Step [1/21], Loss train: 5.5342
+Epoch [18/20], Step [11/21], Loss train: 7.7665
+Epoch [18/20], Step [21/21], Loss train: 9.1864
+Epoch [18/20], Training Loss: 6.1622, Validation RMSE Loss: 5.8778, Validation MAE Loss: 5.1366
+Epoch [19/20], Step [1/21], Loss train: 6.2865
+Epoch [19/20], Step [11/21], Loss train: 4.6742
+Epoch [19/20], Step [21/21], Loss train: 8.1317
+Epoch [19/20], Training Loss: 6.1305, Validation RMSE Loss: 5.9182, Validation MAE Loss: 4.7686
+Epoch [20/20], Step [1/21], Loss train: 5.9193
+Epoch [20/20], Step [11/21], Loss train: 6.7444
+Epoch [20/20], Step [21/21], Loss train: 4.2047
+Epoch [20/20], Training Loss: 6.0638, Validation RMSE Loss: 5.7802, Validation MAE Loss: 4.7353
+Test RMSE Loss (au_r): 5.040864944458008, Test MAE Loss (au_r): 4.375
+---------------------------------
+feature_type:  au_c
+Epoch [1/20], Step [1/21], Loss train: 11.1238
+Epoch [1/20], Step [11/21], Loss train: 6.1430
+Epoch [1/20], Step [21/21], Loss train: 3.0114
+Epoch [1/20], Training Loss: 7.3597, Validation RMSE Loss: 5.7159, Validation MAE Loss: 4.9528
+Epoch [2/20], Step [1/21], Loss train: 5.3907
+Epoch [2/20], Step [11/21], Loss train: 5.9239
+Epoch [2/20], Step [21/21], Loss train: 5.8116
+Epoch [2/20], Training Loss: 6.1873, Validation RMSE Loss: 7.6491, Validation MAE Loss: 5.7850
+Epoch [3/20], Step [1/21], Loss train: 3.2607
+Epoch [3/20], Step [11/21], Loss train: 5.6117
+Epoch [3/20], Step [21/21], Loss train: 7.3079
+Epoch [3/20], Training Loss: 6.6495, Validation RMSE Loss: 5.6543, Validation MAE Loss: 4.7128
+Epoch [4/20], Step [1/21], Loss train: 3.9218
+Epoch [4/20], Step [11/21], Loss train: 7.2097
+Epoch [4/20], Step [21/21], Loss train: 8.3446
+Epoch [4/20], Training Loss: 6.3125, Validation RMSE Loss: 5.6018, Validation MAE Loss: 4.8199
+Epoch [5/20], Step [1/21], Loss train: 4.8531
+Epoch [5/20], Step [11/21], Loss train: 5.1625
+Epoch [5/20], Step [21/21], Loss train: 7.7376
+Epoch [5/20], Training Loss: 6.1793, Validation RMSE Loss: 5.6645, Validation MAE Loss: 4.7149
+Epoch [6/20], Step [1/21], Loss train: 6.5789
+Epoch [6/20], Step [11/21], Loss train: 6.5884
+Epoch [6/20], Step [21/21], Loss train: 10.1886
+Epoch [6/20], Training Loss: 6.2050, Validation RMSE Loss: 6.4387, Validation MAE Loss: 5.7474
+Epoch [7/20], Step [1/21], Loss train: 7.0239
+Epoch [7/20], Step [11/21], Loss train: 5.0394
+Epoch [7/20], Step [21/21], Loss train: 3.4637
+Epoch [7/20], Training Loss: 6.6692, Validation RMSE Loss: 6.6745, Validation MAE Loss: 5.0904
+Epoch [8/20], Step [1/21], Loss train: 5.7270
+Epoch [8/20], Step [11/21], Loss train: 6.2027
+Epoch [8/20], Step [21/21], Loss train: 12.7227
+Epoch [8/20], Training Loss: 6.8068, Validation RMSE Loss: 6.8657, Validation MAE Loss: 5.2107
+Epoch [9/20], Step [1/21], Loss train: 3.2545
+Epoch [9/20], Step [11/21], Loss train: 6.4455
+Epoch [9/20], Step [21/21], Loss train: 6.7541
+Epoch [9/20], Training Loss: 6.1787, Validation RMSE Loss: 6.0567, Validation MAE Loss: 4.7961
+Epoch [10/20], Step [1/21], Loss train: 6.0328
+Epoch [10/20], Step [11/21], Loss train: 5.0274
+Epoch [10/20], Step [21/21], Loss train: 2.8077
+Epoch [10/20], Training Loss: 6.0374, Validation RMSE Loss: 5.7064, Validation MAE Loss: 4.7226
+Epoch [11/20], Step [1/21], Loss train: 6.3657
+Epoch [11/20], Step [11/21], Loss train: 7.2830
+Epoch [11/20], Step [21/21], Loss train: 8.9822
+Epoch [11/20], Training Loss: 6.5531, Validation RMSE Loss: 5.5705, Validation MAE Loss: 4.7219
+Epoch [12/20], Step [1/21], Loss train: 7.7772
+Epoch [12/20], Step [11/21], Loss train: 5.2187
+Epoch [12/20], Step [21/21], Loss train: 8.7895
+Epoch [12/20], Training Loss: 7.2411, Validation RMSE Loss: 6.9267, Validation MAE Loss: 6.1982
+Epoch [13/20], Step [1/21], Loss train: 5.7361
+Epoch [13/20], Step [11/21], Loss train: 6.1454
+Epoch [13/20], Step [21/21], Loss train: 8.0619
+Epoch [13/20], Training Loss: 6.6116, Validation RMSE Loss: 5.7420, Validation MAE Loss: 4.9873
+Epoch [14/20], Step [1/21], Loss train: 6.9413
+Epoch [14/20], Step [11/21], Loss train: 10.1484
+Epoch [14/20], Step [21/21], Loss train: 9.9666
+Epoch [14/20], Training Loss: 6.2540, Validation RMSE Loss: 5.5671, Validation MAE Loss: 4.7304
+Epoch [15/20], Step [1/21], Loss train: 6.2499
+Epoch [15/20], Step [11/21], Loss train: 4.5452
+Epoch [15/20], Step [21/21], Loss train: 9.6248
+Epoch [15/20], Training Loss: 6.1213, Validation RMSE Loss: 5.6271, Validation MAE Loss: 4.7064
+Epoch [16/20], Step [1/21], Loss train: 7.9727
+Epoch [16/20], Step [11/21], Loss train: 3.2436
+Epoch [16/20], Step [21/21], Loss train: 5.9060
+Epoch [16/20], Training Loss: 6.2475, Validation RMSE Loss: 5.9605, Validation MAE Loss: 5.2121
+Epoch [17/20], Step [1/21], Loss train: 5.8073
+Epoch [17/20], Step [11/21], Loss train: 6.4806
+Epoch [17/20], Step [21/21], Loss train: 2.3002
+Epoch [17/20], Training Loss: 6.3061, Validation RMSE Loss: 6.3676, Validation MAE Loss: 4.9341
+Epoch [18/20], Step [1/21], Loss train: 7.2470
+Epoch [18/20], Step [11/21], Loss train: 4.9240
+Epoch [18/20], Step [21/21], Loss train: 8.3089
+Epoch [18/20], Training Loss: 6.2358, Validation RMSE Loss: 5.5730, Validation MAE Loss: 4.7179
+Epoch [19/20], Step [1/21], Loss train: 8.7028
+Epoch [19/20], Step [11/21], Loss train: 3.9501
+Epoch [19/20], Step [21/21], Loss train: 4.0200
+Epoch [19/20], Training Loss: 5.9914, Validation RMSE Loss: 5.5667, Validation MAE Loss: 4.7473
+Epoch [20/20], Step [1/21], Loss train: 6.0843
+Epoch [20/20], Step [11/21], Loss train: 5.5366
+Epoch [20/20], Step [21/21], Loss train: 4.5597
+Epoch [20/20], Training Loss: 5.9992, Validation RMSE Loss: 5.6081, Validation MAE Loss: 4.7011
+Test RMSE Loss (au_c): 5.047613143920898, Test MAE Loss (au_c): 4.375
+---------------------------------
+feature_type:  pose_gaze
+Epoch [1/20], Step [1/21], Loss train: 9.8971
+Epoch [1/20], Step [11/21], Loss train: 6.0615
+Epoch [1/20], Step [21/21], Loss train: 8.6939
+Epoch [1/20], Training Loss: 7.0158, Validation RMSE Loss: 6.1782, Validation MAE Loss: 5.4731
+Epoch [2/20], Step [1/21], Loss train: 6.3388
+Epoch [2/20], Step [11/21], Loss train: 5.7286
+Epoch [2/20], Step [21/21], Loss train: 6.5298
+Epoch [2/20], Training Loss: 6.6002, Validation RMSE Loss: 5.6341, Validation MAE Loss: 4.7082
+Epoch [3/20], Step [1/21], Loss train: 5.8806
+Epoch [3/20], Step [11/21], Loss train: 8.8676
+Epoch [3/20], Step [21/21], Loss train: 4.9236
+Epoch [3/20], Training Loss: 6.1575, Validation RMSE Loss: 5.5834, Validation MAE Loss: 4.7056
+Epoch [4/20], Step [1/21], Loss train: 5.5920
+Epoch [4/20], Step [11/21], Loss train: 4.9962
+Epoch [4/20], Step [21/21], Loss train: 3.2488
+Epoch [4/20], Training Loss: 6.1369, Validation RMSE Loss: 5.5753, Validation MAE Loss: 4.7146
+Epoch [5/20], Step [1/21], Loss train: 4.3943
+Epoch [5/20], Step [11/21], Loss train: 8.5890
+Epoch [5/20], Step [21/21], Loss train: 1.2213
+Epoch [5/20], Training Loss: 5.7914, Validation RMSE Loss: 6.4645, Validation MAE Loss: 4.9761
+Epoch [6/20], Step [1/21], Loss train: 4.5141
+Epoch [6/20], Step [11/21], Loss train: 5.0450
+Epoch [6/20], Step [21/21], Loss train: 4.9235
+Epoch [6/20], Training Loss: 6.2039, Validation RMSE Loss: 5.7043, Validation MAE Loss: 4.7222
+Epoch [7/20], Step [1/21], Loss train: 4.6572
+Epoch [7/20], Step [11/21], Loss train: 7.0391
+Epoch [7/20], Step [21/21], Loss train: 7.9214
+Epoch [7/20], Training Loss: 6.0692, Validation RMSE Loss: 6.2120, Validation MAE Loss: 4.8616
+Epoch [8/20], Step [1/21], Loss train: 6.3246
+Epoch [8/20], Step [11/21], Loss train: 5.4423
+Epoch [8/20], Step [21/21], Loss train: 6.4093
+Epoch [8/20], Training Loss: 5.9084, Validation RMSE Loss: 6.7595, Validation MAE Loss: 6.0535
+Epoch [9/20], Step [1/21], Loss train: 7.7914
+Epoch [9/20], Step [11/21], Loss train: 4.5953
+Epoch [9/20], Step [21/21], Loss train: 9.5665
+Epoch [9/20], Training Loss: 6.3503, Validation RMSE Loss: 6.5289, Validation MAE Loss: 5.0030
+Epoch [10/20], Step [1/21], Loss train: 7.9611
+Epoch [10/20], Step [11/21], Loss train: 6.6919
+Epoch [10/20], Step [21/21], Loss train: 6.6195
+Epoch [10/20], Training Loss: 6.6912, Validation RMSE Loss: 6.0179, Validation MAE Loss: 5.2776
+Epoch [11/20], Step [1/21], Loss train: 5.2669
+Epoch [11/20], Step [11/21], Loss train: 6.7530
+Epoch [11/20], Step [21/21], Loss train: 3.8400
+Epoch [11/20], Training Loss: 6.0048, Validation RMSE Loss: 6.1167, Validation MAE Loss: 4.8134
+Epoch [12/20], Step [1/21], Loss train: 4.8948
+Epoch [12/20], Step [11/21], Loss train: 6.2096
+Epoch [12/20], Step [21/21], Loss train: 4.5191
+Epoch [12/20], Training Loss: 6.3231, Validation RMSE Loss: 5.5929, Validation MAE Loss: 4.6975
+Epoch [13/20], Step [1/21], Loss train: 6.2213
+Epoch [13/20], Step [11/21], Loss train: 6.3612
+Epoch [13/20], Step [21/21], Loss train: 6.2319
+Epoch [13/20], Training Loss: 6.3637, Validation RMSE Loss: 5.5755, Validation MAE Loss: 4.7649
+Epoch [14/20], Step [1/21], Loss train: 3.7654
+Epoch [14/20], Step [11/21], Loss train: 10.8355
+Epoch [14/20], Step [21/21], Loss train: 5.4598
+Epoch [14/20], Training Loss: 6.7571, Validation RMSE Loss: 5.5842, Validation MAE Loss: 4.7848
+Epoch [15/20], Step [1/21], Loss train: 4.3932
+Epoch [15/20], Step [11/21], Loss train: 7.9217
+Epoch [15/20], Step [21/21], Loss train: 2.3041
+Epoch [15/20], Training Loss: 6.6717, Validation RMSE Loss: 5.6834, Validation MAE Loss: 4.7185
+Epoch [16/20], Step [1/21], Loss train: 3.7374
+Epoch [16/20], Step [11/21], Loss train: 8.7243
+Epoch [16/20], Step [21/21], Loss train: 13.3555
+Epoch [16/20], Training Loss: 6.6069, Validation RMSE Loss: 5.6200, Validation MAE Loss: 4.7046
+Epoch [17/20], Step [1/21], Loss train: 5.6170
+Epoch [17/20], Step [11/21], Loss train: 4.2894
+Epoch [17/20], Step [21/21], Loss train: 4.6829
+Epoch [17/20], Training Loss: 6.2182, Validation RMSE Loss: 5.6387, Validation MAE Loss: 4.7093
+Epoch [18/20], Step [1/21], Loss train: 4.2651
+Epoch [18/20], Step [11/21], Loss train: 8.2212
+Epoch [18/20], Step [21/21], Loss train: 4.5011
+Epoch [18/20], Training Loss: 6.2624, Validation RMSE Loss: 5.7465, Validation MAE Loss: 4.9930
+Epoch [19/20], Step [1/21], Loss train: 6.4237
+Epoch [19/20], Step [11/21], Loss train: 5.1131
+Epoch [19/20], Step [21/21], Loss train: 6.8631
+Epoch [19/20], Training Loss: 6.4193, Validation RMSE Loss: 5.6795, Validation MAE Loss: 4.7178
+Epoch [20/20], Step [1/21], Loss train: 6.9465
+Epoch [20/20], Step [11/21], Loss train: 6.1420
+Epoch [20/20], Step [21/21], Loss train: 10.7057
+Epoch [20/20], Training Loss: 6.5074, Validation RMSE Loss: 5.6267, Validation MAE Loss: 4.7063
+Test RMSE Loss (pose_gaze): 5.035386562347412, Test MAE Loss (pose_gaze): 4.375
+---------------------------------
+feature_type:  pose_au_r
+Epoch [1/20], Step [1/21], Loss train: 7.9147
+Epoch [1/20], Step [11/21], Loss train: nan
+Epoch [1/20], Step [21/21], Loss train: nan
+Epoch [1/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [2/20], Step [1/21], Loss train: nan
+Epoch [2/20], Step [11/21], Loss train: nan
+Epoch [2/20], Step [21/21], Loss train: nan
+Epoch [2/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [3/20], Step [1/21], Loss train: nan
+Epoch [3/20], Step [11/21], Loss train: nan
+Epoch [3/20], Step [21/21], Loss train: nan
+Epoch [3/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [4/20], Step [1/21], Loss train: nan
+Epoch [4/20], Step [11/21], Loss train: nan
+Epoch [4/20], Step [21/21], Loss train: nan
+Epoch [4/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [5/20], Step [1/21], Loss train: nan
+Epoch [5/20], Step [11/21], Loss train: nan
+Epoch [5/20], Step [21/21], Loss train: nan
+Epoch [5/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [6/20], Step [1/21], Loss train: nan
+Epoch [6/20], Step [11/21], Loss train: nan
+Epoch [6/20], Step [21/21], Loss train: nan
+Epoch [6/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [7/20], Step [1/21], Loss train: nan
+Epoch [7/20], Step [11/21], Loss train: nan
+Epoch [7/20], Step [21/21], Loss train: nan
+Epoch [7/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [8/20], Step [1/21], Loss train: nan
+Epoch [8/20], Step [11/21], Loss train: nan
+Epoch [8/20], Step [21/21], Loss train: nan
+Epoch [8/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [9/20], Step [1/21], Loss train: nan
+Epoch [9/20], Step [11/21], Loss train: nan
+Epoch [9/20], Step [21/21], Loss train: nan
+Epoch [9/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [10/20], Step [1/21], Loss train: nan
+Epoch [10/20], Step [11/21], Loss train: nan
+Epoch [10/20], Step [21/21], Loss train: nan
+Epoch [10/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [11/20], Step [1/21], Loss train: nan
+Epoch [11/20], Step [11/21], Loss train: nan
+Epoch [11/20], Step [21/21], Loss train: nan
+Epoch [11/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [12/20], Step [1/21], Loss train: nan
+Epoch [12/20], Step [11/21], Loss train: nan
+Epoch [12/20], Step [21/21], Loss train: nan
+Epoch [12/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [13/20], Step [1/21], Loss train: nan
+Epoch [13/20], Step [11/21], Loss train: nan
+Epoch [13/20], Step [21/21], Loss train: nan
+Epoch [13/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [14/20], Step [1/21], Loss train: nan
+Epoch [14/20], Step [11/21], Loss train: nan
+Epoch [14/20], Step [21/21], Loss train: nan
+Epoch [14/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [15/20], Step [1/21], Loss train: nan
+Epoch [15/20], Step [11/21], Loss train: nan
+Epoch [15/20], Step [21/21], Loss train: nan
+Epoch [15/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [16/20], Step [1/21], Loss train: nan
+Epoch [16/20], Step [11/21], Loss train: nan
+Epoch [16/20], Step [21/21], Loss train: nan
+Epoch [16/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [17/20], Step [1/21], Loss train: nan
+Epoch [17/20], Step [11/21], Loss train: nan
+Epoch [17/20], Step [21/21], Loss train: nan
+Epoch [17/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [18/20], Step [1/21], Loss train: nan
+Epoch [18/20], Step [11/21], Loss train: nan
+Epoch [18/20], Step [21/21], Loss train: nan
+Epoch [18/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [19/20], Step [1/21], Loss train: nan
+Epoch [19/20], Step [11/21], Loss train: nan
+Epoch [19/20], Step [21/21], Loss train: nan
+Epoch [19/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [20/20], Step [1/21], Loss train: nan
+Epoch [20/20], Step [11/21], Loss train: nan
+Epoch [20/20], Step [21/21], Loss train: nan
+Epoch [20/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Test RMSE Loss (pose_au_r): nan, Test MAE Loss (pose_au_r): nan
+---------------------------------
+feature_type:  pose_au_c
+Epoch [1/20], Step [1/21], Loss train: 11.9956
+Epoch [1/20], Step [11/21], Loss train: 6.0299
+Epoch [1/20], Step [21/21], Loss train: 7.7306
+Epoch [1/20], Training Loss: 7.0760, Validation RMSE Loss: 5.6563, Validation MAE Loss: 4.7132
+Epoch [2/20], Step [1/21], Loss train: 6.6663
+Epoch [2/20], Step [11/21], Loss train: 5.0308
+Epoch [2/20], Step [21/21], Loss train: 4.2891
+Epoch [2/20], Training Loss: 6.1650, Validation RMSE Loss: 6.3302, Validation MAE Loss: 5.6366
+Epoch [3/20], Step [1/21], Loss train: 7.9111
+Epoch [3/20], Step [11/21], Loss train: 7.0024
+Epoch [3/20], Step [21/21], Loss train: 2.5584
+Epoch [3/20], Training Loss: 6.7094, Validation RMSE Loss: 6.3232, Validation MAE Loss: 4.9141
+Epoch [4/20], Step [1/21], Loss train: 6.5257
+Epoch [4/20], Step [11/21], Loss train: 6.7410
+Epoch [4/20], Step [21/21], Loss train: 5.4747
+Epoch [4/20], Training Loss: 6.5470, Validation RMSE Loss: 5.7557, Validation MAE Loss: 5.0044
+Epoch [5/20], Step [1/21], Loss train: 8.4374
+Epoch [5/20], Step [11/21], Loss train: 6.7847
+Epoch [5/20], Step [21/21], Loss train: 6.9809
+Epoch [5/20], Training Loss: 6.4610, Validation RMSE Loss: 6.8556, Validation MAE Loss: 6.1375
+Epoch [6/20], Step [1/21], Loss train: 6.3586
+Epoch [6/20], Step [11/21], Loss train: 5.4773
+Epoch [6/20], Step [21/21], Loss train: 3.8776
+Epoch [6/20], Training Loss: 6.0224, Validation RMSE Loss: 5.5734, Validation MAE Loss: 4.7620
+Epoch [7/20], Step [1/21], Loss train: 8.5611
+Epoch [7/20], Step [11/21], Loss train: 4.8274
+Epoch [7/20], Step [21/21], Loss train: 3.8610
+Epoch [7/20], Training Loss: 6.2720, Validation RMSE Loss: 5.8344, Validation MAE Loss: 4.7493
+Epoch [8/20], Step [1/21], Loss train: 3.7059
+Epoch [8/20], Step [11/21], Loss train: 5.8024
+Epoch [8/20], Step [21/21], Loss train: 9.0778
+Epoch [8/20], Training Loss: 6.2708, Validation RMSE Loss: 5.7311, Validation MAE Loss: 4.9732
+Epoch [9/20], Step [1/21], Loss train: 4.5139
+Epoch [9/20], Step [11/21], Loss train: 4.6543
+Epoch [9/20], Step [21/21], Loss train: 6.5320
+Epoch [9/20], Training Loss: 6.1167, Validation RMSE Loss: 5.7841, Validation MAE Loss: 5.0382
+Epoch [10/20], Step [1/21], Loss train: 6.3714
+Epoch [10/20], Step [11/21], Loss train: 7.3038
+Epoch [10/20], Step [21/21], Loss train: 6.6922
+Epoch [10/20], Training Loss: 6.6794, Validation RMSE Loss: 5.8497, Validation MAE Loss: 4.7530
+Epoch [11/20], Step [1/21], Loss train: 9.2197
+Epoch [11/20], Step [11/21], Loss train: 6.7693
+Epoch [11/20], Step [21/21], Loss train: 6.4811
+Epoch [11/20], Training Loss: 6.4816, Validation RMSE Loss: 5.6391, Validation MAE Loss: 4.7094
+Epoch [12/20], Step [1/21], Loss train: 4.9229
+Epoch [12/20], Step [11/21], Loss train: 7.0027
+Epoch [12/20], Step [21/21], Loss train: 8.8467
+Epoch [12/20], Training Loss: 6.3173, Validation RMSE Loss: 5.6837, Validation MAE Loss: 4.7186
+Epoch [13/20], Step [1/21], Loss train: 3.6200
+Epoch [13/20], Step [11/21], Loss train: 3.8195
+Epoch [13/20], Step [21/21], Loss train: 8.3931
+Epoch [13/20], Training Loss: 6.0939, Validation RMSE Loss: 6.4306, Validation MAE Loss: 4.9616
+Epoch [14/20], Step [1/21], Loss train: 3.0681
+Epoch [14/20], Step [11/21], Loss train: 7.1285
+Epoch [14/20], Step [21/21], Loss train: 7.0547
+Epoch [14/20], Training Loss: 6.4532, Validation RMSE Loss: 6.0554, Validation MAE Loss: 5.3260
+Epoch [15/20], Step [1/21], Loss train: 4.3238
+Epoch [15/20], Step [11/21], Loss train: 7.8244
+Epoch [15/20], Step [21/21], Loss train: 4.2859
+Epoch [15/20], Training Loss: 6.1928, Validation RMSE Loss: 6.5337, Validation MAE Loss: 5.0051
+Epoch [16/20], Step [1/21], Loss train: 4.3959
+Epoch [16/20], Step [11/21], Loss train: 8.6478
+Epoch [16/20], Step [21/21], Loss train: 9.5611
+Epoch [16/20], Training Loss: 6.1111, Validation RMSE Loss: 5.5730, Validation MAE Loss: 4.7615
+Epoch [17/20], Step [1/21], Loss train: 6.8631
+Epoch [17/20], Step [11/21], Loss train: 3.7226
+Epoch [17/20], Step [21/21], Loss train: 3.9751
+Epoch [17/20], Training Loss: 5.9373, Validation RMSE Loss: 6.9312, Validation MAE Loss: 5.2503
+Epoch [18/20], Step [1/21], Loss train: 8.3975
+Epoch [18/20], Step [11/21], Loss train: 8.9194
+Epoch [18/20], Step [21/21], Loss train: 3.6682
+Epoch [18/20], Training Loss: 7.1449, Validation RMSE Loss: 5.7201, Validation MAE Loss: 4.7248
+Epoch [19/20], Step [1/21], Loss train: 5.8699
+Epoch [19/20], Step [11/21], Loss train: 5.5875
+Epoch [19/20], Step [21/21], Loss train: 6.0146
+Epoch [19/20], Training Loss: 6.1284, Validation RMSE Loss: 5.7796, Validation MAE Loss: 5.0330
+Epoch [20/20], Step [1/21], Loss train: 7.7818
+Epoch [20/20], Step [11/21], Loss train: 4.1471
+Epoch [20/20], Step [21/21], Loss train: 7.0961
+Epoch [20/20], Training Loss: 6.2689, Validation RMSE Loss: 6.9443, Validation MAE Loss: 5.2582
+Test RMSE Loss (pose_au_c): 5.875715732574463, Test MAE Loss (pose_au_c): 4.5432233810424805
+---------------------------------
+feature_type:  gaze_au_r
+Epoch [1/20], Step [1/21], Loss train: 7.1515
+Epoch [1/20], Step [11/21], Loss train: 6.7433
+Epoch [1/20], Step [21/21], Loss train: 4.2298
+Epoch [1/20], Training Loss: 6.9409, Validation RMSE Loss: 5.6225, Validation MAE Loss: 4.8516
+Epoch [2/20], Step [1/21], Loss train: 7.6479
+Epoch [2/20], Step [11/21], Loss train: 3.6205
+Epoch [2/20], Step [21/21], Loss train: 4.0664
+Epoch [2/20], Training Loss: 6.1612, Validation RMSE Loss: 5.5673, Validation MAE Loss: 4.7295
+Epoch [3/20], Step [1/21], Loss train: 4.7885
+Epoch [3/20], Step [11/21], Loss train: 7.0799
+Epoch [3/20], Step [21/21], Loss train: 6.4938
+Epoch [3/20], Training Loss: 6.2199, Validation RMSE Loss: 6.0827, Validation MAE Loss: 5.3602
+Epoch [4/20], Step [1/21], Loss train: 5.8437
+Epoch [4/20], Step [11/21], Loss train: 7.8041
+Epoch [4/20], Step [21/21], Loss train: 3.5084
+Epoch [4/20], Training Loss: 5.9679, Validation RMSE Loss: 6.7555, Validation MAE Loss: 5.1422
+Epoch [5/20], Step [1/21], Loss train: 7.8120
+Epoch [5/20], Step [11/21], Loss train: 5.4707
+Epoch [5/20], Step [21/21], Loss train: 4.8575
+Epoch [5/20], Training Loss: 6.4002, Validation RMSE Loss: 5.6374, Validation MAE Loss: 4.7090
+Epoch [6/20], Step [1/21], Loss train: 4.4519
+Epoch [6/20], Step [11/21], Loss train: 7.6265
+Epoch [6/20], Step [21/21], Loss train: 11.5100
+Epoch [6/20], Training Loss: 6.4154, Validation RMSE Loss: 5.6871, Validation MAE Loss: 4.9244
+Epoch [7/20], Step [1/21], Loss train: 5.4298
+Epoch [7/20], Step [11/21], Loss train: 7.5883
+Epoch [7/20], Step [21/21], Loss train: 9.5875
+Epoch [7/20], Training Loss: 6.7295, Validation RMSE Loss: 5.6633, Validation MAE Loss: 4.7146
+Epoch [8/20], Step [1/21], Loss train: 7.1089
+Epoch [8/20], Step [11/21], Loss train: 5.7978
+Epoch [8/20], Step [21/21], Loss train: 2.8781
+Epoch [8/20], Training Loss: 6.3623, Validation RMSE Loss: 5.9993, Validation MAE Loss: 4.7852
+Epoch [9/20], Step [1/21], Loss train: 8.5578
+Epoch [9/20], Step [11/21], Loss train: 3.4640
+Epoch [9/20], Step [21/21], Loss train: 6.0147
+Epoch [9/20], Training Loss: 6.3352, Validation RMSE Loss: 7.7704, Validation MAE Loss: 7.0492
+Epoch [10/20], Step [1/21], Loss train: 8.3155
+Epoch [10/20], Step [11/21], Loss train: 6.6687
+Epoch [10/20], Step [21/21], Loss train: 9.1923
+Epoch [10/20], Training Loss: 6.5568, Validation RMSE Loss: 6.6257, Validation MAE Loss: 5.0584
+Epoch [11/20], Step [1/21], Loss train: 4.4321
+Epoch [11/20], Step [11/21], Loss train: 4.8285
+Epoch [11/20], Step [21/21], Loss train: 6.2573
+Epoch [11/20], Training Loss: 6.1227, Validation RMSE Loss: 5.6433, Validation MAE Loss: 4.7103
+Epoch [12/20], Step [1/21], Loss train: 6.4238
+Epoch [12/20], Step [11/21], Loss train: 3.7813
+Epoch [12/20], Step [21/21], Loss train: 5.5673
+Epoch [12/20], Training Loss: 6.1989, Validation RMSE Loss: 6.0011, Validation MAE Loss: 4.7855
+Epoch [13/20], Step [1/21], Loss train: 6.8038
+Epoch [13/20], Step [11/21], Loss train: 10.3620
+Epoch [13/20], Step [21/21], Loss train: 9.7442
+Epoch [13/20], Training Loss: 7.0188, Validation RMSE Loss: 5.8294, Validation MAE Loss: 4.7481
+Epoch [14/20], Step [1/21], Loss train: 5.7179
+Epoch [14/20], Step [11/21], Loss train: 6.7154
+Epoch [14/20], Step [21/21], Loss train: 5.6274
+Epoch [14/20], Training Loss: 6.1731, Validation RMSE Loss: 5.5700, Validation MAE Loss: 4.7561
+Epoch [15/20], Step [1/21], Loss train: 6.8093
+Epoch [15/20], Step [11/21], Loss train: 4.8887
+Epoch [15/20], Step [21/21], Loss train: 6.5693
+Epoch [15/20], Training Loss: 6.0647, Validation RMSE Loss: 6.9308, Validation MAE Loss: 6.2027
+Epoch [16/20], Step [1/21], Loss train: 7.7342
+Epoch [16/20], Step [11/21], Loss train: 7.3977
+Epoch [16/20], Step [21/21], Loss train: 8.7286
+Epoch [16/20], Training Loss: 6.7766, Validation RMSE Loss: 5.5988, Validation MAE Loss: 4.8146
+Epoch [17/20], Step [1/21], Loss train: 5.7142
+Epoch [17/20], Step [11/21], Loss train: 7.6260
+Epoch [17/20], Step [21/21], Loss train: 3.5060
+Epoch [17/20], Training Loss: 6.7549, Validation RMSE Loss: 7.2366, Validation MAE Loss: 5.4526
+Epoch [18/20], Step [1/21], Loss train: 10.6385
+Epoch [18/20], Step [11/21], Loss train: 4.8877
+Epoch [18/20], Step [21/21], Loss train: 7.0391
+Epoch [18/20], Training Loss: 6.8881, Validation RMSE Loss: 5.6102, Validation MAE Loss: 4.8337
+Epoch [19/20], Step [1/21], Loss train: 4.4402
+Epoch [19/20], Step [11/21], Loss train: 7.5396
+Epoch [19/20], Step [21/21], Loss train: 12.4734
+Epoch [19/20], Training Loss: 6.9806, Validation RMSE Loss: 5.5986, Validation MAE Loss: 4.6980
+Epoch [20/20], Step [1/21], Loss train: 6.4437
+Epoch [20/20], Step [11/21], Loss train: 7.6107
+Epoch [20/20], Step [21/21], Loss train: 3.3481
+Epoch [20/20], Training Loss: 6.4621, Validation RMSE Loss: 5.8368, Validation MAE Loss: 5.0956
+Test RMSE Loss (gaze_au_r): 5.9277801513671875, Test MAE Loss (gaze_au_r): 5.13604736328125
+---------------------------------
+feature_type:  gaze_au_c
+Epoch [1/20], Step [1/21], Loss train: 10.9590
+Epoch [1/20], Step [11/21], Loss train: 7.5638
+Epoch [1/20], Step [21/21], Loss train: 13.1994
+Epoch [1/20], Training Loss: 6.9983, Validation RMSE Loss: 5.5743, Validation MAE Loss: 4.7159
+Epoch [2/20], Step [1/21], Loss train: 4.1801
+Epoch [2/20], Step [11/21], Loss train: 4.3149
+Epoch [2/20], Step [21/21], Loss train: 4.1040
+Epoch [2/20], Training Loss: 6.0004, Validation RMSE Loss: 6.1707, Validation MAE Loss: 4.8412
+Epoch [3/20], Step [1/21], Loss train: 3.0040
+Epoch [3/20], Step [11/21], Loss train: 7.0000
+Epoch [3/20], Step [21/21], Loss train: 3.6486
+Epoch [3/20], Training Loss: 5.9500, Validation RMSE Loss: 5.6574, Validation MAE Loss: 4.7134
+Epoch [4/20], Step [1/21], Loss train: 6.0958
+Epoch [4/20], Step [11/21], Loss train: 4.7645
+Epoch [4/20], Step [21/21], Loss train: 5.4081
+Epoch [4/20], Training Loss: 6.0306, Validation RMSE Loss: 6.0439, Validation MAE Loss: 4.7937
+Epoch [5/20], Step [1/21], Loss train: 7.3769
+Epoch [5/20], Step [11/21], Loss train: 5.3837
+Epoch [5/20], Step [21/21], Loss train: 7.6998
+Epoch [5/20], Training Loss: 6.3448, Validation RMSE Loss: 5.7113, Validation MAE Loss: 4.7234
+Epoch [6/20], Step [1/21], Loss train: 8.4478
+Epoch [6/20], Step [11/21], Loss train: 4.9071
+Epoch [6/20], Step [21/21], Loss train: 8.2268
+Epoch [6/20], Training Loss: 6.5696, Validation RMSE Loss: 7.0010, Validation MAE Loss: 6.2774
+Epoch [7/20], Step [1/21], Loss train: 7.4392
+Epoch [7/20], Step [11/21], Loss train: 4.6755
+Epoch [7/20], Step [21/21], Loss train: 3.3314
+Epoch [7/20], Training Loss: 6.3842, Validation RMSE Loss: 6.0506, Validation MAE Loss: 4.7950
+Epoch [8/20], Step [1/21], Loss train: 5.9449
+Epoch [8/20], Step [11/21], Loss train: 6.8771
+Epoch [8/20], Step [21/21], Loss train: 5.0401
+Epoch [8/20], Training Loss: 6.2616, Validation RMSE Loss: 5.9022, Validation MAE Loss: 5.1598
+Epoch [9/20], Step [1/21], Loss train: 6.8312
+Epoch [9/20], Step [11/21], Loss train: 8.3419
+Epoch [9/20], Step [21/21], Loss train: 3.0009
+Epoch [9/20], Training Loss: 6.0266, Validation RMSE Loss: 5.7478, Validation MAE Loss: 4.7291
+Epoch [10/20], Step [1/21], Loss train: 5.1526
+Epoch [10/20], Step [11/21], Loss train: 8.4572
+Epoch [10/20], Step [21/21], Loss train: 5.2510
+Epoch [10/20], Training Loss: 6.2321, Validation RMSE Loss: 5.9378, Validation MAE Loss: 4.7727
+Epoch [11/20], Step [1/21], Loss train: 8.9596
+Epoch [11/20], Step [11/21], Loss train: 8.8509
+Epoch [11/20], Step [21/21], Loss train: 2.4672
+Epoch [11/20], Training Loss: 5.9136, Validation RMSE Loss: 6.5472, Validation MAE Loss: 5.0106
+Epoch [12/20], Step [1/21], Loss train: 7.4238
+Epoch [12/20], Step [11/21], Loss train: 7.6146
+Epoch [12/20], Step [21/21], Loss train: 9.6212
+Epoch [12/20], Training Loss: 6.7574, Validation RMSE Loss: 6.2586, Validation MAE Loss: 5.5617
+Epoch [13/20], Step [1/21], Loss train: 6.6394
+Epoch [13/20], Step [11/21], Loss train: 6.1577
+Epoch [13/20], Step [21/21], Loss train: 6.9902
+Epoch [13/20], Training Loss: 6.4911, Validation RMSE Loss: 5.5659, Validation MAE Loss: 4.7420
+Epoch [14/20], Step [1/21], Loss train: 3.5264
+Epoch [14/20], Step [11/21], Loss train: 8.3134
+Epoch [14/20], Step [21/21], Loss train: 5.3657
+Epoch [14/20], Training Loss: 6.1689, Validation RMSE Loss: 5.5700, Validation MAE Loss: 4.7230
+Epoch [15/20], Step [1/21], Loss train: 6.9082
+Epoch [15/20], Step [11/21], Loss train: 7.0164
+Epoch [15/20], Step [21/21], Loss train: 8.6934
+Epoch [15/20], Training Loss: 6.1689, Validation RMSE Loss: 5.5894, Validation MAE Loss: 4.7965
+Epoch [16/20], Step [1/21], Loss train: 6.7826
+Epoch [16/20], Step [11/21], Loss train: 4.1519
+Epoch [16/20], Step [21/21], Loss train: 6.6877
+Epoch [16/20], Training Loss: 5.9718, Validation RMSE Loss: 5.5672, Validation MAE Loss: 4.7491
+Epoch [17/20], Step [1/21], Loss train: 7.1213
+Epoch [17/20], Step [11/21], Loss train: 6.4446
+Epoch [17/20], Step [21/21], Loss train: 6.6979
+Epoch [17/20], Training Loss: 6.3082, Validation RMSE Loss: 5.5751, Validation MAE Loss: 4.7148
+Epoch [18/20], Step [1/21], Loss train: 7.1530
+Epoch [18/20], Step [11/21], Loss train: 6.8670
+Epoch [18/20], Step [21/21], Loss train: 4.6583
+Epoch [18/20], Training Loss: 6.1311, Validation RMSE Loss: 5.8333, Validation MAE Loss: 4.7491
+Epoch [19/20], Step [1/21], Loss train: 5.6769
+Epoch [19/20], Step [11/21], Loss train: 6.0233
+Epoch [19/20], Step [21/21], Loss train: 8.5676
+Epoch [19/20], Training Loss: 6.3851, Validation RMSE Loss: 6.3428, Validation MAE Loss: 5.6494
+Epoch [20/20], Step [1/21], Loss train: 5.5454
+Epoch [20/20], Step [11/21], Loss train: 4.3748
+Epoch [20/20], Step [21/21], Loss train: 4.7254
+Epoch [20/20], Training Loss: 6.0527, Validation RMSE Loss: 5.9085, Validation MAE Loss: 5.1656
+Test RMSE Loss (gaze_au_c): 6.061395168304443, Test MAE Loss (gaze_au_c): 5.258534908294678
+---------------------------------
+feature_type:  au_r_au_c
+Epoch [1/20], Step [1/21], Loss train: 10.0265
+Epoch [1/20], Step [11/21], Loss train: 5.3205
+Epoch [1/20], Step [21/21], Loss train: 7.6332
+Epoch [1/20], Training Loss: 6.4723, Validation RMSE Loss: 6.2362, Validation MAE Loss: 5.5376
+Epoch [2/20], Step [1/21], Loss train: 7.2365
+Epoch [2/20], Step [11/21], Loss train: 6.5419
+Epoch [2/20], Step [21/21], Loss train: 4.9156
+Epoch [2/20], Training Loss: 6.3737, Validation RMSE Loss: 5.9807, Validation MAE Loss: 5.2294
+Epoch [3/20], Step [1/21], Loss train: 7.1531
+Epoch [3/20], Step [11/21], Loss train: 4.1140
+Epoch [3/20], Step [21/21], Loss train: 6.6408
+Epoch [3/20], Training Loss: 6.1958, Validation RMSE Loss: 5.9676, Validation MAE Loss: 5.2182
+Epoch [4/20], Step [1/21], Loss train: 6.6332
+Epoch [4/20], Step [11/21], Loss train: 6.0546
+Epoch [4/20], Step [21/21], Loss train: 5.4214
+Epoch [4/20], Training Loss: 6.2815, Validation RMSE Loss: 5.7116, Validation MAE Loss: 4.7234
+Epoch [5/20], Step [1/21], Loss train: 4.1835
+Epoch [5/20], Step [11/21], Loss train: 5.9345
+Epoch [5/20], Step [21/21], Loss train: 7.7527
+Epoch [5/20], Training Loss: 6.2312, Validation RMSE Loss: 5.7330, Validation MAE Loss: 4.9757
+Epoch [6/20], Step [1/21], Loss train: 6.4904
+Epoch [6/20], Step [11/21], Loss train: 7.3978
+Epoch [6/20], Step [21/21], Loss train: 2.8998
+Epoch [6/20], Training Loss: 6.0197, Validation RMSE Loss: 6.6481, Validation MAE Loss: 5.0732
+Epoch [7/20], Step [1/21], Loss train: 8.5870
+Epoch [7/20], Step [11/21], Loss train: 6.4783
+Epoch [7/20], Step [21/21], Loss train: 4.6184
+Epoch [7/20], Training Loss: 6.5401, Validation RMSE Loss: 5.6961, Validation MAE Loss: 4.7208
+Epoch [8/20], Step [1/21], Loss train: 4.5786
+Epoch [8/20], Step [11/21], Loss train: 7.9347
+Epoch [8/20], Step [21/21], Loss train: 6.8642
+Epoch [8/20], Training Loss: 6.0649, Validation RMSE Loss: 5.6788, Validation MAE Loss: 4.7177
+Epoch [9/20], Step [1/21], Loss train: 5.7609
+Epoch [9/20], Step [11/21], Loss train: 10.3242
+Epoch [9/20], Step [21/21], Loss train: 7.2473
+Epoch [9/20], Training Loss: 6.4696, Validation RMSE Loss: 5.5773, Validation MAE Loss: 4.7121
+Epoch [10/20], Step [1/21], Loss train: 5.4011
+Epoch [10/20], Step [11/21], Loss train: 3.3564
+Epoch [10/20], Step [21/21], Loss train: 10.1027
+Epoch [10/20], Training Loss: 6.3684, Validation RMSE Loss: 5.5709, Validation MAE Loss: 4.7213
+Epoch [11/20], Step [1/21], Loss train: 6.2233
+Epoch [11/20], Step [11/21], Loss train: 8.0988
+Epoch [11/20], Step [21/21], Loss train: 10.2967
+Epoch [11/20], Training Loss: 7.1391, Validation RMSE Loss: 6.2487, Validation MAE Loss: 4.8794
+Epoch [12/20], Step [1/21], Loss train: 6.0514
+Epoch [12/20], Step [11/21], Loss train: 4.4457
+Epoch [12/20], Step [21/21], Loss train: 7.2835
+Epoch [12/20], Training Loss: 6.1275, Validation RMSE Loss: 6.3001, Validation MAE Loss: 5.6055
+Epoch [13/20], Step [1/21], Loss train: 6.0868
+Epoch [13/20], Step [11/21], Loss train: 3.7156
+Epoch [13/20], Step [21/21], Loss train: 7.0823
+Epoch [13/20], Training Loss: 6.7778, Validation RMSE Loss: 5.8480, Validation MAE Loss: 4.7526
+Epoch [14/20], Step [1/21], Loss train: 9.0428
+Epoch [14/20], Step [11/21], Loss train: 7.9342
+Epoch [14/20], Step [21/21], Loss train: 7.6077
+Epoch [14/20], Training Loss: 6.1688, Validation RMSE Loss: 5.8940, Validation MAE Loss: 4.7633
+Epoch [15/20], Step [1/21], Loss train: 9.6887
+Epoch [15/20], Step [11/21], Loss train: 6.2075
+Epoch [15/20], Step [21/21], Loss train: 6.7517
+Epoch [15/20], Training Loss: 6.1773, Validation RMSE Loss: 5.5735, Validation MAE Loss: 4.7171
+Epoch [16/20], Step [1/21], Loss train: 3.3174
+Epoch [16/20], Step [11/21], Loss train: 5.6554
+Epoch [16/20], Step [21/21], Loss train: 5.3345
+Epoch [16/20], Training Loss: 6.2651, Validation RMSE Loss: 6.4718, Validation MAE Loss: 5.7813
+Epoch [17/20], Step [1/21], Loss train: 7.3815
+Epoch [17/20], Step [11/21], Loss train: 6.2044
+Epoch [17/20], Step [21/21], Loss train: 11.6514
+Epoch [17/20], Training Loss: 6.5278, Validation RMSE Loss: 5.8283, Validation MAE Loss: 4.7478
+Epoch [18/20], Step [1/21], Loss train: 9.1349
+Epoch [18/20], Step [11/21], Loss train: 6.2658
+Epoch [18/20], Step [21/21], Loss train: 4.8145
+Epoch [18/20], Training Loss: 6.1008, Validation RMSE Loss: 5.7193, Validation MAE Loss: 4.9574
+Epoch [19/20], Step [1/21], Loss train: 5.1927
+Epoch [19/20], Step [11/21], Loss train: 5.0703
+Epoch [19/20], Step [21/21], Loss train: 7.5791
+Epoch [19/20], Training Loss: 6.3960, Validation RMSE Loss: 6.5662, Validation MAE Loss: 5.8746
+Epoch [20/20], Step [1/21], Loss train: 7.9855
+Epoch [20/20], Step [11/21], Loss train: 6.2460
+Epoch [20/20], Step [21/21], Loss train: 4.2829
+Epoch [20/20], Training Loss: 6.1538, Validation RMSE Loss: 7.0425, Validation MAE Loss: 5.3161
+Test RMSE Loss (au_r_au_c): 5.961463928222656, Test MAE Loss (au_r_au_c): 4.583772659301758
+---------------------------------
+feature_type:  pose_gaze_au_r
+Epoch [1/20], Step [1/21], Loss train: 10.0862
+Epoch [1/20], Step [11/21], Loss train: 6.4812
+Epoch [1/20], Step [21/21], Loss train: 7.5615
+Epoch [1/20], Training Loss: 6.9976, Validation RMSE Loss: 5.5349, Validation MAE Loss: 4.6306
+Epoch [2/20], Step [1/21], Loss train: 6.8363
+Epoch [2/20], Step [11/21], Loss train: 4.9522
+Epoch [2/20], Step [21/21], Loss train: 5.5403
+Epoch [2/20], Training Loss: 6.0505, Validation RMSE Loss: 5.5604, Validation MAE Loss: 4.5807
+Epoch [3/20], Step [1/21], Loss train: 6.6009
+Epoch [3/20], Step [11/21], Loss train: 8.7716
+Epoch [3/20], Step [21/21], Loss train: 4.1490
+Epoch [3/20], Training Loss: 6.0579, Validation RMSE Loss: 5.6493, Validation MAE Loss: 4.7244
+Epoch [4/20], Step [1/21], Loss train: 7.7038
+Epoch [4/20], Step [11/21], Loss train: 5.1798
+Epoch [4/20], Step [21/21], Loss train: 6.0858
+Epoch [4/20], Training Loss: 6.3156, Validation RMSE Loss: 5.7126, Validation MAE Loss: 4.9505
+Epoch [5/20], Step [1/21], Loss train: 6.7248
+Epoch [5/20], Step [11/21], Loss train: 5.8658
+Epoch [5/20], Step [21/21], Loss train: 5.3191
+Epoch [5/20], Training Loss: 6.0765, Validation RMSE Loss: 5.5617, Validation MAE Loss: 4.7270
+Epoch [6/20], Step [1/21], Loss train: 4.7592
+Epoch [6/20], Step [11/21], Loss train: 6.5690
+Epoch [6/20], Step [21/21], Loss train: 6.3629
+Epoch [6/20], Training Loss: 6.0998, Validation RMSE Loss: 5.5478, Validation MAE Loss: 4.6798
+Epoch [7/20], Step [1/21], Loss train: 3.8444
+Epoch [7/20], Step [11/21], Loss train: 5.7181
+Epoch [7/20], Step [21/21], Loss train: 3.3875
+Epoch [7/20], Training Loss: 6.0591, Validation RMSE Loss: 5.5870, Validation MAE Loss: 4.6628
+Epoch [8/20], Step [1/21], Loss train: 6.9699
+Epoch [8/20], Step [11/21], Loss train: 5.6551
+Epoch [8/20], Step [21/21], Loss train: 4.2993
+Epoch [8/20], Training Loss: 5.9199, Validation RMSE Loss: 5.8909, Validation MAE Loss: 4.7411
+Epoch [9/20], Step [1/21], Loss train: 4.6702
+Epoch [9/20], Step [11/21], Loss train: 6.8721
+Epoch [9/20], Step [21/21], Loss train: 7.6618
+Epoch [9/20], Training Loss: 6.1830, Validation RMSE Loss: 5.4125, Validation MAE Loss: 4.5966
+Epoch [10/20], Step [1/21], Loss train: 8.4064
+Epoch [10/20], Step [11/21], Loss train: 6.4066
+Epoch [10/20], Step [21/21], Loss train: 5.2543
+Epoch [10/20], Training Loss: 6.3963, Validation RMSE Loss: 5.7482, Validation MAE Loss: 4.7144
+Epoch [11/20], Step [1/21], Loss train: 6.0439
+Epoch [11/20], Step [11/21], Loss train: 5.1399
+Epoch [11/20], Step [21/21], Loss train: 7.6329
+Epoch [11/20], Training Loss: 6.3563, Validation RMSE Loss: 5.8205, Validation MAE Loss: 5.0784
+Epoch [12/20], Step [1/21], Loss train: 5.5835
+Epoch [12/20], Step [11/21], Loss train: 10.4899
+Epoch [12/20], Step [21/21], Loss train: 5.2791
+Epoch [12/20], Training Loss: 6.8604, Validation RMSE Loss: 5.7899, Validation MAE Loss: 5.0448
+Epoch [13/20], Step [1/21], Loss train: 6.2084
+Epoch [13/20], Step [11/21], Loss train: 5.0698
+Epoch [13/20], Step [21/21], Loss train: 2.8369
+Epoch [13/20], Training Loss: 7.4385, Validation RMSE Loss: 6.4630, Validation MAE Loss: 4.9755
+Epoch [14/20], Step [1/21], Loss train: 7.0767
+Epoch [14/20], Step [11/21], Loss train: 6.0300
+Epoch [14/20], Step [21/21], Loss train: 2.7064
+Epoch [14/20], Training Loss: 6.4394, Validation RMSE Loss: 5.9162, Validation MAE Loss: 4.7681
+Epoch [15/20], Step [1/21], Loss train: 4.5286
+Epoch [15/20], Step [11/21], Loss train: 8.3547
+Epoch [15/20], Step [21/21], Loss train: 3.0425
+Epoch [15/20], Training Loss: 5.9483, Validation RMSE Loss: 6.1105, Validation MAE Loss: 4.8101
+Epoch [16/20], Step [1/21], Loss train: 6.3992
+Epoch [16/20], Step [11/21], Loss train: 6.1758
+Epoch [16/20], Step [21/21], Loss train: 2.2095
+Epoch [16/20], Training Loss: 6.1827, Validation RMSE Loss: 5.6869, Validation MAE Loss: 4.7191
+Epoch [17/20], Step [1/21], Loss train: 6.1446
+Epoch [17/20], Step [11/21], Loss train: 3.6551
+Epoch [17/20], Step [21/21], Loss train: 4.7457
+Epoch [17/20], Training Loss: 6.0295, Validation RMSE Loss: 6.4428, Validation MAE Loss: 5.7516
+Epoch [18/20], Step [1/21], Loss train: 6.3429
+Epoch [18/20], Step [11/21], Loss train: 6.8315
+Epoch [18/20], Step [21/21], Loss train: 6.6960
+Epoch [18/20], Training Loss: 6.1804, Validation RMSE Loss: 6.2927, Validation MAE Loss: 4.9001
+Epoch [19/20], Step [1/21], Loss train: 8.1397
+Epoch [19/20], Step [11/21], Loss train: 6.6609
+Epoch [19/20], Step [21/21], Loss train: 3.3033
+Epoch [19/20], Training Loss: 6.1411, Validation RMSE Loss: 5.6357, Validation MAE Loss: 4.7086
+Epoch [20/20], Step [1/21], Loss train: 5.6661
+Epoch [20/20], Step [11/21], Loss train: 6.6627
+Epoch [20/20], Step [21/21], Loss train: 3.7090
+Epoch [20/20], Training Loss: 6.0320, Validation RMSE Loss: 5.7523, Validation MAE Loss: 4.7298
+Test RMSE Loss (pose_gaze_au_r): 5.0328474044799805, Test MAE Loss (pose_gaze_au_r): 4.375
+---------------------------------
+feature_type:  pose_gaze_au_c
+Epoch [1/20], Step [1/21], Loss train: 11.9432
+Epoch [1/20], Step [11/21], Loss train: 6.3013
+Epoch [1/20], Step [21/21], Loss train: 6.8569
+Epoch [1/20], Training Loss: 6.5159, Validation RMSE Loss: 5.5608, Validation MAE Loss: 4.7596
+Epoch [2/20], Step [1/21], Loss train: 8.1729
+Epoch [2/20], Step [11/21], Loss train: 6.4867
+Epoch [2/20], Step [21/21], Loss train: 3.9147
+Epoch [2/20], Training Loss: 6.1127, Validation RMSE Loss: 6.9460, Validation MAE Loss: 5.2539
+Epoch [3/20], Step [1/21], Loss train: 10.3157
+Epoch [3/20], Step [11/21], Loss train: 8.2604
+Epoch [3/20], Step [21/21], Loss train: 4.8993
+Epoch [3/20], Training Loss: 6.5714, Validation RMSE Loss: 6.5810, Validation MAE Loss: 5.0305
+Epoch [4/20], Step [1/21], Loss train: 7.6524
+Epoch [4/20], Step [11/21], Loss train: 5.1737
+Epoch [4/20], Step [21/21], Loss train: 6.4399
+Epoch [4/20], Training Loss: 6.2730, Validation RMSE Loss: 5.6537, Validation MAE Loss: 4.6872
+Epoch [5/20], Step [1/21], Loss train: 7.2130
+Epoch [5/20], Step [11/21], Loss train: 7.7375
+Epoch [5/20], Step [21/21], Loss train: 5.2300
+Epoch [5/20], Training Loss: 6.0786, Validation RMSE Loss: 6.1277, Validation MAE Loss: 4.8160
+Epoch [6/20], Step [1/21], Loss train: 8.8972
+Epoch [6/20], Step [11/21], Loss train: 5.6008
+Epoch [6/20], Step [21/21], Loss train: 3.0535
+Epoch [6/20], Training Loss: 6.2134, Validation RMSE Loss: 6.4508, Validation MAE Loss: 5.7581
+Epoch [7/20], Step [1/21], Loss train: 6.5487
+Epoch [7/20], Step [11/21], Loss train: 6.6670
+Epoch [7/20], Step [21/21], Loss train: 11.2753
+Epoch [7/20], Training Loss: 6.8471, Validation RMSE Loss: 5.5900, Validation MAE Loss: 4.6610
+Epoch [8/20], Step [1/21], Loss train: 5.3636
+Epoch [8/20], Step [11/21], Loss train: 7.0387
+Epoch [8/20], Step [21/21], Loss train: 3.5264
+Epoch [8/20], Training Loss: 6.3435, Validation RMSE Loss: 5.5386, Validation MAE Loss: 4.6562
+Epoch [9/20], Step [1/21], Loss train: 6.6819
+Epoch [9/20], Step [11/21], Loss train: 4.4986
+Epoch [9/20], Step [21/21], Loss train: 4.0118
+Epoch [9/20], Training Loss: 6.2946, Validation RMSE Loss: 5.6809, Validation MAE Loss: 4.6742
+Epoch [10/20], Step [1/21], Loss train: 4.2128
+Epoch [10/20], Step [11/21], Loss train: 6.3544
+Epoch [10/20], Step [21/21], Loss train: 8.2123
+Epoch [10/20], Training Loss: 6.1787, Validation RMSE Loss: 5.5851, Validation MAE Loss: 4.8290
+Epoch [11/20], Step [1/21], Loss train: 4.3714
+Epoch [11/20], Step [11/21], Loss train: 8.3157
+Epoch [11/20], Step [21/21], Loss train: 5.7021
+Epoch [11/20], Training Loss: 5.9942, Validation RMSE Loss: 5.4782, Validation MAE Loss: 4.6667
+Epoch [12/20], Step [1/21], Loss train: 7.4690
+Epoch [12/20], Step [11/21], Loss train: 4.4361
+Epoch [12/20], Step [21/21], Loss train: 8.5467
+Epoch [12/20], Training Loss: 6.2225, Validation RMSE Loss: 5.8039, Validation MAE Loss: 4.6609
+Epoch [13/20], Step [1/21], Loss train: 8.2323
+Epoch [13/20], Step [11/21], Loss train: 6.4391
+Epoch [13/20], Step [21/21], Loss train: 6.2035
+Epoch [13/20], Training Loss: 6.0690, Validation RMSE Loss: 5.9085, Validation MAE Loss: 5.1900
+Epoch [14/20], Step [1/21], Loss train: 5.5977
+Epoch [14/20], Step [11/21], Loss train: 5.8194
+Epoch [14/20], Step [21/21], Loss train: 5.3083
+Epoch [14/20], Training Loss: 6.1047, Validation RMSE Loss: 5.7911, Validation MAE Loss: 4.6502
+Epoch [15/20], Step [1/21], Loss train: 4.2927
+Epoch [15/20], Step [11/21], Loss train: 7.7901
+Epoch [15/20], Step [21/21], Loss train: 5.8992
+Epoch [15/20], Training Loss: 6.9001, Validation RMSE Loss: 5.4592, Validation MAE Loss: 4.6267
+Epoch [16/20], Step [1/21], Loss train: 7.5724
+Epoch [16/20], Step [11/21], Loss train: 10.1458
+Epoch [16/20], Step [21/21], Loss train: 3.8426
+Epoch [16/20], Training Loss: 6.1470, Validation RMSE Loss: 5.6190, Validation MAE Loss: 4.6774
+Epoch [17/20], Step [1/21], Loss train: 7.1953
+Epoch [17/20], Step [11/21], Loss train: 6.6813
+Epoch [17/20], Step [21/21], Loss train: 6.5028
+Epoch [17/20], Training Loss: 6.6381, Validation RMSE Loss: 5.6247, Validation MAE Loss: 4.8585
+Epoch [18/20], Step [1/21], Loss train: 6.2215
+Epoch [18/20], Step [11/21], Loss train: 6.2492
+Epoch [18/20], Step [21/21], Loss train: 4.1725
+Epoch [18/20], Training Loss: 6.2100, Validation RMSE Loss: 5.5512, Validation MAE Loss: 4.6997
+Epoch [19/20], Step [1/21], Loss train: 5.0384
+Epoch [19/20], Step [11/21], Loss train: 6.9268
+Epoch [19/20], Step [21/21], Loss train: 3.7280
+Epoch [19/20], Training Loss: 6.0612, Validation RMSE Loss: 5.7124, Validation MAE Loss: 4.7039
+Epoch [20/20], Step [1/21], Loss train: 6.6668
+Epoch [20/20], Step [11/21], Loss train: 10.5642
+Epoch [20/20], Step [21/21], Loss train: 5.2888
+Epoch [20/20], Training Loss: 6.1792, Validation RMSE Loss: 5.9742, Validation MAE Loss: 5.2536
+Test RMSE Loss (pose_gaze_au_c): 6.357326984405518, Test MAE Loss (pose_gaze_au_c): 5.565093517303467
+---------------------------------
+feature_type:  pose_au_r_au_c
+Epoch [1/20], Step [1/21], Loss train: 12.1334
+Epoch [1/20], Step [11/21], Loss train: nan
+Epoch [1/20], Step [21/21], Loss train: nan
+Epoch [1/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [2/20], Step [1/21], Loss train: nan
+Epoch [2/20], Step [11/21], Loss train: nan
+Epoch [2/20], Step [21/21], Loss train: nan
+Epoch [2/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [3/20], Step [1/21], Loss train: nan
+Epoch [3/20], Step [11/21], Loss train: nan
+Epoch [3/20], Step [21/21], Loss train: nan
+Epoch [3/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [4/20], Step [1/21], Loss train: nan
+Epoch [4/20], Step [11/21], Loss train: nan
+Epoch [4/20], Step [21/21], Loss train: nan
+Epoch [4/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [5/20], Step [1/21], Loss train: nan
+Epoch [5/20], Step [11/21], Loss train: nan
+Epoch [5/20], Step [21/21], Loss train: nan
+Epoch [5/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [6/20], Step [1/21], Loss train: nan
+Epoch [6/20], Step [11/21], Loss train: nan
+Epoch [6/20], Step [21/21], Loss train: nan
+Epoch [6/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [7/20], Step [1/21], Loss train: nan
+Epoch [7/20], Step [11/21], Loss train: nan
+Epoch [7/20], Step [21/21], Loss train: nan
+Epoch [7/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [8/20], Step [1/21], Loss train: nan
+Epoch [8/20], Step [11/21], Loss train: nan
+Epoch [8/20], Step [21/21], Loss train: nan
+Epoch [8/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [9/20], Step [1/21], Loss train: nan
+Epoch [9/20], Step [11/21], Loss train: nan
+Epoch [9/20], Step [21/21], Loss train: nan
+Epoch [9/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [10/20], Step [1/21], Loss train: nan
+Epoch [10/20], Step [11/21], Loss train: nan
+Epoch [10/20], Step [21/21], Loss train: nan
+Epoch [10/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [11/20], Step [1/21], Loss train: nan
+Epoch [11/20], Step [11/21], Loss train: nan
+Epoch [11/20], Step [21/21], Loss train: nan
+Epoch [11/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [12/20], Step [1/21], Loss train: nan
+Epoch [12/20], Step [11/21], Loss train: nan
+Epoch [12/20], Step [21/21], Loss train: nan
+Epoch [12/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [13/20], Step [1/21], Loss train: nan
+Epoch [13/20], Step [11/21], Loss train: nan
+Epoch [13/20], Step [21/21], Loss train: nan
+Epoch [13/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [14/20], Step [1/21], Loss train: nan
+Epoch [14/20], Step [11/21], Loss train: nan
+Epoch [14/20], Step [21/21], Loss train: nan
+Epoch [14/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [15/20], Step [1/21], Loss train: nan
+Epoch [15/20], Step [11/21], Loss train: nan
+Epoch [15/20], Step [21/21], Loss train: nan
+Epoch [15/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [16/20], Step [1/21], Loss train: nan
+Epoch [16/20], Step [11/21], Loss train: nan
+Epoch [16/20], Step [21/21], Loss train: nan
+Epoch [16/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [17/20], Step [1/21], Loss train: nan
+Epoch [17/20], Step [11/21], Loss train: nan
+Epoch [17/20], Step [21/21], Loss train: nan
+Epoch [17/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [18/20], Step [1/21], Loss train: nan
+Epoch [18/20], Step [11/21], Loss train: nan
+Epoch [18/20], Step [21/21], Loss train: nan
+Epoch [18/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [19/20], Step [1/21], Loss train: nan
+Epoch [19/20], Step [11/21], Loss train: nan
+Epoch [19/20], Step [21/21], Loss train: nan
+Epoch [19/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [20/20], Step [1/21], Loss train: nan
+Epoch [20/20], Step [11/21], Loss train: nan
+Epoch [20/20], Step [21/21], Loss train: nan
+Epoch [20/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Test RMSE Loss (pose_au_r_au_c): nan, Test MAE Loss (pose_au_r_au_c): nan
+---------------------------------
+feature_type:  gaze_au_r_au_c
+Epoch [1/20], Step [1/21], Loss train: 5.4947
+Epoch [1/20], Step [11/21], Loss train: 5.0001
+Epoch [1/20], Step [21/21], Loss train: 7.9112
+Epoch [1/20], Training Loss: 6.6420, Validation RMSE Loss: 6.3258, Validation MAE Loss: 5.6321
+Epoch [2/20], Step [1/21], Loss train: 6.5389
+Epoch [2/20], Step [11/21], Loss train: 4.7549
+Epoch [2/20], Step [21/21], Loss train: 4.1733
+Epoch [2/20], Training Loss: 6.1023, Validation RMSE Loss: 6.0347, Validation MAE Loss: 4.7920
+Epoch [3/20], Step [1/21], Loss train: 7.5756
+Epoch [3/20], Step [11/21], Loss train: 8.4730
+Epoch [3/20], Step [21/21], Loss train: 7.4490
+Epoch [3/20], Training Loss: 6.2545, Validation RMSE Loss: 6.0130, Validation MAE Loss: 4.7878
+Epoch [4/20], Step [1/21], Loss train: 8.3956
+Epoch [4/20], Step [11/21], Loss train: 6.6583
+Epoch [4/20], Step [21/21], Loss train: 8.2817
+Epoch [4/20], Training Loss: 6.3469, Validation RMSE Loss: 5.6134, Validation MAE Loss: 4.8385
+Epoch [5/20], Step [1/21], Loss train: 7.8066
+Epoch [5/20], Step [11/21], Loss train: 7.4851
+Epoch [5/20], Step [21/21], Loss train: 4.7270
+Epoch [5/20], Training Loss: 6.0965, Validation RMSE Loss: 5.5684, Validation MAE Loss: 4.7266
+Epoch [6/20], Step [1/21], Loss train: 4.2686
+Epoch [6/20], Step [11/21], Loss train: 7.4610
+Epoch [6/20], Step [21/21], Loss train: 8.1571
+Epoch [6/20], Training Loss: 6.2213, Validation RMSE Loss: 5.5722, Validation MAE Loss: 4.7190
+Epoch [7/20], Step [1/21], Loss train: 5.2760
+Epoch [7/20], Step [11/21], Loss train: 6.8006
+Epoch [7/20], Step [21/21], Loss train: 8.7939
+Epoch [7/20], Training Loss: 6.5934, Validation RMSE Loss: 5.9429, Validation MAE Loss: 4.7738
+Epoch [8/20], Step [1/21], Loss train: 5.6371
+Epoch [8/20], Step [11/21], Loss train: 6.6890
+Epoch [8/20], Step [21/21], Loss train: 8.5542
+Epoch [8/20], Training Loss: 6.2584, Validation RMSE Loss: 5.5672, Validation MAE Loss: 4.7492
+Epoch [9/20], Step [1/21], Loss train: 7.0530
+Epoch [9/20], Step [11/21], Loss train: 8.4316
+Epoch [9/20], Step [21/21], Loss train: 5.8632
+Epoch [9/20], Training Loss: 6.6393, Validation RMSE Loss: 5.7068, Validation MAE Loss: 4.9424
+Epoch [10/20], Step [1/21], Loss train: 4.9044
+Epoch [10/20], Step [11/21], Loss train: 7.5816
+Epoch [10/20], Step [21/21], Loss train: 7.5930
+Epoch [10/20], Training Loss: 6.1982, Validation RMSE Loss: 5.5679, Validation MAE Loss: 4.7513
+Epoch [11/20], Step [1/21], Loss train: 6.4642
+Epoch [11/20], Step [11/21], Loss train: 3.2528
+Epoch [11/20], Step [21/21], Loss train: 5.9466
+Epoch [11/20], Training Loss: 6.0303, Validation RMSE Loss: 5.6193, Validation MAE Loss: 4.8471
+Epoch [12/20], Step [1/21], Loss train: 8.5313
+Epoch [12/20], Step [11/21], Loss train: 7.5092
+Epoch [12/20], Step [21/21], Loss train: 3.3074
+Epoch [12/20], Training Loss: 6.0353, Validation RMSE Loss: 5.9845, Validation MAE Loss: 4.7823
+Epoch [13/20], Step [1/21], Loss train: 4.9187
+Epoch [13/20], Step [11/21], Loss train: 7.5253
+Epoch [13/20], Step [21/21], Loss train: 5.1420
+Epoch [13/20], Training Loss: 6.0169, Validation RMSE Loss: 6.0753, Validation MAE Loss: 4.7995
+Epoch [14/20], Step [1/21], Loss train: 4.3972
+Epoch [14/20], Step [11/21], Loss train: 6.4403
+Epoch [14/20], Step [21/21], Loss train: 3.7512
+Epoch [14/20], Training Loss: 6.8199, Validation RMSE Loss: 5.6808, Validation MAE Loss: 4.9183
+Epoch [15/20], Step [1/21], Loss train: 5.3484
+Epoch [15/20], Step [11/21], Loss train: 6.1407
+Epoch [15/20], Step [21/21], Loss train: 8.2952
+Epoch [15/20], Training Loss: 6.4997, Validation RMSE Loss: 5.9324, Validation MAE Loss: 4.7716
+Epoch [16/20], Step [1/21], Loss train: 4.4664
+Epoch [16/20], Step [11/21], Loss train: 4.5764
+Epoch [16/20], Step [21/21], Loss train: 7.7446
+Epoch [16/20], Training Loss: 6.2712, Validation RMSE Loss: 6.0230, Validation MAE Loss: 5.2843
+Epoch [17/20], Step [1/21], Loss train: 7.4078
+Epoch [17/20], Step [11/21], Loss train: 6.6867
+Epoch [17/20], Step [21/21], Loss train: 2.4934
+Epoch [17/20], Training Loss: 6.2759, Validation RMSE Loss: 5.5660, Validation MAE Loss: 4.7427
+Epoch [18/20], Step [1/21], Loss train: 6.5518
+Epoch [18/20], Step [11/21], Loss train: 6.3494
+Epoch [18/20], Step [21/21], Loss train: 4.1753
+Epoch [18/20], Training Loss: 6.4218, Validation RMSE Loss: 5.5813, Validation MAE Loss: 4.7775
+Epoch [19/20], Step [1/21], Loss train: 6.7970
+Epoch [19/20], Step [11/21], Loss train: 5.4798
+Epoch [19/20], Step [21/21], Loss train: 6.0025
+Epoch [19/20], Training Loss: 6.2476, Validation RMSE Loss: 5.6428, Validation MAE Loss: 4.8775
+Epoch [20/20], Step [1/21], Loss train: 8.3254
+Epoch [20/20], Step [11/21], Loss train: 4.9273
+Epoch [20/20], Step [21/21], Loss train: 2.1924
+Epoch [20/20], Training Loss: 5.8383, Validation RMSE Loss: 6.6871, Validation MAE Loss: 5.0985
+Test RMSE Loss (gaze_au_r_au_c): 5.6567559242248535, Test MAE Loss (gaze_au_r_au_c): 4.431467056274414
+---------------------------------
+feature_type:  confidence_success_all
+Epoch [1/20], Step [1/21], Loss train: 6.9950
+Epoch [1/20], Step [11/21], Loss train: 6.5389
+Epoch [1/20], Step [21/21], Loss train: 6.2148
+Epoch [1/20], Training Loss: 6.7621, Validation RMSE Loss: 5.5830, Validation MAE Loss: 4.7818
+Epoch [2/20], Step [1/21], Loss train: 6.5993
+Epoch [2/20], Step [11/21], Loss train: 7.3062
+Epoch [2/20], Step [21/21], Loss train: 4.8463
+Epoch [2/20], Training Loss: 6.0712, Validation RMSE Loss: 6.0543, Validation MAE Loss: 4.7956
+Epoch [3/20], Step [1/21], Loss train: 6.9701
+Epoch [3/20], Step [11/21], Loss train: 6.9139
+Epoch [3/20], Step [21/21], Loss train: 6.8017
+Epoch [3/20], Training Loss: 6.5608, Validation RMSE Loss: 5.6061, Validation MAE Loss: 4.8272
+Epoch [4/20], Step [1/21], Loss train: 5.2578
+Epoch [4/20], Step [11/21], Loss train: 4.9379
+Epoch [4/20], Step [21/21], Loss train: 7.7152
+Epoch [4/20], Training Loss: 6.1246, Validation RMSE Loss: 6.1950, Validation MAE Loss: 5.4921
+Epoch [5/20], Step [1/21], Loss train: 7.9973
+Epoch [5/20], Step [11/21], Loss train: 6.0147
+Epoch [5/20], Step [21/21], Loss train: 4.7941
+Epoch [5/20], Training Loss: 6.4346, Validation RMSE Loss: 5.6060, Validation MAE Loss: 4.7005
+Epoch [6/20], Step [1/21], Loss train: 5.7323
+Epoch [6/20], Step [11/21], Loss train: 6.0777
+Epoch [6/20], Step [21/21], Loss train: 4.9081
+Epoch [6/20], Training Loss: 6.0744, Validation RMSE Loss: 6.7641, Validation MAE Loss: 6.0576
+Epoch [7/20], Step [1/21], Loss train: 6.8956
+Epoch [7/20], Step [11/21], Loss train: 7.5416
+Epoch [7/20], Step [21/21], Loss train: 5.0993
+Epoch [7/20], Training Loss: 6.0483, Validation RMSE Loss: 5.6552, Validation MAE Loss: 4.7129
+Epoch [8/20], Step [1/21], Loss train: 6.0956
+Epoch [8/20], Step [11/21], Loss train: 5.1866
+Epoch [8/20], Step [21/21], Loss train: 5.9326
+Epoch [8/20], Training Loss: 6.0966, Validation RMSE Loss: 5.6103, Validation MAE Loss: 4.8338
+Epoch [9/20], Step [1/21], Loss train: 4.2637
+Epoch [9/20], Step [11/21], Loss train: 6.4445
+Epoch [9/20], Step [21/21], Loss train: 7.6876
+Epoch [9/20], Training Loss: 6.3758, Validation RMSE Loss: 5.6777, Validation MAE Loss: 4.7174
+Epoch [10/20], Step [1/21], Loss train: 5.0367
+Epoch [10/20], Step [11/21], Loss train: 5.6031
+Epoch [10/20], Step [21/21], Loss train: 3.8714
+Epoch [10/20], Training Loss: 6.0007, Validation RMSE Loss: 5.8638, Validation MAE Loss: 4.7564
+Epoch [11/20], Step [1/21], Loss train: 7.0486
+Epoch [11/20], Step [11/21], Loss train: 7.7698
+Epoch [11/20], Step [21/21], Loss train: 3.6809
+Epoch [11/20], Training Loss: 6.1816, Validation RMSE Loss: 5.6292, Validation MAE Loss: 4.8606
+Epoch [12/20], Step [1/21], Loss train: 5.9124
+Epoch [12/20], Step [11/21], Loss train: 7.3107
+Epoch [12/20], Step [21/21], Loss train: 5.1546
+Epoch [12/20], Training Loss: 6.1433, Validation RMSE Loss: 5.5659, Validation MAE Loss: 4.7416
+Epoch [13/20], Step [1/21], Loss train: 4.6272
+Epoch [13/20], Step [11/21], Loss train: 5.5737
+Epoch [13/20], Step [21/21], Loss train: 5.2732
+Epoch [13/20], Training Loss: 5.9886, Validation RMSE Loss: 5.6521, Validation MAE Loss: 4.7123
+Epoch [14/20], Step [1/21], Loss train: 3.5383
+Epoch [14/20], Step [11/21], Loss train: 6.6749
+Epoch [14/20], Step [21/21], Loss train: 4.7949
+Epoch [14/20], Training Loss: 6.2312, Validation RMSE Loss: 6.1329, Validation MAE Loss: 4.8219
+Epoch [15/20], Step [1/21], Loss train: 6.6159
+Epoch [15/20], Step [11/21], Loss train: 7.6802
+Epoch [15/20], Step [21/21], Loss train: 5.9614
+Epoch [15/20], Training Loss: 6.9827, Validation RMSE Loss: 5.6200, Validation MAE Loss: 4.8481
+Epoch [16/20], Step [1/21], Loss train: 5.0871
+Epoch [16/20], Step [11/21], Loss train: 5.1773
+Epoch [16/20], Step [21/21], Loss train: 4.3038
+Epoch [16/20], Training Loss: 6.0905, Validation RMSE Loss: 5.7023, Validation MAE Loss: 4.7219
+Epoch [17/20], Step [1/21], Loss train: 6.8871
+Epoch [17/20], Step [11/21], Loss train: 6.2576
+Epoch [17/20], Step [21/21], Loss train: 8.3482
+Epoch [17/20], Training Loss: 6.2256, Validation RMSE Loss: 5.5708, Validation MAE Loss: 4.7577
+Epoch [18/20], Step [1/21], Loss train: 4.8009
+Epoch [18/20], Step [11/21], Loss train: 7.0619
+Epoch [18/20], Step [21/21], Loss train: 7.0933
+Epoch [18/20], Training Loss: 6.3894, Validation RMSE Loss: 5.5795, Validation MAE Loss: 4.7726
+Epoch [19/20], Step [1/21], Loss train: 8.6654
+Epoch [19/20], Step [11/21], Loss train: 4.8738
+Epoch [19/20], Step [21/21], Loss train: 8.5832
+Epoch [19/20], Training Loss: 6.1392, Validation RMSE Loss: 5.6041, Validation MAE Loss: 4.8238
+Epoch [20/20], Step [1/21], Loss train: 6.5688
+Epoch [20/20], Step [11/21], Loss train: 8.0780
+Epoch [20/20], Step [21/21], Loss train: 3.8119
+Epoch [20/20], Training Loss: 6.5205, Validation RMSE Loss: 6.0605, Validation MAE Loss: 4.7968
+Test RMSE Loss (confidence_success_all): 5.183858871459961, Test MAE Loss (confidence_success_all): 4.375
+---------------------------------
+feature_type:  confidence_success_AUintens
+Epoch [1/20], Step [1/21], Loss train: 10.5080
+Epoch [1/20], Step [11/21], Loss train: 6.6058
+Epoch [1/20], Step [21/21], Loss train: 2.8319
+Epoch [1/20], Training Loss: 6.9653, Validation RMSE Loss: 5.6098, Validation MAE Loss: 4.7016
+Epoch [2/20], Step [1/21], Loss train: 4.8573
+Epoch [2/20], Step [11/21], Loss train: 6.0614
+Epoch [2/20], Step [21/21], Loss train: 6.1902
+Epoch [2/20], Training Loss: 6.0181, Validation RMSE Loss: 5.6618, Validation MAE Loss: 4.7143
+Epoch [3/20], Step [1/21], Loss train: 6.4228
+Epoch [3/20], Step [11/21], Loss train: 8.2376
+Epoch [3/20], Step [21/21], Loss train: 5.9866
+Epoch [3/20], Training Loss: 6.3406, Validation RMSE Loss: 5.6303, Validation MAE Loss: 4.7072
+Epoch [4/20], Step [1/21], Loss train: 5.1771
+Epoch [4/20], Step [11/21], Loss train: 5.7864
+Epoch [4/20], Step [21/21], Loss train: 3.8955
+Epoch [4/20], Training Loss: 5.9902, Validation RMSE Loss: 5.8112, Validation MAE Loss: 4.7435
+Epoch [5/20], Step [1/21], Loss train: 6.8376
+Epoch [5/20], Step [11/21], Loss train: 5.6118
+Epoch [5/20], Step [21/21], Loss train: 3.9803
+Epoch [5/20], Training Loss: 6.1646, Validation RMSE Loss: 5.9741, Validation MAE Loss: 4.7802
+Epoch [6/20], Step [1/21], Loss train: 6.1688
+Epoch [6/20], Step [11/21], Loss train: 5.3178
+Epoch [6/20], Step [21/21], Loss train: 7.5506
+Epoch [6/20], Training Loss: 6.5794, Validation RMSE Loss: 5.5658, Validation MAE Loss: 4.7400
+Epoch [7/20], Step [1/21], Loss train: 6.7893
+Epoch [7/20], Step [11/21], Loss train: 5.1015
+Epoch [7/20], Step [21/21], Loss train: 10.3681
+Epoch [7/20], Training Loss: 6.3110, Validation RMSE Loss: 5.7382, Validation MAE Loss: 4.9825
+Epoch [8/20], Step [1/21], Loss train: 5.0580
+Epoch [8/20], Step [11/21], Loss train: 6.3918
+Epoch [8/20], Step [21/21], Loss train: 8.5839
+Epoch [8/20], Training Loss: 6.7736, Validation RMSE Loss: 6.2427, Validation MAE Loss: 4.8765
+Epoch [9/20], Step [1/21], Loss train: 2.6562
+Epoch [9/20], Step [11/21], Loss train: 6.6757
+Epoch [9/20], Step [21/21], Loss train: 9.7492
+Epoch [9/20], Training Loss: 6.2730, Validation RMSE Loss: 5.9984, Validation MAE Loss: 5.2516
+Epoch [10/20], Step [1/21], Loss train: 5.1694
+Epoch [10/20], Step [11/21], Loss train: 3.2073
+Epoch [10/20], Step [21/21], Loss train: 3.0510
+Epoch [10/20], Training Loss: 6.2769, Validation RMSE Loss: 5.5776, Validation MAE Loss: 4.7676
+Epoch [11/20], Step [1/21], Loss train: 7.2900
+Epoch [11/20], Step [11/21], Loss train: 5.8996
+Epoch [11/20], Step [21/21], Loss train: 2.8708
+Epoch [11/20], Training Loss: 6.2060, Validation RMSE Loss: 5.5659, Validation MAE Loss: 4.7422
+Epoch [12/20], Step [1/21], Loss train: 6.7234
+Epoch [12/20], Step [11/21], Loss train: 9.8244
+Epoch [12/20], Step [21/21], Loss train: 6.3523
+Epoch [12/20], Training Loss: 6.5189, Validation RMSE Loss: 5.7686, Validation MAE Loss: 5.0201
+Epoch [13/20], Step [1/21], Loss train: 7.8585
+Epoch [13/20], Step [11/21], Loss train: 5.5413
+Epoch [13/20], Step [21/21], Loss train: 11.9717
+Epoch [13/20], Training Loss: 6.3332, Validation RMSE Loss: 6.8866, Validation MAE Loss: 5.2234
+Epoch [14/20], Step [1/21], Loss train: 5.3748
+Epoch [14/20], Step [11/21], Loss train: 4.5667
+Epoch [14/20], Step [21/21], Loss train: 3.7394
+Epoch [14/20], Training Loss: 6.6467, Validation RMSE Loss: 5.5995, Validation MAE Loss: 4.8159
+Epoch [15/20], Step [1/21], Loss train: 6.0507
+Epoch [15/20], Step [11/21], Loss train: 5.7687
+Epoch [15/20], Step [21/21], Loss train: 10.3990
+Epoch [15/20], Training Loss: 6.2993, Validation RMSE Loss: 5.5758, Validation MAE Loss: 4.7654
+Epoch [16/20], Step [1/21], Loss train: 5.6652
+Epoch [16/20], Step [11/21], Loss train: 7.9633
+Epoch [16/20], Step [21/21], Loss train: 3.9892
+Epoch [16/20], Training Loss: 6.0309, Validation RMSE Loss: 5.6135, Validation MAE Loss: 4.7027
+Epoch [17/20], Step [1/21], Loss train: 4.2670
+Epoch [17/20], Step [11/21], Loss train: 9.0311
+Epoch [17/20], Step [21/21], Loss train: 10.2571
+Epoch [17/20], Training Loss: 6.2504, Validation RMSE Loss: 5.5836, Validation MAE Loss: 4.7054
+Epoch [18/20], Step [1/21], Loss train: 4.2122
+Epoch [18/20], Step [11/21], Loss train: 5.5644
+Epoch [18/20], Step [21/21], Loss train: 4.4576
+Epoch [18/20], Training Loss: 6.0753, Validation RMSE Loss: 5.5667, Validation MAE Loss: 4.7319
+Epoch [19/20], Step [1/21], Loss train: 4.1235
+Epoch [19/20], Step [11/21], Loss train: 9.7370
+Epoch [19/20], Step [21/21], Loss train: 11.5725
+Epoch [19/20], Training Loss: 6.4227, Validation RMSE Loss: 5.8089, Validation MAE Loss: 4.7429
+Epoch [20/20], Step [1/21], Loss train: 6.2132
+Epoch [20/20], Step [11/21], Loss train: 6.2944
+Epoch [20/20], Step [21/21], Loss train: 5.4748
+Epoch [20/20], Training Loss: 6.0676, Validation RMSE Loss: 5.8521, Validation MAE Loss: 5.1112
+Test RMSE Loss (confidence_success_AUintens): 5.957038402557373, Test MAE Loss (confidence_success_AUintens): 5.1634321212768555
+---------------------------------
+feature_type:  confidence_success_AUoccurr
+Epoch [1/20], Step [1/21], Loss train: 10.0377
+Epoch [1/20], Step [11/21], Loss train: 6.6363
+Epoch [1/20], Step [21/21], Loss train: 8.2745
+Epoch [1/20], Training Loss: 6.8013, Validation RMSE Loss: 6.0729, Validation MAE Loss: 4.7990
+Epoch [2/20], Step [1/21], Loss train: 8.3793
+Epoch [2/20], Step [11/21], Loss train: 3.9259
+Epoch [2/20], Step [21/21], Loss train: 7.7455
+Epoch [2/20], Training Loss: 6.1857, Validation RMSE Loss: 7.1951, Validation MAE Loss: 6.4766
+Epoch [3/20], Step [1/21], Loss train: 7.2738
+Epoch [3/20], Step [11/21], Loss train: 5.7858
+Epoch [3/20], Step [21/21], Loss train: 6.3728
+Epoch [3/20], Training Loss: 6.4148, Validation RMSE Loss: 8.6161, Validation MAE Loss: 6.6794
+Epoch [4/20], Step [1/21], Loss train: 5.4336
+Epoch [4/20], Step [11/21], Loss train: 5.4248
+Epoch [4/20], Step [21/21], Loss train: 5.6294
+Epoch [4/20], Training Loss: 6.5900, Validation RMSE Loss: 5.5661, Validation MAE Loss: 4.7439
+Epoch [5/20], Step [1/21], Loss train: 5.3254
+Epoch [5/20], Step [11/21], Loss train: 5.3528
+Epoch [5/20], Step [21/21], Loss train: 8.1469
+Epoch [5/20], Training Loss: 6.2859, Validation RMSE Loss: 5.5724, Validation MAE Loss: 4.7188
+Epoch [6/20], Step [1/21], Loss train: 5.5331
+Epoch [6/20], Step [11/21], Loss train: 7.3348
+Epoch [6/20], Step [21/21], Loss train: 8.3157
+Epoch [6/20], Training Loss: 6.7674, Validation RMSE Loss: 8.1834, Validation MAE Loss: 7.4697
+Epoch [7/20], Step [1/21], Loss train: 9.0128
+Epoch [7/20], Step [11/21], Loss train: 3.3678
+Epoch [7/20], Step [21/21], Loss train: 8.3316
+Epoch [7/20], Training Loss: 7.2158, Validation RMSE Loss: 5.6763, Validation MAE Loss: 4.7172
+Epoch [8/20], Step [1/21], Loss train: 2.5428
+Epoch [8/20], Step [11/21], Loss train: 7.9314
+Epoch [8/20], Step [21/21], Loss train: 6.7278
+Epoch [8/20], Training Loss: 6.2496, Validation RMSE Loss: 6.3593, Validation MAE Loss: 5.6660
+Epoch [9/20], Step [1/21], Loss train: 6.0524
+Epoch [9/20], Step [11/21], Loss train: 7.1440
+Epoch [9/20], Step [21/21], Loss train: 3.3299
+Epoch [9/20], Training Loss: 6.1504, Validation RMSE Loss: 5.5990, Validation MAE Loss: 4.6981
+Epoch [10/20], Step [1/21], Loss train: 5.1319
+Epoch [10/20], Step [11/21], Loss train: 6.0575
+Epoch [10/20], Step [21/21], Loss train: 5.1793
+Epoch [10/20], Training Loss: 6.4584, Validation RMSE Loss: 5.5687, Validation MAE Loss: 4.7533
+Epoch [11/20], Step [1/21], Loss train: 6.0557
+Epoch [11/20], Step [11/21], Loss train: 6.0204
+Epoch [11/20], Step [21/21], Loss train: 4.1921
+Epoch [11/20], Training Loss: 6.0571, Validation RMSE Loss: 6.1153, Validation MAE Loss: 4.8127
+Epoch [12/20], Step [1/21], Loss train: 10.3300
+Epoch [12/20], Step [11/21], Loss train: 4.5940
+Epoch [12/20], Step [21/21], Loss train: 6.2323
+Epoch [12/20], Training Loss: 6.2534, Validation RMSE Loss: 6.0164, Validation MAE Loss: 5.2757
+Epoch [13/20], Step [1/21], Loss train: 7.7767
+Epoch [13/20], Step [11/21], Loss train: 5.1233
+Epoch [13/20], Step [21/21], Loss train: 2.9576
+Epoch [13/20], Training Loss: 6.2308, Validation RMSE Loss: 6.4343, Validation MAE Loss: 4.9632
+Epoch [14/20], Step [1/21], Loss train: 8.1014
+Epoch [14/20], Step [11/21], Loss train: 5.5477
+Epoch [14/20], Step [21/21], Loss train: 6.9872
+Epoch [14/20], Training Loss: 6.6207, Validation RMSE Loss: 5.6006, Validation MAE Loss: 4.8178
+Epoch [15/20], Step [1/21], Loss train: 4.5873
+Epoch [15/20], Step [11/21], Loss train: 6.0095
+Epoch [15/20], Step [21/21], Loss train: 6.1889
+Epoch [15/20], Training Loss: 6.1031, Validation RMSE Loss: 5.9132, Validation MAE Loss: 5.1700
+Epoch [16/20], Step [1/21], Loss train: 7.4897
+Epoch [16/20], Step [11/21], Loss train: 6.4934
+Epoch [16/20], Step [21/21], Loss train: 3.3584
+Epoch [16/20], Training Loss: 6.3423, Validation RMSE Loss: 5.6809, Validation MAE Loss: 4.7180
+Epoch [17/20], Step [1/21], Loss train: 5.8947
+Epoch [17/20], Step [11/21], Loss train: 6.4068
+Epoch [17/20], Step [21/21], Loss train: 5.2599
+Epoch [17/20], Training Loss: 6.5404, Validation RMSE Loss: 6.1814, Validation MAE Loss: 5.4767
+Epoch [18/20], Step [1/21], Loss train: 6.3213
+Epoch [18/20], Step [11/21], Loss train: 7.9020
+Epoch [18/20], Step [21/21], Loss train: 5.6454
+Epoch [18/20], Training Loss: 6.2939, Validation RMSE Loss: 5.7296, Validation MAE Loss: 4.7263
+Epoch [19/20], Step [1/21], Loss train: 6.4320
+Epoch [19/20], Step [11/21], Loss train: 6.1832
+Epoch [19/20], Step [21/21], Loss train: 7.8354
+Epoch [19/20], Training Loss: 6.1520, Validation RMSE Loss: 6.6025, Validation MAE Loss: 5.9093
+Epoch [20/20], Step [1/21], Loss train: 6.6252
+Epoch [20/20], Step [11/21], Loss train: 8.9225
+Epoch [20/20], Step [21/21], Loss train: 4.0633
+Epoch [20/20], Training Loss: 6.5426, Validation RMSE Loss: 6.3530, Validation MAE Loss: 4.9275
+Test RMSE Loss (confidence_success_AUoccurr): 5.389869213104248, Test MAE Loss (confidence_success_AUoccurr): 4.375
+---------------------------------
+feature_type:  confidence_success_pose
+Epoch [1/20], Step [1/21], Loss train: 3.3107
+Epoch [1/20], Step [11/21], Loss train: nan
+Epoch [1/20], Step [21/21], Loss train: nan
+Epoch [1/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [2/20], Step [1/21], Loss train: nan
+Epoch [2/20], Step [11/21], Loss train: nan
+Epoch [2/20], Step [21/21], Loss train: nan
+Epoch [2/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [3/20], Step [1/21], Loss train: nan
+Epoch [3/20], Step [11/21], Loss train: nan
+Epoch [3/20], Step [21/21], Loss train: nan
+Epoch [3/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [4/20], Step [1/21], Loss train: nan
+Epoch [4/20], Step [11/21], Loss train: nan
+Epoch [4/20], Step [21/21], Loss train: nan
+Epoch [4/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [5/20], Step [1/21], Loss train: nan
+Epoch [5/20], Step [11/21], Loss train: nan
+Epoch [5/20], Step [21/21], Loss train: nan
+Epoch [5/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [6/20], Step [1/21], Loss train: nan
+Epoch [6/20], Step [11/21], Loss train: nan
+Epoch [6/20], Step [21/21], Loss train: nan
+Epoch [6/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [7/20], Step [1/21], Loss train: nan
+Epoch [7/20], Step [11/21], Loss train: nan
+Epoch [7/20], Step [21/21], Loss train: nan
+Epoch [7/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [8/20], Step [1/21], Loss train: nan
+Epoch [8/20], Step [11/21], Loss train: nan
+Epoch [8/20], Step [21/21], Loss train: nan
+Epoch [8/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [9/20], Step [1/21], Loss train: nan
+Epoch [9/20], Step [11/21], Loss train: nan
+Epoch [9/20], Step [21/21], Loss train: nan
+Epoch [9/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [10/20], Step [1/21], Loss train: nan
+Epoch [10/20], Step [11/21], Loss train: nan
+Epoch [10/20], Step [21/21], Loss train: nan
+Epoch [10/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [11/20], Step [1/21], Loss train: nan
+Epoch [11/20], Step [11/21], Loss train: nan
+Epoch [11/20], Step [21/21], Loss train: nan
+Epoch [11/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [12/20], Step [1/21], Loss train: nan
+Epoch [12/20], Step [11/21], Loss train: nan
+Epoch [12/20], Step [21/21], Loss train: nan
+Epoch [12/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [13/20], Step [1/21], Loss train: nan
+Epoch [13/20], Step [11/21], Loss train: nan
+Epoch [13/20], Step [21/21], Loss train: nan
+Epoch [13/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [14/20], Step [1/21], Loss train: nan
+Epoch [14/20], Step [11/21], Loss train: nan
+Epoch [14/20], Step [21/21], Loss train: nan
+Epoch [14/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [15/20], Step [1/21], Loss train: nan
+Epoch [15/20], Step [11/21], Loss train: nan
+Epoch [15/20], Step [21/21], Loss train: nan
+Epoch [15/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [16/20], Step [1/21], Loss train: nan
+Epoch [16/20], Step [11/21], Loss train: nan
+Epoch [16/20], Step [21/21], Loss train: nan
+Epoch [16/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [17/20], Step [1/21], Loss train: nan
+Epoch [17/20], Step [11/21], Loss train: nan
+Epoch [17/20], Step [21/21], Loss train: nan
+Epoch [17/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [18/20], Step [1/21], Loss train: nan
+Epoch [18/20], Step [11/21], Loss train: nan
+Epoch [18/20], Step [21/21], Loss train: nan
+Epoch [18/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [19/20], Step [1/21], Loss train: nan
+Epoch [19/20], Step [11/21], Loss train: nan
+Epoch [19/20], Step [21/21], Loss train: nan
+Epoch [19/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [20/20], Step [1/21], Loss train: nan
+Epoch [20/20], Step [11/21], Loss train: nan
+Epoch [20/20], Step [21/21], Loss train: nan
+Epoch [20/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Test RMSE Loss (confidence_success_pose): nan, Test MAE Loss (confidence_success_pose): nan
+---------------------------------
+feature_type:  confidence_success_gaze
+Epoch [1/20], Step [1/21], Loss train: 8.6753
+Epoch [1/20], Step [11/21], Loss train: 8.4236
+Epoch [1/20], Step [21/21], Loss train: 4.6616
+Epoch [1/20], Training Loss: 6.3358, Validation RMSE Loss: 5.6124, Validation MAE Loss: 4.8370
+Epoch [2/20], Step [1/21], Loss train: 4.9582
+Epoch [2/20], Step [11/21], Loss train: 8.6971
+Epoch [2/20], Step [21/21], Loss train: 9.3224
+Epoch [2/20], Training Loss: 6.2972, Validation RMSE Loss: 5.6209, Validation MAE Loss: 4.7048
+Epoch [3/20], Step [1/21], Loss train: 8.1227
+Epoch [3/20], Step [11/21], Loss train: 8.8393
+Epoch [3/20], Step [21/21], Loss train: 4.0293
+Epoch [3/20], Training Loss: 6.2347, Validation RMSE Loss: 5.6236, Validation MAE Loss: 4.7055
+Epoch [4/20], Step [1/21], Loss train: 7.8997
+Epoch [4/20], Step [11/21], Loss train: 5.5562
+Epoch [4/20], Step [21/21], Loss train: 6.3554
+Epoch [4/20], Training Loss: 6.3418, Validation RMSE Loss: 5.7006, Validation MAE Loss: 4.9369
+Epoch [5/20], Step [1/21], Loss train: 7.7031
+Epoch [5/20], Step [11/21], Loss train: 7.4861
+Epoch [5/20], Step [21/21], Loss train: 3.1374
+Epoch [5/20], Training Loss: 6.0197, Validation RMSE Loss: 6.3413, Validation MAE Loss: 4.9223
+Epoch [6/20], Step [1/21], Loss train: 6.5038
+Epoch [6/20], Step [11/21], Loss train: 9.0753
+Epoch [6/20], Step [21/21], Loss train: 5.0674
+Epoch [6/20], Training Loss: 6.5104, Validation RMSE Loss: 5.5913, Validation MAE Loss: 4.6987
+Epoch [7/20], Step [1/21], Loss train: 3.7987
+Epoch [7/20], Step [11/21], Loss train: 7.2499
+Epoch [7/20], Step [21/21], Loss train: 2.8856
+Epoch [7/20], Training Loss: 6.7789, Validation RMSE Loss: 6.2147, Validation MAE Loss: 4.8630
+Epoch [8/20], Step [1/21], Loss train: 7.2412
+Epoch [8/20], Step [11/21], Loss train: 6.6368
+Epoch [8/20], Step [21/21], Loss train: 5.0313
+Epoch [8/20], Training Loss: 6.0422, Validation RMSE Loss: 5.5685, Validation MAE Loss: 4.7530
+Epoch [9/20], Step [1/21], Loss train: 6.7577
+Epoch [9/20], Step [11/21], Loss train: 3.4732
+Epoch [9/20], Step [21/21], Loss train: 6.8105
+Epoch [9/20], Training Loss: 6.1094, Validation RMSE Loss: 5.7991, Validation MAE Loss: 5.0551
+Epoch [10/20], Step [1/21], Loss train: 6.2004
+Epoch [10/20], Step [11/21], Loss train: 6.5344
+Epoch [10/20], Step [21/21], Loss train: 5.8133
+Epoch [10/20], Training Loss: 6.4435, Validation RMSE Loss: 6.4267, Validation MAE Loss: 4.9599
+Epoch [11/20], Step [1/21], Loss train: 3.5833
+Epoch [11/20], Step [11/21], Loss train: 4.7358
+Epoch [11/20], Step [21/21], Loss train: 7.4167
+Epoch [11/20], Training Loss: 6.1004, Validation RMSE Loss: 5.8549, Validation MAE Loss: 5.1140
+Epoch [12/20], Step [1/21], Loss train: 5.6775
+Epoch [12/20], Step [11/21], Loss train: 6.8804
+Epoch [12/20], Step [21/21], Loss train: 6.6348
+Epoch [12/20], Training Loss: 6.4606, Validation RMSE Loss: 5.6401, Validation MAE Loss: 4.8743
+Epoch [13/20], Step [1/21], Loss train: 7.1840
+Epoch [13/20], Step [11/21], Loss train: 3.6045
+Epoch [13/20], Step [21/21], Loss train: 8.7135
+Epoch [13/20], Training Loss: 6.2294, Validation RMSE Loss: 5.6041, Validation MAE Loss: 4.8239
+Epoch [14/20], Step [1/21], Loss train: 6.5963
+Epoch [14/20], Step [11/21], Loss train: 5.3986
+Epoch [14/20], Step [21/21], Loss train: 3.3338
+Epoch [14/20], Training Loss: 6.0553, Validation RMSE Loss: 6.1210, Validation MAE Loss: 4.8156
+Epoch [15/20], Step [1/21], Loss train: 5.5956
+Epoch [15/20], Step [11/21], Loss train: 7.1944
+Epoch [15/20], Step [21/21], Loss train: 5.3671
+Epoch [15/20], Training Loss: 6.4075, Validation RMSE Loss: 5.6686, Validation MAE Loss: 4.9060
+Epoch [16/20], Step [1/21], Loss train: 6.9740
+Epoch [16/20], Step [11/21], Loss train: 4.4105
+Epoch [16/20], Step [21/21], Loss train: 4.9262
+Epoch [16/20], Training Loss: 7.1429, Validation RMSE Loss: 5.5931, Validation MAE Loss: 4.8040
+Epoch [17/20], Step [1/21], Loss train: 4.3558
+Epoch [17/20], Step [11/21], Loss train: 8.4336
+Epoch [17/20], Step [21/21], Loss train: 1.9638
+Epoch [17/20], Training Loss: 6.8920, Validation RMSE Loss: 8.2383, Validation MAE Loss: 6.3105
+Epoch [18/20], Step [1/21], Loss train: 9.0860
+Epoch [18/20], Step [11/21], Loss train: 8.5254
+Epoch [18/20], Step [21/21], Loss train: 3.0921
+Epoch [18/20], Training Loss: 7.4184, Validation RMSE Loss: 6.4135, Validation MAE Loss: 4.9542
+Epoch [19/20], Step [1/21], Loss train: 6.2455
+Epoch [19/20], Step [11/21], Loss train: 6.9453
+Epoch [19/20], Step [21/21], Loss train: 5.5381
+Epoch [19/20], Training Loss: 6.5753, Validation RMSE Loss: 5.5659, Validation MAE Loss: 4.7423
+Epoch [20/20], Step [1/21], Loss train: 5.1884
+Epoch [20/20], Step [11/21], Loss train: 5.9901
+Epoch [20/20], Step [21/21], Loss train: 6.1773
+Epoch [20/20], Training Loss: 6.1060, Validation RMSE Loss: 6.0885, Validation MAE Loss: 5.3673
+Test RMSE Loss (confidence_success_gaze): 6.369507312774658, Test MAE Loss (confidence_success_gaze): 5.520576000213623
+---------------------------------
+feature_type:  confidence_success_AUintens_pose_gaze
+Epoch [1/20], Step [1/21], Loss train: 5.3229
+Epoch [1/20], Step [11/21], Loss train: 6.3268
+Epoch [1/20], Step [21/21], Loss train: 9.2231
+Epoch [1/20], Training Loss: 6.6093, Validation RMSE Loss: 5.5961, Validation MAE Loss: 4.8097
+Epoch [2/20], Step [1/21], Loss train: 4.7548
+Epoch [2/20], Step [11/21], Loss train: nan
+Epoch [2/20], Step [21/21], Loss train: nan
+Epoch [2/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [3/20], Step [1/21], Loss train: nan
+Epoch [3/20], Step [11/21], Loss train: nan
+Epoch [3/20], Step [21/21], Loss train: nan
+Epoch [3/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [4/20], Step [1/21], Loss train: nan
+Epoch [4/20], Step [11/21], Loss train: nan
+Epoch [4/20], Step [21/21], Loss train: nan
+Epoch [4/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [5/20], Step [1/21], Loss train: nan
+Epoch [5/20], Step [11/21], Loss train: nan
+Epoch [5/20], Step [21/21], Loss train: nan
+Epoch [5/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [6/20], Step [1/21], Loss train: nan
+Epoch [6/20], Step [11/21], Loss train: nan
+Epoch [6/20], Step [21/21], Loss train: nan
+Epoch [6/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [7/20], Step [1/21], Loss train: nan
+Epoch [7/20], Step [11/21], Loss train: nan
+Epoch [7/20], Step [21/21], Loss train: nan
+Epoch [7/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [8/20], Step [1/21], Loss train: nan
+Epoch [8/20], Step [11/21], Loss train: nan
+Epoch [8/20], Step [21/21], Loss train: nan
+Epoch [8/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [9/20], Step [1/21], Loss train: nan
+Epoch [9/20], Step [11/21], Loss train: nan
+Epoch [9/20], Step [21/21], Loss train: nan
+Epoch [9/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [10/20], Step [1/21], Loss train: nan
+Epoch [10/20], Step [11/21], Loss train: nan
+Epoch [10/20], Step [21/21], Loss train: nan
+Epoch [10/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [11/20], Step [1/21], Loss train: nan
+Epoch [11/20], Step [11/21], Loss train: nan
+Epoch [11/20], Step [21/21], Loss train: nan
+Epoch [11/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [12/20], Step [1/21], Loss train: nan
+Epoch [12/20], Step [11/21], Loss train: nan
+Epoch [12/20], Step [21/21], Loss train: nan
+Epoch [12/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [13/20], Step [1/21], Loss train: nan
+Epoch [13/20], Step [11/21], Loss train: nan
+Epoch [13/20], Step [21/21], Loss train: nan
+Epoch [13/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [14/20], Step [1/21], Loss train: nan
+Epoch [14/20], Step [11/21], Loss train: nan
+Epoch [14/20], Step [21/21], Loss train: nan
+Epoch [14/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [15/20], Step [1/21], Loss train: nan
+Epoch [15/20], Step [11/21], Loss train: nan
+Epoch [15/20], Step [21/21], Loss train: nan
+Epoch [15/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [16/20], Step [1/21], Loss train: nan
+Epoch [16/20], Step [11/21], Loss train: nan
+Epoch [16/20], Step [21/21], Loss train: nan
+Epoch [16/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [17/20], Step [1/21], Loss train: nan
+Epoch [17/20], Step [11/21], Loss train: nan
+Epoch [17/20], Step [21/21], Loss train: nan
+Epoch [17/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [18/20], Step [1/21], Loss train: nan
+Epoch [18/20], Step [11/21], Loss train: nan
+Epoch [18/20], Step [21/21], Loss train: nan
+Epoch [18/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [19/20], Step [1/21], Loss train: nan
+Epoch [19/20], Step [11/21], Loss train: nan
+Epoch [19/20], Step [21/21], Loss train: nan
+Epoch [19/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Epoch [20/20], Step [1/21], Loss train: nan
+Epoch [20/20], Step [11/21], Loss train: nan
+Epoch [20/20], Step [21/21], Loss train: nan
+Epoch [20/20], Training Loss: nan, Validation RMSE Loss: nan, Validation MAE Loss: nan
+Test RMSE Loss (confidence_success_AUintens_pose_gaze): nan, Test MAE Loss (confidence_success_AUintens_pose_gaze): nan
+---------------------------------
+feature_type:  confidence_success_AUoccurr_pose_gaze
+Epoch [1/20], Step [1/21], Loss train: 6.3961
+Epoch [1/20], Step [11/21], Loss train: 4.8047
+Epoch [1/20], Step [21/21], Loss train: 5.4629
+Epoch [1/20], Training Loss: 6.3378, Validation RMSE Loss: 5.8002, Validation MAE Loss: 4.7407
+Epoch [2/20], Step [1/21], Loss train: 4.1736
+Epoch [2/20], Step [11/21], Loss train: 6.7379
+Epoch [2/20], Step [21/21], Loss train: 4.8799
+Epoch [2/20], Training Loss: 6.1263, Validation RMSE Loss: 5.7162, Validation MAE Loss: 4.7242
+Epoch [3/20], Step [1/21], Loss train: 5.2751
+Epoch [3/20], Step [11/21], Loss train: 6.1018
+Epoch [3/20], Step [21/21], Loss train: 3.5903
+Epoch [3/20], Training Loss: 6.1041, Validation RMSE Loss: 5.9145, Validation MAE Loss: 5.1711
+Epoch [4/20], Step [1/21], Loss train: 6.4123
+Epoch [4/20], Step [11/21], Loss train: 6.8398
+Epoch [4/20], Step [21/21], Loss train: 4.9989
+Epoch [4/20], Training Loss: 6.3407, Validation RMSE Loss: 5.5660, Validation MAE Loss: 4.7427
+Epoch [5/20], Step [1/21], Loss train: 6.3897
+Epoch [5/20], Step [11/21], Loss train: 5.1845
+Epoch [5/20], Step [21/21], Loss train: 4.5207
+Epoch [5/20], Training Loss: 5.9568, Validation RMSE Loss: 6.5588, Validation MAE Loss: 5.8674
+Epoch [6/20], Step [1/21], Loss train: 7.2037
+Epoch [6/20], Step [11/21], Loss train: 5.7876
+Epoch [6/20], Step [21/21], Loss train: 2.6652
+Epoch [6/20], Training Loss: 6.6151, Validation RMSE Loss: 5.5962, Validation MAE Loss: 4.6972
+Epoch [7/20], Step [1/21], Loss train: 7.7512
+Epoch [7/20], Step [11/21], Loss train: 4.9998
+Epoch [7/20], Step [21/21], Loss train: 5.7067
+Epoch [7/20], Training Loss: 6.1636, Validation RMSE Loss: 5.6997, Validation MAE Loss: 4.7214
+Epoch [8/20], Step [1/21], Loss train: 6.8949
+Epoch [8/20], Step [11/21], Loss train: 4.6604
+Epoch [8/20], Step [21/21], Loss train: 2.8878
+Epoch [8/20], Training Loss: 5.9825, Validation RMSE Loss: 5.6846, Validation MAE Loss: 4.9220
+Epoch [9/20], Step [1/21], Loss train: 6.8587
+Epoch [9/20], Step [11/21], Loss train: 11.2889
+Epoch [9/20], Step [21/21], Loss train: 4.1022
+Epoch [9/20], Training Loss: 6.7885, Validation RMSE Loss: 6.7698, Validation MAE Loss: 5.1513
+Epoch [10/20], Step [1/21], Loss train: 6.3891
+Epoch [10/20], Step [11/21], Loss train: 5.7282
+Epoch [10/20], Step [21/21], Loss train: 6.8881
+Epoch [10/20], Training Loss: 6.2931, Validation RMSE Loss: 5.6105, Validation MAE Loss: 4.8341
+Epoch [11/20], Step [1/21], Loss train: 6.2218
+Epoch [11/20], Step [11/21], Loss train: 7.6190
+Epoch [11/20], Step [21/21], Loss train: 4.6384
+Epoch [11/20], Training Loss: 6.1901, Validation RMSE Loss: 5.7614, Validation MAE Loss: 4.7311
+Epoch [12/20], Step [1/21], Loss train: 4.0093
+Epoch [12/20], Step [11/21], Loss train: 5.4165
+Epoch [12/20], Step [21/21], Loss train: 2.8645
+Epoch [12/20], Training Loss: 5.9074, Validation RMSE Loss: 6.0316, Validation MAE Loss: 4.7914
+Epoch [13/20], Step [1/21], Loss train: 7.8152
+Epoch [13/20], Step [11/21], Loss train: 5.6773
+Epoch [13/20], Step [21/21], Loss train: 7.7932
+Epoch [13/20], Training Loss: 6.2101, Validation RMSE Loss: 5.7014, Validation MAE Loss: 4.7217
+Epoch [14/20], Step [1/21], Loss train: 9.7157
+Epoch [14/20], Step [11/21], Loss train: 7.1610
+Epoch [14/20], Step [21/21], Loss train: 9.2498
+Epoch [14/20], Training Loss: 6.5154, Validation RMSE Loss: 8.3387, Validation MAE Loss: 6.4020
+Epoch [15/20], Step [1/21], Loss train: 11.5770
+Epoch [15/20], Step [11/21], Loss train: 7.3545
+Epoch [15/20], Step [21/21], Loss train: 9.2412
+Epoch [15/20], Training Loss: 6.4111, Validation RMSE Loss: 5.6780, Validation MAE Loss: 4.7175
+Epoch [16/20], Step [1/21], Loss train: 6.8822
+Epoch [16/20], Step [11/21], Loss train: 7.8500
+Epoch [16/20], Step [21/21], Loss train: 3.8243
+Epoch [16/20], Training Loss: 5.9033, Validation RMSE Loss: 6.1963, Validation MAE Loss: 4.8539
+Epoch [17/20], Step [1/21], Loss train: 7.9312
+Epoch [17/20], Step [11/21], Loss train: 8.1122
+Epoch [17/20], Step [21/21], Loss train: 4.2305
+Epoch [17/20], Training Loss: 6.1419, Validation RMSE Loss: 5.5937, Validation MAE Loss: 4.6969
+Epoch [18/20], Step [1/21], Loss train: 4.8620
+Epoch [18/20], Step [11/21], Loss train: 8.4294
+Epoch [18/20], Step [21/21], Loss train: 8.2375
+Epoch [18/20], Training Loss: 6.8228, Validation RMSE Loss: 5.6685, Validation MAE Loss: 4.9059
+Epoch [19/20], Step [1/21], Loss train: 4.9321
+Epoch [19/20], Step [11/21], Loss train: 5.9941
+Epoch [19/20], Step [21/21], Loss train: 8.0665
+Epoch [19/20], Training Loss: 6.6349, Validation RMSE Loss: 5.6257, Validation MAE Loss: 4.7061
+Epoch [20/20], Step [1/21], Loss train: 6.3877
+Epoch [20/20], Step [11/21], Loss train: 5.6266
+Epoch [20/20], Step [21/21], Loss train: 3.5902
+Epoch [20/20], Training Loss: 6.1039, Validation RMSE Loss: 5.9023, Validation MAE Loss: 5.1599
+Test RMSE Loss (confidence_success_AUoccurr_pose_gaze): 6.050205707550049, Test MAE Loss (confidence_success_AUoccurr_pose_gaze): 5.248517036437988
+---------------------------------
+=== JOB_STATISTICS ===
+=== current date     : Thu 15 Feb 2024 06:48:47 PM CET
+= Job-ID             : 769574 on tinygpu
+= Job-Name           : job_LSTM_base.sh
+= Job-Command        : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/enhancing_base_code/base_config/job_LSTM_base.sh
+= Initial workdir    : /home/hpc/empk/empk004h/depression-detection/code_for_job/visual/LSTM/enhancing_base_code/base_config
+= Queue/Partition    : a100
+= Slurm account      : empk with QOS=normal
+= Requested resources: cpu=32,mem=120000M,node=1,billing=32,gres/gpu=1,gres/gpu:a100=1 for 20:00:00
+= Elapsed runtime    : 04:01:32
+= Total RAM usage    : 0.9 GiB of requested 117 GiB (0.8%)   
+= Node list          : tg096
+= Subm/Elig/Start/End: 2024-02-15T14:47:15 / 2024-02-15T14:47:15 / 2024-02-15T14:47:15 / 2024-02-15T18:48:47
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           76.7G   104.9G   209.7G        N/A      52K     500K   1,000K        N/A    
+    /home/woody        311.0G   500.0G   750.0G        N/A     314K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:81:00.0, 3512112, 32 %, 1 %, 28208 MiB, 14457259 ms
