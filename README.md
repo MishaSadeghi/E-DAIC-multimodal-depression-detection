@@ -87,7 +87,7 @@ E-DAIC/
 
 **API Key for GPT Completions:**
 
-The text processing pipeline uses GPT to generate questionnaire data. To use this feature, you must provide an OpenAI API key.
+The text processing pipeline uses GPT to generate the completions. To use this feature, you must provide an OpenAI API key.
 
 1.  Create a file named `.env` in the root of the project directory (`E-DAIC-multimodal-depression-detection/`).
 2.  Add your OpenAI API key to this file:
@@ -120,27 +120,27 @@ python scripts/train_video_model.py \
 **Step 2: Train the Text-based Models**
 
 Two models are trained on the textual data:
-a) A fine-tuned DeBERTa model.
-b) An SVR model trained on the features extracted from the DeBERTa model and the GPT-generated questionnaire. These scripts will also generate the feature CSVs required for the final multimodal model.
+a) A fine-tuned DepRoBERTa model.
+b) An SVR model trained on the features extracted from the DepRoBERTa model and the GPT-generated completions. These scripts will also generate the feature CSVs required for the final multimodal model.
 
 ```sh
-# a) Fine-tune the DeBERTa model and extract features
+# a) Fine-tune the DepRoBERTa model and extract features
 python scripts/train_text_model.py \
     --data_dir data/ \
     --output_dir trained_models/text_model/
 
-# b) Train the SVR on DeBERTa + Questionnaire features
-# This script generates the questionnaire features using the OpenAI API.
+# b) Train the SVR on DepRoBERTa + Completions features
+# This script generates the completion features using the OpenAI API.
 # Ensure you have your OPENAI_API_KEY in the .env file.
 python scripts/train_svr_on_text_features.py \
     --data_dir data/ \
-    --deberta_feature_dir trained_models/text_model/ \
+    --DepRoBERTa_feature_dir trained_models/text_model/ \
     --output_dir trained_models/text_svr_model/
 ```
 
 **Step 3: Train the Final Multimodal Model**
 
-This script brings everything together. It loads the trained video model to extract features, loads the text and questionnaire features (generated in the previous step), and trains a final SVR fusion model.
+This script brings everything together. It loads the trained video model to extract features, loads the text and completions features (generated in the previous step), and trains a final SVR fusion model.
 
 ```sh
 python scripts/train_multimodal_model.py \
