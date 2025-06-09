@@ -77,6 +77,7 @@ venv.bak/
 *.model
 *.pt
 *.pth
+*.safetensors
 
 # Logs and outputs
 logs/
