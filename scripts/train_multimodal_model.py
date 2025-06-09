@@ -27,7 +27,7 @@ def main(video_feature_dir, text_feature_dir, video_model_path, output_dir):
         device=device
     )
 
-    # Apply PCA on video features, as done in the notebook
+    # Apply PCA on video features
     pca_video = PCA(n_components=10)
     
     # Fit on training data and transform all sets
@@ -60,9 +60,6 @@ def main(video_feature_dir, text_feature_dir, video_model_path, output_dir):
     svr = SVR(kernel='rbf')
     grid_search = GridSearchCV(estimator=svr, param_grid=param_grid, cv=5, scoring='neg_mean_squared_error', n_jobs=-1, verbose=2)
     
-    # The notebook trains on train+dev, but for a cleaner pipeline, let's train on train and validate on dev.
-    # We can train on train+dev before final testing if desired.
-    # For now, following standard practice:
     grid_search.fit(X_train, y_train)
     
     best_svr = grid_search.best_estimator_

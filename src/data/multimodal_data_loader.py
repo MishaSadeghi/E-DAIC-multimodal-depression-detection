@@ -6,7 +6,7 @@ from torch.utils.data import Dataset
 from torch.nn.utils.rnn import pad_sequence
 from sklearn.preprocessing import StandardScaler
 
-from src.models.video_model import VideoLSTMModel # Assuming the refactored model is here
+from src.models.video_model import VideoLSTMModel 
 
 def str_to_np_array(s):
     """Converts a string representation of a numpy array back to a numpy array."""
@@ -28,7 +28,7 @@ class OpenFaceDataset(Dataset):
         if 'PHQ_Score' in row:
             phq_score = row['PHQ_Score']
         else:
-            phq_score = -1 # Or some other placeholder for test data without labels
+            phq_score = -1 
 
         filepath = os.path.join(self.data_folder, f"{participant_id}_OpenFace2.1.0_Pose_gaze_AUs.csv")
         
@@ -51,10 +51,6 @@ class OpenFaceDataset(Dataset):
 
         except FileNotFoundError:
             print(f"Warning: File not found for participant {participant_id}. Returning empty tensor.")
-            # This needs to be handled. Returning zeros might be problematic.
-            # For now, let's assume all files exist. A more robust solution would be needed.
-            # Let's find the number of features from a sample file or hardcode it.
-            # Based on the model `input_size=31`, this seems to be the expected feature count.
             features = np.zeros((1, 31))
 
         return torch.tensor(features, dtype=torch.float32), torch.tensor(phq_score, dtype=torch.float32)
@@ -68,7 +64,6 @@ def extract_video_features(model, labels_df, data_folder, device):
     with torch.no_grad():
         for features, _ in dataset:
             features = features.unsqueeze(0).to(device)
-            # Use the method from the refactored model to get the feature representation
             output = model.get_feature_representation(features).squeeze().cpu().numpy()
             extracted_features.append(output)
     return np.array(extracted_features)
@@ -85,9 +80,6 @@ def load_multimodal_data(video_feature_dir, text_feature_dir, video_model_path, 
     print("Loading multimodal data...")
 
     # 1. Load video model
-    # The model input size must match the features from OpenFaceDataset
-    # The notebook used 'pose_gaze_au_r', let's find the input size.
-    # From the notebook `EnhancedPHQLSTM(input_size=31, ...)`
     video_model = VideoLSTMModel(input_size=31, hidden_size=64, num_layers=3, dropout_rate=0.3)
     video_model.load_state_dict(torch.load(video_model_path, map_location=device))
     video_model.to(device)
@@ -120,8 +112,7 @@ def load_multimodal_data(video_feature_dir, text_feature_dir, video_model_path, 
 
     # 4. Load text and questionnaire features
     print("Loading text and questionnaire features...")
-    # These are the files used in the final model cell of the notebook
-    deberta_prompt = 'prompt3' # Based on the notebook's final model cell
+    deberta_prompt = 'prompt3' 
     
     txt_feat_train_df = pd.read_csv(os.path.join(text_feature_dir, f"df_train_{deberta_prompt}.csv"))
     txt_feat_dev_df = pd.read_csv(os.path.join(text_feature_dir, f"df_dev_{deberta_prompt}.csv"))

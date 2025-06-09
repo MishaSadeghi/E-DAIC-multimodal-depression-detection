@@ -103,7 +103,7 @@ def load_and_extract_text_features(label_dir, text_data_path, model_name, device
 
     Args:
         label_dir (str): Path to the directory with train/dev/test label CSVs.
-        text_data_path (str): Path to the Excel file with ChatGPT processed text.
+        text_data_path (str): Path to the Excel file with GPT processed text.
         model_name (str): Name of the Hugging Face model to use for feature extraction.
         device (torch.device): The device to run the model on.
 

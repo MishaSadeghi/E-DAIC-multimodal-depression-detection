@@ -102,8 +102,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Extract features from a trained Video LSTM model.")
     
     # Paths
-    parser.add_argument('--data_dir', type=str, default='/home/hpc/empk/empk004h/depression-detection/data', help='Directory with DAIC_open_face_* folders.')
-    parser.add_argument('--label_dir', type=str, default='/home/hpc/empk/empk004h/depression-detection/data/labels', help='Directory with train/dev/test split CSVs.')
+    parser.add_argument('--data_dir', type=str, default='depression-detection/data', help='Directory with DAIC_open_face_* folders.')
+    parser.add_argument('--label_dir', type=str, default='depression-detection/data/labels', help='Directory with train/dev/test split CSVs.')
     parser.add_argument('--model_load_dir', type=str, default='./models', help='Directory where the trained model is saved.')
     parser.add_argument('--feature_save_dir', type=str, default='./data/processed_features/video', help='Directory to save the extracted features.')
 

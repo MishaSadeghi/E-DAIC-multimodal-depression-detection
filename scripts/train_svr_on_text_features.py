@@ -79,8 +79,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Train SVR on DepRoBERTa text features.")
     
     # Paths
-    parser.add_argument('--label_dir', type=str, default='/home/hpc/empk/empk004h/depression-detection/data/DAIC/labels', help='Directory with train/dev/test split CSVs.')
-    parser.add_argument('--text_data_path', type=str, default='/home/hpc/empk/empk004h/depression-detection/data/DAIC/DAIC_Chatgpt_text_1.xlsx', help='Path to the Excel file with ChatGPT processed text.')
+    parser.add_argument('--label_dir', type=str, default='depression-detection/data/DAIC/labels', help='Directory with train/dev/test split CSVs.')
+    parser.add_argument('--text_data_path', type=str, default='depression-detection/data/DAIC/DAIC_gpt_text.xlsx', help='Path to the Excel file with GPT processed text.')
     parser.add_argument('--model_name', type=str, default='rafalposwiata/deproberta-large-depression', help='Name of the Hugging Face model for feature extraction.')
 
     args = parser.parse_args()
