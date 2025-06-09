@@ -60,8 +60,6 @@ E-DAIC/
 │       ├── dev_split.csv
 │       └── test_split.csv
 │
-├── notebooks/               # Original experimental notebooks (for reference)
-│
 ├── scripts/                 # Main executable scripts for training models
 │   ├── train_video_model.py
 │   ├── train_text_model.py
