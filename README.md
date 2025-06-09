@@ -1,4 +1,4 @@
-# Harnessing Multimodal Approaches for Depression Detection
+# Harnessing Multimodal Approaches for Depression Detection (https://www.nature.com/articles/s44184-024-00112-8)
 
 This repository contains the official source code and implementation for the paper: **"Harnessing multimodal approaches for depression detection using large language models and facial expressions."**
 
