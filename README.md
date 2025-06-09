@@ -170,22 +170,30 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
----
-
-## Contact
-
-Misha Sadeghi - [m.sadeghi@example.com](mailto:m.sadeghi@example.com)
-
-Project Link: [https://github.com/MishaSadeghi/E-DAIC-multimodal-depression-detection](https://github.com/MishaSadeghi/E-DAIC-multimodal-depression-detection)
 
 ---
 ## Citation
-If you use this code in your research, please consider citing our paper:
+
+If you use this code in your research, please consider citing the following papers:
 ```
 @article{sadeghi2024harnessing,
   title={Harnessing multimodal approaches for depression detection using large language models and facial expressions},
-  author={Sadeghi, M., Richer, R., Egger, B. et al.},
-  journal={npj Mental Health Res 3, 66},
-  year={2024}
+  author={Sadeghi, Misha and Richer, Robert and Egger, Bernhard and Schindler-Gmelch, Lena and Rupp, Lydia Helene and Rahimi, Farnaz and Berking, Matthias and Eskofier, Bjoern M},
+  journal={npj Mental Health Research},
+  volume={3},
+  number={1},
+  pages={66},
+  year={2024},
+  publisher={Nature Publishing Group UK London}
+}
+```
+```
+@inproceedings{sadeghi2023exploring,
+  title={Exploring the capabilities of a language model-only approach for depression detection in text data},
+  author={Sadeghi, Misha and Egger, Bernhard and Agahi, Reza and Richer, Robert and Capito, Klara and Rupp, Lydia Helene and Schindler-Gmelch, Lena and Berking, Matthias and Eskofier, Bjoern M},
+  booktitle={2023 IEEE EMBS International Conference on Biomedical and Health Informatics (BHI)},
+  pages={1--5},
+  year={2023},
+  organization={IEEE}
 }
 ```
