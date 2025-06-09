@@ -92,3 +92,10 @@ logs/
 slurm-*.out
 
 .env
+
+# Ignored directories
+Backup/
+audio_quality_check/
+code_for_job/
+experiments_4_new_prompts/
+notebooks/

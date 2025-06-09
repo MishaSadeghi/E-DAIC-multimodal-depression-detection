@@ -1,2 +1,0 @@
-git+https://github.com/huggingface/evaluate.git@{COMMIT_PLACEHOLDER}
-nltk~=3.7
