@@ -98,7 +98,7 @@ The text processing pipeline uses GPT to generate questionnaire data. To use thi
 
 ### 2. Data Preparation
 
-This project uses the **DAIC-WOZ (Distress Analysis Interview Corpus - Wizard of Oz)** dataset. You must download it from the official source and structure it as follows inside the `data/` directory:
+This project uses the **Extended DAIC** dataset. You must download it from the official source (https://dcapswoz.ict.usc.edu/) and structure it as follows inside the `data/` directory:
 
 -   **`data/DAIC_openface_features/`**: This directory should contain the extracted OpenFace 2.1.0 features (`*_OpenFace2.1.0_Pose_gaze_AUs.csv`) for each participant, split into `train`, `dev`, and `test` subdirectories.
 -   **`data/labels/`**: This directory should contain the `train_split.csv`, `dev_split.csv`, and `test_split.csv` files, which map participant IDs to their PHQ-8 scores and binary depression labels.
