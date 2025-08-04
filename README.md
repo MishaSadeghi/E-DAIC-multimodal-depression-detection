@@ -86,7 +86,7 @@ E-DAIC/
 
 **API Key for GPT Completions:**
 
-The text processing pipeline uses GPT to generate the completions. To use this feature, you must provide an OpenAI API key.
+The text processing pipeline uses GPT-3.5 Turbo to generate the completions. To use this feature, you must provide an OpenAI API key.
 
 1.  Create a file named `.env` in the root of the project directory (`E-DAIC-multimodal-depression-detection/`).
 2.  Add your OpenAI API key to this file:
