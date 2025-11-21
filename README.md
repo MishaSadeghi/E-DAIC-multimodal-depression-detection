@@ -159,7 +159,8 @@ Distributed under the MIT License.
 ---
 ## Citation
 
-If you use this code in your research, please consider citing the following papers:
+If you used or were inspired by our work, please kindly cite our publications:
+
 ```
 @article{sadeghi2024harnessing,
   title={Harnessing multimodal approaches for depression detection using large language models and facial expressions},
