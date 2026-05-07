@@ -141,7 +141,7 @@ python scripts/train_svr_on_text_features.py \
 
 **Step 3: Train the Final Multimodal Model**
 
-This script combines video, text, and questionnaire features and trains a final SVR fusion model. The `--text_feature_dir` should point to the directory containing the pre-generated per-participant feature CSVs (`df_train_prompt3.csv`, `df_dev_prompt3.csv`, etc.).
+This script combines video and text features and trains a final SVR fusion model. The `--text_feature_dir` should point to the directory containing the pre-generated per-participant feature CSVs (`df_train_prompt3.csv`, `df_dev_prompt3.csv`, etc.).
 
 ```sh
 python scripts/train_multimodal_model.py \
