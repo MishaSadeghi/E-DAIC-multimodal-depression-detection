@@ -1,6 +1,7 @@
 import os
 import argparse
 import torch
+import torch.nn as nn
 import numpy as np
 from tqdm import tqdm
 
@@ -102,10 +103,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Extract features from a trained Video LSTM model.")
     
     # Paths
-    parser.add_argument('--data_dir', type=str, default='depression-detection/data', help='Directory with DAIC_open_face_* folders.')
-    parser.add_argument('--label_dir', type=str, default='depression-detection/data/labels', help='Directory with train/dev/test split CSVs.')
-    parser.add_argument('--model_load_dir', type=str, default='./models', help='Directory where the trained model is saved.')
-    parser.add_argument('--feature_save_dir', type=str, default='./data/processed_features/video', help='Directory to save the extracted features.')
+    parser.add_argument('--data_dir', type=str, default='data', help='Root data directory containing DAIC_openface_features/.')
+    parser.add_argument('--label_dir', type=str, default='data/labels', help='Directory with train/dev/test split CSVs.')
+    parser.add_argument('--model_load_dir', type=str, default='trained_models/video_model', help='Directory where the trained model is saved.')
+    parser.add_argument('--feature_save_dir', type=str, default='trained_models/video_model/features', help='Directory to save the extracted features.')
 
     # Model parameters (must match the trained model)
     parser.add_argument('--feature_type', type=str, default='all', help='Feature set used for the trained model.')

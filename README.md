@@ -44,29 +44,29 @@ This project is organized into a modular pipeline to ensure reproducibility. The
 The repository is organized as follows:
 
 ```
-E-DAIC/
+E-DAIC-multimodal-depression-detection/
 │
-├── data/                    # Should contain the DAIC-WOZ dataset structured as described below
-│   ├── DAIC_openface_features/
+├── data/                          # Place the E-DAIC dataset here
+│   ├── DAIC_openface_features/    # OpenFace extracted features
 │   │   ├── train/
-│   │   └── dev/
+│   │   ├── dev/
 │   │   └── test/
-│   │   └── labels/
-│   │   └── train_split.csv
-│   │   └── dev_split.csv
+│   ├── labels/                    # Participant split and label files
+│   │   ├── train_split.csv
+│   │   ├── dev_split.csv
 │   │   └── test_split.csv
-│   └── labels/
-│       ├── train_split.csv
-│       ├── dev_split.csv
-│       └── test_split.csv
+│   ├── transcripts/               # GPT-processed transcripts (one subfolder per prompt)
+│   │   └── prompt3/
+│   └── DAIC_gpt_text.xlsx         # GPT-generated text completions
 │
-├── scripts/                 # Main executable scripts for training models
+├── scripts/                       # Main executable training scripts
+│   ├── extract_video_features.py
 │   ├── train_video_model.py
 │   ├── train_text_model.py
 │   ├── train_svr_on_text_features.py
 │   └── train_multimodal_model.py
 │
-├── src/                     # Source code for data loaders and models
+├── src/                           # Source code for data loaders and models
 │   ├── data/
 │   │   ├── video_data_loader.py
 │   │   ├── text_data_loader.py
@@ -75,9 +75,9 @@ E-DAIC/
 │       ├── video_model.py
 │       └── text_model.py
 │
-├── trained_models/          # Output directory for saved models and results
+├── trained_models/                # Output directory for saved models and results
 │
-├── .env                     # For storing API keys (ignored by git)
+├── .env                           # For storing API keys (ignored by git)
 ├── requirements.txt
 └── README.md
 ```
@@ -113,39 +113,41 @@ This script trains the LSTM model on sequential OpenFace features and saves the 
 ```sh
 python scripts/train_video_model.py \
     --data_dir data/ \
-    --output_dir trained_models/video_model/
+    --label_dir data/labels/ \
+    --model_save_dir trained_models/video_model/
 ```
 
 **Step 2: Train the Text-based Models**
 
 Two models are trained on the textual data:
-a) A fine-tuned DepRoBERTa model.
-b) An SVR model trained on the features extracted from the DepRoBERTa model and the GPT-generated completions. These scripts will also generate the feature CSVs required for the final multimodal model.
+a) A fine-tuned DepRoBERTa model (3-class depression severity classifier).
+b) An SVR model trained on GPT-completion features extracted via the DepRoBERTa model.
 
 ```sh
-# a) Fine-tune the DepRoBERTa model and extract features
+# a) Fine-tune the DepRoBERTa model
+# --prompt specifies the subfolder under data/transcripts/ (e.g., prompt3)
 python scripts/train_text_model.py \
-    --data_dir data/ \
-    --output_dir trained_models/text_model/
+    --data_dir data/transcripts/ \
+    --prompt prompt3 \
+    --model_save_dir trained_models/text_model/
 
-# b) Train the SVR on DepRoBERTa + Completions features
-# This script generates the completion features using the OpenAI API.
-# Ensure you have your OPENAI_API_KEY in the .env file.
+# b) Train the SVR on DepRoBERTa features extracted from GPT-generated completions
+# Ensure you have your OPENAI_API_KEY in the .env file before generating completions.
 python scripts/train_svr_on_text_features.py \
-    --data_dir data/ \
-    --DepRoBERTa_feature_dir trained_models/text_model/ \
-    --output_dir trained_models/text_svr_model/
+    --label_dir data/labels/ \
+    --text_data_path data/DAIC_gpt_text.xlsx \
+    --model_name rafalposwiata/deproberta-large-depression
 ```
 
 **Step 3: Train the Final Multimodal Model**
 
-This script brings everything together. It loads the trained video model to extract features, loads the text and completions features (generated in the previous step), and trains a final SVR fusion model.
+This script combines video, text, and questionnaire features and trains a final SVR fusion model. The `--text_feature_dir` should point to the directory containing the pre-generated per-participant feature CSVs (`df_train_prompt3.csv`, `df_dev_prompt3.csv`, etc.).
 
 ```sh
 python scripts/train_multimodal_model.py \
     --video_feature_dir data/ \
-    --text_feature_dir trained_models/text_svr_model/ \
-    --video_model_path trained_models/video_model/best_video_model.pth \
+    --text_feature_dir trained_models/text_model/ \
+    --video_model_path trained_models/video_model/best_video_model_all.pth \
     --output_dir trained_models/multimodal_model/
 ```
 

@@ -107,9 +107,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Fine-tune DepRoBERTa model for depression classification.")
     
     # Paths and identifiers
-    parser.add_argument('--data_dir', type=str, default='depression-detection/data/revised_transcripts_completions/', help='Directory containing the prompt folders.')
-    parser.add_argument('--prompt', type=str, required=True, help='Name of the prompt folder to process.')
-    parser.add_argument('--model_save_dir', type=str, default='./models', help='Directory to save the best model.')
+    parser.add_argument('--data_dir', type=str, default='data/transcripts', help='Directory containing the prompt folders.')
+    parser.add_argument('--prompt', type=str, required=True, help='Name of the prompt folder to process (e.g., prompt3).')
+    parser.add_argument('--model_save_dir', type=str, default='trained_models/text_model', help='Directory to save the best model.')
     parser.add_argument('--model_name', type=str, default='rafalposwiata/deproberta-large-depression', help='Name of the Hugging Face model.')
 
     # Model and training parameters

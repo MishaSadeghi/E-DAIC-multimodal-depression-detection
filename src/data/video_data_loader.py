@@ -86,17 +86,13 @@ def pad_collate_fn(batch):
     This is a required helper function for the DataLoader.
     """
     (sequences, labels) = zip(*batch)
-    
-    # Filter out empty sequences that might result from missing files
-    sequences = [s for s in sequences if s.nelement() > 0]
-    labels = [l for s, l in zip(sequences, labels) if s.nelement() > 0]
-    
-    if not sequences:
-        return torch.empty(0,0,0), torch.empty(0)
 
-    # Pad sequences with 0s
+    valid = [(s, l) for s, l in zip(sequences, labels) if s.nelement() > 0]
+    if not valid:
+        return torch.empty(0, 0, 0), torch.empty(0)
+    sequences, labels = zip(*valid)
+
     sequences_padded = torch.nn.utils.rnn.pad_sequence(sequences, batch_first=True, padding_value=0)
-    
     return sequences_padded, torch.tensor(labels, dtype=torch.float64)
 
 def create_data_loaders(data_dir, label_dir, feature_type, batch_size=32):
@@ -107,9 +103,10 @@ def create_data_loaders(data_dir, label_dir, feature_type, batch_size=32):
     dev_csv_path = os.path.join(label_dir, 'dev_split.csv')
     test_csv_path = os.path.join(label_dir, 'test_split.csv')
     
-    open_face_train_dir = os.path.join(data_dir, 'DAIC_open_face_train')
-    open_face_dev_dir = os.path.join(data_dir, 'DAIC_open_face_dev')
-    open_face_test_dir = os.path.join(data_dir, 'DAIC_open_face_test')
+    openface_root = os.path.join(data_dir, 'DAIC_openface_features')
+    open_face_train_dir = os.path.join(openface_root, 'train')
+    open_face_dev_dir = os.path.join(openface_root, 'dev')
+    open_face_test_dir = os.path.join(openface_root, 'test')
 
     train_dataset = VideoDataset(csv_file=train_csv_path, data_folder=open_face_train_dir, feature_type=feature_type)
     val_dataset = VideoDataset(csv_file=dev_csv_path, data_folder=open_face_dev_dir, feature_type=feature_type)
